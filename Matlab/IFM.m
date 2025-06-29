@@ -41,12 +41,14 @@ function [IFM_results] = IFM(noisySignals,varargin)
     TimeVector = 0:1/Fs:BroadcastTime-1/Fs;
     TotalSamples = Fs*BroadcastTime;
     JustNoiseSamples = Fs*JustNoiseTime;
-
+    
     % Threshold hesaplama
     Threshold_db = zeros(1,length(SNR_dB));
     Threshold_linear = zeros(1,length(SNR_dB));
     power_dB = zeros(1,length(SNR_dB));
     
+    
+
     for threshold_SNR_idx = 1:length(SNR_dB)
         % Gürültü gücünü sadece gürültü bölgesinden hesapla (0-100 μs)
         noise_power_linear = mean(abs(noisySignals(1:JustNoiseSamples,threshold_SNR_idx)).^2);

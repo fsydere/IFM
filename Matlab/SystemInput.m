@@ -87,6 +87,12 @@ for i = 1:length(SNR_dB)
     NoisySignals(:,i) = PulseRadarSignal + Noise;
 end
 
+for i = 1:length(SNR_dB)
+    data =  timeseries(NoisySignals(:,i));
+    file_name = sprintf('../SystemInputs/Fc_%dMHz_PW_%dus_PRI_%dus_SNR_%ddB.mat', Fc/1e6, PW*1e6, PRI*1e6, SNR_dB(i));
+    save(file_name, '-v7.3', 'data');
+end
+
 %% Sonuçları Görselleştir
 if PlotResults
     plotResults(TimeVector, PulseTrain, PulseRadarSignal, NoisySignals, SNR_dB, Fs, PW, PRI, Fc, BroadcastTime);
