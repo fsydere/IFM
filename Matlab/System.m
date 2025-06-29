@@ -15,6 +15,8 @@ TimeVector = 0:1/Fs:BroadcastTime-1/Fs;
 TotalSamples = Fs*BroadcastTime;
 JustNoiseSamples = Fs*JustNoiseTime;
 
-[signal, time, pulse, noisySignals] = SystemInput();
+[signal, time, pulse, noisySignals] = SystemInput('CarrierAmplitude', 1);
 
 [IFM_results] = IFM(noisySignals);
+
+% close all;

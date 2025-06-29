@@ -91,6 +91,15 @@ for i = 1:length(SNR_dB)
     data =  timeseries(NoisySignals(:,i));
     file_name = sprintf('../SystemInputs/Fc_%dMHz_PW_%dus_PRI_%dus_SNR_%ddB.mat', Fc/1e6, PW*1e6, PRI*1e6, SNR_dB(i));
     save(file_name, '-v7.3', 'data');
+    
+    real_data = real(NoisySignals(:,i));
+    file_name2 = sprintf('../SystemInputs/Real_Fc_%dMHz_PW_%dus_PRI_%dus_SNR_%ddB.mat', Fc/1e6, PW*1e6, PRI*1e6, SNR_dB(i));
+    save(file_name2, 'real_data');
+
+    imag_data = imag(NoisySignals(:,i));
+    file_name2 = sprintf('../SystemInputs/Imag_Fc_%dMHz_PW_%dus_PRI_%dus_SNR_%ddB.mat', Fc/1e6, PW*1e6, PRI*1e6, SNR_dB(i));
+    save(file_name2, 'imag_data');
+    
 end
 
 %% Sonuçları Görselleştir
