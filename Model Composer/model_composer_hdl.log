@@ -1,0 +1,31 @@
+--------------------------------------------------------------------------------
+Vitis Model Composer 4029153 2023.2 Fri Oct 13 20:21:45 MDT 2023 
+--------------------------------------------------------------------------------
+Model Composer: C:/Xilinx/Model_Composer/2023.2
+Vivado: C:/Xilinx/Vivado/2023.2
+Vitis: C:/Xilinx/Vitis/2023.2
+HLS: C:/Xilinx/Vitis_HLS/2023.2
+SysGen: C:/Xilinx/Vivado/2023.2
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Summary of Errors:
+Error 0001: Internal Error
+     Block: 'System/Mean'
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'System/Mean'
+
+Details:
+An internal error occurred in the Xilinx Blockset Library.
+
+Please report this error to Xilinx (http://support.xilinx.com),
+in as much detail as possible. You may also find immediate help
+in the Answers Database and other online resources at http://support.xilinx.com.
+
+
+Error occurred during "Rate and Type Error Checking".
+
+--------------------------------------------------------------------------------
