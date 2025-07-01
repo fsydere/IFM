@@ -88,44 +88,49 @@ for i = 1:length(SNR_dB)
 end
 
 for i = 1:length(SNR_dB)
-    data =  timeseries(NoisySignals(:,i));
-    file_name = sprintf('../SystemInputs/Fc_%dMHz_PW_%dus_PRI_%dus_SNR_%ddB.mat', Fc/1e6, PW*1e6, PRI*1e6, SNR_dB(i));
+    timespan = 0:1/Fs:BroadcastTime - 1/Fs;  % Doğru zaman vektörü
+    data = timeseries(NoisySignals(:,i), timespan);
+    
+    file_name = sprintf('Fs_%d_Fc_%dMHz_PW_%dus_PRI_%dus_SNR_%ddB.mat', ...
+        Fs/1e6, Fc/1e6, PW*1e6, PRI*1e6, SNR_dB(i));
+    
     save(file_name, '-v7.3', 'data');  
 end
 
-for i = 1:length(SNR_dB)
-    % Gerçek ve sanal kısımları ayır ve ölçekle
-    real_part = round(real(NoisySignals(:, i)) * 2^15);
-    imag_part = round(imag(NoisySignals(:, i)) * 2^15);
-
-    % Saturasyon (int16 sınırı)
-    real_part = min(max(real_part, -32768), 32767);
-    imag_part = min(max(imag_part, -32768), 32767);
-
-    % int16 türüne dönüştür
-    real_part = int16(real_part);
-    imag_part = int16(imag_part);
-
-    % Dosya adını oluştur
-    file_name_real = sprintf('../SystemInputs/Fc_%dMHz_PW_%dus_PRI_%dus_SNR_%ddB_real.txt', ...
-                        Fc/1e6, PW*1e6, PRI*1e6, SNR_dB(i));
-    file_name_imag = sprintf('../SystemInputs/Fc_%dMHz_PW_%dus_PRI_%dus_SNR_%ddB_imag.txt', ...
-                        Fc/1e6, PW*1e6, PRI*1e6, SNR_dB(i));
-
-    % Dosyayı aç (yazma modunda)
-    fid = fopen(file_name_real, 'w');
-    fid2 = fopen(file_name_imag, 'w');
-
-    % Her satıra real ve imag değerlerini yaz
-    for k = 1:length(real_part)
-        fprintf(fid, '%d\n', real_part(k));  % tab ayracı
-        fprintf(fid2, '%d\n', imag_part(k));  % tab ayracı
-    end
-
-    % Dosyayı kapat
-    fclose(fid);
-    fclose(fid2);
-end
+% 
+% for i = 1:length(SNR_dB)
+%     % Gerçek ve sanal kısımları ayır ve ölçekle
+%     real_part = round(real(NoisySignals(:, i)) * 2^15);
+%     imag_part = round(imag(NoisySignals(:, i)) * 2^15);
+% 
+%     % Saturasyon (int16 sınırı)
+%     real_part = min(max(real_part, -32768), 32767);
+%     imag_part = min(max(imag_part, -32768), 32767);
+% 
+%     % int16 türüne dönüştür
+%     real_part = int16(real_part);
+%     imag_part = int16(imag_part);
+% 
+%     % Dosya adını oluştur
+%     file_name_real = sprintf('../SystemInputs/Fs_%d_Fc_%dMHz_PW_%dus_PRI_%dus_SNR_%ddB_real.txt', ...
+%                         Fs/1e6, Fc/1e6, PW*1e6, PRI*1e6, SNR_dB(i));
+%     file_name_imag = sprintf('../SystemInputs/Fs_%d_Fc_%dMHz_PW_%dus_PRI_%dus_SNR_%ddB_imag.txt', ...
+%                         Fs/1e6, Fc/1e6, PW*1e6, PRI*1e6, SNR_dB(i));
+% 
+%     % Dosyayı aç (yazma modunda)
+%     fid = fopen(file_name_real, 'w');
+%     fid2 = fopen(file_name_imag, 'w');
+% 
+%     % Her satıra real ve imag değerlerini yaz
+%     for k = 1:length(real_part)
+%         fprintf(fid, '%d\n', real_part(k));  % tab ayracı
+%         fprintf(fid2, '%d\n', imag_part(k));  % tab ayracı
+%     end
+% 
+%     % Dosyayı kapat
+%     fclose(fid);
+%     fclose(fid2);
+% end
 
 %% Sonuçları Görselleştir
 if PlotResults

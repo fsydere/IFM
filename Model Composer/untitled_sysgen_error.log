@@ -1,0 +1,86 @@
+--------------------------------- Version Log ----------------------------------
+Version                                 Path
+System Generator 2025.1                 /home/fsy/Tools/Xilinx/2025.1/Model_Composer
+Matlab 24.2.0.2923080 (R2024b) Update 6 /home/fsy/Tools/MATLAB/R2024b
+Vivado 2025.1                           /home/fsy/Tools/Xilinx/2025.1/Vivado
+--------------------------------------------------------------------------------
+Summary of Errors:
+Error 0001: The design contains HDL blocks. Add a Vitis Model Compose...
+     Block: 'untitled/Gateway In'
+Error 0002: The design contains HDL blocks. Add a Vitis Model Compose...
+     Block: 'untitled/Gateway In1'
+Error 0003: The design contains HDL blocks. Add a Vitis Model Compose...
+     Block: 'untitled/Convert'
+Error 0004: The design contains HDL blocks. Add a Vitis Model Compose...
+     Block: 'untitled/Convert1'
+Error 0005: The design contains HDL blocks. Add a Vitis Model Compose...
+     Block: 'untitled/Divide'
+Error 0006: The design contains HDL blocks. Add a Vitis Model Compose...
+     Block: 'untitled/Gateway Out'
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'untitled/Gateway In'
+
+Details:
+The design contains HDL blocks. Add a Vitis Model Composer Hub
+block at the top level in the design.
+
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'untitled/Gateway In1'
+
+Details:
+The design contains HDL blocks. Add a Vitis Model Composer Hub
+block at the top level in the design.
+
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'untitled/Convert'
+
+Details:
+The design contains HDL blocks. Add a Vitis Model Composer Hub
+block at the top level in the design.
+
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'untitled/Convert1'
+
+Details:
+The design contains HDL blocks. Add a Vitis Model Composer Hub
+block at the top level in the design.
+
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'untitled/Divide'
+
+Details:
+The design contains HDL blocks. Add a Vitis Model Composer Hub
+block at the top level in the design.
+
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'untitled/Gateway Out'
+
+Details:
+The design contains HDL blocks. Add a Vitis Model Composer Hub
+block at the top level in the design.
+
+--------------------------------------------------------------------------------
