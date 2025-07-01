@@ -22,7 +22,7 @@ function [IFM_results] = IFM(noisySignals,varargin)
     addParameter(p, 'SNR_dB', defaultSNR_dB, @(x) isnumeric(x));
     addParameter(p, 'CarrierAmplitude', defaultCarrierAmplitude, @(x) isnumeric(x) && x > 0);
     addParameter(p, 'PlotResults', defaultPlotResults, @(x) islogical(x));
-    addParameter(p, 'time_delays', defaulttime_delays, @(x) isnumeric(x) && x > 0);
+    addParameter(p, 'time_delays', defaulttime_delays, @(x) isnumeric(x));
     parse(p, varargin{:});
     
     % Parametreleri değişkenlere ata

@@ -48,8 +48,10 @@
        sgBanner.src='File:////home/fsy/Tools/Xilinx/2025.1/Model_Composer/data/sysgen/images/sgbanner.jpg';
        var modelName = 'Trial';
 var jTblExternally_Connected_Blocks = new Array();
- jTblExternally_Connected_Blocks[0] = { val1:"Trial/Accumulator",act1:"matlab:load_system('xbsIndex');xlHiliteOne('Trial/Accumulator');",val2:"q",act2:"" };
- jTblExternally_Connected_Blocks[1] = { val1:"Trial/Relational",act1:"matlab:load_system('xbsIndex');xlHiliteOne('Trial/Relational');",val2:"op",act2:"" };
+ jTblExternally_Connected_Blocks[0] = { val1:"Trial/Subsystem/Counter",act1:"matlab:load_system('xbsIndex');xlHiliteOne('Trial/Subsystem/Counter');",val2:"op",act2:"" };
+ jTblExternally_Connected_Blocks[1] = { val1:"Trial/Subsystem/NOT",act1:"matlab:load_system('xbsIndex');xlHiliteOne('Trial/Subsystem/NOT');",val2:"op",act2:"" };
+ jTblExternally_Connected_Blocks[2] = { val1:"Trial/Subsystem/NoiseSampleDone",act1:"matlab:load_system('xbsIndex');xlHiliteOne('Trial/Subsystem/NoiseSampleDone');",val2:"op",act2:"" };
+ jTblExternally_Connected_Blocks[3] = { val1:"Trial/Subsystem/TotalSum",act1:"matlab:load_system('xbsIndex');xlHiliteOne('Trial/Subsystem/TotalSum');",val2:"q",act2:"" };
  
        var maxStrLen = 35; 
        var displaymode = 0;
