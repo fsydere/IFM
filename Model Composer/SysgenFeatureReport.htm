@@ -50,7 +50,8 @@
 var jTblExternally_Connected_Blocks = new Array();
  jTblExternally_Connected_Blocks[0] = { val1:"Divide/Subsystem/Convert",act1:"matlab:load_system('xbsIndex');xlHiliteOne('Divide/Subsystem/Convert');",val2:"dout",act2:"" };
  jTblExternally_Connected_Blocks[1] = { val1:"Divide/Subsystem/Convert1",act1:"matlab:load_system('xbsIndex');xlHiliteOne('Divide/Subsystem/Convert1');",val2:"dout",act2:"" };
- jTblExternally_Connected_Blocks[2] = { val1:"Divide/Subsystem/Divide",act1:"matlab:load_system('xbsIndex');xlHiliteOne('Divide/Subsystem/Divide');",val2:"op",act2:"" };
+ jTblExternally_Connected_Blocks[2] = { val1:"Divide/Subsystem/Divide",act1:"matlab:load_system('xbsIndex');xlHiliteOne('Divide/Subsystem/Divide');",val2:"a_tready, b_tready, result_tvalid, op",act2:"" };
+ jTblExternally_Connected_Blocks[3] = { val1:"Divide/Subsystem/Constant",act1:"matlab:load_system('xbsIndex');xlHiliteOne('Divide/Subsystem/Constant');",val2:"op",act2:"" };
  
        var maxStrLen = 35; 
        var displaymode = 0;
