@@ -16,6 +16,25 @@ TotalSamples = Fs*BroadcastTime;
 JustNoiseSamples = Fs*JustNoiseTime;
 
 [signal, time, pulse, noisySignals] = SystemInput('CarrierAmplitude', CarrierAmplitude);
+Threshold_db = zeros(1,length(SNR_dB));
+Threshold_linear = zeros(1,length(SNR_dB));
+power_dB = zeros(1,length(SNR_dB));
+before_mean_noise_power = zeros(1,length(SNR_dB));
+for threshold_SNR_idx = 1:length(SNR_dB)
+    % Gürültü gücünü sadece gürültü bölgesinden hesapla (0-100 μs)
+    noise_power_linear = mean(abs(noisySignals(1:JustNoiseSamples,threshold_SNR_idx)).^2);
+    noise_power_dB = 10*log10(noise_power_linear);
+    
+    before_mean_noise_power(threshold_SNR_idx) = JustNoiseSamples*noise_power_linear;
+
+    % Threshold: gürültü seviyesinin 6 dB üzeri
+    Threshold_db(threshold_SNR_idx) = noise_power_dB + 6;
+    Threshold_linear(threshold_SNR_idx) = 10^(Threshold_db(threshold_SNR_idx)/10);
+    
+    % Toplam sinyal gücü
+    power_linear = mean(abs(noisySignals(:,threshold_SNR_idx)).^2);
+    power_dB(threshold_SNR_idx) = 10*log10(power_linear);
+end
 
 [IFM_results] = IFM(noisySignals);
 
