@@ -11,17 +11,18 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="100,048,032 ps"></ZoomStartTime>
-      <ZoomEndTime time="100,048,807 ps"></ZoomEndTime>
-      <Cursor1Time time="2,000,421,671 ps"></Cursor1Time>
+      <ZoomStartTime time="0.000000 us"></ZoomStartTime>
+      <ZoomEndTime time="150.000001 us"></ZoomEndTime>
+      <Cursor1Time time="150.000000 us"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="276"></NameColumnWidth>
-      <ValueColumnWidth column_width="80"></ValueColumnWidth>
+      <ValueColumnWidth column_width="60"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="16" />
+   <WVObjectSize size="23" />
    <wave_markers>
-      <marker time="100048339" label="" />
+      <marker time="362124077" label="" />
+      <marker time="100041671" label="" />
    </wave_markers>
    <wvobject fp_name="/ThresholdDetector_tb/dut/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
@@ -47,21 +48,41 @@
       <obj_property name="radix_fractionWidth">15</obj_property>
       <obj_property name="radix_otherWidth">0</obj_property>
    </wvobject>
-   <wvobject fp_name="/ThresholdDetector_tb/dut/threshold" type="array">
-      <obj_property name="ElementShortName">threshold[47:0]</obj_property>
-      <obj_property name="ObjectShortName">threshold[47:0]</obj_property>
-      <obj_property name="Radix">REALRADIX</obj_property>
-      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
-      <obj_property name="radix_fractionWidth">30</obj_property>
-      <obj_property name="radix_otherWidth">0</obj_property>
-   </wvobject>
    <wvobject fp_name="/ThresholdDetector_tb/dut/data_valid" type="logic">
       <obj_property name="ElementShortName">data_valid</obj_property>
       <obj_property name="ObjectShortName">data_valid</obj_property>
    </wvobject>
-   <wvobject fp_name="/ThresholdDetector_tb/dut/threshold_calculated" type="logic">
-      <obj_property name="ElementShortName">threshold_calculated</obj_property>
-      <obj_property name="ObjectShortName">threshold_calculated</obj_property>
+   <wvobject fp_name="/ThresholdDetector_tb/dut/real_part_delayed" type="array">
+      <obj_property name="ElementShortName">real_part_delayed[15:0]</obj_property>
+      <obj_property name="ObjectShortName">real_part_delayed[15:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">15</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+      <obj_property name="CustomSignalColor">#FFD700</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ThresholdDetector_tb/dut/imag_part_delayed" type="array">
+      <obj_property name="ElementShortName">imag_part_delayed[15:0]</obj_property>
+      <obj_property name="ObjectShortName">imag_part_delayed[15:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">15</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+      <obj_property name="CustomSignalColor">#FFD700</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ThresholdDetector_tb/dut/data_valid_delayed" type="logic">
+      <obj_property name="ElementShortName">data_valid_delayed</obj_property>
+      <obj_property name="ObjectShortName">data_valid_delayed</obj_property>
+      <obj_property name="CustomSignalColor">#FFD700</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ThresholdDetector_tb/dut/envelope" type="logic">
+      <obj_property name="ElementShortName">envelope</obj_property>
+      <obj_property name="ObjectShortName">envelope</obj_property>
+      <obj_property name="CustomSignalColor">#FFD700</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
    <wvobject fp_name="/ThresholdDetector_tb/dut/noise_sample_counter" type="array">
       <obj_property name="ElementShortName">noise_sample_counter[15:0]</obj_property>
@@ -72,29 +93,77 @@
       <obj_property name="ElementShortName">noise_sample_done[0:0]</obj_property>
       <obj_property name="ObjectShortName">noise_sample_done[0:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/ThresholdDetector_tb/dut/noise_sample_done_reg1" type="array">
-      <obj_property name="ElementShortName">noise_sample_done_reg1[0:0]</obj_property>
-      <obj_property name="ObjectShortName">noise_sample_done_reg1[0:0]</obj_property>
+   <wvobject fp_name="/ThresholdDetector_tb/dut/noise_sample_done_d1" type="array">
+      <obj_property name="ElementShortName">noise_sample_done_d1[0:0]</obj_property>
+      <obj_property name="ObjectShortName">noise_sample_done_d1[0:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/ThresholdDetector_tb/dut/data_valid_reg" type="array">
-      <obj_property name="ElementShortName">data_valid_reg[0:0]</obj_property>
-      <obj_property name="ObjectShortName">data_valid_reg[0:0]</obj_property>
+   <wvobject fp_name="/ThresholdDetector_tb/dut/data_valid_d1" type="array">
+      <obj_property name="ElementShortName">data_valid_d1[0:0]</obj_property>
+      <obj_property name="ObjectShortName">data_valid_d1[0:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/ThresholdDetector_tb/dut/make_avarage" type="array">
       <obj_property name="ElementShortName">make_avarage[0:0]</obj_property>
       <obj_property name="ObjectShortName">make_avarage[0:0]</obj_property>
    </wvobject>
+   <wvobject fp_name="/ThresholdDetector_tb/dut/threshold" type="array">
+      <obj_property name="ElementShortName">threshold[47:0]</obj_property>
+      <obj_property name="ObjectShortName">threshold[47:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">30</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ThresholdDetector_tb/dut/threshold_calculated" type="logic">
+      <obj_property name="ElementShortName">threshold_calculated</obj_property>
+      <obj_property name="ObjectShortName">threshold_calculated</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ThresholdDetector_tb/dut/real_part_d1" type="array">
+      <obj_property name="ElementShortName">real_part_d1[15:0]</obj_property>
+      <obj_property name="ObjectShortName">real_part_d1[15:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">15</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ThresholdDetector_tb/dut/imag_part_d1" type="array">
+      <obj_property name="ElementShortName">imag_part_d1[15:0]</obj_property>
+      <obj_property name="ObjectShortName">imag_part_d1[15:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">15</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
    <wvobject fp_name="/ThresholdDetector_tb/dut/square_real" type="array">
       <obj_property name="ElementShortName">square_real[31:0]</obj_property>
       <obj_property name="ObjectShortName">square_real[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">30</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
    </wvobject>
    <wvobject fp_name="/ThresholdDetector_tb/dut/square_imag" type="array">
       <obj_property name="ElementShortName">square_imag[31:0]</obj_property>
       <obj_property name="ObjectShortName">square_imag[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">30</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
    </wvobject>
    <wvobject fp_name="/ThresholdDetector_tb/dut/sum_squares" type="array">
       <obj_property name="ElementShortName">sum_squares[31:0]</obj_property>
       <obj_property name="ObjectShortName">sum_squares[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">30</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ThresholdDetector_tb/dut/sum_squares_d1" type="array">
+      <obj_property name="ElementShortName">sum_squares_d1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">sum_squares_d1[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">30</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
    </wvobject>
    <wvobject fp_name="/ThresholdDetector_tb/dut/total_sum" type="array">
       <obj_property name="ElementShortName">total_sum[47:0]</obj_property>

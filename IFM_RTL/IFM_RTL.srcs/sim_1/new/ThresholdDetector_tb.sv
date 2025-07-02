@@ -36,8 +36,8 @@ module ThresholdDetector_tb();
         .reset(reset),
         .real_part(RealPart),
         .imag_part(ImagPart),
-        .data_valid(DataValid),
-        .threshold_calculated(ThresholdCalculated)
+        .data_valid(DataValid)
+        // outputs
     );
     
     // Clock generation (300 MHz)
@@ -60,8 +60,8 @@ module ThresholdDetector_tb();
         start = 0;
         reset = 1;
         // Open data file
-        file = $fopen("../../../../../SystemInputs/Fc_25MHz_PW_10us_PRI_100us_SNR_10dB_real.txt", "r");
-        file2 = $fopen("../../../../../SystemInputs/Fc_25MHz_PW_10us_PRI_100us_SNR_10dB_imag.txt", "r");
+        file = $fopen("../../../../../SystemInputs/Fs_300_Fc_25MHz_PW_10us_PRI_100us_SNR_10dB_real.txt", "r");
+        file2 = $fopen("../../../../../SystemInputs/Fs_300_Fc_25MHz_PW_10us_PRI_100us_SNR_10dB_imag.txt", "r");
         if (file == 0) begin
             $display("Error: Could not open input_data.txt");
             $finish;
