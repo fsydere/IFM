@@ -33,7 +33,6 @@ module ThresholdDetector_tb();
     // Instantiate DUT
     envelope_generator dut (
         .clk(clk),
-        .reset(reset),
         .real_part(RealPart),
         .imag_part(ImagPart),
         .data_valid(DataValid)

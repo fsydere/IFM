@@ -22,7 +22,6 @@
 
 module envelope_generator(
     input                     clk,                          //300MHz
-    input                     reset,                        //
     input wire signed [15:00] real_part,                    //Sfix_16_15
     input wire signed [15:00] imag_part,                    //Sfix_16_15
     input wire                data_valid,

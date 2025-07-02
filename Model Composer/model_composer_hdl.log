@@ -8,13 +8,13 @@ Vitis: C:/Xilinx/2025.1/Vitis
 --------------------------------------------------------------------------------
 Summary of Errors:
 Error 0001: Undriven input port
-     Block: 'Trial/Envelope Deteector/Delay6'
+     Block: 'Trial/Envelope Generator w// Threshold Detector/Black Box'
 --------------------------------------------------------------------------------
 
 Error 0001:
 
 Reported by:
-  'Trial/Envelope Deteector/Delay6'
+  'Trial/Envelope Generator w// Threshold Detector/Black Box'
 
 Details:
 The input ports on this block must be driven by other AMD HDL
