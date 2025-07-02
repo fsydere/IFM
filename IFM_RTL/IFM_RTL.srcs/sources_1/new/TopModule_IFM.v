@@ -29,14 +29,11 @@ module TopModule_IFM(
     output wire outputValid
     );
     
-    ThresholdDetector THRESHOLD_DETECTOR
+    envelope_generator ENVELOPE_GENERATOR
     (
     
     );
     
-    EnvelopeDetector ENVELOPE_DETECTOR(
-    
-    );
     
     IFM IFM(
     

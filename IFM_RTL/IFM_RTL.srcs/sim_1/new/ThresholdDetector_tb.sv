@@ -31,7 +31,7 @@ module ThresholdDetector_tb();
     wire ThresholdCalculated;
     
     // Instantiate DUT
-    ThresholdDetector dut (
+    envelope_generator dut (
         .clk(clk),
         .reset(reset),
         .real_part(RealPart),

@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module signal_envelope(
+module envelope_generator(
     input                     clk,                          //300MHz
     input                     reset,                        //
     input wire signed [15:00] real_part,                    //Sfix_16_15
