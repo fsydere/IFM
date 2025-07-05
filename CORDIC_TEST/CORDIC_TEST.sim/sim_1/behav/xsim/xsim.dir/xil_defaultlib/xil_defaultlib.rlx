@@ -1,0 +1,8 @@
+0.7
+2020.2
+May 22 2025
+00:13:55
+C:/Users/fsydere/Workspace/IFM/CORDIC_TEST/CORDIC_TEST.gen/sources_1/ip/cordic_0/sim/cordic_0.vhd,1751703150,vhdl,,,,cordic_0,,,,,,,,
+C:/Users/fsydere/Workspace/IFM/CORDIC_TEST/CORDIC_TEST.sim/sim_1/behav/xsim/glbl.v,1741209010,verilog,,,,glbl,,,,,,,,
+C:/Users/fsydere/Workspace/IFM/CORDIC_TEST/CORDIC_TEST.srcs/sim_1/new/cordic_dut.v,1751704513,verilog,,,,cordic_dut,,,../../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
+C:/Users/fsydere/Workspace/IFM/CORDIC_TEST/CORDIC_TEST.srcs/sources_1/new/cordic_wrapper.v,1751703350,verilog,,C:/Users/fsydere/Workspace/IFM/CORDIC_TEST/CORDIC_TEST.srcs/sim_1/new/cordic_dut.v,,cordic_wrapper,,,../../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,

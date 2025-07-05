@@ -9,7 +9,7 @@ PRI                 = 100e-6;           % Darbe tekrarlama aralığı (100 μs)
 Fc                  = 25e6;             % Taşıyıcı frekans (25 MHz)
 SNR_dB              = [10, 20, 40];     % SNR seviyeleri (dB)
 CarrierAmplitude    = 1;                % Başlangıç amplitüdü
-time_delays         = [1, 2, 3, 4];           % IFM için zaman kaymaları (örnek sayısı)
+time_delays         = [2, 4];           % IFM için zaman kaymaları (örnek sayısı)
 
 TimeVector = 0:1/Fs:BroadcastTime-1/Fs;
 TotalSamples = Fs*BroadcastTime;
@@ -33,4 +33,4 @@ end
     'PW',PW, 'PRI',PRI, 'Fc',Fc, 'SNR_dB',SNR_dB, ...
     'CarrierAmplitude',CarrierAmplitude, 'time_delays', time_delays);
 
-% close all;
+close all;

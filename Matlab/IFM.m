@@ -163,7 +163,11 @@ function [IFM_results] = IFM(noisySignals,varargin)
     function [freq_estimates, avg_freq, freq_error] = calculateIFM(signal, pulse_regions, delay_samples, Fs, true_freq)
         % Sampling period
         freq_estimates = [];
-        
+        complex_mult = [];
+        orig = [];
+        delay = [];
+
+
         for i = 1:size(pulse_regions, 1)
             start_idx = pulse_regions(i, 1);
             end_idx = pulse_regions(i, 2);
@@ -178,13 +182,18 @@ function [IFM_results] = IFM(noisySignals,varargin)
                 % Extract delayed and original segments
                 delayed_signal = pulse_signal(1:end-delay_samples);
                 original_signal = pulse_signal(delay_samples+1:end);
-                
+                complex_mult = original_signal .* conj(delayed_signal);
+                delayed_complex = conj(delayed_signal);
+
+                divide = imag(complex_mult)./real(complex_mult);
+
                 % Vectorized phase difference calculation
                 phase_diffs = angle(original_signal .* conj(delayed_signal));
                 current_estimates = phase_diffs*Fs / (2 * pi * delay_samples);
                 
                 % Append estimates for this pulse
                 freq_estimates = [freq_estimates; current_estimates(:)];
+
             end
         end
         

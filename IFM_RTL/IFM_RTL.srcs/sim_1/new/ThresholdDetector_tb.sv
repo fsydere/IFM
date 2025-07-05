@@ -30,13 +30,21 @@ module ThresholdDetector_tb();
     reg start;
     wire ThresholdCalculated;
     
-    // Instantiate DUT
-    envelope_generator dut (
-        .clk(clk),
-        .real_part(RealPart),
-        .imag_part(ImagPart),
-        .data_valid(DataValid)
-        // outputs
+//    // Instantiate DUT
+//    envelope_generator dut (
+//        .clk(clk),
+//        .real_part(RealPart),
+//        .imag_part(ImagPart),
+//        .data_valid(DataValid)
+//        // outputs
+//    );
+
+    TopModule_IFM DUT
+    (
+    .clk(clk),             
+    .RealPart(RealPart),  
+    .ImagPart(ImagPart),  
+    .dataValid(DataValid) 
     );
     
     // Clock generation (300 MHz)

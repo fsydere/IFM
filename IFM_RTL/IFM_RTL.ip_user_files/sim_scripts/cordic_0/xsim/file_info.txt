@@ -1,0 +1,1 @@
+cordic_0.vhd,vhdl,xil_defaultlib,../../../../IFM_RTL.gen/sources_1/ip/cordic_0/sim/cordic_0.vhd,incdir="../../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef"

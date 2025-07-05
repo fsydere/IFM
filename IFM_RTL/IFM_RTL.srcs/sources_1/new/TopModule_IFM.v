@@ -29,14 +29,32 @@ module TopModule_IFM(
     output wire outputValid
     );
     
+    wire signed [15:00] real_part;            //Sfix_16_15
+    wire signed [15:00] imag_part;            //Sfix_16_15
+    wire                data_valid;           //1 bit
+    wire                envelope;                     //1 bit
+    
+    
     envelope_generator ENVELOPE_GENERATOR
     (
-    
+        .clk                (clk),   
+        .real_part          (RealPart),   
+        .imag_part          (ImagPart),   
+        .data_valid         (dataValid),
+       
+        .real_part_delayed  (real_part),   
+        .imag_part_delayed  (imag_part),   
+        .data_valid_delayed (data_valid),   
+        .envelope           (envelope)           
     );
     
     
     IFM IFM(
-    
+       .clk                 (clk),
+       .real_part           (real_part),            //Sfix_16_15
+       .imag_part           (imag_part),            //Sfix_16_15
+       .data_valid          (data_valid),           //1 bit
+       .envelope            (envelope)                      //1 bit
     );
     
     

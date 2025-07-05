@@ -1,0 +1,11 @@
+0.7
+2020.2
+May 22 2025
+00:13:55
+C:/Users/fsydere/Workspace/IFM/IFM_RTL/IFM_RTL.gen/sources_1/ip/cordic_0/sim/cordic_0.vhd,1751706394,vhdl,,,,cordic_0,,,,,,,,
+C:/Users/fsydere/Workspace/IFM/IFM_RTL/IFM_RTL.sim/sim_1/behav/xsim/glbl.v,1741209010,verilog,,,,glbl,,uvm,,,,,,
+C:/Users/fsydere/Workspace/IFM/IFM_RTL/IFM_RTL.srcs/sim_1/new/ThresholdDetector_tb.sv,1751475636,systemVerilog,,,,ThresholdDetector_tb,,uvm,../../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
+C:/Users/fsydere/Workspace/IFM/IFM_RTL/IFM_RTL.srcs/sources_1/new/IFM.v,1751704802,verilog,,C:/Users/fsydere/Workspace/IFM/IFM_RTL/IFM_RTL.srcs/sources_1/new/TopModule_IFM.v,,IFM,,uvm,../../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
+C:/Users/fsydere/Workspace/IFM/IFM_RTL/IFM_RTL.srcs/sources_1/new/TopModule_IFM.v,1751475551,verilog,,C:/Users/fsydere/Workspace/IFM/IFM_RTL/IFM_RTL.srcs/sources_1/new/complex_mult.v,,TopModule_IFM,,uvm,../../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
+C:/Users/fsydere/Workspace/IFM/IFM_RTL/IFM_RTL.srcs/sources_1/new/complex_mult.v,1751522560,verilog,,C:/Users/fsydere/Workspace/IFM/IFM_RTL/IFM_RTL.srcs/sources_1/new/envelope_generator.v,,complex_mult,,uvm,../../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
+C:/Users/fsydere/Workspace/IFM/IFM_RTL/IFM_RTL.srcs/sources_1/new/envelope_generator.v,1751467154,verilog,,,,envelope_generator,,uvm,../../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
