@@ -1,8 +1,9 @@
 Vivado Simulator v2025.1.0
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/2025.1/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_14 -L c_reg_fd_v12_0_10 -L xbip_dsp48_wrapper_v3_0_7 -L xbip_pipe_v3_0_10 -L c_addsub_v12_0_20 -L mult_gen_v12_0_23 -L axi_utils_v2_0_10 -L cordic_v6_0_24 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cordic_dut_behav xil_defaultlib.cordic_dut xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
+Running: /home/fsy/Tools/Xilinx/2025.1/Vivado/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L xbip_utils_v3_0_14 -L c_reg_fd_v12_0_10 -L xbip_dsp48_wrapper_v3_0_7 -L xbip_pipe_v3_0_10 -L c_addsub_v12_0_20 -L mult_gen_v12_0_23 -L axi_utils_v2_0_10 -L cordic_v6_0_24 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cordic_dut_behav xil_defaultlib.cordic_dut xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by AMD, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
 Starting static elaboration
 Pass Through NonSizing Optimizer
 Completed static elaboration
@@ -31,7 +32,7 @@ Compiling package c_addsub_v12_0_20.c_addsub_v12_0_20_pkg_legacy
 Compiling package c_reg_fd_v12_0_10.c_reg_fd_v12_0_10_viv_comp
 Compiling package unisim.vcomponents
 Compiling architecture synth of entity xbip_pipe_v3_0_10.xbip_pipe_v3_0_10_viv [\xbip_pipe_v3_0_10_viv(c_latency...]
-Compiling architecture structural of entity c_reg_fd_v12_0_10.c_reg_fd_v12_0_10_viv [\c_reg_fd_v12_0_10_viv(c_width=1...]
+Compiling architecture structural of entity c_reg_fd_v12_0_10.c_reg_fd_v12_0_10_viv [\c_reg_fd_v12_0_10_viv(c_width=2...]
 Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
 Compiling architecture xorcy_v of entity unisim.XORCY [xorcy_default]
 Compiling architecture rtl of entity c_addsub_v12_0_20.c_addsub_v12_0_20_lut6_legacy [\c_addsub_v12_0_20_lut6_legacy(c...]
@@ -45,7 +46,7 @@ Compiling architecture synth of entity c_addsub_v12_0_20.c_addsub_v12_0_20_legac
 Compiling architecture synth of entity c_addsub_v12_0_20.c_addsub_v12_0_20_viv [\c_addsub_v12_0_20_viv(c_xdevice...]
 Compiling architecture synth of entity cordic_v6_0_24.addsub [\addsub(family="zynq",add_mode=0...]
 Compiling architecture struct_all of entity cordic_v6_0_24.delay [\delay(delay_len=1,family="zynq"...]
-Compiling architecture structural of entity c_reg_fd_v12_0_10.c_reg_fd_v12_0_10_viv [\c_reg_fd_v12_0_10_viv(c_width=1...]
+Compiling architecture structural of entity c_reg_fd_v12_0_10.c_reg_fd_v12_0_10_viv [\c_reg_fd_v12_0_10_viv(c_width=2...]
 Compiling architecture rtl of entity c_addsub_v12_0_20.c_addsub_v12_0_20_lut6_legacy [\c_addsub_v12_0_20_lut6_legacy(c...]
 Compiling architecture synth of entity c_addsub_v12_0_20.c_addsub_v12_0_20_fabric_legacy [\c_addsub_v12_0_20_fabric_legacy...]
 Compiling architecture synth of entity c_addsub_v12_0_20.c_addsub_v12_0_20_legacy [\c_addsub_v12_0_20_legacy(c_fami...]
@@ -59,6 +60,22 @@ Compiling architecture synth of entity cordic_v6_0_24.cordic_pha_acc_slice_par [
 Compiling architecture struct_all of entity cordic_v6_0_24.delay [\delay(delay_len=1,family="zynq"...]
 Compiling architecture struct_all of entity cordic_v6_0_24.delay_bit [\delay_bit(delay_len=1,family="z...]
 Compiling architecture synth of entity cordic_v6_0_24.cordic_ctrl_slice_par [\cordic_ctrl_slice_par(p_xdevice...]
+Compiling architecture synth of entity cordic_v6_0_24.cordic_eng_slice_par [\cordic_eng_slice_par(p_xdevicef...]
+Compiling architecture synth of entity cordic_v6_0_24.cordic_dat_acc_slice_par [\cordic_dat_acc_slice_par(p_xdev...]
+Compiling architecture synth of entity cordic_v6_0_24.cordic_eng_slice_par [\cordic_eng_slice_par(p_xdevicef...]
+Compiling architecture synth of entity cordic_v6_0_24.cordic_dat_acc_slice_par [\cordic_dat_acc_slice_par(p_xdev...]
+Compiling architecture synth of entity cordic_v6_0_24.cordic_eng_slice_par [\cordic_eng_slice_par(p_xdevicef...]
+Compiling architecture synth of entity cordic_v6_0_24.cordic_dat_acc_slice_par [\cordic_dat_acc_slice_par(p_xdev...]
+Compiling architecture synth of entity cordic_v6_0_24.cordic_eng_slice_par [\cordic_eng_slice_par(p_xdevicef...]
+Compiling architecture synth of entity cordic_v6_0_24.cordic_dat_acc_slice_par [\cordic_dat_acc_slice_par(p_xdev...]
+Compiling architecture synth of entity cordic_v6_0_24.cordic_eng_slice_par [\cordic_eng_slice_par(p_xdevicef...]
+Compiling architecture synth of entity cordic_v6_0_24.cordic_dat_acc_slice_par [\cordic_dat_acc_slice_par(p_xdev...]
+Compiling architecture synth of entity cordic_v6_0_24.cordic_eng_slice_par [\cordic_eng_slice_par(p_xdevicef...]
+Compiling architecture synth of entity cordic_v6_0_24.cordic_dat_acc_slice_par [\cordic_dat_acc_slice_par(p_xdev...]
+Compiling architecture synth of entity cordic_v6_0_24.cordic_eng_slice_par [\cordic_eng_slice_par(p_xdevicef...]
+Compiling architecture synth of entity cordic_v6_0_24.cordic_dat_acc_slice_par [\cordic_dat_acc_slice_par(p_xdev...]
+Compiling architecture synth of entity cordic_v6_0_24.cordic_eng_slice_par [\cordic_eng_slice_par(p_xdevicef...]
+Compiling architecture synth of entity cordic_v6_0_24.cordic_dat_acc_slice_par [\cordic_dat_acc_slice_par(p_xdev...]
 Compiling architecture synth of entity cordic_v6_0_24.cordic_eng_slice_par [\cordic_eng_slice_par(p_xdevicef...]
 Compiling architecture synth of entity cordic_v6_0_24.cordic_dat_acc_slice_par [\cordic_dat_acc_slice_par(p_xdev...]
 Compiling architecture synth of entity cordic_v6_0_24.cordic_eng_slice_par [\cordic_eng_slice_par(p_xdevicef...]

@@ -23,9 +23,11 @@
 module cordic_wrapper(
     input wire aclk,                             
     input wire s_axis_cartesian_tvalid,          
-    input wire [31 : 0] s_axis_cartesian_tdata,  
+//    input wire [31 : 0] s_axis_cartesian_tdata,  
+    input wire [63 : 0] s_axis_cartesian_tdata,  
     output wire m_axis_dout_tvalid,              
     output wire [15 : 0] m_axis_dout_tdata      
+//    output wire [39 : 0] m_axis_dout_tdata      
 );
 
 cordic_0 CORDIC_10Q8 (

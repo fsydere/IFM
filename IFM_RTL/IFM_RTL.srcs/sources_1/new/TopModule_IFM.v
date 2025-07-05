@@ -49,7 +49,15 @@ module TopModule_IFM(
     );
     
     
-    IFM IFM(
+//    IFM IFM(
+//       .clk                 (clk),
+//       .real_part           (real_part),            //Sfix_16_15
+//       .imag_part           (imag_part),            //Sfix_16_15
+//       .data_valid          (data_valid),           //1 bit
+//       .envelope            (envelope)                      //1 bit
+//    );
+    
+    IFM_v2 IFM(
        .clk                 (clk),
        .real_part           (real_part),            //Sfix_16_15
        .imag_part           (imag_part),            //Sfix_16_15

@@ -24,9 +24,11 @@ module cordic_dut();
 
 reg             aclk;                             
 reg             s_axis_cartesian_tvalid;          
-reg [31 : 0]    s_axis_cartesian_tdata;  
+//reg [31 : 0]    s_axis_cartesian_tdata;  
+reg [63 : 0]    s_axis_cartesian_tdata;  
 wire            m_axis_dout_tvalid;     
 wire [15 : 0]   m_axis_dout_tdata;
+//wire [39 : 0]   m_axis_dout_tdata;
 
 
 always
@@ -38,10 +40,19 @@ initial begin
     s_axis_cartesian_tdata = 0;
     #100;
     s_axis_cartesian_tvalid = 1;
-    s_axis_cartesian_tdata = 32'h00B5_0040;
+    s_axis_cartesian_tdata = 64'h30d23e82307f843a;
     #10;
-    s_axis_cartesian_tvalid = 1;
-    s_axis_cartesian_tdata = 32'h0040_00B5;
+    s_axis_cartesian_tdata = 64'h30d23e82307f843a;
+    #10;
+     s_axis_cartesian_tdata = 64'h30d23e82307f843a;
+    #10;
+     s_axis_cartesian_tdata = 64'h30d23e82307f843a;
+    #10;
+     s_axis_cartesian_tdata = 64'h30d23e82307f843a;
+    #10;
+     s_axis_cartesian_tdata = 64'h30d23e82307f843a;
+    #10;
+     s_axis_cartesian_tdata = 64'h30d23e82307f843a;
     #10;
     s_axis_cartesian_tvalid = 0;
     s_axis_cartesian_tdata = 0;

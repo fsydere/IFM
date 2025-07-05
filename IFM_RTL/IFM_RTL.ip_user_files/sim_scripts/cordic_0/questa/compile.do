@@ -21,31 +21,31 @@ vmap axi_utils_v2_0_10 questa_lib/msim/axi_utils_v2_0_10
 vmap cordic_v6_0_24 questa_lib/msim/cordic_v6_0_24
 vmap xil_defaultlib questa_lib/msim/xil_defaultlib
 
-vcom -work xbip_utils_v3_0_14  -93  \
+vcom -work xbip_utils_v3_0_14 -64 -93  \
 "../../../ipstatic/hdl/xbip_utils_v3_0_vh_rfs.vhd" \
 
-vcom -work c_reg_fd_v12_0_10  -93  \
+vcom -work c_reg_fd_v12_0_10 -64 -93  \
 "../../../ipstatic/hdl/c_reg_fd_v12_0_vh_rfs.vhd" \
 
-vcom -work xbip_dsp48_wrapper_v3_0_7  -93  \
+vcom -work xbip_dsp48_wrapper_v3_0_7 -64 -93  \
 "../../../ipstatic/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd" \
 
-vcom -work xbip_pipe_v3_0_10  -93  \
+vcom -work xbip_pipe_v3_0_10 -64 -93  \
 "../../../ipstatic/hdl/xbip_pipe_v3_0_vh_rfs.vhd" \
 
-vcom -work c_addsub_v12_0_20  -93  \
+vcom -work c_addsub_v12_0_20 -64 -93  \
 "../../../ipstatic/hdl/c_addsub_v12_0_vh_rfs.vhd" \
 
-vcom -work mult_gen_v12_0_23  -93  \
+vcom -work mult_gen_v12_0_23 -64 -93  \
 "../../../ipstatic/hdl/mult_gen_v12_0_vh_rfs.vhd" \
 
-vcom -work axi_utils_v2_0_10  -93  \
+vcom -work axi_utils_v2_0_10 -64 -93  \
 "../../../ipstatic/hdl/axi_utils_v2_0_vh_rfs.vhd" \
 
-vcom -work cordic_v6_0_24  -93  \
+vcom -work cordic_v6_0_24 -64 -93  \
 "../../../ipstatic/hdl/cordic_v6_0_vh_rfs.vhd" \
 
-vcom -work xil_defaultlib  -93  \
+vcom -work xil_defaultlib -64 -93  \
 "../../../../IFM_RTL.gen/sources_1/ip/cordic_0/sim/cordic_0.vhd" \
 
 
