@@ -1,24 +1,24 @@
 #-----------------------------------------------------------
 # Vivado v2025.1 (64-bit)
-# SW Build 6140274 on Wed May 21 22:58:25 MDT 2025
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
 # IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
 # SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
-# Start of session at: Sat Jul  5 16:54:13 2025
-# Process ID         : 36848
-# Current directory  : /home/fsy/Workspace/IFM/IFM_RTL/IFM_RTL.runs/cordic_0_synth_1
-# Command line       : vivado -log cordic_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source cordic_0.tcl
-# Log file           : /home/fsy/Workspace/IFM/IFM_RTL/IFM_RTL.runs/cordic_0_synth_1/cordic_0.vds
-# Journal file       : /home/fsy/Workspace/IFM/IFM_RTL/IFM_RTL.runs/cordic_0_synth_1/vivado.jou
-# Running On         : fsy-MS-7D99
-# Platform           : Ubuntu
-# Operating System   : Ubuntu 22.04.5 LTS
+# Start of session at: Sun Jul  6 16:41:24 2025
+# Process ID         : 21840
+# Current directory  : C:/Users/fsydere/Workspace/IFM/IFM_RTL/IFM_RTL.runs/cordic_0_synth_1
+# Command line       : vivado.exe -log cordic_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source cordic_0.tcl
+# Log file           : C:/Users/fsydere/Workspace/IFM/IFM_RTL/IFM_RTL.runs/cordic_0_synth_1/cordic_0.vds
+# Journal file       : C:/Users/fsydere/Workspace/IFM/IFM_RTL/IFM_RTL.runs/cordic_0_synth_1\vivado.jou
+# Running On         : DESKTOP-5G0J4EJ
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
 # Processor Detail   : Intel(R) Core(TM) i9-14900K
-# CPU Frequency      : 5700.000 MHz
+# CPU Frequency      : 3187 MHz
 # CPU Physical cores : 24
 # CPU Logical cores  : 32
-# Host memory        : 33404 MB
+# Host memory        : 34115 MB
 # Swap memory        : 2147 MB
-# Total Virtual      : 35552 MB
-# Available Virtual  : 27320 MB
+# Total Virtual      : 36262 MB
+# Available Virtual  : 12921 MB
 #-----------------------------------------------------------
 source cordic_0.tcl -notrace
