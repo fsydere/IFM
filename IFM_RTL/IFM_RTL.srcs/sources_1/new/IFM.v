@@ -19,7 +19,6 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-
 module IFM(
     input clk,
     input rst_n,
@@ -27,7 +26,10 @@ module IFM(
     input wire signed [15:00] imag_part,            //Sfix_16_15
     input wire                data_valid,           //1 bit
     input wire                envelope,                      //1 bit
-    output wire freq
+    output reg       [79:00]  est_freq_2_tap,
+    output wire               est_freq_2_tap_valid,
+    output reg       [79:00]  est_freq_4_tap,
+    output wire               est_freq_4_tap_valid
     );
     
     reg signed [15:00] real_part_d1;
@@ -140,6 +142,9 @@ module IFM(
         .valid_out(mult_out_valid_4_tap)
     );
     
+    //***************************************************************
+    // Delta Phase
+    //***************************************************************
     
     wire [15 : 0] delta_phase_2_tap; // signed Q3.13, fix_16_13
     wire [15 : 0] delta_phase_4_tap; // signed Q3.13, fix_16_13
@@ -162,12 +167,21 @@ module IFM(
       .m_axis_dout_tdata(delta_phase_4_tap)              
     );
     
+    //***************************************************************
+    // Instantaneous Frequency
+    //***************************************************************
+    
     reg signed [23:00] t2_constant = 24'h02fbf2; 
     reg signed [23:00] t4_constant = 24'h017df9;
     reg signed [39:00] inst_freq_2_tap; 
     reg signed [39:00] inst_freq_4_tap;
     reg inst_freq_2_tap_valid;
+    reg inst_freq_2_tap_valid_d1;
+    wire inst_freq_2_tap_valid_neg_edge;
     reg inst_freq_4_tap_valid;
+    reg inst_freq_4_tap_valid_d1;
+    wire inst_freq_4_tap_valid_neg_edge;
+    
     
     always @(posedge clk)
     begin
@@ -181,69 +195,102 @@ module IFM(
         else begin
             inst_freq_2_tap <= $signed(delta_phase_2_tap) * $signed(t2_constant);
             inst_freq_4_tap <= $signed(delta_phase_4_tap) * $signed(t4_constant);
+            
             inst_freq_2_tap_valid <= delta_phase_2_tap_valid;
             inst_freq_4_tap_valid <= delta_phase_4_tap_valid;
+            
+            inst_freq_2_tap_valid_d1 <= inst_freq_2_tap_valid;
+            inst_freq_4_tap_valid_d1 <= inst_freq_4_tap_valid;
         end
     end
     
-    /*
-    wire signed [15:00] phase2;
-    wire signed [15:00] phase4;
-    wire phase2_valid;
-    wire phase4_valid;
-        
-    cordic_0 ATAN2 (
-      .aclk(clk),                                        // input wire aclk
-      .s_axis_cartesian_tvalid(two_delay),  // input wire s_axis_cartesian_tvalid
-      .s_axis_cartesian_tdata({mult_imag_2,mult_real_2}),    // input wire [63 : 0] s_axis_cartesian_tdata
-      .m_axis_dout_tvalid(phase2_valid),            // output wire m_axis_dout_tvalid
-      .m_axis_dout_tdata(phase2)              // output wire [39 : 0] m_axis_dout_tdata
-    );
+    assign inst_freq_2_tap_valid_neg_edge = inst_freq_2_tap_valid_d1 & ~inst_freq_2_tap_valid;
+    assign inst_freq_4_tap_valid_neg_edge = inst_freq_4_tap_valid_d1 & ~inst_freq_4_tap_valid;
     
-    cordic_0 ATAN4 (
-      .aclk(clk),                                        // input wire aclk
-      .s_axis_cartesian_tvalid(four_delay),  // input wire s_axis_cartesian_tvalid
-      .s_axis_cartesian_tdata({mult_imag_4,mult_real_4}),    // input wire [63 : 0] s_axis_cartesian_tdata
-      .m_axis_dout_tvalid(phase4_valid),            // output wire m_axis_dout_tvalid
-      .m_axis_dout_tdata(phase4)              // output wire [39 : 0] m_axis_dout_tdata
-    );
+    //***************************************************************
+    // Average Frequency Detection
+    //***************************************************************
     
-    reg [39:00] freq2 = 0;   //Q14.26
-    reg [39:00] freq4 = 0;   //Q14.26
+    reg [15:00] avg_2_tap_counter;
+    reg signed [63:00] total_2_tap; //Q28.26
     
-    reg signed [23:00] t2_constant = 24'h02fbf2; //Q11.13
-    reg signed [23:00] t4_constant = 24'h017df9; //Q11.13
-    
-    always @(phase2)
-        freq2 = $signed(phase2) * $signed(t2_constant); // Q3.13 * Q11.13 = Q14.26
-        
-    always @(phase4)
-        freq4 = $signed(phase4) * $signed(t4_constant); // Q3.13 * Q11.13 = Q14.26
-    
-    reg [63:00] total_freq2  = 0;
-    reg [63:00] total_freq4  = 0;
-    
-    reg [63:00] freq2_counter = 0;
-    reg [63:00] freq4_counter = 0;
+    reg [15:00] avg_4_tap_counter;
+    reg signed [63:00] total_4_tap; //Q28.26
     
     always @(posedge clk)
-        if(phase2_valid)
-            freq2_counter <= freq2_counter + 1;
+    begin
+        if(!rst_n)
+        begin
+            avg_2_tap_counter <= 0;       //Q14.26
+            avg_4_tap_counter <= 0;       //Q14.26
+            total_2_tap <= 0;
+            total_4_tap <= 0;
+        end
+        else begin
             
+            if(inst_freq_2_tap_valid)
+            begin
+                avg_2_tap_counter <= avg_2_tap_counter + 1;       //Q14.26
+                total_2_tap <= total_2_tap + inst_freq_2_tap;
+            end
+            else
+            begin
+                avg_2_tap_counter <= 0;
+                total_2_tap <= 0;
+            end
+            
+            if(inst_freq_4_tap_valid)
+            begin
+                avg_4_tap_counter <= avg_4_tap_counter + 1;       //Q14.26
+                total_4_tap <= total_4_tap + inst_freq_4_tap;
+            end
+            else
+            begin
+                avg_4_tap_counter <= 0;
+                total_4_tap <= 0;
+            end   
+        end
+    end
+    
+    wire [79 : 0] avg_freq_2_tap;
+    wire avg_freq_2_tap_valid;
+    
+    div_gen_0 AVG_2_TAP  (
+      .aclk(clk),                                      // input wire aclk
+      .s_axis_divisor_tvalid(inst_freq_2_tap_valid_neg_edge),    // input wire s_axis_divisor_tvalid
+      .s_axis_divisor_tready(),    // output wire s_axis_divisor_tready
+      .s_axis_divisor_tdata(avg_2_tap_counter),      // input wire [15 : 0] s_axis_divisor_tdata
+      .s_axis_dividend_tvalid(inst_freq_2_tap_valid_neg_edge),  // input wire s_axis_dividend_tvalid
+      .s_axis_dividend_tready(),  // output wire s_axis_dividend_tready
+      .s_axis_dividend_tdata(total_2_tap),    // input wire [63 : 0] s_axis_dividend_tdata
+      .m_axis_dout_tvalid(avg_freq_2_tap_valid),          // output wire m_axis_dout_tvalid
+      .m_axis_dout_tdata(avg_freq_2_tap)            // output wire [79 : 0] m_axis_dout_tdata  fix_80_42
+    );
+    
+    wire [79 : 0] avg_freq_4_tap;
+    wire avg_freq_4_tap_valid;
+    
+    div_gen_0 AVG_4_TAP  (
+      .aclk(clk),                                      // input wire aclk
+      .s_axis_divisor_tvalid(inst_freq_4_tap_valid_neg_edge),    // input wire s_axis_divisor_tvalid
+      .s_axis_divisor_tready(),    // output wire s_axis_divisor_tready
+      .s_axis_divisor_tdata(avg_4_tap_counter),      // input wire [15 : 0] s_axis_divisor_tdata
+      .s_axis_dividend_tvalid(inst_freq_4_tap_valid_neg_edge),  // input wire s_axis_dividend_tvalid
+      .s_axis_dividend_tready(),  // output wire s_axis_dividend_tready
+      .s_axis_dividend_tdata(total_4_tap),    // input wire [63 : 0] s_axis_dividend_tdata
+      .m_axis_dout_tvalid(avg_freq_4_tap_valid),          // output wire m_axis_dout_tvalid
+      .m_axis_dout_tdata(avg_freq_4_tap)            // output wire [79 : 0] m_axis_dout_tdata  fix_80_42
+    );
+    
+    assign est_freq_2_tap_valid = avg_freq_2_tap_valid;
+    assign est_freq_4_tap_valid = avg_freq_4_tap_valid;
+    
     always @(posedge clk)
-        if(phase4_valid)
-            freq4_counter <= freq4_counter + 1;
-            
-    always @(phase2_valid)
-        total_freq2 <= total_freq2 + freq2;
-    
-    always @(phase4_valid)
-        total_freq4 <= total_freq4 + freq4;
-    
-    wire [63:00] est_freq2 = 0;   
-    wire [63:00] est_freq4 = 0;    
-    
-    assign est_freq2 = total_freq2 / (freq2_counter<<13);
-    assign est_freq4 = total_freq4 / (freq4_counter<<13);
-        */
+    begin
+        if(avg_freq_2_tap_valid)
+            est_freq_2_tap <= avg_freq_2_tap;
+        if(avg_freq_4_tap_valid)
+            est_freq_4_tap <= avg_freq_4_tap;
+    end
+
 endmodule

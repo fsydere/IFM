@@ -31,10 +31,10 @@ module complex_mult #(
             mult_ai_br_reg <= 0;
             valid_stage1 <= 1'b0;
         end else begin
-            mult_ar_br_reg <= a_real * b_real;
-            mult_ai_bi_reg <= a_imag * b_imag;
-            mult_ar_bi_reg <= a_real * b_imag;
-            mult_ai_br_reg <= a_imag * b_real;
+            mult_ar_br_reg <= $signed(a_real) * $signed(b_real);
+            mult_ai_bi_reg <= $signed(a_imag) * $signed(b_imag);
+            mult_ar_bi_reg <= $signed(a_real) * $signed(b_imag);
+            mult_ai_br_reg <= $signed(a_imag) * $signed(b_real);
             valid_stage1 <= valid_in;
         end
     end
