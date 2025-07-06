@@ -23,7 +23,7 @@
 module ThresholdDetector_tb();
 
     reg clk;
-    reg reset;
+    reg rst_n;
     reg signed [15:0] RealPart;
     reg signed [15:0] ImagPart;
     reg DataValid;
@@ -41,7 +41,8 @@ module ThresholdDetector_tb();
 
     TopModule_IFM DUT
     (
-    .clk(clk),             
+    .clk(clk),
+    .rst_n(rst_n),             
     .RealPart(RealPart),  
     .ImagPart(ImagPart),  
     .dataValid(DataValid) 
@@ -65,7 +66,7 @@ module ThresholdDetector_tb();
         ImagPart = 0;
         DataValid = 0;
         start = 0;
-        reset = 1;
+        rst_n = 0;
         // Open data file
         file = $fopen("../../../../../SystemInputs/Fs_300_Fc_25MHz_PW_10us_PRI_100us_SNR_10dB_real.txt", "r");
         file2 = $fopen("../../../../../SystemInputs/Fs_300_Fc_25MHz_PW_10us_PRI_100us_SNR_10dB_imag.txt", "r");
@@ -77,11 +78,11 @@ module ThresholdDetector_tb();
         // Reset sequence
         #20;
         start = 1;
-        reset = 0;
+        rst_n = 1;
     end
     
     always @(posedge clk) begin
-        if (!reset) begin
+        if (rst_n) begin
             if (!$feof(file)) begin
                 status = $fscanf(file, "%d\n", RealPart);
                 status2 = $fscanf(file2, "%d\n", ImagPart);

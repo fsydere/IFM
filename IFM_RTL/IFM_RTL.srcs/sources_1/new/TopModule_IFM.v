@@ -22,6 +22,7 @@
 
 module TopModule_IFM(
     input clk,
+    input rst_n,
     input wire signed [15:0] RealPart,  //Sfix_16_15
     input wire signed [15:0] ImagPart,  //Sfix_16_15
     input wire dataValid,
@@ -49,21 +50,23 @@ module TopModule_IFM(
     );
     
     
-//    IFM IFM(
+    IFM IFM(
+       .clk                 (clk),
+       .rst_n               (rst_n),
+       .real_part           (real_part),            //Sfix_16_15
+       .imag_part           (imag_part),            //Sfix_16_15
+       .data_valid          (data_valid),           //1 bit
+       .envelope            (envelope)              //1 bit
+       //outputs
+    );
+    
+//    IFM_v2 IFM(
 //       .clk                 (clk),
 //       .real_part           (real_part),            //Sfix_16_15
 //       .imag_part           (imag_part),            //Sfix_16_15
 //       .data_valid          (data_valid),           //1 bit
 //       .envelope            (envelope)                      //1 bit
 //    );
-    
-    IFM_v2 IFM(
-       .clk                 (clk),
-       .real_part           (real_part),            //Sfix_16_15
-       .imag_part           (imag_part),            //Sfix_16_15
-       .data_valid          (data_valid),           //1 bit
-       .envelope            (envelope)                      //1 bit
-    );
     
     
     
