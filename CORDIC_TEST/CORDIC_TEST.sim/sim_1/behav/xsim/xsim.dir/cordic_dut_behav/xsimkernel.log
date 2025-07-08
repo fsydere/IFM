@@ -1,7 +1,0 @@
-Running: xsim.dir/cordic_dut_behav/xsimk -simmode gui -wdb cordic_dut_behav.wdb -simrunnum 0 -socket 47851
-Design successfully loaded
-Design Loading Memory Usage: 185964 KB (Peak: 185972 KB)
-Design Loading CPU Usage: 560 ms
-Simulation completed
-Simulation Memory Usage: 275900 KB (Peak: 325232 KB)
-Simulation CPU Usage: 600 ms

@@ -1,8 +1,0 @@
-0.7
-2020.2
-May 21 2025
-22:59:56
-/home/fsy/Workspace/IFM/CORDIC_TEST/CORDIC_TEST.gen/sources_1/ip/cordic_0/sim/cordic_0.vhd,1751723570,vhdl,,,,cordic_0,,,,,,,,
-/home/fsy/Workspace/IFM/CORDIC_TEST/CORDIC_TEST.sim/sim_1/behav/xsim/glbl.v,1751720476,verilog,,,,glbl,,,,,,,,
-/home/fsy/Workspace/IFM/CORDIC_TEST/CORDIC_TEST.srcs/sim_1/new/cordic_dut.v,1751722877,verilog,,,,cordic_dut,,,../../../../../../../Tools/Xilinx/2025.1/data/rsb/busdef,,,,,
-/home/fsy/Workspace/IFM/CORDIC_TEST/CORDIC_TEST.srcs/sources_1/new/cordic_wrapper.v,1751722866,verilog,,/home/fsy/Workspace/IFM/CORDIC_TEST/CORDIC_TEST.srcs/sim_1/new/cordic_dut.v,,cordic_wrapper,,,../../../../../../../Tools/Xilinx/2025.1/data/rsb/busdef,,,,,
