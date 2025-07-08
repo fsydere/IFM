@@ -105,6 +105,7 @@ function [IFM_results] = IFM(noisySignals,varargin)
             field_name = sprintf('SNR_%ddB_delay_%d', current_SNR, delay_samples);
             IFM_results.(field_name).freq_estimates = freq_estimates;
             IFM_results.(field_name).average_frequency = avg_freq;
+            IFM_results.(field_name).average_frequency_MHz = timeseries(avg_freq/1e6,1);
             IFM_results.(field_name).frequency_error = freq_error;
             IFM_results.(field_name).pulse_regions = pulse_regions;
             IFM_results.(field_name).envelope = envelope;
