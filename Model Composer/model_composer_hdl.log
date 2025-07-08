@@ -1,18 +1,18 @@
 --------------------------------------------------------------------------------
 Vitis Model Composer 6134165 2025.1 Thu May 15 15:44:55 MDT 2025 
 --------------------------------------------------------------------------------
-Model Composer: /home/fsy/Tools/Xilinx/2025.1/Model_Composer
-Vivado: /home/fsy/Tools/Xilinx/2025.1/Vivado
-Vitis: /home/fsy/Tools/Xilinx/2025.1/Vitis
+Model Composer: C:/Xilinx/2025.1/Model_Composer
+Vivado: C:/Xilinx/2025.1/Vivado
+Vitis: C:/Xilinx/2025.1/Vitis
 --------------------------------------------------------------------------------
 Warning:
  code:     
  severity: L1
  open_fcn:   
- summary:  Externally connected blocks are defined as blocks that directly drive native Simulink blocks without going through a gateway. An example is the output port of a Model Composer block connected to the input port of a Simulink Scope. Modify the design by inserting Gateway Out blocks with 'Translate into output port' turned off. Also, Model Composer blocks with ports that have Signal Logging turned on are classified as Externally connected blocks. For more details look into <a href= "matlab:web('file:///home/fsy/Workspace/IFM/Model Composer/SysgenFeatureReport.htm')">SysgenFeatureReport.htm</a>.
+ summary:  Externally connected blocks are defined as blocks that directly drive native Simulink blocks without going through a gateway. An example is the output port of a Model Composer block connected to the input port of a Simulink Scope. Modify the design by inserting Gateway Out blocks with 'Translate into output port' turned off. Also, Model Composer blocks with ports that have Signal Logging turned on are classified as Externally connected blocks. For more details look into <a href= "matlab:web('file://C:/Users/fsydere/Workspace/IFM/Model Composer/SysgenFeatureReport.htm')">SysgenFeatureReport.htm</a>.
 <a href="matlab:xlignoremodelforwarning('IFM_ModelComposer')">Disable</a> feature warnings for this model.
 
- details:  Externally connected blocks are defined as blocks that directly drive native Simulink blocks without going through a gateway. An example is the output port of a Model Composer block connected to the input port of a Simulink Scope. Modify the design by inserting Gateway Out blocks with 'Translate into output port' turned off. Also, Model Composer blocks with ports that have Signal Logging turned on are classified as Externally connected blocks. For more details look into <a href= "matlab:web('file:///home/fsy/Workspace/IFM/Model Composer/SysgenFeatureReport.htm')">SysgenFeatureReport.htm</a>.
+ details:  Externally connected blocks are defined as blocks that directly drive native Simulink blocks without going through a gateway. An example is the output port of a Model Composer block connected to the input port of a Simulink Scope. Modify the design by inserting Gateway Out blocks with 'Translate into output port' turned off. Also, Model Composer blocks with ports that have Signal Logging turned on are classified as Externally connected blocks. For more details look into <a href= "matlab:web('file://C:/Users/fsydere/Workspace/IFM/Model Composer/SysgenFeatureReport.htm')">SysgenFeatureReport.htm</a>.
 <a href="matlab:xlignoremodelforwarning('IFM_ModelComposer')">Disable</a> feature warnings for this model.
 
 
