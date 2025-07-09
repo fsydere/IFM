@@ -1,0 +1,492 @@
+{
+  'Line_1003' => {
+    'CodeInstance' => 'ifm_struct/envelope_detection/envelope_detection/d1_1',
+    'Instance' => 'd1_1',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/Envelope Detection/Envelope Detection/D1_1'
+  },
+  'Line_101' => {
+    'CodeInstance' => 'ifm_struct/x2_delay_avarage_freq/counter',
+    'Instance' => 'counter',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/2 Delay Avarage Freq/Counter'
+  },
+  'Line_1018' => {
+    'CodeInstance' => 'ifm_struct/envelope_detection/envelope_detection/d2_x0',
+    'Instance' => 'd2_x0',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/Envelope Detection/Envelope Detection/D2'
+  },
+  'Line_1033' => {
+    'CodeInstance' => 'ifm_struct/envelope_detection/envelope_detection/d2_1',
+    'Instance' => 'd2_1',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/Envelope Detection/Envelope Detection/D2_1'
+  },
+  'Line_1048' => {
+    'CodeInstance' => 'ifm_struct/envelope_detection/envelope_detection/d3',
+    'Instance' => 'd3',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/Envelope Detection/Envelope Detection/D3'
+  },
+  'Line_1063' => {
+    'CodeInstance' => 'ifm_struct/envelope_detection/envelope_detection/d3_1',
+    'Instance' => 'd3_1',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/Envelope Detection/Envelope Detection/D3_1'
+  },
+  'Line_1078' => {
+    'CodeInstance' => 'ifm_struct/envelope_detection/envelope_detection/d4',
+    'Instance' => 'd4',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/Envelope Detection/Envelope Detection/D4'
+  },
+  'Line_1093' => {
+    'CodeInstance' => 'ifm_struct/envelope_detection/envelope_detection/d4_1',
+    'Instance' => 'd4_1',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/Envelope Detection/Envelope Detection/D4_1'
+  },
+  'Line_1108' => {
+    'CodeInstance' => 'ifm_struct/envelope_detection/envelope_detection/envelope_detector',
+    'Instance' => 'envelope_detector',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/Envelope Detection/Envelope Detection/Envelope Detector'
+  },
+  'Line_1118' => {
+    'CodeInstance' => 'ifm_struct/envelope_detection/envelope_detection/d1',
+    'Instance' => 'd1',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/Envelope Detection/Envelope Detection/d1'
+  },
+  'Line_1133' => {
+    'CodeInstance' => 'ifm_struct/envelope_detection/envelope_detection/d2',
+    'Instance' => 'd2',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/Envelope Detection/Envelope Detection/d2'
+  },
+  'Line_1148' => {
+    'CodeInstance' => 'ifm_struct/envelope_detection/envelope_detection/d3_x0',
+    'Instance' => 'd3_x0',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/Envelope Detection/Envelope Detection/d3'
+  },
+  'Line_115' => {
+    'CodeInstance' => 'ifm_struct/x2_delay_avarage_freq/delay',
+    'Instance' => 'delay',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/2 Delay Avarage Freq/Delay'
+  },
+  'Line_1163' => {
+    'CodeInstance' => 'ifm_struct/envelope_detection/envelope_detection/d4_x0',
+    'Instance' => 'd4_x0',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/Envelope Detection/Envelope Detection/d4'
+  },
+  'Line_1240' => {
+    'CodeInstance' => 'ifm_struct/envelope_detection/threshold_detection/and_x0',
+    'Instance' => 'and_x0',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/Envelope Detection/Threshold Detection/AND'
+  },
+  'Line_1249' => {
+    'CodeInstance' => 'ifm_struct/envelope_detection/threshold_detection/cmult',
+    'Instance' => 'cmult',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/Envelope Detection/Threshold Detection/CMult'
+  },
+  'Line_1282' => {
+    'CodeInstance' => 'ifm_struct/envelope_detection/threshold_detection/constant1',
+    'Instance' => 'constant1',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/Envelope Detection/Threshold Detection/Constant1'
+  },
+  'Line_1289' => {
+    'CodeInstance' => 'ifm_struct/envelope_detection/threshold_detection/constant4',
+    'Instance' => 'constant4',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/Envelope Detection/Threshold Detection/Constant4'
+  },
+  'Line_1296' => {
+    'CodeInstance' => 'ifm_struct/envelope_detection/threshold_detection/convert',
+    'Instance' => 'convert',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/Envelope Detection/Threshold Detection/Convert'
+  },
+  'Line_130' => {
+    'CodeInstance' => 'ifm_struct/x2_delay_avarage_freq/delay1',
+    'Instance' => 'delay1',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/2 Delay Avarage Freq/Delay1'
+  },
+  'Line_1317' => {
+    'CodeInstance' => 'ifm_struct/envelope_detection/threshold_detection/convert4',
+    'Instance' => 'convert4',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/Envelope Detection/Threshold Detection/Convert4'
+  },
+  'Line_1338' => {
+    'CodeInstance' => 'ifm_struct/envelope_detection/threshold_detection/convert6',
+    'Instance' => 'convert6',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/Envelope Detection/Threshold Detection/Convert6'
+  },
+  'Line_1359' => {
+    'CodeInstance' => 'ifm_struct/envelope_detection/threshold_detection/counter',
+    'Instance' => 'counter',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/Envelope Detection/Threshold Detection/Counter'
+  },
+  'Line_1378' => {
+    'CodeInstance' => 'ifm_struct/envelope_detection/threshold_detection/delay',
+    'Instance' => 'delay',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/Envelope Detection/Threshold Detection/Delay'
+  },
+  'Line_1386' => {
+    'CodeInstance' => 'ifm_struct/envelope_detection/threshold_detection/delay1',
+    'Instance' => 'delay1',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/Envelope Detection/Threshold Detection/Delay1'
+  },
+  'Line_1394' => {
+    'CodeInstance' => 'ifm_struct/envelope_detection/threshold_detection/delay2',
+    'Instance' => 'delay2',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/Envelope Detection/Threshold Detection/Delay2'
+  },
+  'Line_1402' => {
+    'CodeInstance' => 'ifm_struct/envelope_detection/threshold_detection/delay3',
+    'Instance' => 'delay3',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/Envelope Detection/Threshold Detection/Delay3'
+  },
+  'Line_1417' => {
+    'CodeInstance' => 'ifm_struct/envelope_detection/threshold_detection/imag_component',
+    'Instance' => 'imag_component',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/Envelope Detection/Threshold Detection/Imag_component'
+  },
+  'Line_1432' => {
+    'CodeInstance' => 'ifm_struct/envelope_detection/threshold_detection/mean',
+    'Instance' => 'mean',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/Envelope Detection/Threshold Detection/Mean'
+  },
+  'Line_1445' => {
+    'CodeInstance' => 'ifm_struct/envelope_detection/threshold_detection/not_x0',
+    'Instance' => 'not_x0',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/Envelope Detection/Threshold Detection/NOT'
+  },
+  'Line_145' => {
+    'CodeInstance' => 'ifm_struct/x2_delay_avarage_freq/divide',
+    'Instance' => 'divide',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/2 Delay Avarage Freq/Divide'
+  },
+  'Line_1453' => {
+    'CodeInstance' => 'ifm_struct/envelope_detection/threshold_detection/noisesampledone',
+    'Instance' => 'noisesampledone',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/Envelope Detection/Threshold Detection/NoiseSampleDone'
+  },
+  'Line_1462' => {
+    'CodeInstance' => 'ifm_struct/envelope_detection/threshold_detection/real_component',
+    'Instance' => 'real_component',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/Envelope Detection/Threshold Detection/Real_component'
+  },
+  'Line_1477' => {
+    'CodeInstance' => 'ifm_struct/envelope_detection/threshold_detection/squarereal',
+    'Instance' => 'squarereal',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/Envelope Detection/Threshold Detection/SquareReal'
+  },
+  'Line_1486' => {
+    'CodeInstance' => 'ifm_struct/envelope_detection/threshold_detection/squarereal1',
+    'Instance' => 'squarereal1',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/Envelope Detection/Threshold Detection/SquareReal1'
+  },
+  'Line_1495' => {
+    'CodeInstance' => 'ifm_struct/envelope_detection/threshold_detection/sumsquares',
+    'Instance' => 'sumsquares',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/Envelope Detection/Threshold Detection/SumSquares'
+  },
+  'Line_1504' => {
+    'CodeInstance' => 'ifm_struct/envelope_detection/threshold_detection/threshold_delay',
+    'Instance' => 'threshold_delay',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/Envelope Detection/Threshold Detection/Threshold_delay'
+  },
+  'Line_1519' => {
+    'CodeInstance' => 'ifm_struct/envelope_detection/threshold_detection/totalsum',
+    'Instance' => 'totalsum',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/Envelope Detection/Threshold Detection/TotalSum'
+  },
+  'Line_158' => {
+    'CodeInstance' => 'ifm_struct/x2_delay_avarage_freq/inverter',
+    'Instance' => 'inverter',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/2 Delay Avarage Freq/Inverter'
+  },
+  'Line_1582' => {
+    'CodeInstance' => 'ifm_struct/envelope_detection/envelope_detection',
+    'Instance' => 'envelope_detection',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/Envelope Detection/Envelope Detection'
+  },
+  'Line_1598' => {
+    'CodeInstance' => 'ifm_struct/envelope_detection/threshold_detection',
+    'Instance' => 'threshold_detection',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/Envelope Detection/Threshold Detection'
+  },
+  'Line_1659' => {
+    'CodeInstance' => 'ifm_struct/x2_delay_avarage_freq',
+    'Instance' => 'x2_delay_avarage_freq',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/2 Delay Avarage Freq'
+  },
+  'Line_166' => {
+    'CodeInstance' => 'ifm_struct/x2_delay_avarage_freq/logical',
+    'Instance' => 'logical',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/2 Delay Avarage Freq/Logical'
+  },
+  'Line_1667' => {
+    'CodeInstance' => 'ifm_struct/x2_delay_instantenous_frequency',
+    'Instance' => 'x2_delay_instantenous_frequency',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/2 Delay Instantenous Frequency'
+  },
+  'Line_1679' => {
+    'CodeInstance' => 'ifm_struct/x4_delay_avarage_freq',
+    'Instance' => 'x4_delay_avarage_freq',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/4 Delay Avarage Freq'
+  },
+  'Line_1687' => {
+    'CodeInstance' => 'ifm_struct/x4_delay_instantenous_frequency',
+    'Instance' => 'x4_delay_instantenous_frequency',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/4 Delay Instantenous Frequency'
+  },
+  'Line_1699' => {
+    'CodeInstance' => 'ifm_struct/envelope_detection',
+    'Instance' => 'envelope_detection',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/Envelope Detection'
+  },
+  'Line_1715' => {
+    'CodeInstance' => 'ifm_struct/convert1',
+    'Instance' => 'convert1',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/Convert1'
+  },
+  'Line_1736' => {
+    'CodeInstance' => 'ifm_struct/convert2',
+    'Instance' => 'convert2',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/Convert2'
+  },
+  'Line_175' => {
+    'CodeInstance' => 'ifm_struct/x2_delay_avarage_freq/logical1',
+    'Instance' => 'logical1',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/2 Delay Avarage Freq/Logical1'
+  },
+  'Line_1757' => {
+    'CodeInstance' => 'ifm_struct/convert3',
+    'Instance' => 'convert3',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/Convert3'
+  },
+  'Line_1795' => {
+    'CodeInstance' => 'ifm_default_clock_driver/clockdriver',
+    'Instance' => 'clockdriver',
+    'SimulinkInstance' => ''
+  },
+  'Line_1829' => {
+    'CodeInstance' => 'ifm_default_clock_driver',
+    'Instance' => 'ifm_default_clock_driver',
+    'SimulinkInstance' => ''
+  },
+  'Line_1837' => {
+    'CodeInstance' => 'ifm_struct',
+    'Instance' => 'ifm_struct',
+    'SimulinkInstance' => 'IFM'
+  },
+  'Line_184' => {
+    'CodeInstance' => 'ifm_struct/x2_delay_avarage_freq/register_x0',
+    'Instance' => 'register_x0',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/2 Delay Avarage Freq/Register'
+  },
+  'Line_197' => {
+    'CodeInstance' => 'ifm_struct/x2_delay_avarage_freq/relational',
+    'Instance' => 'relational',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/2 Delay Avarage Freq/Relational'
+  },
+  'Line_256' => {
+    'CodeInstance' => 'ifm_struct/x2_delay_instantenous_frequency/cmult',
+    'Instance' => 'cmult',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/2 Delay Instantenous Frequency/CMult'
+  },
+  'Line_289' => {
+    'CodeInstance' => 'ifm_struct/x2_delay_instantenous_frequency/cordic_6_0',
+    'Instance' => 'cordic_6_0',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/2 Delay Instantenous Frequency/CORDIC 6.0'
+  },
+  'Line_299' => {
+    'CodeInstance' => 'ifm_struct/x2_delay_instantenous_frequency/convert',
+    'Instance' => 'convert',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/2 Delay Instantenous Frequency/Convert'
+  },
+  'Line_320' => {
+    'CodeInstance' => 'ifm_struct/x2_delay_instantenous_frequency/convert1',
+    'Instance' => 'convert1',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/2 Delay Instantenous Frequency/Convert1'
+  },
+  'Line_341' => {
+    'CodeInstance' => 'ifm_struct/x2_delay_instantenous_frequency/convert2',
+    'Instance' => 'convert2',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/2 Delay Instantenous Frequency/Convert2'
+  },
+  'Line_362' => {
+    'CodeInstance' => 'ifm_struct/x2_delay_instantenous_frequency/convert4',
+    'Instance' => 'convert4',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/2 Delay Instantenous Frequency/Convert4'
+  },
+  'Line_383' => {
+    'CodeInstance' => 'ifm_struct/x2_delay_instantenous_frequency/convert5',
+    'Instance' => 'convert5',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/2 Delay Instantenous Frequency/Convert5'
+  },
+  'Line_404' => {
+    'CodeInstance' => 'ifm_struct/x2_delay_instantenous_frequency/delay',
+    'Instance' => 'delay',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/2 Delay Instantenous Frequency/Delay'
+  },
+  'Line_419' => {
+    'CodeInstance' => 'ifm_struct/x2_delay_instantenous_frequency/delay1',
+    'Instance' => 'delay1',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/2 Delay Instantenous Frequency/Delay1'
+  },
+  'Line_42' => {
+    'CodeInstance' => 'ifm_struct/x2_delay_avarage_freq/accumulator1',
+    'Instance' => 'accumulator1',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/2 Delay Avarage Freq/Accumulator1'
+  },
+  'Line_434' => {
+    'CodeInstance' => 'ifm_struct/x2_delay_instantenous_frequency/negate',
+    'Instance' => 'negate',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/2 Delay Instantenous Frequency/Negate'
+  },
+  'Line_442' => {
+    'CodeInstance' => 'ifm_struct/x2_delay_instantenous_frequency/product',
+    'Instance' => 'product',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/2 Delay Instantenous Frequency/Product'
+  },
+  'Line_495' => {
+    'CodeInstance' => 'ifm_struct/x4_delay_avarage_freq/accumulator1',
+    'Instance' => 'accumulator1',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/4 Delay Avarage Freq/Accumulator1'
+  },
+  'Line_505' => {
+    'CodeInstance' => 'ifm_struct/x4_delay_avarage_freq/constant_x0',
+    'Instance' => 'constant_x0',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/4 Delay Avarage Freq/Constant'
+  },
+  'Line_512' => {
+    'CodeInstance' => 'ifm_struct/x4_delay_avarage_freq/convert',
+    'Instance' => 'convert',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/4 Delay Avarage Freq/Convert'
+  },
+  'Line_52' => {
+    'CodeInstance' => 'ifm_struct/x2_delay_avarage_freq/constant_x0',
+    'Instance' => 'constant_x0',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/2 Delay Avarage Freq/Constant'
+  },
+  'Line_533' => {
+    'CodeInstance' => 'ifm_struct/x4_delay_avarage_freq/convert1',
+    'Instance' => 'convert1',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/4 Delay Avarage Freq/Convert1'
+  },
+  'Line_554' => {
+    'CodeInstance' => 'ifm_struct/x4_delay_avarage_freq/counter',
+    'Instance' => 'counter',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/4 Delay Avarage Freq/Counter'
+  },
+  'Line_568' => {
+    'CodeInstance' => 'ifm_struct/x4_delay_avarage_freq/delay',
+    'Instance' => 'delay',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/4 Delay Avarage Freq/Delay'
+  },
+  'Line_583' => {
+    'CodeInstance' => 'ifm_struct/x4_delay_avarage_freq/delay1',
+    'Instance' => 'delay1',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/4 Delay Avarage Freq/Delay1'
+  },
+  'Line_59' => {
+    'CodeInstance' => 'ifm_struct/x2_delay_avarage_freq/convert',
+    'Instance' => 'convert',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/2 Delay Avarage Freq/Convert'
+  },
+  'Line_598' => {
+    'CodeInstance' => 'ifm_struct/x4_delay_avarage_freq/divide',
+    'Instance' => 'divide',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/4 Delay Avarage Freq/Divide'
+  },
+  'Line_611' => {
+    'CodeInstance' => 'ifm_struct/x4_delay_avarage_freq/inverter',
+    'Instance' => 'inverter',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/4 Delay Avarage Freq/Inverter'
+  },
+  'Line_619' => {
+    'CodeInstance' => 'ifm_struct/x4_delay_avarage_freq/logical',
+    'Instance' => 'logical',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/4 Delay Avarage Freq/Logical'
+  },
+  'Line_628' => {
+    'CodeInstance' => 'ifm_struct/x4_delay_avarage_freq/logical1',
+    'Instance' => 'logical1',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/4 Delay Avarage Freq/Logical1'
+  },
+  'Line_637' => {
+    'CodeInstance' => 'ifm_struct/x4_delay_avarage_freq/register_x0',
+    'Instance' => 'register_x0',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/4 Delay Avarage Freq/Register'
+  },
+  'Line_650' => {
+    'CodeInstance' => 'ifm_struct/x4_delay_avarage_freq/relational',
+    'Instance' => 'relational',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/4 Delay Avarage Freq/Relational'
+  },
+  'Line_709' => {
+    'CodeInstance' => 'ifm_struct/x4_delay_instantenous_frequency/cmult',
+    'Instance' => 'cmult',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/4 Delay Instantenous Frequency/CMult'
+  },
+  'Line_742' => {
+    'CodeInstance' => 'ifm_struct/x4_delay_instantenous_frequency/cordic_6_0',
+    'Instance' => 'cordic_6_0',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/4 Delay Instantenous Frequency/CORDIC 6.0'
+  },
+  'Line_752' => {
+    'CodeInstance' => 'ifm_struct/x4_delay_instantenous_frequency/convert',
+    'Instance' => 'convert',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/4 Delay Instantenous Frequency/Convert'
+  },
+  'Line_773' => {
+    'CodeInstance' => 'ifm_struct/x4_delay_instantenous_frequency/convert1',
+    'Instance' => 'convert1',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/4 Delay Instantenous Frequency/Convert1'
+  },
+  'Line_794' => {
+    'CodeInstance' => 'ifm_struct/x4_delay_instantenous_frequency/convert2',
+    'Instance' => 'convert2',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/4 Delay Instantenous Frequency/Convert2'
+  },
+  'Line_80' => {
+    'CodeInstance' => 'ifm_struct/x2_delay_avarage_freq/convert1',
+    'Instance' => 'convert1',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/2 Delay Avarage Freq/Convert1'
+  },
+  'Line_815' => {
+    'CodeInstance' => 'ifm_struct/x4_delay_instantenous_frequency/convert4',
+    'Instance' => 'convert4',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/4 Delay Instantenous Frequency/Convert4'
+  },
+  'Line_836' => {
+    'CodeInstance' => 'ifm_struct/x4_delay_instantenous_frequency/convert5',
+    'Instance' => 'convert5',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/4 Delay Instantenous Frequency/Convert5'
+  },
+  'Line_857' => {
+    'CodeInstance' => 'ifm_struct/x4_delay_instantenous_frequency/delay',
+    'Instance' => 'delay',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/4 Delay Instantenous Frequency/Delay'
+  },
+  'Line_872' => {
+    'CodeInstance' => 'ifm_struct/x4_delay_instantenous_frequency/delay1',
+    'Instance' => 'delay1',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/4 Delay Instantenous Frequency/Delay1'
+  },
+  'Line_887' => {
+    'CodeInstance' => 'ifm_struct/x4_delay_instantenous_frequency/negate',
+    'Instance' => 'negate',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/4 Delay Instantenous Frequency/Negate'
+  },
+  'Line_895' => {
+    'CodeInstance' => 'ifm_struct/x4_delay_instantenous_frequency/product',
+    'Instance' => 'product',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/4 Delay Instantenous Frequency/Product'
+  },
+  'Line_966' => {
+    'CodeInstance' => 'ifm_struct/envelope_detection/envelope_detection/x2_tap_envelope',
+    'Instance' => 'x2_tap_envelope',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/Envelope Detection/Envelope Detection/2 TAP Envelope'
+  },
+  'Line_976' => {
+    'CodeInstance' => 'ifm_struct/envelope_detection/envelope_detection/x4_tap_envelope',
+    'Instance' => 'x4_tap_envelope',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/Envelope Detection/Envelope Detection/4 TAP Envelope'
+  },
+  'Line_988' => {
+    'CodeInstance' => 'ifm_struct/envelope_detection/envelope_detection/d1_x0',
+    'Instance' => 'd1_x0',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/Envelope Detection/Envelope Detection/D1'
+  }
+}
