@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x734B265CBD58F726",
+      "boundary_crc": "0x13D88A8585599D41",
       "design_src": "SYSGEN",
       "device": "xczu9eg-ffvb1156-2-e",
       "gen_directory": "../../../../ifm.gen/sources_1/bd/IFM_bd",
@@ -53,7 +53,7 @@
           }
         }
       },
-      "gateway_out": {
+      "estimated_frequency_2_delay": {
         "type": "data",
         "direction": "O",
         "left": "81",
@@ -71,7 +71,25 @@
           }
         }
       },
-      "gateway_out1": {
+      "estimated_frequency_2_delay_valid": {
+        "type": "data",
+        "direction": "O",
+        "left": "0",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": [
+              "xilinx.com:interface:datatypes:1.0 {",
+              "DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {}",
+              "maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format",
+              "long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}",
+              "}"
+            ],
+            "value_src": "const_prop"
+          }
+        }
+      },
+      "estimated_frequency_4_delay": {
         "type": "data",
         "direction": "O",
         "left": "81",
@@ -83,6 +101,24 @@
               "DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {}",
               "maximum {}} value 82} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format",
               "long minimum {} maximum {}} value 18} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true}}}}}",
+              "}"
+            ],
+            "value_src": "const_prop"
+          }
+        }
+      },
+      "estimated_frequency_4_delay_valid": {
+        "type": "data",
+        "direction": "O",
+        "left": "0",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": [
+              "xilinx.com:interface:datatypes:1.0 {",
+              "DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {}",
+              "maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format",
+              "long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}",
               "}"
             ],
             "value_src": "const_prop"
@@ -116,8 +152,8 @@
     },
     "components": {
       "IFM_1": {
-        "vlnv": "User_Company:VMC:IFM:1.0",
-        "ip_revision": "382984683",
+        "vlnv": "FSY:VMC:IFM:1.0",
+        "ip_revision": "383077390",
         "xci_name": "IFM_bd_IFM_1_0",
         "xci_path": "ip\\IFM_bd_IFM_1_0\\IFM_bd_IFM_1_0.xci",
         "inst_hier_path": "IFM_1",
@@ -125,16 +161,28 @@
       }
     },
     "nets": {
-      "IFM_1_gateway_out": {
+      "IFM_1_estimated_frequency_2_delay": {
         "ports": [
-          "IFM_1/gateway_out",
-          "gateway_out"
+          "IFM_1/estimated_frequency_2_delay",
+          "estimated_frequency_2_delay"
         ]
       },
-      "IFM_1_gateway_out1": {
+      "IFM_1_estimated_frequency_2_delay_valid": {
         "ports": [
-          "IFM_1/gateway_out1",
-          "gateway_out1"
+          "IFM_1/estimated_frequency_2_delay_valid",
+          "estimated_frequency_2_delay_valid"
+        ]
+      },
+      "IFM_1_estimated_frequency_4_delay": {
+        "ports": [
+          "IFM_1/estimated_frequency_4_delay",
+          "estimated_frequency_4_delay"
+        ]
+      },
+      "IFM_1_estimated_frequency_4_delay_valid": {
+        "ports": [
+          "IFM_1/estimated_frequency_4_delay_valid",
+          "estimated_frequency_4_delay_valid"
         ]
       },
       "clk_1": {

@@ -1,0 +1,29 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
+| Date         : Thu Jul 10 18:32:27 2025
+| Host         : DESKTOP-5G0J4EJ running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu9eg-ffvb1156-2-e
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'IFM_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of IFM_0 (FSY:VMC:IFM:1.0) from (Rev. 383002486) to (Rev. 383077390)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'IFM_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'estimated_frequency_2_delay_valid'
+
+-Upgrade has added port 'estimated_frequency_4_delay_valid'
+
+

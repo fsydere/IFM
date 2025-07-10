@@ -2,13 +2,13 @@
 -- Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
--- Date        : Sun Jul  6 15:29:00 2025
+-- Date        : Wed Jul  9 21:47:41 2025
 -- Host        : DESKTOP-5G0J4EJ running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub
 --               c:/Users/fsydere/Workspace/IFM/IFM_RTL/IFM_RTL.gen/sources_1/ip/div_gen_0/div_gen_0_stub.vhdl
 -- Design      : div_gen_0
 -- Purpose     : Stub declaration of top-level module interface
--- Device      : xc7z020clg400-1
+-- Device      : xczu9eg-ffvb1156-2-e
 -- --------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
@@ -29,7 +29,7 @@ entity div_gen_0 is
   attribute CHECK_LICENSE_TYPE : string;
   attribute CHECK_LICENSE_TYPE of div_gen_0 : entity is "div_gen_0,div_gen_v5_1_24,{}";
   attribute core_generation_info : string;
-  attribute core_generation_info of div_gen_0 : entity is "div_gen_0,div_gen_v5_1_24,{x_ipProduct=Vivado 2025.1,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=div_gen,x_ipVersion=5.1,x_ipCoreRevision=24,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_XDEVICEFAMILY=zynq,C_HAS_ARESETN=0,C_HAS_ACLKEN=0,C_LATENCY=10,ALGORITHM_TYPE=3,DIVISOR_WIDTH=16,DIVIDEND_WIDTH=64,SIGNED_B=1,DIVCLK_SEL=1,FRACTIONAL_B=1,FRACTIONAL_WIDTH=16,C_HAS_DIV_BY_ZERO=0,C_THROTTLE_SCHEME=3,C_TLAST_RESOLUTION=0,C_HAS_S_AXIS_DIVISOR_TUSER=0,C_HAS_S_AXIS_DIVISOR_TLAST=0,C_S_AXIS_DIVISOR_TDATA_WIDTH=16,C_S_AXIS_DIVISOR_TUSER_WIDTH=1,C_HAS_S_AXIS_DIVIDEND_TUSER=0,C_HAS_S_AXIS_DIVIDEND_TLAST=0,C_S_AXIS_DIVIDEND_TDATA_WIDTH=64,C_S_AXIS_DIVIDEND_TUSER_WIDTH=1,C_M_AXIS_DOUT_TDATA_WIDTH=80,C_M_AXIS_DOUT_TUSER_WIDTH=1}";
+  attribute core_generation_info of div_gen_0 : entity is "div_gen_0,div_gen_v5_1_24,{x_ipProduct=Vivado 2025.1,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=div_gen,x_ipVersion=5.1,x_ipCoreRevision=24,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_XDEVICEFAMILY=zynquplus,C_HAS_ARESETN=0,C_HAS_ACLKEN=0,C_LATENCY=10,ALGORITHM_TYPE=3,DIVISOR_WIDTH=16,DIVIDEND_WIDTH=64,SIGNED_B=1,DIVCLK_SEL=1,FRACTIONAL_B=1,FRACTIONAL_WIDTH=16,C_HAS_DIV_BY_ZERO=0,C_THROTTLE_SCHEME=3,C_TLAST_RESOLUTION=0,C_HAS_S_AXIS_DIVISOR_TUSER=0,C_HAS_S_AXIS_DIVISOR_TLAST=0,C_S_AXIS_DIVISOR_TDATA_WIDTH=16,C_S_AXIS_DIVISOR_TUSER_WIDTH=1,C_HAS_S_AXIS_DIVIDEND_TUSER=0,C_HAS_S_AXIS_DIVIDEND_TLAST=0,C_S_AXIS_DIVIDEND_TDATA_WIDTH=64,C_S_AXIS_DIVIDEND_TUSER_WIDTH=1,C_M_AXIS_DOUT_TDATA_WIDTH=80,C_M_AXIS_DOUT_TUSER_WIDTH=1}";
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of div_gen_0 : entity is "yes";
 end div_gen_0;

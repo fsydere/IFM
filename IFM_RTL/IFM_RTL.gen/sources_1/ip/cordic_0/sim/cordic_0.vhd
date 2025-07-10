@@ -144,7 +144,7 @@ BEGIN
       C_CORDIC_FUNCTION => 3,
       C_COARSE_ROTATE => 1,
       C_DATA_FORMAT => 0,
-      C_XDEVICEFAMILY => "zynq",
+      C_XDEVICEFAMILY => "zynquplus",
       C_HAS_ACLKEN => 0,
       C_HAS_ACLK => 1,
       C_HAS_S_AXIS_CARTESIAN => 1,

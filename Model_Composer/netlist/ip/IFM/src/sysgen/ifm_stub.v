@@ -5,15 +5,19 @@ module ifm_stub (
   input [16-1:0] imagpart,
   input [16-1:0] realpart,
   input clk,
-  output [82-1:0] gateway_out,
-  output [82-1:0] gateway_out1
+  output [82-1:0] estimated_frequency_2_delay,
+  output [82-1:0] estimated_frequency_4_delay,
+  output [1-1:0] estimated_frequency_2_delay_valid,
+  output [1-1:0] estimated_frequency_4_delay_valid
 );
   ifm sysgen_dut (
     .datavalid(datavalid),
     .imagpart(imagpart),
     .realpart(realpart),
     .clk(clk),
-    .gateway_out(gateway_out),
-    .gateway_out1(gateway_out1)
+    .estimated_frequency_2_delay(estimated_frequency_2_delay),
+    .estimated_frequency_4_delay(estimated_frequency_4_delay),
+    .estimated_frequency_2_delay_valid(estimated_frequency_2_delay_valid),
+    .estimated_frequency_4_delay_valid(estimated_frequency_4_delay_valid)
   );
 endmodule

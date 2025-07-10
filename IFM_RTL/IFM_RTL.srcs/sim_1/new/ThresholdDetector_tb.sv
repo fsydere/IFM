@@ -48,11 +48,11 @@ module ThresholdDetector_tb();
     .dataValid(DataValid) 
     );
     
-    // Clock generation (300 MHz)
+    // Clock generation: 300 MHz => 3.333 ns period
+    realtime half_period = 1.66666667;
     initial begin
         clk = 0;
-        forever #1.6665 clk = ~clk;  // 3.333 ns period
-//        forever #5 clk = ~clk;  // 3.333 ns period
+        forever #half_period clk = ~clk;
     end
     
     // Test variables
@@ -70,6 +70,10 @@ module ThresholdDetector_tb();
         // Open data file
         file = $fopen("../../../../../SystemInputs/Fs_300_Fc_25MHz_PW_10us_PRI_100us_SNR_10dB_real.txt", "r");
         file2 = $fopen("../../../../../SystemInputs/Fs_300_Fc_25MHz_PW_10us_PRI_100us_SNR_10dB_imag.txt", "r");
+//        file = $fopen("../../../../../SystemInputs/Fs_300_Fc_25MHz_PW_10us_PRI_100us_SNR_20dB_real.txt", "r");
+//        file2 = $fopen("../../../../../SystemInputs/Fs_300_Fc_25MHz_PW_10us_PRI_100us_SNR_20dB_imag.txt", "r");
+//        file = $fopen("../../../../../SystemInputs/Fs_300_Fc_25MHz_PW_10us_PRI_100us_SNR_40dB_real.txt", "r");
+//        file2 = $fopen("../../../../../SystemInputs/Fs_300_Fc_25MHz_PW_10us_PRI_100us_SNR_40dB_imag.txt", "r");
         if (file == 0) begin
             $display("Error: Could not open input_data.txt");
             $finish;
@@ -101,4 +105,3 @@ module ThresholdDetector_tb();
     end
     
 endmodule
-

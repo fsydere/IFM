@@ -8,24 +8,27 @@
   **** SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
   **** IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
   **** SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
-  **** Start of session at: Sun Jul  6 15:28:26 2025
+  **** Start of session at: Wed Jul  9 21:47:01 2025
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source div_gen_0.tcl -notrace
-Command: synth_design -top div_gen_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/2025.1/Vivado/data/ip'.
+Command: synth_design -top div_gen_0 -part xczu9eg-ffvb1156-2-e -incremental_mode off -mode out_of_context
 Starting synth_design
-Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
-INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
-INFO: [Device 21-403] Loading part xc7z020clg400-1
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu9eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu9eg'
+INFO: [Device 21-403] Loading part xczu9eg-ffvb1156-2-e
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 10060
+INFO: [Synth 8-7075] Helper process launched with PID 24800
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1236.992 ; gain = 494.520
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1751.184 ; gain = 213.066
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'div_gen_0' [c:/Users/fsydere/Workspace/IFM/IFM_RTL/IFM_RTL.gen/sources_1/ip/div_gen_0/synth/div_gen_0.vhd:73]
-	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_XDEVICEFAMILY bound to: zynquplus - type: string 
 	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
 	Parameter C_HAS_ACLKEN bound to: 0 - type: integer 
 	Parameter C_LATENCY bound to: 10 - type: integer 
@@ -60,54 +63,54 @@ WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized
 WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_10_viv__parameterized71 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized71 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port PENULT_DIGIT in module quotient_collector is either unconnected or has no load
-WARNING: [Synth 8-7129] Port CEA1 in module xbip_dsp48e1_wrapper_v3_0__parameterized1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port CEA2 in module xbip_dsp48e1_wrapper_v3_0__parameterized1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port CEB1 in module xbip_dsp48e1_wrapper_v3_0__parameterized1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port CEB2 in module xbip_dsp48e1_wrapper_v3_0__parameterized1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port CEAD in module xbip_dsp48e1_wrapper_v3_0__parameterized1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port CED in module xbip_dsp48e1_wrapper_v3_0__parameterized1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port CEC in module xbip_dsp48e1_wrapper_v3_0__parameterized1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port CECARRYIN in module xbip_dsp48e1_wrapper_v3_0__parameterized1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port CECTRL in module xbip_dsp48e1_wrapper_v3_0__parameterized1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port CEALUMODE in module xbip_dsp48e1_wrapper_v3_0__parameterized1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port CEINMODE in module xbip_dsp48e1_wrapper_v3_0__parameterized1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port CEM in module xbip_dsp48e1_wrapper_v3_0__parameterized1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port CEP in module xbip_dsp48e1_wrapper_v3_0__parameterized1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SCLRA in module xbip_dsp48e1_wrapper_v3_0__parameterized1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SCLRB in module xbip_dsp48e1_wrapper_v3_0__parameterized1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SCLRC in module xbip_dsp48e1_wrapper_v3_0__parameterized1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SCLRD in module xbip_dsp48e1_wrapper_v3_0__parameterized1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SCLRALLCARRYIN in module xbip_dsp48e1_wrapper_v3_0__parameterized1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SCLRCTRL in module xbip_dsp48e1_wrapper_v3_0__parameterized1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SCLRALUMODE in module xbip_dsp48e1_wrapper_v3_0__parameterized1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SCLRINMODE in module xbip_dsp48e1_wrapper_v3_0__parameterized1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SCLRM in module xbip_dsp48e1_wrapper_v3_0__parameterized1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SCLRP in module xbip_dsp48e1_wrapper_v3_0__parameterized1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port CE in module xbip_dsp48e1_wrapper_v3_0__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SCLR in module xbip_dsp48e1_wrapper_v3_0__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port CEA1 in module xbip_dsp48e1_wrapper_v3_0__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port CEA2 in module xbip_dsp48e1_wrapper_v3_0__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port CEB1 in module xbip_dsp48e1_wrapper_v3_0__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port CEB2 in module xbip_dsp48e1_wrapper_v3_0__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port CEAD in module xbip_dsp48e1_wrapper_v3_0__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port CED in module xbip_dsp48e1_wrapper_v3_0__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port CEC in module xbip_dsp48e1_wrapper_v3_0__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port CECARRYIN in module xbip_dsp48e1_wrapper_v3_0__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port CECTRL in module xbip_dsp48e1_wrapper_v3_0__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port CEALUMODE in module xbip_dsp48e1_wrapper_v3_0__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port CEINMODE in module xbip_dsp48e1_wrapper_v3_0__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port CEM in module xbip_dsp48e1_wrapper_v3_0__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port CEP in module xbip_dsp48e1_wrapper_v3_0__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SCLRA in module xbip_dsp48e1_wrapper_v3_0__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SCLRB in module xbip_dsp48e1_wrapper_v3_0__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SCLRC in module xbip_dsp48e1_wrapper_v3_0__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SCLRD in module xbip_dsp48e1_wrapper_v3_0__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SCLRALLCARRYIN in module xbip_dsp48e1_wrapper_v3_0__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SCLRCTRL in module xbip_dsp48e1_wrapper_v3_0__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SCLRALUMODE in module xbip_dsp48e1_wrapper_v3_0__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SCLRINMODE in module xbip_dsp48e1_wrapper_v3_0__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SCLRM in module xbip_dsp48e1_wrapper_v3_0__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port SCLRP in module xbip_dsp48e1_wrapper_v3_0__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CEA1 in module xbip_dsp48e2_wrapper_v3_0__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CEA2 in module xbip_dsp48e2_wrapper_v3_0__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CEB1 in module xbip_dsp48e2_wrapper_v3_0__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CEB2 in module xbip_dsp48e2_wrapper_v3_0__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CEAD in module xbip_dsp48e2_wrapper_v3_0__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CED in module xbip_dsp48e2_wrapper_v3_0__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CEC in module xbip_dsp48e2_wrapper_v3_0__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CECARRYIN in module xbip_dsp48e2_wrapper_v3_0__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CECTRL in module xbip_dsp48e2_wrapper_v3_0__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CEALUMODE in module xbip_dsp48e2_wrapper_v3_0__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CEINMODE in module xbip_dsp48e2_wrapper_v3_0__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CEM in module xbip_dsp48e2_wrapper_v3_0__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CEP in module xbip_dsp48e2_wrapper_v3_0__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLRA in module xbip_dsp48e2_wrapper_v3_0__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLRB in module xbip_dsp48e2_wrapper_v3_0__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLRC in module xbip_dsp48e2_wrapper_v3_0__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLRD in module xbip_dsp48e2_wrapper_v3_0__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLRALLCARRYIN in module xbip_dsp48e2_wrapper_v3_0__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLRCTRL in module xbip_dsp48e2_wrapper_v3_0__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLRALUMODE in module xbip_dsp48e2_wrapper_v3_0__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLRINMODE in module xbip_dsp48e2_wrapper_v3_0__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLRM in module xbip_dsp48e2_wrapper_v3_0__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLRP in module xbip_dsp48e2_wrapper_v3_0__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_dsp48e2_wrapper_v3_0__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_dsp48e2_wrapper_v3_0__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CEA1 in module xbip_dsp48e2_wrapper_v3_0__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CEA2 in module xbip_dsp48e2_wrapper_v3_0__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CEB1 in module xbip_dsp48e2_wrapper_v3_0__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CEB2 in module xbip_dsp48e2_wrapper_v3_0__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CEAD in module xbip_dsp48e2_wrapper_v3_0__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CED in module xbip_dsp48e2_wrapper_v3_0__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CEC in module xbip_dsp48e2_wrapper_v3_0__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CECARRYIN in module xbip_dsp48e2_wrapper_v3_0__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CECTRL in module xbip_dsp48e2_wrapper_v3_0__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CEALUMODE in module xbip_dsp48e2_wrapper_v3_0__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CEINMODE in module xbip_dsp48e2_wrapper_v3_0__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CEM in module xbip_dsp48e2_wrapper_v3_0__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CEP in module xbip_dsp48e2_wrapper_v3_0__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLRA in module xbip_dsp48e2_wrapper_v3_0__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLRB in module xbip_dsp48e2_wrapper_v3_0__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLRC in module xbip_dsp48e2_wrapper_v3_0__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLRD in module xbip_dsp48e2_wrapper_v3_0__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLRALLCARRYIN in module xbip_dsp48e2_wrapper_v3_0__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLRCTRL in module xbip_dsp48e2_wrapper_v3_0__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLRALUMODE in module xbip_dsp48e2_wrapper_v3_0__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLRINMODE in module xbip_dsp48e2_wrapper_v3_0__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLRM in module xbip_dsp48e2_wrapper_v3_0__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLRP in module xbip_dsp48e2_wrapper_v3_0__parameterized0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_10_viv__parameterized8 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_10_viv__parameterized8 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized8 is either unconnected or has no load
@@ -153,18 +156,18 @@ WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_10_viv__parameterized
 WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_10_viv__parameterized65 is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1592.941 ; gain = 850.469
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2008.863 ; gain = 470.746
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1592.941 ; gain = 850.469
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2008.863 ; gain = 470.746
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1592.941 ; gain = 850.469
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2008.863 ; gain = 470.746
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1592.941 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 2008.863 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 78 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -177,30 +180,32 @@ Parsing XDC File [C:/Users/fsydere/Workspace/IFM/IFM_RTL/IFM_RTL.runs/div_gen_0_
 Finished Parsing XDC File [C:/Users/fsydere/Workspace/IFM/IFM_RTL/IFM_RTL.runs/div_gen_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1592.941 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2088.199 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
+  A total of 9 instances were transformed.
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 9 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 1592.941 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 2088.543 ; gain = 0.344
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1592.941 ; gain = 850.469
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2088.543 ; gain = 550.426
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
-Loading part: xc7z020clg400-1
+Loading part: xczu9eg-ffvb1156-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1592.941 ; gain = 850.469
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2088.543 ; gain = 550.426
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1592.941 ; gain = 850.469
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2088.543 ; gain = 550.426
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1592.941 ; gain = 850.469
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2088.543 ; gain = 550.426
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-223] decloning instance 'U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_fixed.i_fix_to_flt/i_fpo/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized2) to 'U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_fixed.i_fix_to_flt/i_fpo/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_RND1_DEL'
 INFO: [Synth 8-223] decloning instance 'U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_fixed.i_fix_to_flt/i_fpo/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_DELAY' (delay__parameterized2) to 'U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_fixed.i_fix_to_flt/i_fpo/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_RND1_DELAY'
@@ -221,8 +226,8 @@ Finished RTL Component Statistics
 Start Part Resource Summary
 ---------------------------------------------------------------------------------
 Part Resources:
-DSPs: 220 (col length:60)
-BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+DSPs: 2520 (col length:168)
+BRAMs: 1824 (col length: RAMB18 168 RAMB36 84)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
@@ -233,20 +238,20 @@ WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 WARNING: [Synth 8-7061] Pipelining failed and skipped for datapath ("datapath__3") because of no pipeline register is available
 WARNING: [Synth 8-7061] Pipelining failed and skipped for datapath ("datapath") because of no pipeline register is available
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1592.941 ; gain = 850.469
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2088.543 ; gain = 550.426
 ---------------------------------------------------------------------------------
  Sort Area is  gDSP.gDSP_only.iDSP/inferred_dsp.reg_mult.m_reg_reg_0 : 0 0 : 2623 2623 : Used 1 time 100
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1633.059 ; gain = 890.586
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2665.352 ; gain = 1127.234
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1638.285 ; gain = 895.812
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2675.246 ; gain = 1137.129
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
@@ -442,7 +447,7 @@ RETIMING: backward move register U0/i_synth/i_nonzero_fract.i_synth/opt_high_rad
 INFO: [Synth 8-7052] The timing for the instance U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_estimator/lut_out2_pre_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7052] The timing for the instance U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_estimator/lut_out1_pre_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1657.391 ; gain = 914.918
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 2693.809 ; gain = 1155.691
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -460,37 +465,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1883.590 ; gain = 1141.117
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2917.035 ; gain = 1378.918
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1883.590 ; gain = 1141.117
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 2917.035 ; gain = 1378.918
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1883.590 ; gain = 1141.117
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 2917.035 ; gain = 1378.918
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1883.590 ; gain = 1141.117
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 2917.035 ; gain = 1378.918
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1886.559 ; gain = 1144.086
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 2917.035 ; gain = 1378.918
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1886.559 ; gain = 1144.086
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 2917.035 ; gain = 1378.918
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -501,13 +506,13 @@ DSP Final Report (the ' indicates corresponding REG is set)
 |Module Name                                  | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
 +---------------------------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 |dsp                                          | (A*B)'      | 30     | 16     | -      | -      | 36     | 0    | 0    | -    | -    | -     | 0    | 1    | 
-|xbip_dsp48e1_wrapper_v3_0                    | C+A*B       | 30     | 18     | 40     | -      | 48     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
-|xbip_dsp48e1_wrapper_v3_0__parameterized0_9  | C+A:B       | 0      | 15     | 32     | -      | 48     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
-|xbip_dsp48e1_wrapper_v3_0__parameterized1_10 | Dynamic     | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
-|xbip_dsp48e1_wrapper_v3_0__parameterized0_7  | C+A:B       | 15     | 18     | 33     | -      | 48     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
-|xbip_dsp48e1_wrapper_v3_0__parameterized1_8  | Dynamic     | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
-|xbip_dsp48e1_wrapper_v3_0__parameterized0    | C+A:B       | 30     | 18     | 33     | -      | 48     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
-|xbip_dsp48e1_wrapper_v3_0__parameterized1    | Dynamic     | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|xbip_dsp48e2_wrapper_v3_0                    | C+A*B       | 30     | 18     | 40     | -      | 48     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|xbip_dsp48e2_wrapper_v3_0__parameterized0_9  | C+A:B       | 0      | 15     | 32     | -      | 48     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|xbip_dsp48e2_wrapper_v3_0__parameterized1_10 | Dynamic     | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|xbip_dsp48e2_wrapper_v3_0__parameterized0_7  | C+A:B       | 15     | 18     | 33     | -      | 48     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|xbip_dsp48e2_wrapper_v3_0__parameterized1_8  | Dynamic     | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|xbip_dsp48e2_wrapper_v3_0__parameterized0    | C+A:B       | 30     | 18     | 33     | -      | 48     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|xbip_dsp48e2_wrapper_v3_0__parameterized1    | Dynamic     | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
 +---------------------------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 
 
@@ -518,52 +523,60 @@ Report BlackBoxes:
 +-+--------------+----------+
 
 Report Cell Usage: 
-+------+---------+------+
-|      |Cell     |Count |
-+------+---------+------+
-|1     |CARRY4   |    22|
-|2     |DSP48E1  |     8|
-|6     |LUT1     |     9|
-|7     |LUT2     |    94|
-|8     |LUT3     |   221|
-|9     |LUT4     |    54|
-|10    |LUT5     |    55|
-|11    |LUT6     |   192|
-|12    |MUXCY    |    37|
-|13    |MUXF7    |     4|
-|14    |MUXF8    |     2|
-|15    |RAMB18E1 |     2|
-|17    |SRL16E   |     2|
-|18    |XORCY    |    32|
-|19    |FDRE     |   501|
-+------+---------+------+
++------+----------------+------+
+|      |Cell            |Count |
++------+----------------+------+
+|1     |CARRY8          |    11|
+|2     |DSP_ALU         |     8|
+|4     |DSP_A_B_DATA    |     8|
+|5     |DSP_C_DATA      |     8|
+|6     |DSP_MULTIPLIER  |     8|
+|8     |DSP_M_DATA      |     8|
+|9     |DSP_OUTPUT      |     8|
+|11    |DSP_PREADD      |     8|
+|12    |DSP_PREADD_DATA |     8|
+|15    |LUT1            |     9|
+|16    |LUT2            |    94|
+|17    |LUT3            |   221|
+|18    |LUT4            |    54|
+|19    |LUT5            |    55|
+|20    |LUT6            |   192|
+|21    |MUXCY           |    37|
+|22    |MUXF7           |     4|
+|23    |MUXF8           |     2|
+|24    |RAMB18E2        |     2|
+|26    |SRL16E          |     2|
+|27    |XORCY           |    32|
+|28    |FDRE            |   501|
++------+----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1886.559 ; gain = 1144.086
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 2917.035 ; gain = 1378.918
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 97 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:23 . Memory (MB): peak = 1886.559 ; gain = 1144.086
-Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1886.559 ; gain = 1144.086
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:21 . Memory (MB): peak = 2917.035 ; gain = 1299.238
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2917.035 ; gain = 1378.918
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1886.559 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 107 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 2917.035 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 94 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1886.559 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2917.035 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 11 instances were transformed.
-  (MUXCY,XORCY) => CARRY4: 11 instances
+  A total of 15 instances were transformed.
+  (CARRY4) => CARRY8: 7 instances
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 8 instances
 
-Synth Design complete | Checksum: 3dc420e8
+Synth Design complete | Checksum: 8a0f82e6
 INFO: [Common 17-83] Releasing license: Synthesis
-33 Infos, 103 Warnings, 0 Critical Warnings and 0 Errors encountered.
+37 Infos, 103 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1886.559 ; gain = 1376.867
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1886.559 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2917.035 ; gain = 2364.238
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2917.035 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/fsydere/Workspace/IFM/IFM_RTL/IFM_RTL.runs/div_gen_0_synth_1/div_gen_0.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP div_gen_0, cache-ID = ab2e9a9e51813018
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP div_gen_0, cache-ID = a9201805d51e05cd
 INFO: [Coretcl 2-1174] Renamed 56 cell refs.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1886.559 ; gain = 0.000
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2917.035 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/fsydere/Workspace/IFM/IFM_RTL/IFM_RTL.runs/div_gen_0_synth_1/div_gen_0.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file div_gen_0_utilization_synth.rpt -pb div_gen_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sun Jul  6 15:29:01 2025...
+INFO: [Common 17-206] Exiting Vivado at Wed Jul  9 21:47:42 2025...

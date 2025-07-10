@@ -81,7 +81,7 @@ end
 for i = 1:length(SNR_dB)
     data = timeseries(NoisySignals(:,i), TimeVector);
     
-    file_name = sprintf('../System_Inputs/Fs_%d_Fc_%dMHz_PW_%dus_PRI_%dus_SNR_%ddB.mat', ...
+    file_name = sprintf('../System_Inputs/Fs_%dMHz_Fc_%dMHz_PW_%dus_PRI_%dus_SNR_%ddB.mat', ...
         Fs/1e6, Fc/1e6, PW*1e6, PRI*1e6, SNR_dB(i));
     
     save(file_name, '-v7.3', 'data');  
@@ -102,9 +102,9 @@ for i = 1:length(SNR_dB)
     imag_part = int16(imag_part);
 
     % Dosya adını oluştur
-    file_name_real = sprintf('../System_Inputs/Fs_%d_Fc_%dMHz_PW_%dus_PRI_%dus_SNR_%ddB_real.txt', ...
+    file_name_real = sprintf('../System_Inputs/Fs_%dMHz_Fc_%dMHz_PW_%dus_PRI_%dus_SNR_%ddB_real.txt', ...
                         Fs/1e6, Fc/1e6, PW*1e6, PRI*1e6, SNR_dB(i));
-    file_name_imag = sprintf('../System_Inputs/Fs_%d_Fc_%dMHz_PW_%dus_PRI_%dus_SNR_%ddB_imag.txt', ...
+    file_name_imag = sprintf('../System_Inputs/Fs_%dMHz_Fc_%dMHz_PW_%dus_PRI_%dus_SNR_%ddB_imag.txt', ...
                         Fs/1e6, Fc/1e6, PW*1e6, PRI*1e6, SNR_dB(i));
 
     % Dosyayı aç (yazma modunda)

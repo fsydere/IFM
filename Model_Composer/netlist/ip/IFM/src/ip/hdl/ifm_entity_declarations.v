@@ -327,6 +327,14 @@ module sysgen_relational_639524f7d0 (
   assign op = result_28_3_rel;
 endmodule
 `timescale 1 ns / 10 ps
+module sysgen_constant_4ef91a5823 (
+  output [(16 - 1):0] op,
+  input clk,
+  input ce,
+  input clr);
+  assign op = 16'b0000000000000100;
+endmodule
+`timescale 1 ns / 10 ps
 module sysgen_negate_edd45ee5a2 (
   input [(16 - 1):0] ip,
   output [(17 - 1):0] op,
@@ -375,14 +383,6 @@ module sysgen_negate_edd45ee5a2 (
   assign op_mem_48_20_front_din = internal_ip_join_30_1;
   assign op_mem_48_20_push_front_pop_back_en = 1'b1;
   assign op = op_mem_48_20_back;
-endmodule
-`timescale 1 ns / 10 ps
-module sysgen_constant_4ef91a5823 (
-  output [(16 - 1):0] op,
-  input clk,
-  input ce,
-  input clr);
-  assign op = 16'b0000000000000100;
 endmodule
 `timescale 1 ns / 10 ps
 module sysgen_logical_2283bfdd69 (

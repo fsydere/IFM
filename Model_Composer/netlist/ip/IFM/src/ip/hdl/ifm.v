@@ -9,29 +9,32 @@ module ifm_2_delay_avarage_freq (
   input [1-1:0] inst_freq_valid,
   input clk_1,
   input ce_1,
-  output [82-1:0] espected_frequency
+  output [82-1:0] espected_frequency,
+  output [1-1:0] espected_frequency_valid
 );
-  wire [1-1:0] delay_q_net;
-  wire [64-1:0] convert1_dout_net;
-  wire [1-1:0] logical_y_net;
-  wire ce_net;
-  wire [1-1:0] delay1_q_net;
-  wire [36-1:0] cmult_p_net;
-  wire [64-1:0] convert_dout_net;
-  wire [16-1:0] counter_op_net;
   wire [82-1:0] register_q_net;
-  wire [16-1:0] constant_op_net;
-  wire [64-1:0] accumulator1_q_net;
   wire clk_net;
+  wire ce_net;
+  wire [16-1:0] counter_op_net;
+  wire [16-1:0] constant_op_net;
+  wire [64-1:0] convert1_dout_net;
+  wire [1-1:0] delay2_q_net;
   wire [1-1:0] delay1_q_net_x0;
-  wire divide_b_tready_net;
-  wire logical1_y_net;
-  wire [1-1:0] inverter_op_net;
-  wire [82-1:0] divide_op_net;
+  wire [1-1:0] delay_q_net;
+  wire [64-1:0] convert_dout_net;
+  wire [1-1:0] delay1_q_net;
+  wire [1-1:0] logical_y_net;
+  wire [36-1:0] cmult_p_net;
+  wire [64-1:0] accumulator1_q_net;
   wire divide_a_tready_net;
-  wire divide_result_tvalid_net;
   wire [1-1:0] relational_op_net;
+  wire logical1_y_net;
+  wire divide_result_tvalid_net;
+  wire [82-1:0] divide_op_net;
+  wire divide_b_tready_net;
+  wire [1-1:0] inverter_op_net;
   assign espected_frequency = register_q_net;
+  assign espected_frequency_valid = delay2_q_net;
   assign cmult_p_net = inst_freq;
   assign delay1_q_net = inst_freq_valid;
   assign clk_net = clk_1;
@@ -187,6 +190,223 @@ module ifm_2_delay_avarage_freq (
     .b(constant_op_net),
     .op(relational_op_net)
   );
+  ifm_xldelay #(
+    .latency(1),
+    .reg_retiming(0),
+    .reset(0),
+    .width(1)
+  )
+  delay2 (
+    .en(1'b1),
+    .rst(1'b0),
+    .d(divide_result_tvalid_net),
+    .clk(clk_net),
+    .ce(ce_net),
+    .q(delay2_q_net)
+  );
+endmodule
+`timescale 1 ns / 10 ps
+// Generated from Simulink block IFM_ModelComposer/IFM/2 Delay Avarage Freq1
+module ifm_2_delay_avarage_freq1 (
+  input [36-1:0] inst_freq,
+  input [1-1:0] inst_freq_valid,
+  input clk_1,
+  input ce_1,
+  output [82-1:0] espected_frequency,
+  output [1-1:0] espected_frequency_valid
+);
+  wire [1-1:0] delay2_q_net;
+  wire ce_net;
+  wire [36-1:0] cmult_p_net;
+  wire [82-1:0] register_q_net;
+  wire [1-1:0] delay1_q_net;
+  wire clk_net;
+  wire [64-1:0] convert1_dout_net;
+  wire [64-1:0] convert_dout_net;
+  wire [1-1:0] delay_q_net;
+  wire [64-1:0] accumulator1_q_net;
+  wire [1-1:0] logical_y_net;
+  wire [1-1:0] delay1_q_net_x0;
+  wire [1-1:0] divide_result_tvalid_net;
+  wire divide_a_tready_net;
+  wire divide_b_tready_net;
+  wire [16-1:0] counter_op_net;
+  wire [16-1:0] constant_op_net;
+  wire logical1_y_net;
+  wire [1-1:0] inverter_op_net;
+  wire [82-1:0] divide_op_net;
+  wire [1-1:0] relational_op_net;
+  assign espected_frequency = register_q_net;
+  assign espected_frequency_valid = delay2_q_net;
+  assign cmult_p_net = inst_freq;
+  assign delay1_q_net = inst_freq_valid;
+  assign clk_net = clk_1;
+  assign ce_net = ce_1;
+  sysgen_accum_0932bf0451 accumulator1 (
+    .clr(1'b0),
+    .b(cmult_p_net),
+    .rst(delay1_q_net_x0),
+    .en(delay1_q_net),
+    .clk(clk_net),
+    .ce(ce_net),
+    .q(accumulator1_q_net)
+  );
+  sysgen_constant_4ef91a5823 constant (
+    .clk(1'b0),
+    .ce(1'b0),
+    .clr(1'b0),
+    .op(constant_op_net)
+  );
+  ifm_xlconvert #(
+    .bool_conversion(0),
+    .din_arith(1),
+    .din_bin_pt(0),
+    .din_width(16),
+    .dout_arith(2),
+    .dout_bin_pt(26),
+    .dout_width(64),
+    .latency(0),
+    .overflow(`xlWrap),
+    .quantization(`xlTruncate)
+  )
+  convert (
+    .clr(1'b0),
+    .en(1'b1),
+    .din(counter_op_net),
+    .clk(clk_net),
+    .ce(ce_net),
+    .dout(convert_dout_net)
+  );
+  ifm_xlconvert #(
+    .bool_conversion(0),
+    .din_arith(2),
+    .din_bin_pt(26),
+    .din_width(64),
+    .dout_arith(2),
+    .dout_bin_pt(26),
+    .dout_width(64),
+    .latency(0),
+    .overflow(`xlWrap),
+    .quantization(`xlTruncate)
+  )
+  convert1 (
+    .clr(1'b0),
+    .en(1'b1),
+    .din(accumulator1_q_net),
+    .clk(clk_net),
+    .ce(ce_net),
+    .dout(convert1_dout_net)
+  );
+  ifm_xlcounter_free #(
+    .core_name0("ifm_c_counter_binary_v12_0_i0"),
+    .op_arith(`xlUnsigned),
+    .op_width(16)
+  )
+  counter (
+    .clr(1'b0),
+    .rst(delay1_q_net_x0),
+    .en(delay1_q_net),
+    .clk(clk_net),
+    .ce(ce_net),
+    .op(counter_op_net)
+  );
+  ifm_xldelay #(
+    .latency(1),
+    .reg_retiming(0),
+    .reset(0),
+    .width(1)
+  )
+  delay (
+    .en(1'b1),
+    .rst(1'b0),
+    .d(delay1_q_net),
+    .clk(clk_net),
+    .ce(ce_net),
+    .q(delay_q_net)
+  );
+  ifm_xldelay #(
+    .latency(1),
+    .reg_retiming(0),
+    .reset(0),
+    .width(1)
+  )
+  delay1 (
+    .en(1'b1),
+    .rst(1'b0),
+    .d(logical_y_net),
+    .clk(clk_net),
+    .ce(ce_net),
+    .q(delay1_q_net_x0)
+  );
+  ifm_xldelay #(
+    .latency(1),
+    .reg_retiming(0),
+    .reset(0),
+    .width(1)
+  )
+  delay2 (
+    .en(1'b1),
+    .rst(1'b0),
+    .d(divide_result_tvalid_net),
+    .clk(clk_net),
+    .ce(ce_net),
+    .q(delay2_q_net)
+  );
+  xldivider_generator_35fbedb0beb337359c74de660051a815 divide (
+    .a_tvalid(logical_y_net),
+    .a(convert1_dout_net),
+    .b_tvalid(logical1_y_net),
+    .b(convert_dout_net),
+    .clk(clk_net),
+    .ce(ce_net),
+    .a_tready(divide_a_tready_net),
+    .b_tready(divide_b_tready_net),
+    .result_tvalid(divide_result_tvalid_net),
+    .op(divide_op_net)
+  );
+  sysgen_inverter_c9b1913825 inverter (
+    .clr(1'b0),
+    .ip(delay1_q_net),
+    .clk(clk_net),
+    .ce(ce_net),
+    .op(inverter_op_net)
+  );
+  sysgen_logical_5f99e03888 logical (
+    .clk(1'b0),
+    .ce(1'b0),
+    .clr(1'b0),
+    .d0(delay_q_net),
+    .d1(inverter_op_net),
+    .y(logical_y_net)
+  );
+  sysgen_logical_5f99e03888 logical1 (
+    .clk(1'b0),
+    .ce(1'b0),
+    .clr(1'b0),
+    .d0(logical_y_net),
+    .d1(relational_op_net),
+    .y(logical1_y_net)
+  );
+  ifm_xlregister #(
+    .d_width(82),
+    .init_value(82'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000)
+  )
+  register (
+    .rst(1'b0),
+    .d(divide_op_net),
+    .en(divide_result_tvalid_net),
+    .clk(clk_net),
+    .ce(ce_net),
+    .q(register_q_net)
+  );
+  sysgen_relational_639524f7d0 relational (
+    .clk(1'b0),
+    .ce(1'b0),
+    .clr(1'b0),
+    .a(counter_op_net),
+    .b(constant_op_net),
+    .op(relational_op_net)
+  );
 endmodule
 `timescale 1 ns / 10 ps
 // Generated from Simulink block IFM_ModelComposer/IFM/2 Delay Instantenous Frequency
@@ -201,26 +421,26 @@ module ifm_2_delay_instantenous_frequency (
   output [36-1:0] inst_freq,
   output [1-1:0] inst_freq_valid
 );
-  wire [35-1:0] product_p_re_net;
-  wire [35-1:0] product_p_im_net;
-  wire [17-1:0] convert4_dout_net;
-  wire [16-1:0] d2_q_net;
   wire [1-1:0] delay1_q_net;
-  wire [16-1:0] real_component_q_net;
-  wire [16-1:0] imag_component_q_net;
-  wire [36-1:0] cmult_p_net;
-  wire ce_net;
-  wire [1-1:0] x2_tap_envelope_y_net;
-  wire [16-1:0] d2_1_q_net;
-  wire clk_net;
-  wire delay_q_net;
-  wire [35-1:0] convert1_dout_net;
-  wire cordic_6_0_m_axis_dout_tvalid_net;
-  wire [35-1:0] convert2_dout_net;
   wire [16-1:0] cordic_6_0_m_axis_dout_tdata_phase_net;
+  wire [16-1:0] imag_component_q_net;
+  wire [16-1:0] d2_q_net;
+  wire [16-1:0] d2_1_q_net;
+  wire [1-1:0] x2_tap_envelope_y_net;
+  wire clk_net;
+  wire ce_net;
+  wire [36-1:0] cmult_p_net;
+  wire [16-1:0] real_component_q_net;
+  wire [17-1:0] convert4_dout_net;
   wire [17-1:0] convert_dout_net;
-  wire [17-1:0] negate_op_net;
+  wire [35-1:0] convert2_dout_net;
+  wire cordic_6_0_m_axis_dout_tvalid_net;
+  wire [35-1:0] convert1_dout_net;
+  wire [35-1:0] product_p_im_net;
+  wire delay_q_net;
   wire [17-1:0] convert5_dout_net;
+  wire [17-1:0] negate_op_net;
+  wire [35-1:0] product_p_re_net;
   assign inst_freq = cmult_p_net;
   assign inst_freq_valid = delay1_q_net;
   assign real_component_q_net = real_part;
@@ -418,192 +638,6 @@ module ifm_2_delay_instantenous_frequency (
   );
 endmodule
 `timescale 1 ns / 10 ps
-// Generated from Simulink block IFM_ModelComposer/IFM/4 Delay Avarage Freq
-module ifm_4_delay_avarage_freq (
-  input [36-1:0] inst_freq,
-  input [1-1:0] inst_freq_valid,
-  input clk_1,
-  input ce_1,
-  output [82-1:0] espected_frequency
-);
-  wire [1-1:0] delay_q_net;
-  wire [1-1:0] delay1_q_net;
-  wire [1-1:0] logical_y_net;
-  wire [36-1:0] cmult_p_net;
-  wire [16-1:0] constant_op_net;
-  wire [16-1:0] counter_op_net;
-  wire [64-1:0] accumulator1_q_net;
-  wire [82-1:0] register_q_net;
-  wire [64-1:0] convert_dout_net;
-  wire clk_net;
-  wire ce_net;
-  wire [64-1:0] convert1_dout_net;
-  wire [1-1:0] delay1_q_net_x0;
-  wire [1-1:0] relational_op_net;
-  wire [82-1:0] divide_op_net;
-  wire divide_result_tvalid_net;
-  wire divide_b_tready_net;
-  wire logical1_y_net;
-  wire divide_a_tready_net;
-  wire [1-1:0] inverter_op_net;
-  assign espected_frequency = register_q_net;
-  assign cmult_p_net = inst_freq;
-  assign delay1_q_net = inst_freq_valid;
-  assign clk_net = clk_1;
-  assign ce_net = ce_1;
-  sysgen_accum_0932bf0451 accumulator1 (
-    .clr(1'b0),
-    .b(cmult_p_net),
-    .rst(delay1_q_net_x0),
-    .en(delay1_q_net),
-    .clk(clk_net),
-    .ce(ce_net),
-    .q(accumulator1_q_net)
-  );
-  sysgen_constant_4ef91a5823 constant (
-    .clk(1'b0),
-    .ce(1'b0),
-    .clr(1'b0),
-    .op(constant_op_net)
-  );
-  ifm_xlconvert #(
-    .bool_conversion(0),
-    .din_arith(1),
-    .din_bin_pt(0),
-    .din_width(16),
-    .dout_arith(2),
-    .dout_bin_pt(26),
-    .dout_width(64),
-    .latency(0),
-    .overflow(`xlWrap),
-    .quantization(`xlTruncate)
-  )
-  convert (
-    .clr(1'b0),
-    .en(1'b1),
-    .din(counter_op_net),
-    .clk(clk_net),
-    .ce(ce_net),
-    .dout(convert_dout_net)
-  );
-  ifm_xlconvert #(
-    .bool_conversion(0),
-    .din_arith(2),
-    .din_bin_pt(26),
-    .din_width(64),
-    .dout_arith(2),
-    .dout_bin_pt(26),
-    .dout_width(64),
-    .latency(0),
-    .overflow(`xlWrap),
-    .quantization(`xlTruncate)
-  )
-  convert1 (
-    .clr(1'b0),
-    .en(1'b1),
-    .din(accumulator1_q_net),
-    .clk(clk_net),
-    .ce(ce_net),
-    .dout(convert1_dout_net)
-  );
-  ifm_xlcounter_free #(
-    .core_name0("ifm_c_counter_binary_v12_0_i0"),
-    .op_arith(`xlUnsigned),
-    .op_width(16)
-  )
-  counter (
-    .clr(1'b0),
-    .rst(delay1_q_net_x0),
-    .en(delay1_q_net),
-    .clk(clk_net),
-    .ce(ce_net),
-    .op(counter_op_net)
-  );
-  ifm_xldelay #(
-    .latency(1),
-    .reg_retiming(0),
-    .reset(0),
-    .width(1)
-  )
-  delay (
-    .en(1'b1),
-    .rst(1'b0),
-    .d(delay1_q_net),
-    .clk(clk_net),
-    .ce(ce_net),
-    .q(delay_q_net)
-  );
-  ifm_xldelay #(
-    .latency(1),
-    .reg_retiming(0),
-    .reset(0),
-    .width(1)
-  )
-  delay1 (
-    .en(1'b1),
-    .rst(1'b0),
-    .d(logical_y_net),
-    .clk(clk_net),
-    .ce(ce_net),
-    .q(delay1_q_net_x0)
-  );
-  xldivider_generator_35fbedb0beb337359c74de660051a815 divide (
-    .a_tvalid(logical_y_net),
-    .a(convert1_dout_net),
-    .b_tvalid(logical1_y_net),
-    .b(convert_dout_net),
-    .clk(clk_net),
-    .ce(ce_net),
-    .a_tready(divide_a_tready_net),
-    .b_tready(divide_b_tready_net),
-    .result_tvalid(divide_result_tvalid_net),
-    .op(divide_op_net)
-  );
-  sysgen_inverter_c9b1913825 inverter (
-    .clr(1'b0),
-    .ip(delay1_q_net),
-    .clk(clk_net),
-    .ce(ce_net),
-    .op(inverter_op_net)
-  );
-  sysgen_logical_5f99e03888 logical (
-    .clk(1'b0),
-    .ce(1'b0),
-    .clr(1'b0),
-    .d0(delay_q_net),
-    .d1(inverter_op_net),
-    .y(logical_y_net)
-  );
-  sysgen_logical_5f99e03888 logical1 (
-    .clk(1'b0),
-    .ce(1'b0),
-    .clr(1'b0),
-    .d0(logical_y_net),
-    .d1(relational_op_net),
-    .y(logical1_y_net)
-  );
-  ifm_xlregister #(
-    .d_width(82),
-    .init_value(82'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000)
-  )
-  register (
-    .rst(1'b0),
-    .d(divide_op_net),
-    .en(divide_result_tvalid_net),
-    .clk(clk_net),
-    .ce(ce_net),
-    .q(register_q_net)
-  );
-  sysgen_relational_639524f7d0 relational (
-    .clk(1'b0),
-    .ce(1'b0),
-    .clr(1'b0),
-    .a(counter_op_net),
-    .b(constant_op_net),
-    .op(relational_op_net)
-  );
-endmodule
-`timescale 1 ns / 10 ps
 // Generated from Simulink block IFM_ModelComposer/IFM/4 Delay Instantenous Frequency
 module ifm_4_delay_instantenous_frequency (
   input [16-1:0] real_part,
@@ -616,26 +650,26 @@ module ifm_4_delay_instantenous_frequency (
   output [36-1:0] inst_freq,
   output [1-1:0] inst_freq_valid
 );
-  wire [16-1:0] d4_q_net;
+  wire [35-1:0] convert2_dout_net;
+  wire [35-1:0] product_p_re_net;
+  wire [16-1:0] cordic_6_0_m_axis_dout_tdata_phase_net;
   wire [16-1:0] real_component_q_net;
-  wire ce_net;
-  wire [36-1:0] cmult_p_net;
-  wire [16-1:0] imag_component_q_net;
-  wire [1-1:0] x4_tap_envelope_y_net;
-  wire [1-1:0] delay1_q_net;
   wire [16-1:0] d4_1_q_net;
+  wire [1-1:0] delay1_q_net;
   wire clk_net;
   wire cordic_6_0_m_axis_dout_tvalid_net;
   wire delay_q_net;
-  wire [35-1:0] convert2_dout_net;
   wire [17-1:0] convert_dout_net;
-  wire [35-1:0] product_p_re_net;
-  wire [35-1:0] product_p_im_net;
-  wire [16-1:0] cordic_6_0_m_axis_dout_tdata_phase_net;
+  wire ce_net;
+  wire [16-1:0] imag_component_q_net;
+  wire [16-1:0] d4_q_net;
+  wire [36-1:0] cmult_p_net;
+  wire [1-1:0] x4_tap_envelope_y_net;
   wire [35-1:0] convert1_dout_net;
+  wire [17-1:0] negate_op_net;
+  wire [35-1:0] product_p_im_net;
   wire [17-1:0] convert4_dout_net;
   wire [17-1:0] convert5_dout_net;
-  wire [17-1:0] negate_op_net;
   assign inst_freq = cmult_p_net;
   assign inst_freq_valid = delay1_q_net;
   assign real_component_q_net = real_part;
@@ -849,28 +883,28 @@ module ifm_envelope_detection_x0 (
   output [16-1:0] d4_real,
   output [16-1:0] d4_imag
 );
-  wire [16-1:0] d2_1_q_net;
-  wire [1-1:0] envelope_detector_op_net;
   wire [1-1:0] x2_tap_envelope_y_net;
-  wire [1-1:0] x4_tap_envelope_y_net;
+  wire [16-1:0] d2_q_net;
+  wire [16-1:0] d4_q_net_x0;
+  wire [16-1:0] d4_1_q_net;
   wire [16-1:0] real_component_q_net;
+  wire [1-1:0] x4_tap_envelope_y_net;
+  wire [16-1:0] d2_1_q_net;
   wire [16-1:0] imag_component_q_net;
   wire [48-1:0] delay3_q_net;
-  wire [1-1:0] d1_q_net_x0;
-  wire [16-1:0] d4_1_q_net;
-  wire clk_net;
-  wire ce_net;
-  wire [1-1:0] threshold_delay_q_net;
-  wire [16-1:0] d4_q_net_x0;
   wire [1-1:0] d3_q_net_x0;
-  wire [1-1:0] d2_q_net_x0;
+  wire [16-1:0] d1_1_q_net;
+  wire clk_net;
+  wire [1-1:0] envelope_detector_op_net;
+  wire [1-1:0] threshold_delay_q_net;
+  wire ce_net;
+  wire [1-1:0] d1_q_net_x0;
   wire [1-1:0] d4_q_net;
+  wire [16-1:0] d1_q_net;
+  wire [1-1:0] d2_q_net_x0;
   wire [96-1:0] cmult_p_net;
-  wire [16-1:0] d2_q_net;
   wire [16-1:0] d3_q_net;
   wire [16-1:0] d3_1_q_net;
-  wire [16-1:0] d1_1_q_net;
-  wire [16-1:0] d1_q_net;
   assign envelope_2_delay = x2_tap_envelope_y_net;
   assign envelope_4_delay = x4_tap_envelope_y_net;
   assign d2_real = d2_q_net;
@@ -1096,36 +1130,36 @@ module ifm_threshold_detection (
   output [96-1:0] x6db_linearthreshold,
   output [1-1:0] thresholdvalid
 );
-  wire [1-1:0] convert3_dout_net;
-  wire [16-1:0] real_component_q_net;
-  wire [1-1:0] not_op_net;
-  wire [16-1:0] convert2_dout_net;
+  wire [16-1:0] imag_component_q_net;
   wire [16-1:0] convert1_dout_net;
-  wire [48-1:0] convert4_dout_net;
+  wire [16-1:0] real_component_q_net;
+  wire [48-1:0] delay3_q_net;
   wire [96-1:0] cmult_p_net;
   wire [1-1:0] threshold_delay_q_net;
-  wire [1-1:0] and_y_net;
-  wire [1-1:0] delay2_q_net;
-  wire [16-1:0] imag_component_q_net;
-  wire [15-1:0] constant1_op_net;
+  wire [16-1:0] convert2_dout_net;
   wire clk_net;
-  wire ce_net;
-  wire [48-1:0] delay3_q_net;
-  wire [48-1:0] convert6_dout_net;
-  wire [48-1:0] totalsum_q_net;
-  wire [49-1:0] constant4_op_net;
-  wire [1-1:0] delay_q_net;
-  wire [48-1:0] convert_dout_net;
+  wire [1-1:0] convert3_dout_net;
+  wire [1-1:0] and_y_net;
+  wire [1-1:0] not_op_net;
   wire [32-1:0] sumsquares_s_net;
+  wire [1-1:0] delay2_q_net;
+  wire ce_net;
+  wire [49-1:0] constant4_op_net;
+  wire [48-1:0] convert_dout_net;
+  wire [48-1:0] totalsum_q_net;
+  wire [48-1:0] convert4_dout_net;
   wire [78-1:0] mean_op_net;
-  wire [15-1:0] counter_op_net;
+  wire [48-1:0] convert6_dout_net;
+  wire [15-1:0] constant1_op_net;
   wire [1-1:0] delay1_q_net;
-  wire noisesampledone_op_net;
+  wire [1-1:0] delay_q_net;
   wire mean_result_tvalid_net;
+  wire [15-1:0] counter_op_net;
   wire mean_b_tready_net;
+  wire noisesampledone_op_net;
+  wire mean_a_tready_net;
   wire [32-1:0] squarereal_p_net;
   wire [32-1:0] squarereal1_p_net;
-  wire mean_a_tready_net;
   assign sync_real_part = real_component_q_net;
   assign sync_imag_part = imag_component_q_net;
   assign instantaneous_power = delay3_q_net;
@@ -1420,22 +1454,22 @@ module ifm_envelope_detection (
   output [16-1:0] d4_real,
   output [16-1:0] d4_imag
 );
-  wire [1-1:0] convert3_dout_net;
+  wire clk_net;
+  wire [96-1:0] cmult_p_net;
+  wire [16-1:0] convert2_dout_net;
+  wire ce_net;
   wire [1-1:0] threshold_delay_q_net;
   wire [16-1:0] convert1_dout_net;
-  wire [16-1:0] d2_1_q_net;
   wire [16-1:0] d2_q_net;
-  wire [1-1:0] x2_tap_envelope_y_net;
-  wire [96-1:0] cmult_p_net;
+  wire [1-1:0] x4_tap_envelope_y_net;
+  wire [16-1:0] imag_component_q_net;
   wire [16-1:0] real_component_q_net;
-  wire [16-1:0] d4_q_net;
-  wire clk_net;
   wire [16-1:0] d4_1_q_net;
   wire [48-1:0] delay3_q_net;
-  wire [16-1:0] imag_component_q_net;
-  wire ce_net;
-  wire [1-1:0] x4_tap_envelope_y_net;
-  wire [16-1:0] convert2_dout_net;
+  wire [16-1:0] d4_q_net;
+  wire [1-1:0] x2_tap_envelope_y_net;
+  wire [16-1:0] d2_1_q_net;
+  wire [1-1:0] convert3_dout_net;
   assign envelope_2_delay = x2_tap_envelope_y_net;
   assign envelope_4_delay = x4_tap_envelope_y_net;
   assign original_real = real_component_q_net;
@@ -1485,36 +1519,42 @@ module ifm_struct (
   input [16-1:0] realpart,
   input clk_1,
   input ce_1,
-  output [82-1:0] gateway_out,
-  output [82-1:0] gateway_out1
+  output [82-1:0] estimated_frequency_2_delay,
+  output [82-1:0] estimated_frequency_4_delay,
+  output [1-1:0] estimated_frequency_2_delay_valid,
+  output [1-1:0] estimated_frequency_4_delay_valid
 );
-  wire [16-1:0] imagpart_net;
-  wire clk_net;
-  wire [82-1:0] register_q_net_x0;
-  wire [16-1:0] convert1_dout_net;
-  wire [16-1:0] d2_1_q_net;
-  wire [1-1:0] delay1_q_net;
-  wire [16-1:0] convert2_dout_net;
-  wire [36-1:0] cmult_p_net_x0;
-  wire [1-1:0] x4_tap_envelope_y_net;
-  wire [1-1:0] convert3_dout_net;
-  wire ce_net;
-  wire [16-1:0] imag_component_q_net;
-  wire [1-1:0] x2_tap_envelope_y_net;
   wire [1-1:0] datavalid_net;
-  wire [82-1:0] register_q_net;
-  wire [1-1:0] delay1_q_net_x0;
-  wire [16-1:0] real_component_q_net;
-  wire [16-1:0] realpart_net;
-  wire [16-1:0] d2_q_net;
-  wire [36-1:0] cmult_p_net;
-  wire [16-1:0] d4_q_net;
+  wire [82-1:0] register_q_net_x0;
+  wire clk_net;
+  wire [1-1:0] delay1_q_net;
+  wire [1-1:0] x4_tap_envelope_y_net;
   wire [16-1:0] d4_1_q_net;
+  wire [16-1:0] imag_component_q_net;
+  wire [1-1:0] delay2_q_net;
+  wire [82-1:0] register_q_net;
+  wire [1-1:0] x2_tap_envelope_y_net;
+  wire [36-1:0] cmult_p_net_x0;
+  wire [16-1:0] d2_1_q_net;
+  wire [16-1:0] d4_q_net;
+  wire [16-1:0] d2_q_net;
+  wire [1-1:0] convert3_dout_net;
+  wire [1-1:0] delay1_q_net_x0;
+  wire ce_net;
+  wire [16-1:0] convert1_dout_net;
+  wire [16-1:0] realpart_net;
+  wire [16-1:0] real_component_q_net;
+  wire [16-1:0] imagpart_net;
+  wire [1-1:0] delay2_q_net_x0;
+  wire [16-1:0] convert2_dout_net;
+  wire [36-1:0] cmult_p_net;
   assign datavalid_net = datavalid;
-  assign gateway_out = register_q_net_x0;
-  assign gateway_out1 = register_q_net;
+  assign estimated_frequency_2_delay = register_q_net_x0;
+  assign estimated_frequency_4_delay = register_q_net;
   assign imagpart_net = imagpart;
   assign realpart_net = realpart;
+  assign estimated_frequency_2_delay_valid = delay2_q_net;
+  assign estimated_frequency_4_delay_valid = delay2_q_net_x0;
   assign clk_net = clk_1;
   assign ce_net = ce_1;
   ifm_2_delay_avarage_freq x2_delay_avarage_freq (
@@ -1522,7 +1562,16 @@ module ifm_struct (
     .inst_freq_valid(delay1_q_net_x0),
     .clk_1(clk_net),
     .ce_1(ce_net),
-    .espected_frequency(register_q_net_x0)
+    .espected_frequency(register_q_net_x0),
+    .espected_frequency_valid(delay2_q_net)
+  );
+  ifm_2_delay_avarage_freq1 x2_delay_avarage_freq1 (
+    .inst_freq(cmult_p_net),
+    .inst_freq_valid(delay1_q_net),
+    .clk_1(clk_net),
+    .ce_1(ce_net),
+    .espected_frequency(register_q_net),
+    .espected_frequency_valid(delay2_q_net_x0)
   );
   ifm_2_delay_instantenous_frequency x2_delay_instantenous_frequency (
     .real_part(real_component_q_net),
@@ -1534,13 +1583,6 @@ module ifm_struct (
     .ce_1(ce_net),
     .inst_freq(cmult_p_net_x0),
     .inst_freq_valid(delay1_q_net_x0)
-  );
-  ifm_4_delay_avarage_freq x4_delay_avarage_freq (
-    .inst_freq(cmult_p_net),
-    .inst_freq_valid(delay1_q_net),
-    .clk_1(clk_net),
-    .ce_1(ce_net),
-    .espected_frequency(register_q_net)
   );
   ifm_4_delay_instantenous_frequency x4_delay_instantenous_frequency (
     .real_part(real_component_q_net),
@@ -1652,14 +1694,16 @@ module ifm_default_clock_driver (
 endmodule
 `timescale 1 ns / 10 ps
 // Generated from Simulink block 
-(* core_generation_info = "ifm,sysgen_core_2025_1,{,compilation=IP Catalog,block_icon_display=Default,family=zynquplus,part=xczu9eg,speed=-2-e,package=ffvb1156,synthesis_language=verilog,hdl_library=xil_defaultlib,synthesis_strategy=Vivado Synthesis Defaults,implementation_strategy=Vivado Implementation Defaults,testbench=0,interface_doc=0,ce_clr=0,clock_period=3.33333,system_simulink_period=3.33333e-09,waveform_viewer=0,axilite_interface=0,ip_catalog_plugin=0,hwcosim_burst_mode=0,simulation_time=0.0002,accum=3,addsub=1,cmult=3,constant=4,convert=20,cordic_v6_0=2,counter=3,delay=27,divide=3,inv=3,logical=7,mult=2,negate=2,product_macro=2,register=2,relational=4,}" *)
+(* core_generation_info = "ifm,sysgen_core_2025_1,{,compilation=IP Catalog,block_icon_display=Default,family=zynquplus,part=xczu9eg,speed=-2-e,package=ffvb1156,synthesis_language=verilog,hdl_library=xil_defaultlib,synthesis_strategy=Vivado Synthesis Defaults,implementation_strategy=Vivado Implementation Defaults,testbench=1,interface_doc=0,ce_clr=0,clock_period=3.33333,system_simulink_period=3.33333e-09,waveform_viewer=0,axilite_interface=0,ip_catalog_plugin=0,hwcosim_burst_mode=0,simulation_time=0.0002,accum=3,addsub=1,cmult=3,constant=4,convert=20,cordic_v6_0=2,counter=3,delay=29,divide=3,inv=3,logical=7,mult=2,negate=2,product_macro=2,register=2,relational=4,}" *)
 module ifm (
   input [1-1:0] datavalid,
   input [16-1:0] imagpart,
   input [16-1:0] realpart,
   input clk,
-  output [82-1:0] gateway_out,
-  output [82-1:0] gateway_out1
+  output [82-1:0] estimated_frequency_2_delay,
+  output [82-1:0] estimated_frequency_4_delay,
+  output [1-1:0] estimated_frequency_2_delay_valid,
+  output [1-1:0] estimated_frequency_4_delay_valid
 );
   wire ce_1_net;
   wire clk_1_net;
@@ -1676,7 +1720,9 @@ module ifm (
     .realpart(realpart),
     .clk_1(clk_1_net),
     .ce_1(ce_1_net),
-    .gateway_out(gateway_out),
-    .gateway_out1(gateway_out1)
+    .estimated_frequency_2_delay(estimated_frequency_2_delay),
+    .estimated_frequency_4_delay(estimated_frequency_4_delay),
+    .estimated_frequency_2_delay_valid(estimated_frequency_2_delay_valid),
+    .estimated_frequency_4_delay_valid(estimated_frequency_4_delay_valid)
   );
 endmodule

@@ -1,0 +1,13 @@
+vhdl xil_defaultlib  \
+"../../../../IFM_RTL.gen/sources_1/ip/IFM_0/ifm_c_counter_binary_v12_0_i0/sim/ifm_c_counter_binary_v12_0_i0.vhd" \
+"../../../../IFM_RTL.gen/sources_1/ip/IFM_0/ifm_c_counter_binary_v12_0_i1/sim/ifm_c_counter_binary_v12_0_i1.vhd" \
+"../../../../IFM_RTL.gen/sources_1/ip/IFM_0/ifm_cmpy_v6_0_i0/sim/ifm_cmpy_v6_0_i0.vhd" \
+"../../../../IFM_RTL.gen/sources_1/ip/IFM_0/ifm_cordic_v6_0_i0/sim/ifm_cordic_v6_0_i0.vhd" \
+"../../../../IFM_RTL.gen/sources_1/ip/IFM_0/ifm_div_gen_v5_1_i0/sim/ifm_div_gen_v5_1_i0.vhd" \
+"../../../../IFM_RTL.gen/sources_1/ip/IFM_0/ifm_div_gen_v5_1_i1/sim/ifm_div_gen_v5_1_i1.vhd" \
+"../../../../IFM_RTL.gen/sources_1/ip/IFM_0/ifm_mult_gen_v12_0_i0/sim/ifm_mult_gen_v12_0_i0.vhd" \
+"../../../../IFM_RTL.gen/sources_1/ip/IFM_0/ifm_mult_gen_v12_0_i1/sim/ifm_mult_gen_v12_0_i1.vhd" \
+"../../../../IFM_RTL.gen/sources_1/ip/IFM_0/ifm_mult_gen_v12_0_i2/sim/ifm_mult_gen_v12_0_i2.vhd" \
+
+# Do not sort compile order
+nosort

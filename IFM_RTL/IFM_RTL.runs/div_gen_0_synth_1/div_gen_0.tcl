@@ -60,7 +60,7 @@ set_param general.usePosixSpawnForFork 1
 set_param project.vivado.isBlockSynthRun true
 set_msg_config -msgmgr_mode ooc_run
 OPTRACE "Creating in-memory project" START { }
-create_project -in_memory -part xc7z020clg400-1
+create_project -in_memory -part xczu9eg-ffvb1156-2-e
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
@@ -70,11 +70,14 @@ set_property webtalk.parent_dir C:/Users/fsydere/Workspace/IFM/IFM_RTL/IFM_RTL.c
 set_property parent.project_path C:/Users/fsydere/Workspace/IFM/IFM_RTL/IFM_RTL.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
+set_property board_part xilinx.com:zcu102:part0:3.4 [current_project]
+set_property ip_repo_paths c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist [current_project]
+update_ip_catalog
 set_property ip_output_repo c:/Users/fsydere/Workspace/IFM/IFM_RTL/IFM_RTL.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_ip -quiet c:/Users/fsydere/Workspace/IFM/IFM_RTL/IFM_RTL.srcs/sources_1/ip/div_gen_0/div_gen_0.xci
+read_ip -quiet C:/Users/fsydere/Workspace/IFM/IFM_RTL/IFM_RTL.srcs/sources_1/ip/div_gen_0/div_gen_0.xci
 set_property used_in_implementation false [get_files -all c:/Users/fsydere/Workspace/IFM/IFM_RTL/IFM_RTL.gen/sources_1/ip/div_gen_0/div_gen_0_ooc.xdc]
 
 OPTRACE "Adding files" END { }
@@ -98,7 +101,7 @@ if { $cacheID == "" } {
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
-synth_design -top div_gen_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+synth_design -top div_gen_0 -part xczu9eg-ffvb1156-2-e -incremental_mode off -mode out_of_context
 OPTRACE "synth_design" END { }
 OPTRACE "Write IP Cache" START { }
 

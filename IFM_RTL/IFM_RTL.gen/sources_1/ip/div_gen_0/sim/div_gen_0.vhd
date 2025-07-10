@@ -144,7 +144,7 @@ ARCHITECTURE div_gen_0_arch OF div_gen_0 IS
 BEGIN
   U0 : div_gen_v5_1_24
     GENERIC MAP (
-      C_XDEVICEFAMILY => "zynq",
+      C_XDEVICEFAMILY => "zynquplus",
       C_HAS_ARESETN => 0,
       C_HAS_ACLKEN => 0,
       C_LATENCY => 10,

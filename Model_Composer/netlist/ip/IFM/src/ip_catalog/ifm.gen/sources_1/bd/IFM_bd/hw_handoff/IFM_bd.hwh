@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Jul 10 18:23:30 2025" VIVADOVERSION="2025.1">
+
+  <SYSTEMINFO ARCH="zynquplus" BOARD="xilinx.com:zcu102:part0:3.4" DEVICE="xczu9eg" NAME="IFM_bd" PACKAGE="ffvb1156" SPEEDGRADE="-2"/>
+
+  <EXTERNALPORTS>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="IFM_1" PORT="clk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="0" NAME="datavalid" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_datavalid">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="IFM_1" PORT="datavalid"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="81" NAME="estimated_frequency_2_delay" RIGHT="0" SIGIS="data" SIGNAME="IFM_1_estimated_frequency_2_delay">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="IFM_1" PORT="estimated_frequency_2_delay"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="0" NAME="estimated_frequency_2_delay_valid" RIGHT="0" SIGIS="data" SIGNAME="IFM_1_estimated_frequency_2_delay_valid">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="IFM_1" PORT="estimated_frequency_2_delay_valid"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="81" NAME="estimated_frequency_4_delay" RIGHT="0" SIGIS="data" SIGNAME="IFM_1_estimated_frequency_4_delay">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="IFM_1" PORT="estimated_frequency_4_delay"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="0" NAME="estimated_frequency_4_delay_valid" RIGHT="0" SIGIS="data" SIGNAME="IFM_1_estimated_frequency_4_delay_valid">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="IFM_1" PORT="estimated_frequency_4_delay_valid"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="15" NAME="imagpart" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_imagpart">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="IFM_1" PORT="imagpart"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="15" NAME="realpart" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_realpart">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="IFM_1" PORT="realpart"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="383077390" FULLNAME="/IFM_1" HWVERSION="1.0" INSTANCE="IFM_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="IFM" VLNV="FSY:VMC:IFM:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="IFM_bd_IFM_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="datavalid" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_datavalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="datavalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="81" NAME="estimated_frequency_2_delay" RIGHT="0" SIGIS="data" SIGNAME="IFM_1_estimated_frequency_2_delay">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="estimated_frequency_2_delay"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="estimated_frequency_2_delay_valid" RIGHT="0" SIGIS="data" SIGNAME="IFM_1_estimated_frequency_2_delay_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="estimated_frequency_2_delay_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="81" NAME="estimated_frequency_4_delay" RIGHT="0" SIGIS="data" SIGNAME="IFM_1_estimated_frequency_4_delay">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="estimated_frequency_4_delay"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="estimated_frequency_4_delay_valid" RIGHT="0" SIGIS="data" SIGNAME="IFM_1_estimated_frequency_4_delay_valid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="estimated_frequency_4_delay_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="imagpart" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_imagpart">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="imagpart"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="realpart" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_realpart">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="realpart"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>
