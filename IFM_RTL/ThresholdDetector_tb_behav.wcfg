@@ -11,12 +11,12 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="2,764.051083 us"></ZoomStartTime>
-      <ZoomEndTime time="3,764.551084 us"></ZoomEndTime>
-      <Cursor1Time time="2,964.051083 us"></Cursor1Time>
+      <ZoomStartTime time="0.000000 us"></ZoomStartTime>
+      <ZoomEndTime time="1,778.291739 us"></ZoomEndTime>
+      <Cursor1Time time="12.934253 us"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="182"></NameColumnWidth>
+      <NameColumnWidth column_width="178"></NameColumnWidth>
       <ValueColumnWidth column_width="58"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="19" />
@@ -82,11 +82,11 @@
       <obj_property name="DisplayName">label</obj_property>
       <obj_property name="BkColor">#FFFFFF</obj_property>
    </wvobject>
-   <wvobject fp_name="/ThresholdDetector_tb/MC_DUT/clk" type="logic">
+   <wvobject fp_name="/ThresholdDetector_tb/DUT2/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
    </wvobject>
-   <wvobject fp_name="/ThresholdDetector_tb/MC_DUT/RealPart" type="array">
+   <wvobject fp_name="/ThresholdDetector_tb/DUT2/RealPart" type="array">
       <obj_property name="ElementShortName">RealPart[15:0]</obj_property>
       <obj_property name="ObjectShortName">RealPart[15:0]</obj_property>
       <obj_property name="Radix">REALRADIX</obj_property>
@@ -94,7 +94,7 @@
       <obj_property name="radix_fractionWidth">15</obj_property>
       <obj_property name="radix_otherWidth">0</obj_property>
    </wvobject>
-   <wvobject fp_name="/ThresholdDetector_tb/MC_DUT/ImagPart" type="array">
+   <wvobject fp_name="/ThresholdDetector_tb/DUT2/ImagPart" type="array">
       <obj_property name="ElementShortName">ImagPart[15:0]</obj_property>
       <obj_property name="ObjectShortName">ImagPart[15:0]</obj_property>
       <obj_property name="Radix">REALRADIX</obj_property>
@@ -102,32 +102,32 @@
       <obj_property name="radix_fractionWidth">15</obj_property>
       <obj_property name="radix_otherWidth">0</obj_property>
    </wvobject>
-   <wvobject fp_name="/ThresholdDetector_tb/MC_DUT/dataValid" type="logic">
+   <wvobject fp_name="/ThresholdDetector_tb/DUT2/dataValid" type="logic">
       <obj_property name="ElementShortName">dataValid</obj_property>
       <obj_property name="ObjectShortName">dataValid</obj_property>
    </wvobject>
-   <wvobject fp_name="/ThresholdDetector_tb/MC_DUT/estimated_frequency_2_delay_valid" type="logic">
+   <wvobject fp_name="/ThresholdDetector_tb/DUT2/estimated_frequency_2_delay_valid" type="logic">
       <obj_property name="ElementShortName">estimated_frequency_2_delay_valid</obj_property>
       <obj_property name="ObjectShortName">estimated_frequency_2_delay_valid</obj_property>
    </wvobject>
-   <wvobject fp_name="/ThresholdDetector_tb/MC_DUT/estimated_frequency_2_delay" type="array">
+   <wvobject fp_name="/ThresholdDetector_tb/DUT2/estimated_frequency_2_delay" type="array">
       <obj_property name="ElementShortName">estimated_frequency_2_delay[81:0]</obj_property>
       <obj_property name="ObjectShortName">estimated_frequency_2_delay[81:0]</obj_property>
       <obj_property name="Radix">REALRADIX</obj_property>
       <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
-      <obj_property name="radix_fractionWidth">18</obj_property>
+      <obj_property name="radix_fractionWidth">26</obj_property>
       <obj_property name="radix_otherWidth">0</obj_property>
    </wvobject>
-   <wvobject fp_name="/ThresholdDetector_tb/MC_DUT/estimated_frequency_4_delay_valid" type="logic">
+   <wvobject fp_name="/ThresholdDetector_tb/DUT2/estimated_frequency_4_delay_valid" type="logic">
       <obj_property name="ElementShortName">estimated_frequency_4_delay_valid</obj_property>
       <obj_property name="ObjectShortName">estimated_frequency_4_delay_valid</obj_property>
    </wvobject>
-   <wvobject fp_name="/ThresholdDetector_tb/MC_DUT/estimated_frequency_4_delay" type="array">
+   <wvobject fp_name="/ThresholdDetector_tb/DUT2/estimated_frequency_4_delay" type="array">
       <obj_property name="ElementShortName">estimated_frequency_4_delay[81:0]</obj_property>
       <obj_property name="ObjectShortName">estimated_frequency_4_delay[81:0]</obj_property>
       <obj_property name="Radix">REALRADIX</obj_property>
       <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
-      <obj_property name="radix_fractionWidth">18</obj_property>
+      <obj_property name="radix_fractionWidth">26</obj_property>
       <obj_property name="radix_otherWidth">0</obj_property>
    </wvobject>
 </wave_config>

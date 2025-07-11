@@ -77,12 +77,12 @@ module ThresholdDetector_tb();
         start = 0;
         rst_n = 0;
         // Open data file
-        file = $fopen("../../../../../SystemInputs/Fs_300_Fc_25MHz_PW_10us_PRI_100us_SNR_10dB_real.txt", "r");
-        file2 = $fopen("../../../../../SystemInputs/Fs_300_Fc_25MHz_PW_10us_PRI_100us_SNR_10dB_imag.txt", "r");
-//        file = $fopen("../../../../../SystemInputs/Fs_300_Fc_25MHz_PW_10us_PRI_100us_SNR_20dB_real.txt", "r");
-//        file2 = $fopen("../../../../../SystemInputs/Fs_300_Fc_25MHz_PW_10us_PRI_100us_SNR_20dB_imag.txt", "r");
-//        file = $fopen("../../../../../SystemInputs/Fs_300_Fc_25MHz_PW_10us_PRI_100us_SNR_40dB_real.txt", "r");
-//        file2 = $fopen("../../../../../SystemInputs/Fs_300_Fc_25MHz_PW_10us_PRI_100us_SNR_40dB_imag.txt", "r");
+        file = $fopen("../../../../../System_Inputs/Fs_300MHz_Fc_25MHz_PW_10us_PRI_100us_SNR_10dB_real.txt", "r");
+        file2 = $fopen("../../../../../System_Inputs/Fs_300_Fc_25MHz_PW_10us_PRI_100us_SNR_10dB_imag.txt", "r");
+//        file = $fopen("../../../../../System_Inputs/Fs_300MHz_Fc_25MHz_PW_10us_PRI_100us_SNR_20dB_real.txt", "r");
+//        file2 = $fopen("../../../../../System_Inputs/Fs_300_Fc_25MHz_PW_10us_PRI_100us_SNR_20dB_imag.txt", "r");
+//        file = $fopen("../../../../../System_Inputs/Fs_300MHz_Fc_25MHz_PW_10us_PRI_100us_SNR_40dB_real.txt", "r");
+//        file2 = $fopen("../../../../../System_Inputs/Fs_300_Fc_25MHz_PW_10us_PRI_100us_SNR_40dB_imag.txt", "r");
         if (file == 0) begin
             $display("Error: Could not open input_data.txt");
             $finish;
