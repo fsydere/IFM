@@ -291,14 +291,14 @@ endmodule
 module ifm_tb (
 
 );
-  wire [82-1:0] estimated_frequency_4_delay_net;
-  wire [1-1:0] estimated_frequency_2_delay_valid_net;
-  wire clk_net;
   wire [16-1:0] realpart_net;
-  wire [1-1:0] estimated_frequency_4_delay_valid_net;
   wire [82-1:0] estimated_frequency_2_delay_net;
-  wire [1-1:0] datavalid_net;
   wire [16-1:0] imagpart_net;
+  wire [1-1:0] estimated_frequency_4_delay_valid_net;
+  wire [1-1:0] estimated_frequency_2_delay_valid_net;
+  wire [1-1:0] datavalid_net;
+  wire clk_net;
+  wire [82-1:0] estimated_frequency_4_delay_net;
   xlclk #(
     .clk_period(3.333333)
   )
@@ -350,17 +350,6 @@ module ifm_tb (
     .clk(clk_net)
   );
   xltbsink #(
-    .i_arith(`xlSigned),
-    .i_bin_pt(18),
-    .i_width(82),
-    .inputFile("ifm_modelcomposer_ifm_estimated_frequency_4_delay.dat"),
-    .periodMultiplier(1)
-  )
-  estimated_frequency_4_delay_load (
-    .i(estimated_frequency_4_delay_net),
-    .clk(clk_net)
-  );
-  xltbsink #(
     .i_arith(`xlUnsigned),
     .i_bin_pt(0),
     .i_width(1),
@@ -369,6 +358,17 @@ module ifm_tb (
   )
   estimated_frequency_2_delay_valid_load (
     .i(estimated_frequency_2_delay_valid_net),
+    .clk(clk_net)
+  );
+  xltbsink #(
+    .i_arith(`xlSigned),
+    .i_bin_pt(18),
+    .i_width(82),
+    .inputFile("ifm_modelcomposer_ifm_estimated_frequency_4_delay.dat"),
+    .periodMultiplier(1)
+  )
+  estimated_frequency_4_delay_load (
+    .i(estimated_frequency_4_delay_net),
     .clk(clk_net)
   );
   xltbsink #(
@@ -388,8 +388,8 @@ module ifm_tb (
     .realpart(realpart_net),
     .clk(clk_net),
     .estimated_frequency_2_delay(estimated_frequency_2_delay_net),
-    .estimated_frequency_4_delay(estimated_frequency_4_delay_net),
     .estimated_frequency_2_delay_valid(estimated_frequency_2_delay_valid_net),
+    .estimated_frequency_4_delay(estimated_frequency_4_delay_net),
     .estimated_frequency_4_delay_valid(estimated_frequency_4_delay_valid_net)
   );
 endmodule

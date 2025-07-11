@@ -56,5 +56,5 @@
 PS1="\[\033[01;36m\]vitis\[\033[00m\]|\u@\h \W\$ "
 
 # This script sets up the environment
-export INSTALLED_ROOT=C:/Xilinx/2025.1/Model_Composer
-export DSP_LIB_ROOT=C:\Xilinx\2025.1\Model_Composer\tps\xf_dsp
+export INSTALLED_ROOT=D:/Xiilinx/2025.1/Model_Composer
+export DSP_LIB_ROOT=D:\Xiilinx\2025.1\Model_Composer\tps\xf_dsp

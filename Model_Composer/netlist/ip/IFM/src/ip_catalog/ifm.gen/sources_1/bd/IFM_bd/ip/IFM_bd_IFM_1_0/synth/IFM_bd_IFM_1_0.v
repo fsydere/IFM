@@ -48,7 +48,7 @@
 
 
 // IP VLNV: FSY:VMC:IFM:1.0
-// IP Revision: 383077390
+// IP Revision: 383149635
 
 (* X_CORE_INFO = "ifm,Vivado 2025.1" *)
 (* CHECK_LICENSE_TYPE = "IFM_bd_IFM_1_0,ifm,{}" *)
@@ -60,8 +60,8 @@ module IFM_bd_IFM_1_0 (
   realpart,
   clk,
   estimated_frequency_2_delay,
-  estimated_frequency_4_delay,
   estimated_frequency_2_delay_valid,
+  estimated_frequency_4_delay,
   estimated_frequency_4_delay_valid
 );
 
@@ -89,16 +89,16 @@ input wire clk;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME estimated_frequency_2_delay, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 82} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long \
 minimum {} maximum {}} value 18} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true}}}}}}" *)
 output wire [81 : 0] estimated_frequency_2_delay;
-(* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 estimated_frequency_4_delay DATA" *)
-(* X_INTERFACE_MODE = "master" *)
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME estimated_frequency_4_delay, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 82} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long \
-minimum {} maximum {}} value 18} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true}}}}}}" *)
-output wire [81 : 0] estimated_frequency_4_delay;
 (* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 estimated_frequency_2_delay_valid DATA" *)
 (* X_INTERFACE_MODE = "master" *)
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME estimated_frequency_2_delay_valid, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format \
 long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}" *)
 output wire [0 : 0] estimated_frequency_2_delay_valid;
+(* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 estimated_frequency_4_delay DATA" *)
+(* X_INTERFACE_MODE = "master" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME estimated_frequency_4_delay, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 82} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long \
+minimum {} maximum {}} value 18} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true}}}}}}" *)
+output wire [81 : 0] estimated_frequency_4_delay;
 (* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 estimated_frequency_4_delay_valid DATA" *)
 (* X_INTERFACE_MODE = "master" *)
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME estimated_frequency_4_delay_valid, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format \
@@ -111,8 +111,8 @@ output wire [0 : 0] estimated_frequency_4_delay_valid;
     .realpart(realpart),
     .clk(clk),
     .estimated_frequency_2_delay(estimated_frequency_2_delay),
-    .estimated_frequency_4_delay(estimated_frequency_4_delay),
     .estimated_frequency_2_delay_valid(estimated_frequency_2_delay_valid),
+    .estimated_frequency_4_delay(estimated_frequency_4_delay),
     .estimated_frequency_4_delay_valid(estimated_frequency_4_delay_valid)
   );
 endmodule

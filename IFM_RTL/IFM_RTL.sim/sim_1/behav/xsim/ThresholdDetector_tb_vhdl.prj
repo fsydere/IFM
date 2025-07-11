@@ -1,0 +1,61 @@
+# compile vhdl design source files
+vhdl xbip_utils_v3_0_14  \
+"../../../../IFM_RTL.ip_user_files/ipstatic/hdl/xbip_utils_v3_0_vh_rfs.vhd" \
+
+vhdl c_reg_fd_v12_0_10  \
+"../../../../IFM_RTL.ip_user_files/ipstatic/hdl/c_reg_fd_v12_0_vh_rfs.vhd" \
+
+vhdl xbip_dsp48_wrapper_v3_0_7  \
+"../../../../IFM_RTL.ip_user_files/ipstatic/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd" \
+
+vhdl xbip_pipe_v3_0_10  \
+"../../../../IFM_RTL.ip_user_files/ipstatic/hdl/xbip_pipe_v3_0_vh_rfs.vhd" \
+
+vhdl c_addsub_v12_0_20  \
+"../../../../IFM_RTL.ip_user_files/ipstatic/hdl/c_addsub_v12_0_vh_rfs.vhd" \
+
+vhdl c_counter_binary_v12_0_21  \
+"../../../../IFM_RTL.ip_user_files/ipstatic/hdl/c_counter_binary_v12_0_vh_rfs.vhd" \
+
+vhdl xil_defaultlib  \
+"../../../../IFM_RTL.gen/sources_1/ip/IFM_0/ifm_c_counter_binary_v12_0_i0/sim/ifm_c_counter_binary_v12_0_i0.vhd" \
+"../../../../IFM_RTL.gen/sources_1/ip/IFM_0/ifm_c_counter_binary_v12_0_i1/sim/ifm_c_counter_binary_v12_0_i1.vhd" \
+
+vhdl axi_utils_v2_0_10  \
+"../../../../IFM_RTL.ip_user_files/ipstatic/hdl/axi_utils_v2_0_vh_rfs.vhd" \
+
+vhdl mult_gen_v12_0_23  \
+"../../../../IFM_RTL.ip_user_files/ipstatic/hdl/mult_gen_v12_0_vh_rfs.vhd" \
+
+vhdl floating_point_v7_1_20  \
+"../../../../IFM_RTL.ip_user_files/ipstatic/hdl/floating_point_v7_1_vh_rfs.vhd" \
+
+vhdl cmpy_v6_0_26  \
+"../../../../IFM_RTL.ip_user_files/ipstatic/hdl/cmpy_v6_0_vh_rfs.vhd" \
+
+vhdl xil_defaultlib  \
+"../../../../IFM_RTL.gen/sources_1/ip/IFM_0/ifm_cmpy_v6_0_i0/sim/ifm_cmpy_v6_0_i0.vhd" \
+
+vhdl cordic_v6_0_24  \
+"../../../../IFM_RTL.ip_user_files/ipstatic/hdl/cordic_v6_0_vh_rfs.vhd" \
+
+vhdl xil_defaultlib  \
+"../../../../IFM_RTL.gen/sources_1/ip/IFM_0/ifm_cordic_v6_0_i0/sim/ifm_cordic_v6_0_i0.vhd" \
+
+vhdl floating_point_v7_0_25  \
+"../../../../IFM_RTL.ip_user_files/ipstatic/hdl/floating_point_v7_0_vh_rfs.vhd" \
+
+vhdl div_gen_v5_1_24  \
+"../../../../IFM_RTL.ip_user_files/ipstatic/hdl/div_gen_v5_1_vh_rfs.vhd" \
+
+vhdl xil_defaultlib  \
+"../../../../IFM_RTL.gen/sources_1/ip/IFM_0/ifm_div_gen_v5_1_i0/sim/ifm_div_gen_v5_1_i0.vhd" \
+"../../../../IFM_RTL.gen/sources_1/ip/IFM_0/ifm_div_gen_v5_1_i1/sim/ifm_div_gen_v5_1_i1.vhd" \
+"../../../../IFM_RTL.gen/sources_1/ip/IFM_0/ifm_mult_gen_v12_0_i0/sim/ifm_mult_gen_v12_0_i0.vhd" \
+"../../../../IFM_RTL.gen/sources_1/ip/IFM_0/ifm_mult_gen_v12_0_i1/sim/ifm_mult_gen_v12_0_i1.vhd" \
+"../../../../IFM_RTL.gen/sources_1/ip/IFM_0/ifm_mult_gen_v12_0_i2/sim/ifm_mult_gen_v12_0_i2.vhd" \
+"../../../../IFM_RTL.gen/sources_1/ip/div_gen_0/sim/div_gen_0.vhd" \
+"../../../../IFM_RTL.gen/sources_1/ip/cordic_0/sim/cordic_0.vhd" \
+
+# Do not sort compile order
+nosort

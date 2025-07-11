@@ -4,7 +4,7 @@
     "xci_name": "IFM_bd_IFM_1_0",
     "cell_name": "IFM_1",
     "component_reference": "FSY:VMC:IFM:1.0",
-    "ip_revision": "383077390",
+    "ip_revision": "383149635",
     "gen_directory": "../../../../../../ifm.gen/sources_1/bd/IFM_bd/ip/IFM_bd_IFM_1_0",
     "parameters": {
       "component_parameters": {
@@ -25,7 +25,7 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
-        "IPREVISION": [ { "value": "383077390" } ],
+        "IPREVISION": [ { "value": "383149635" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "../../../../../../ifm.gen/sources_1/bd/IFM_bd/ip/IFM_bd_IFM_1_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
@@ -41,8 +41,8 @@
         "realpart": [ { "direction": "in", "size_left": "15", "size_right": "0" } ],
         "clk": [ { "direction": "in" } ],
         "estimated_frequency_2_delay": [ { "direction": "out", "size_left": "81", "size_right": "0" } ],
-        "estimated_frequency_4_delay": [ { "direction": "out", "size_left": "81", "size_right": "0" } ],
         "estimated_frequency_2_delay_valid": [ { "direction": "out", "size_left": "0", "size_right": "0" } ],
+        "estimated_frequency_4_delay": [ { "direction": "out", "size_left": "81", "size_right": "0" } ],
         "estimated_frequency_4_delay_valid": [ { "direction": "out", "size_left": "0", "size_right": "0" } ]
       },
       "interfaces": {
@@ -108,17 +108,6 @@
             "DATA": [ { "physical_name": "estimated_frequency_2_delay" } ]
           }
         },
-        "estimated_frequency_4_delay": {
-          "vlnv": "xilinx.com:signal:data:1.0",
-          "abstraction_type": "xilinx.com:signal:data_rtl:1.0",
-          "mode": "master",
-          "parameters": {
-            "LAYERED_METADATA": [ { "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 82} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 18} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true}}}}}}", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ]
-          },
-          "port_maps": {
-            "DATA": [ { "physical_name": "estimated_frequency_4_delay" } ]
-          }
-        },
         "estimated_frequency_2_delay_valid": {
           "vlnv": "xilinx.com:signal:data:1.0",
           "abstraction_type": "xilinx.com:signal:data_rtl:1.0",
@@ -128,6 +117,17 @@
           },
           "port_maps": {
             "DATA": [ { "physical_name": "estimated_frequency_2_delay_valid" } ]
+          }
+        },
+        "estimated_frequency_4_delay": {
+          "vlnv": "xilinx.com:signal:data:1.0",
+          "abstraction_type": "xilinx.com:signal:data_rtl:1.0",
+          "mode": "master",
+          "parameters": {
+            "LAYERED_METADATA": [ { "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 82} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 18} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true}}}}}}", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ]
+          },
+          "port_maps": {
+            "DATA": [ { "physical_name": "estimated_frequency_4_delay" } ]
           }
         },
         "estimated_frequency_4_delay_valid": {

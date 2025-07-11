@@ -3,31 +3,31 @@
 # SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
 # IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
 # SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
-# Start of session at: Thu Jul 10 18:23:32 2025
-# Process ID         : 28124
-# Current directory  : C:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.runs/IFM_0_synth_1
+# Start of session at: Fri Jul 11 14:27:51 2025
+# Process ID         : 10028
+# Current directory  : C:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.runs/IFM_0_synth_1
 # Command line       : vivado.exe -log IFM_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source IFM_0.tcl
-# Log file           : C:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.runs/IFM_0_synth_1/IFM_0.vds
-# Journal file       : C:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.runs/IFM_0_synth_1\vivado.jou
-# Running On         : DESKTOP-5G0J4EJ
+# Log file           : C:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.runs/IFM_0_synth_1/IFM_0.vds
+# Journal file       : C:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.runs/IFM_0_synth_1\vivado.jou
+# Running On         : fsydere
 # Platform           : Windows Server 2016 or Windows 10
 # Operating System   : 26100
-# Processor Detail   : Intel(R) Core(TM) i9-14900K
-# CPU Frequency      : 3187 MHz
-# CPU Physical cores : 24
-# CPU Logical cores  : 32
-# Host memory        : 34115 MB
-# Swap memory        : 2147 MB
-# Total Virtual      : 36262 MB
-# Available Virtual  : 9268 MB
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i9-13900H
+# CPU Frequency      : 2995 MHz
+# CPU Physical cores : 14
+# CPU Logical cores  : 20
+# Host memory        : 16890 MB
+# Swap memory        : 3087 MB
+# Total Virtual      : 19977 MB
+# Available Virtual  : 4951 MB
 #-----------------------------------------------------------
 source IFM_0.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip'.
-WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is 'c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.runs/IFM_0_synth_1'.)
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/2025.1/Vivado/data/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is 'c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.runs/IFM_0_synth_1'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xiilinx/2025.1/Vivado/data/ip'.
 WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
-Current IP cache path is c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.cache/ip 
+Current IP cache path is c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.cache/ip 
 Command: synth_design -top IFM_0 -part xczu9eg-ffvb1156-2-e -incremental_mode off -mode out_of_context
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xczu9eg'
@@ -35,67 +35,67 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu9eg
 INFO: [Device 21-403] Loading part xczu9eg-ffvb1156-2-e
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 22920
+INFO: [Synth 8-7075] Helper process launched with PID 20044
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1751.258 ; gain = 211.152
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1750.676 ; gain = 210.656
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'IFM_0' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/synth/IFM_0.v:53]
-INFO: [Synth 8-6157] synthesizing module 'ifm' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm.v:1697]
-INFO: [Synth 8-6157] synthesizing module 'ifm_default_clock_driver' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm.v:1676]
-INFO: [Synth 8-6157] synthesizing module 'xlclockdriver' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/xlclockdriver_rd.v:22]
-INFO: [Synth 8-6157] synthesizing module 'synth_reg_w_init' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg_w_init.v:3]
-INFO: [Synth 8-6157] synthesizing module 'single_reg_w_init' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg_w_init.v:45]
-INFO: [Synth 8-6157] synthesizing module 'FDRE' [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:44231]
-INFO: [Synth 8-6155] done synthesizing module 'FDRE' (0#1) [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:44231]
-INFO: [Synth 8-6155] done synthesizing module 'single_reg_w_init' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg_w_init.v:45]
-INFO: [Synth 8-6155] done synthesizing module 'synth_reg_w_init' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg_w_init.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'xlclockdriver' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/xlclockdriver_rd.v:22]
-WARNING: [Synth 8-7071] port 'clr' of module 'xlclockdriver' is unconnected for instance 'clockdriver' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm.v:1687]
-WARNING: [Synth 8-7071] port 'ce_logic' of module 'xlclockdriver' is unconnected for instance 'clockdriver' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm.v:1687]
-WARNING: [Synth 8-7023] instance 'clockdriver' of module 'xlclockdriver' has 7 connections declared, but only 5 given [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm.v:1687]
-INFO: [Synth 8-6155] done synthesizing module 'ifm_default_clock_driver' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm.v:1676]
-INFO: [Synth 8-6157] synthesizing module 'ifm_struct' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm.v:1516]
-INFO: [Synth 8-6157] synthesizing module 'ifm_2_delay_avarage_freq' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm.v:7]
-INFO: [Synth 8-6157] synthesizing module 'sysgen_accum_0932bf0451' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:109]
-INFO: [Synth 8-6155] done synthesizing module 'sysgen_accum_0932bf0451' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:109]
-INFO: [Synth 8-6157] synthesizing module 'sysgen_constant_71d0fa22b7' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:174]
-INFO: [Synth 8-6155] done synthesizing module 'sysgen_constant_71d0fa22b7' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:174]
-INFO: [Synth 8-6157] synthesizing module 'ifm_xlconvert' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:42]
-INFO: [Synth 8-6157] synthesizing module 'convert_type' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:775]
-INFO: [Synth 8-6157] synthesizing module 'trunc' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:539]
-INFO: [Synth 8-6157] synthesizing module 'pad_lsb' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:158]
-INFO: [Synth 8-6155] done synthesizing module 'pad_lsb' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:158]
-INFO: [Synth 8-6157] synthesizing module 'extend_msb' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:235]
-INFO: [Synth 8-6157] synthesizing module 'zero_ext' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:186]
-INFO: [Synth 8-6155] done synthesizing module 'zero_ext' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:186]
-INFO: [Synth 8-6155] done synthesizing module 'extend_msb' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:235]
-INFO: [Synth 8-6155] done synthesizing module 'trunc' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:539]
-INFO: [Synth 8-6157] synthesizing module 'wrap_arith' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:754]
-INFO: [Synth 8-6157] synthesizing module 'cast' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:13]
-INFO: [Synth 8-6155] done synthesizing module 'cast' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:13]
-INFO: [Synth 8-6155] done synthesizing module 'wrap_arith' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:754]
-INFO: [Synth 8-6157] synthesizing module 'cast__parameterized0' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:13]
-INFO: [Synth 8-6155] done synthesizing module 'cast__parameterized0' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:13]
-INFO: [Synth 8-6155] done synthesizing module 'convert_type' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:775]
-INFO: [Synth 8-6155] done synthesizing module 'ifm_xlconvert' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:42]
-INFO: [Synth 8-6157] synthesizing module 'ifm_xlconvert__parameterized0' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:42]
-INFO: [Synth 8-6157] synthesizing module 'convert_type__parameterized0' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:775]
-INFO: [Synth 8-6157] synthesizing module 'trunc__parameterized0' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:539]
-INFO: [Synth 8-6157] synthesizing module 'extend_msb__parameterized0' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:235]
-INFO: [Synth 8-6157] synthesizing module 'sign_ext' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:211]
-INFO: [Synth 8-6155] done synthesizing module 'sign_ext' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:211]
-INFO: [Synth 8-6155] done synthesizing module 'extend_msb__parameterized0' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:235]
-INFO: [Synth 8-6155] done synthesizing module 'trunc__parameterized0' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:539]
-INFO: [Synth 8-6157] synthesizing module 'wrap_arith__parameterized0' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:754]
-INFO: [Synth 8-6157] synthesizing module 'cast__parameterized1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:13]
-INFO: [Synth 8-6155] done synthesizing module 'cast__parameterized1' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:13]
-INFO: [Synth 8-6155] done synthesizing module 'wrap_arith__parameterized0' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:754]
-INFO: [Synth 8-6157] synthesizing module 'cast__parameterized2' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:13]
-INFO: [Synth 8-6155] done synthesizing module 'cast__parameterized2' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:13]
-INFO: [Synth 8-6155] done synthesizing module 'convert_type__parameterized0' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:775]
-INFO: [Synth 8-6155] done synthesizing module 'ifm_xlconvert__parameterized0' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:42]
-INFO: [Synth 8-6157] synthesizing module 'ifm_xlcounter_free' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:935]
-INFO: [Synth 8-638] synthesizing module 'ifm_c_counter_binary_v12_0_i0' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_c_counter_binary_v12_0_i0/synth/ifm_c_counter_binary_v12_0_i0.vhd:68]
+INFO: [Synth 8-6157] synthesizing module 'IFM_0' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/synth/IFM_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'ifm' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm.v:1697]
+INFO: [Synth 8-6157] synthesizing module 'ifm_default_clock_driver' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm.v:1676]
+INFO: [Synth 8-6157] synthesizing module 'xlclockdriver' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/xlclockdriver_rd.v:22]
+INFO: [Synth 8-6157] synthesizing module 'synth_reg_w_init' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg_w_init.v:3]
+INFO: [Synth 8-6157] synthesizing module 'single_reg_w_init' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg_w_init.v:45]
+INFO: [Synth 8-6157] synthesizing module 'FDRE' [D:/Xiilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:44231]
+INFO: [Synth 8-6155] done synthesizing module 'FDRE' (0#1) [D:/Xiilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:44231]
+INFO: [Synth 8-6155] done synthesizing module 'single_reg_w_init' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg_w_init.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'synth_reg_w_init' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg_w_init.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'xlclockdriver' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/xlclockdriver_rd.v:22]
+WARNING: [Synth 8-7071] port 'clr' of module 'xlclockdriver' is unconnected for instance 'clockdriver' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm.v:1687]
+WARNING: [Synth 8-7071] port 'ce_logic' of module 'xlclockdriver' is unconnected for instance 'clockdriver' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm.v:1687]
+WARNING: [Synth 8-7023] instance 'clockdriver' of module 'xlclockdriver' has 7 connections declared, but only 5 given [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm.v:1687]
+INFO: [Synth 8-6155] done synthesizing module 'ifm_default_clock_driver' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm.v:1676]
+INFO: [Synth 8-6157] synthesizing module 'ifm_struct' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm.v:1516]
+INFO: [Synth 8-6157] synthesizing module 'ifm_2_delay_avarage_freq' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm.v:7]
+INFO: [Synth 8-6157] synthesizing module 'sysgen_accum_0932bf0451' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:109]
+INFO: [Synth 8-6155] done synthesizing module 'sysgen_accum_0932bf0451' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:109]
+INFO: [Synth 8-6157] synthesizing module 'sysgen_constant_71d0fa22b7' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:174]
+INFO: [Synth 8-6155] done synthesizing module 'sysgen_constant_71d0fa22b7' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:174]
+INFO: [Synth 8-6157] synthesizing module 'ifm_xlconvert' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:42]
+INFO: [Synth 8-6157] synthesizing module 'convert_type' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:775]
+INFO: [Synth 8-6157] synthesizing module 'trunc' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:539]
+INFO: [Synth 8-6157] synthesizing module 'pad_lsb' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:158]
+INFO: [Synth 8-6155] done synthesizing module 'pad_lsb' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:158]
+INFO: [Synth 8-6157] synthesizing module 'extend_msb' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:235]
+INFO: [Synth 8-6157] synthesizing module 'zero_ext' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:186]
+INFO: [Synth 8-6155] done synthesizing module 'zero_ext' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:186]
+INFO: [Synth 8-6155] done synthesizing module 'extend_msb' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:235]
+INFO: [Synth 8-6155] done synthesizing module 'trunc' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:539]
+INFO: [Synth 8-6157] synthesizing module 'wrap_arith' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:754]
+INFO: [Synth 8-6157] synthesizing module 'cast' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'cast' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'wrap_arith' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:754]
+INFO: [Synth 8-6157] synthesizing module 'cast__parameterized0' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'cast__parameterized0' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'convert_type' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:775]
+INFO: [Synth 8-6155] done synthesizing module 'ifm_xlconvert' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:42]
+INFO: [Synth 8-6157] synthesizing module 'ifm_xlconvert__parameterized0' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:42]
+INFO: [Synth 8-6157] synthesizing module 'convert_type__parameterized0' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:775]
+INFO: [Synth 8-6157] synthesizing module 'trunc__parameterized0' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:539]
+INFO: [Synth 8-6157] synthesizing module 'extend_msb__parameterized0' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:235]
+INFO: [Synth 8-6157] synthesizing module 'sign_ext' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:211]
+INFO: [Synth 8-6155] done synthesizing module 'sign_ext' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:211]
+INFO: [Synth 8-6155] done synthesizing module 'extend_msb__parameterized0' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:235]
+INFO: [Synth 8-6155] done synthesizing module 'trunc__parameterized0' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:539]
+INFO: [Synth 8-6157] synthesizing module 'wrap_arith__parameterized0' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:754]
+INFO: [Synth 8-6157] synthesizing module 'cast__parameterized1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'cast__parameterized1' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'wrap_arith__parameterized0' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:754]
+INFO: [Synth 8-6157] synthesizing module 'cast__parameterized2' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'cast__parameterized2' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'convert_type__parameterized0' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:775]
+INFO: [Synth 8-6155] done synthesizing module 'ifm_xlconvert__parameterized0' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:42]
+INFO: [Synth 8-6157] synthesizing module 'ifm_xlcounter_free' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:935]
+INFO: [Synth 8-638] synthesizing module 'ifm_c_counter_binary_v12_0_i0' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_c_counter_binary_v12_0_i0/synth/ifm_c_counter_binary_v12_0_i0.vhd:68]
 	Parameter C_IMPLEMENTATION bound to: 0 - type: integer 
 	Parameter C_VERBOSITY bound to: 0 - type: integer 
 	Parameter C_XDEVICEFAMILY bound to: zynquplus - type: string 
@@ -118,25 +118,25 @@ INFO: [Synth 8-638] synthesizing module 'ifm_c_counter_binary_v12_0_i0' [c:/User
 	Parameter C_SCLR_OVERRIDES_SSET bound to: 1 - type: integer 
 	Parameter C_HAS_SSET bound to: 0 - type: integer 
 	Parameter C_HAS_SINIT bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'c_counter_binary_v12_0_21' declared at 'c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_c_counter_binary_v12_0_i1/hdl/c_counter_binary_v12_0_vh_rfs.vhd:4289' bound to instance 'U0' of component 'c_counter_binary_v12_0_21' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_c_counter_binary_v12_0_i0/synth/ifm_c_counter_binary_v12_0_i0.vhd:132]
-INFO: [Synth 8-256] done synthesizing module 'ifm_c_counter_binary_v12_0_i0' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_c_counter_binary_v12_0_i0/synth/ifm_c_counter_binary_v12_0_i0.vhd:68]
-INFO: [Synth 8-6155] done synthesizing module 'ifm_xlcounter_free' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:935]
-WARNING: [Synth 8-7071] port 'up' of module 'ifm_xlcounter_free' is unconnected for instance 'counter' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm.v:102]
-WARNING: [Synth 8-7071] port 'load' of module 'ifm_xlcounter_free' is unconnected for instance 'counter' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm.v:102]
-WARNING: [Synth 8-7071] port 'din' of module 'ifm_xlcounter_free' is unconnected for instance 'counter' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm.v:102]
-WARNING: [Synth 8-7023] instance 'counter' of module 'ifm_xlcounter_free' has 9 connections declared, but only 6 given [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm.v:102]
-INFO: [Synth 8-6157] synthesizing module 'ifm_xldelay' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:182]
-INFO: [Synth 8-6157] synthesizing module 'synth_reg' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:94]
-INFO: [Synth 8-6157] synthesizing module 'srlc33e' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:60]
-INFO: [Synth 8-6157] synthesizing module 'FDE' [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:44132]
-INFO: [Synth 8-6155] done synthesizing module 'FDE' (0#1) [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:44132]
-INFO: [Synth 8-6155] done synthesizing module 'srlc33e' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:60]
-INFO: [Synth 8-6155] done synthesizing module 'synth_reg' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:94]
-INFO: [Synth 8-6155] done synthesizing module 'ifm_xldelay' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:182]
-INFO: [Synth 8-6157] synthesizing module 'xldivider_generator_35fbedb0beb337359c74de660051a815' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:1034]
-INFO: [Synth 8-6157] synthesizing module 'shift_op' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:109]
-INFO: [Synth 8-6155] done synthesizing module 'shift_op' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:109]
-INFO: [Synth 8-638] synthesizing module 'ifm_div_gen_v5_1_i0' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_div_gen_v5_1_i0/synth/ifm_div_gen_v5_1_i0.vhd:73]
+INFO: [Synth 8-3491] module 'c_counter_binary_v12_0_21' declared at 'c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_c_counter_binary_v12_0_i1/hdl/c_counter_binary_v12_0_vh_rfs.vhd:4289' bound to instance 'U0' of component 'c_counter_binary_v12_0_21' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_c_counter_binary_v12_0_i0/synth/ifm_c_counter_binary_v12_0_i0.vhd:132]
+INFO: [Synth 8-256] done synthesizing module 'ifm_c_counter_binary_v12_0_i0' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_c_counter_binary_v12_0_i0/synth/ifm_c_counter_binary_v12_0_i0.vhd:68]
+INFO: [Synth 8-6155] done synthesizing module 'ifm_xlcounter_free' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:935]
+WARNING: [Synth 8-7071] port 'up' of module 'ifm_xlcounter_free' is unconnected for instance 'counter' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm.v:102]
+WARNING: [Synth 8-7071] port 'load' of module 'ifm_xlcounter_free' is unconnected for instance 'counter' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm.v:102]
+WARNING: [Synth 8-7071] port 'din' of module 'ifm_xlcounter_free' is unconnected for instance 'counter' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm.v:102]
+WARNING: [Synth 8-7023] instance 'counter' of module 'ifm_xlcounter_free' has 9 connections declared, but only 6 given [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm.v:102]
+INFO: [Synth 8-6157] synthesizing module 'ifm_xldelay' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:182]
+INFO: [Synth 8-6157] synthesizing module 'synth_reg' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:94]
+INFO: [Synth 8-6157] synthesizing module 'srlc33e' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:60]
+INFO: [Synth 8-6157] synthesizing module 'FDE' [D:/Xiilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:44132]
+INFO: [Synth 8-6155] done synthesizing module 'FDE' (0#1) [D:/Xiilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:44132]
+INFO: [Synth 8-6155] done synthesizing module 'srlc33e' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'synth_reg' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:94]
+INFO: [Synth 8-6155] done synthesizing module 'ifm_xldelay' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:182]
+INFO: [Synth 8-6157] synthesizing module 'xldivider_generator_35fbedb0beb337359c74de660051a815' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:1034]
+INFO: [Synth 8-6157] synthesizing module 'shift_op' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:109]
+INFO: [Synth 8-6155] done synthesizing module 'shift_op' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:109]
+INFO: [Synth 8-638] synthesizing module 'ifm_div_gen_v5_1_i0' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_div_gen_v5_1_i0/synth/ifm_div_gen_v5_1_i0.vhd:73]
 	Parameter C_XDEVICEFAMILY bound to: zynquplus - type: string 
 	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
 	Parameter C_HAS_ACLKEN bound to: 0 - type: integer 
@@ -161,36 +161,36 @@ INFO: [Synth 8-638] synthesizing module 'ifm_div_gen_v5_1_i0' [c:/Users/fsydere/
 	Parameter C_S_AXIS_DIVIDEND_TUSER_WIDTH bound to: 1 - type: integer 
 	Parameter C_M_AXIS_DOUT_TDATA_WIDTH bound to: 88 - type: integer 
 	Parameter C_M_AXIS_DOUT_TUSER_WIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'div_gen_v5_1_24' declared at 'c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_div_gen_v5_1_i1/hdl/div_gen_v5_1_vh_rfs.vhd:12886' bound to instance 'U0' of component 'div_gen_v5_1_24' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_div_gen_v5_1_i0/synth/ifm_div_gen_v5_1_i0.vhd:152]
-INFO: [Synth 8-256] done synthesizing module 'ifm_div_gen_v5_1_i0' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_div_gen_v5_1_i0/synth/ifm_div_gen_v5_1_i0.vhd:73]
-INFO: [Synth 8-6155] done synthesizing module 'xldivider_generator_35fbedb0beb337359c74de660051a815' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:1034]
-INFO: [Synth 8-6157] synthesizing module 'sysgen_inverter_c9b1913825' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:212]
-INFO: [Synth 8-6155] done synthesizing module 'sysgen_inverter_c9b1913825' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:212]
-INFO: [Synth 8-6157] synthesizing module 'sysgen_logical_5f99e03888' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:244]
-INFO: [Synth 8-6155] done synthesizing module 'sysgen_logical_5f99e03888' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:244]
-INFO: [Synth 8-6157] synthesizing module 'ifm_xlregister' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:260]
-INFO: [Synth 8-6157] synthesizing module 'synth_reg_w_init__parameterized0' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg_w_init.v:3]
-INFO: [Synth 8-6157] synthesizing module 'single_reg_w_init__parameterized0' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg_w_init.v:45]
-INFO: [Synth 8-6155] done synthesizing module 'single_reg_w_init__parameterized0' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg_w_init.v:45]
-INFO: [Synth 8-6155] done synthesizing module 'synth_reg_w_init__parameterized0' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg_w_init.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'ifm_xlregister' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:260]
-INFO: [Synth 8-6157] synthesizing module 'sysgen_relational_639524f7d0' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:285]
-INFO: [Synth 8-6155] done synthesizing module 'sysgen_relational_639524f7d0' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:285]
-INFO: [Synth 8-6155] done synthesizing module 'ifm_2_delay_avarage_freq' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm.v:7]
-INFO: [Synth 8-6157] synthesizing module 'ifm_2_delay_avarage_freq1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm.v:210]
-INFO: [Synth 8-6157] synthesizing module 'sysgen_constant_4ef91a5823' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:330]
-INFO: [Synth 8-6155] done synthesizing module 'sysgen_constant_4ef91a5823' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:330]
-WARNING: [Synth 8-7071] port 'up' of module 'ifm_xlcounter_free' is unconnected for instance 'counter' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm.v:305]
-WARNING: [Synth 8-7071] port 'load' of module 'ifm_xlcounter_free' is unconnected for instance 'counter' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm.v:305]
-WARNING: [Synth 8-7071] port 'din' of module 'ifm_xlcounter_free' is unconnected for instance 'counter' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm.v:305]
-WARNING: [Synth 8-7023] instance 'counter' of module 'ifm_xlcounter_free' has 9 connections declared, but only 6 given [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm.v:305]
-INFO: [Synth 8-6155] done synthesizing module 'ifm_2_delay_avarage_freq1' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm.v:210]
-INFO: [Synth 8-6157] synthesizing module 'ifm_2_delay_instantenous_frequency' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm.v:413]
-INFO: [Synth 8-6157] synthesizing module 'ifm_xlcmult' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:811]
-INFO: [Synth 8-638] synthesizing module 'ifm_mult_gen_v12_0_i0' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_mult_gen_v12_0_i0/synth/ifm_mult_gen_v12_0_i0.vhd:69]
-WARNING: [Synth 8-5640] Port 'zero_detect' is missing in component declaration [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_mult_gen_v12_0_i0/synth/ifm_mult_gen_v12_0_i0.vhd:72]
-WARNING: [Synth 8-5640] Port 'pcasc' is missing in component declaration [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_mult_gen_v12_0_i0/synth/ifm_mult_gen_v12_0_i0.vhd:72]
-WARNING: [Synth 8-5640] Port 'pcasc_ext' is missing in component declaration [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_mult_gen_v12_0_i0/synth/ifm_mult_gen_v12_0_i0.vhd:72]
+INFO: [Synth 8-3491] module 'div_gen_v5_1_24' declared at 'c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_div_gen_v5_1_i1/hdl/div_gen_v5_1_vh_rfs.vhd:12886' bound to instance 'U0' of component 'div_gen_v5_1_24' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_div_gen_v5_1_i0/synth/ifm_div_gen_v5_1_i0.vhd:152]
+INFO: [Synth 8-256] done synthesizing module 'ifm_div_gen_v5_1_i0' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_div_gen_v5_1_i0/synth/ifm_div_gen_v5_1_i0.vhd:73]
+INFO: [Synth 8-6155] done synthesizing module 'xldivider_generator_35fbedb0beb337359c74de660051a815' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:1034]
+INFO: [Synth 8-6157] synthesizing module 'sysgen_inverter_c9b1913825' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:212]
+INFO: [Synth 8-6155] done synthesizing module 'sysgen_inverter_c9b1913825' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:212]
+INFO: [Synth 8-6157] synthesizing module 'sysgen_logical_5f99e03888' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:244]
+INFO: [Synth 8-6155] done synthesizing module 'sysgen_logical_5f99e03888' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:244]
+INFO: [Synth 8-6157] synthesizing module 'ifm_xlregister' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:260]
+INFO: [Synth 8-6157] synthesizing module 'synth_reg_w_init__parameterized0' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg_w_init.v:3]
+INFO: [Synth 8-6157] synthesizing module 'single_reg_w_init__parameterized0' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg_w_init.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'single_reg_w_init__parameterized0' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg_w_init.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'synth_reg_w_init__parameterized0' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg_w_init.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ifm_xlregister' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:260]
+INFO: [Synth 8-6157] synthesizing module 'sysgen_relational_639524f7d0' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:285]
+INFO: [Synth 8-6155] done synthesizing module 'sysgen_relational_639524f7d0' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:285]
+INFO: [Synth 8-6155] done synthesizing module 'ifm_2_delay_avarage_freq' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm.v:7]
+INFO: [Synth 8-6157] synthesizing module 'ifm_2_delay_avarage_freq1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm.v:210]
+INFO: [Synth 8-6157] synthesizing module 'sysgen_constant_4ef91a5823' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:330]
+INFO: [Synth 8-6155] done synthesizing module 'sysgen_constant_4ef91a5823' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:330]
+WARNING: [Synth 8-7071] port 'up' of module 'ifm_xlcounter_free' is unconnected for instance 'counter' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm.v:305]
+WARNING: [Synth 8-7071] port 'load' of module 'ifm_xlcounter_free' is unconnected for instance 'counter' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm.v:305]
+WARNING: [Synth 8-7071] port 'din' of module 'ifm_xlcounter_free' is unconnected for instance 'counter' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm.v:305]
+WARNING: [Synth 8-7023] instance 'counter' of module 'ifm_xlcounter_free' has 9 connections declared, but only 6 given [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm.v:305]
+INFO: [Synth 8-6155] done synthesizing module 'ifm_2_delay_avarage_freq1' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm.v:210]
+INFO: [Synth 8-6157] synthesizing module 'ifm_2_delay_instantenous_frequency' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm.v:413]
+INFO: [Synth 8-6157] synthesizing module 'ifm_xlcmult' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:811]
+INFO: [Synth 8-638] synthesizing module 'ifm_mult_gen_v12_0_i0' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_mult_gen_v12_0_i0/synth/ifm_mult_gen_v12_0_i0.vhd:69]
+WARNING: [Synth 8-5640] Port 'zero_detect' is missing in component declaration [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_mult_gen_v12_0_i0/synth/ifm_mult_gen_v12_0_i0.vhd:72]
+WARNING: [Synth 8-5640] Port 'pcasc' is missing in component declaration [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_mult_gen_v12_0_i0/synth/ifm_mult_gen_v12_0_i0.vhd:72]
+WARNING: [Synth 8-5640] Port 'pcasc_ext' is missing in component declaration [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_mult_gen_v12_0_i0/synth/ifm_mult_gen_v12_0_i0.vhd:72]
 	Parameter C_VERBOSITY bound to: 0 - type: integer 
 	Parameter C_MODEL_TYPE bound to: 0 - type: integer 
 	Parameter C_OPTIMIZE_GOAL bound to: 1 - type: integer 
@@ -211,27 +211,27 @@ WARNING: [Synth 8-5640] Port 'pcasc_ext' is missing in component declaration [c:
 	Parameter C_HAS_ZERO_DETECT bound to: 0 - type: integer 
 	Parameter C_ROUND_OUTPUT bound to: 0 - type: integer 
 	Parameter C_ROUND_PT bound to: 0 - type: integer 
-INFO: [Synth 8-3491] module 'mult_gen_v12_0_23' declared at 'c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_mult_gen_v12_0_i2/hdl/mult_gen_v12_0_vh_rfs.vhd:21527' bound to instance 'U0' of component 'mult_gen_v12_0_23' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_mult_gen_v12_0_i0/synth/ifm_mult_gen_v12_0_i0.vhd:130]
-INFO: [Synth 8-256] done synthesizing module 'ifm_mult_gen_v12_0_i0' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_mult_gen_v12_0_i0/synth/ifm_mult_gen_v12_0_i0.vhd:69]
-INFO: [Synth 8-6157] synthesizing module 'zero_ext__parameterized0' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:186]
-INFO: [Synth 8-6155] done synthesizing module 'zero_ext__parameterized0' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:186]
-INFO: [Synth 8-6157] synthesizing module 'convert_type__parameterized1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:775]
-INFO: [Synth 8-6157] synthesizing module 'trunc__parameterized1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:539]
-INFO: [Synth 8-6157] synthesizing module 'extend_msb__parameterized1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:235]
-INFO: [Synth 8-6157] synthesizing module 'sign_ext__parameterized0' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:211]
-INFO: [Synth 8-6155] done synthesizing module 'sign_ext__parameterized0' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:211]
-INFO: [Synth 8-6155] done synthesizing module 'extend_msb__parameterized1' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:235]
-INFO: [Synth 8-6155] done synthesizing module 'trunc__parameterized1' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:539]
-INFO: [Synth 8-6157] synthesizing module 'wrap_arith__parameterized1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:754]
-INFO: [Synth 8-6157] synthesizing module 'cast__parameterized3' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:13]
-INFO: [Synth 8-6155] done synthesizing module 'cast__parameterized3' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:13]
-INFO: [Synth 8-6155] done synthesizing module 'wrap_arith__parameterized1' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:754]
-INFO: [Synth 8-6157] synthesizing module 'cast__parameterized4' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:13]
-INFO: [Synth 8-6155] done synthesizing module 'cast__parameterized4' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:13]
-INFO: [Synth 8-6155] done synthesizing module 'convert_type__parameterized1' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:775]
-INFO: [Synth 8-6155] done synthesizing module 'ifm_xlcmult' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:811]
-INFO: [Synth 8-6157] synthesizing module 'xlcordic_4466f51b23fa2d0b5b38a3bbfad0b000' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:1075]
-INFO: [Synth 8-638] synthesizing module 'ifm_cordic_v6_0_i0' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_cordic_v6_0_i0/synth/ifm_cordic_v6_0_i0.vhd:70]
+INFO: [Synth 8-3491] module 'mult_gen_v12_0_23' declared at 'c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_mult_gen_v12_0_i2/hdl/mult_gen_v12_0_vh_rfs.vhd:21527' bound to instance 'U0' of component 'mult_gen_v12_0_23' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_mult_gen_v12_0_i0/synth/ifm_mult_gen_v12_0_i0.vhd:130]
+INFO: [Synth 8-256] done synthesizing module 'ifm_mult_gen_v12_0_i0' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_mult_gen_v12_0_i0/synth/ifm_mult_gen_v12_0_i0.vhd:69]
+INFO: [Synth 8-6157] synthesizing module 'zero_ext__parameterized0' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:186]
+INFO: [Synth 8-6155] done synthesizing module 'zero_ext__parameterized0' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:186]
+INFO: [Synth 8-6157] synthesizing module 'convert_type__parameterized1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:775]
+INFO: [Synth 8-6157] synthesizing module 'trunc__parameterized1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:539]
+INFO: [Synth 8-6157] synthesizing module 'extend_msb__parameterized1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:235]
+INFO: [Synth 8-6157] synthesizing module 'sign_ext__parameterized0' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:211]
+INFO: [Synth 8-6155] done synthesizing module 'sign_ext__parameterized0' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:211]
+INFO: [Synth 8-6155] done synthesizing module 'extend_msb__parameterized1' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:235]
+INFO: [Synth 8-6155] done synthesizing module 'trunc__parameterized1' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:539]
+INFO: [Synth 8-6157] synthesizing module 'wrap_arith__parameterized1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:754]
+INFO: [Synth 8-6157] synthesizing module 'cast__parameterized3' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'cast__parameterized3' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'wrap_arith__parameterized1' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:754]
+INFO: [Synth 8-6157] synthesizing module 'cast__parameterized4' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'cast__parameterized4' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'convert_type__parameterized1' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:775]
+INFO: [Synth 8-6155] done synthesizing module 'ifm_xlcmult' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:811]
+INFO: [Synth 8-6157] synthesizing module 'xlcordic_4466f51b23fa2d0b5b38a3bbfad0b000' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:1075]
+INFO: [Synth 8-638] synthesizing module 'ifm_cordic_v6_0_i0' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_cordic_v6_0_i0/synth/ifm_cordic_v6_0_i0.vhd:70]
 	Parameter C_ARCHITECTURE bound to: 2 - type: integer 
 	Parameter C_CORDIC_FUNCTION bound to: 3 - type: integer 
 	Parameter C_COARSE_ROTATE bound to: 1 - type: integer 
@@ -262,61 +262,61 @@ INFO: [Synth 8-638] synthesizing module 'ifm_cordic_v6_0_i0' [c:/Users/fsydere/W
 	Parameter C_S_AXIS_CARTESIAN_TUSER_WIDTH bound to: 1 - type: integer 
 	Parameter C_M_AXIS_DOUT_TDATA_WIDTH bound to: 16 - type: integer 
 	Parameter C_M_AXIS_DOUT_TUSER_WIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'cordic_v6_0_24' declared at 'c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_cordic_v6_0_i0/hdl/cordic_v6_0_vh_rfs.vhd:10026' bound to instance 'U0' of component 'cordic_v6_0_24' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_cordic_v6_0_i0/synth/ifm_cordic_v6_0_i0.vhd:152]
-INFO: [Synth 8-256] done synthesizing module 'ifm_cordic_v6_0_i0' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_cordic_v6_0_i0/synth/ifm_cordic_v6_0_i0.vhd:70]
-INFO: [Synth 8-6155] done synthesizing module 'xlcordic_4466f51b23fa2d0b5b38a3bbfad0b000' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:1075]
-INFO: [Synth 8-6157] synthesizing module 'ifm_xlconvert__parameterized1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:42]
-INFO: [Synth 8-6157] synthesizing module 'convert_type__parameterized2' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:775]
-INFO: [Synth 8-6157] synthesizing module 'trunc__parameterized2' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:539]
-INFO: [Synth 8-6157] synthesizing module 'extend_msb__parameterized2' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:235]
-INFO: [Synth 8-6157] synthesizing module 'sign_ext__parameterized1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:211]
-INFO: [Synth 8-6155] done synthesizing module 'sign_ext__parameterized1' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:211]
-INFO: [Synth 8-6155] done synthesizing module 'extend_msb__parameterized2' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:235]
-INFO: [Synth 8-6155] done synthesizing module 'trunc__parameterized2' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:539]
-INFO: [Synth 8-6157] synthesizing module 'wrap_arith__parameterized2' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:754]
-INFO: [Synth 8-6157] synthesizing module 'cast__parameterized5' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:13]
-INFO: [Synth 8-6155] done synthesizing module 'cast__parameterized5' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:13]
-INFO: [Synth 8-6155] done synthesizing module 'wrap_arith__parameterized2' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:754]
-INFO: [Synth 8-6157] synthesizing module 'cast__parameterized6' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:13]
-INFO: [Synth 8-6155] done synthesizing module 'cast__parameterized6' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:13]
-INFO: [Synth 8-6155] done synthesizing module 'convert_type__parameterized2' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:775]
-INFO: [Synth 8-6157] synthesizing module 'synth_reg__parameterized0' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:94]
-INFO: [Synth 8-6157] synthesizing module 'srlc33e__parameterized0' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:60]
-INFO: [Synth 8-6155] done synthesizing module 'srlc33e__parameterized0' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:60]
-INFO: [Synth 8-6155] done synthesizing module 'synth_reg__parameterized0' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:94]
-INFO: [Synth 8-6155] done synthesizing module 'ifm_xlconvert__parameterized1' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:42]
-INFO: [Synth 8-6157] synthesizing module 'ifm_xlconvert__parameterized2' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:42]
-INFO: [Synth 8-6157] synthesizing module 'convert_type__parameterized3' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:775]
-INFO: [Synth 8-6157] synthesizing module 'trunc__parameterized3' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:539]
-INFO: [Synth 8-6157] synthesizing module 'pad_lsb__parameterized0' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:158]
-INFO: [Synth 8-6155] done synthesizing module 'pad_lsb__parameterized0' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:158]
-INFO: [Synth 8-6157] synthesizing module 'extend_msb__parameterized3' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:235]
-INFO: [Synth 8-6157] synthesizing module 'sign_ext__parameterized2' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:211]
-INFO: [Synth 8-6155] done synthesizing module 'sign_ext__parameterized2' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:211]
-INFO: [Synth 8-6155] done synthesizing module 'extend_msb__parameterized3' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:235]
-INFO: [Synth 8-6155] done synthesizing module 'trunc__parameterized3' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:539]
-INFO: [Synth 8-6157] synthesizing module 'wrap_arith__parameterized3' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:754]
-INFO: [Synth 8-6157] synthesizing module 'cast__parameterized7' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:13]
-INFO: [Synth 8-6155] done synthesizing module 'cast__parameterized7' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:13]
-INFO: [Synth 8-6155] done synthesizing module 'wrap_arith__parameterized3' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:754]
-INFO: [Synth 8-6157] synthesizing module 'cast__parameterized8' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:13]
-INFO: [Synth 8-6155] done synthesizing module 'cast__parameterized8' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:13]
-INFO: [Synth 8-6155] done synthesizing module 'convert_type__parameterized3' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:775]
-INFO: [Synth 8-6155] done synthesizing module 'ifm_xlconvert__parameterized2' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:42]
-INFO: [Synth 8-6157] synthesizing module 'ifm_xldelay__parameterized0' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:182]
-INFO: [Synth 8-6157] synthesizing module 'synth_reg__parameterized1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:94]
-INFO: [Synth 8-6157] synthesizing module 'srlc33e__parameterized1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:60]
-INFO: [Synth 8-6157] synthesizing module 'SRLC32E' [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:158762]
-INFO: [Synth 8-6155] done synthesizing module 'SRLC32E' (0#1) [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:158762]
-WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-INFO: [Synth 8-6155] done synthesizing module 'srlc33e__parameterized1' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:60]
-INFO: [Synth 8-6155] done synthesizing module 'synth_reg__parameterized1' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:94]
-INFO: [Synth 8-6155] done synthesizing module 'ifm_xldelay__parameterized0' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:182]
-INFO: [Synth 8-6157] synthesizing module 'sysgen_negate_edd45ee5a2' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:338]
-INFO: [Synth 8-6155] done synthesizing module 'sysgen_negate_edd45ee5a2' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:338]
-INFO: [Synth 8-6157] synthesizing module 'xlifm_cmpy_v6_0_i0_90479674483ca40bd316442220988f91' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:1105]
-INFO: [Synth 8-638] synthesizing module 'ifm_cmpy_v6_0_i0' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_cmpy_v6_0_i0/synth/ifm_cmpy_v6_0_i0.vhd:72]
+INFO: [Synth 8-3491] module 'cordic_v6_0_24' declared at 'c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_cordic_v6_0_i0/hdl/cordic_v6_0_vh_rfs.vhd:10026' bound to instance 'U0' of component 'cordic_v6_0_24' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_cordic_v6_0_i0/synth/ifm_cordic_v6_0_i0.vhd:152]
+INFO: [Synth 8-256] done synthesizing module 'ifm_cordic_v6_0_i0' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_cordic_v6_0_i0/synth/ifm_cordic_v6_0_i0.vhd:70]
+INFO: [Synth 8-6155] done synthesizing module 'xlcordic_4466f51b23fa2d0b5b38a3bbfad0b000' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:1075]
+INFO: [Synth 8-6157] synthesizing module 'ifm_xlconvert__parameterized1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:42]
+INFO: [Synth 8-6157] synthesizing module 'convert_type__parameterized2' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:775]
+INFO: [Synth 8-6157] synthesizing module 'trunc__parameterized2' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:539]
+INFO: [Synth 8-6157] synthesizing module 'extend_msb__parameterized2' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:235]
+INFO: [Synth 8-6157] synthesizing module 'sign_ext__parameterized1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:211]
+INFO: [Synth 8-6155] done synthesizing module 'sign_ext__parameterized1' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:211]
+INFO: [Synth 8-6155] done synthesizing module 'extend_msb__parameterized2' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:235]
+INFO: [Synth 8-6155] done synthesizing module 'trunc__parameterized2' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:539]
+INFO: [Synth 8-6157] synthesizing module 'wrap_arith__parameterized2' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:754]
+INFO: [Synth 8-6157] synthesizing module 'cast__parameterized5' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'cast__parameterized5' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'wrap_arith__parameterized2' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:754]
+INFO: [Synth 8-6157] synthesizing module 'cast__parameterized6' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'cast__parameterized6' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'convert_type__parameterized2' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:775]
+INFO: [Synth 8-6157] synthesizing module 'synth_reg__parameterized0' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:94]
+INFO: [Synth 8-6157] synthesizing module 'srlc33e__parameterized0' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'srlc33e__parameterized0' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'synth_reg__parameterized0' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:94]
+INFO: [Synth 8-6155] done synthesizing module 'ifm_xlconvert__parameterized1' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:42]
+INFO: [Synth 8-6157] synthesizing module 'ifm_xlconvert__parameterized2' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:42]
+INFO: [Synth 8-6157] synthesizing module 'convert_type__parameterized3' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:775]
+INFO: [Synth 8-6157] synthesizing module 'trunc__parameterized3' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:539]
+INFO: [Synth 8-6157] synthesizing module 'pad_lsb__parameterized0' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:158]
+INFO: [Synth 8-6155] done synthesizing module 'pad_lsb__parameterized0' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:158]
+INFO: [Synth 8-6157] synthesizing module 'extend_msb__parameterized3' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:235]
+INFO: [Synth 8-6157] synthesizing module 'sign_ext__parameterized2' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:211]
+INFO: [Synth 8-6155] done synthesizing module 'sign_ext__parameterized2' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:211]
+INFO: [Synth 8-6155] done synthesizing module 'extend_msb__parameterized3' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:235]
+INFO: [Synth 8-6155] done synthesizing module 'trunc__parameterized3' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:539]
+INFO: [Synth 8-6157] synthesizing module 'wrap_arith__parameterized3' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:754]
+INFO: [Synth 8-6157] synthesizing module 'cast__parameterized7' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'cast__parameterized7' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'wrap_arith__parameterized3' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:754]
+INFO: [Synth 8-6157] synthesizing module 'cast__parameterized8' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'cast__parameterized8' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'convert_type__parameterized3' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:775]
+INFO: [Synth 8-6155] done synthesizing module 'ifm_xlconvert__parameterized2' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:42]
+INFO: [Synth 8-6157] synthesizing module 'ifm_xldelay__parameterized0' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:182]
+INFO: [Synth 8-6157] synthesizing module 'synth_reg__parameterized1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:94]
+INFO: [Synth 8-6157] synthesizing module 'srlc33e__parameterized1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:60]
+INFO: [Synth 8-6157] synthesizing module 'SRLC32E' [D:/Xiilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:158762]
+INFO: [Synth 8-6155] done synthesizing module 'SRLC32E' (0#1) [D:/Xiilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:158762]
+WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+INFO: [Synth 8-6155] done synthesizing module 'srlc33e__parameterized1' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'synth_reg__parameterized1' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:94]
+INFO: [Synth 8-6155] done synthesizing module 'ifm_xldelay__parameterized0' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:182]
+INFO: [Synth 8-6157] synthesizing module 'sysgen_negate_edd45ee5a2' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:338]
+INFO: [Synth 8-6155] done synthesizing module 'sysgen_negate_edd45ee5a2' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:338]
+INFO: [Synth 8-6157] synthesizing module 'xlifm_cmpy_v6_0_i0_90479674483ca40bd316442220988f91' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:1105]
+INFO: [Synth 8-638] synthesizing module 'ifm_cmpy_v6_0_i0' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_cmpy_v6_0_i0/synth/ifm_cmpy_v6_0_i0.vhd:72]
 	Parameter C_VERBOSITY bound to: 0 - type: integer 
 	Parameter C_XDEVICEFAMILY bound to: zynquplus - type: string 
 	Parameter C_XDEVICE bound to: xczu9eg - type: string 
@@ -350,16 +350,16 @@ INFO: [Synth 8-638] synthesizing module 'ifm_cmpy_v6_0_i0' [c:/Users/fsydere/Wor
 	Parameter C_S_AXIS_CTRL_TUSER_WIDTH bound to: 1 - type: integer 
 	Parameter C_M_AXIS_DOUT_TDATA_WIDTH bound to: 80 - type: integer 
 	Parameter C_M_AXIS_DOUT_TUSER_WIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'cmpy_v6_0_26' declared at 'c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_cmpy_v6_0_i0/hdl/cmpy_v6_0_vh_rfs.vhd:16362' bound to instance 'U0' of component 'cmpy_v6_0_26' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_cmpy_v6_0_i0/synth/ifm_cmpy_v6_0_i0.vhd:166]
-INFO: [Synth 8-256] done synthesizing module 'ifm_cmpy_v6_0_i0' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_cmpy_v6_0_i0/synth/ifm_cmpy_v6_0_i0.vhd:72]
-INFO: [Synth 8-6155] done synthesizing module 'xlifm_cmpy_v6_0_i0_90479674483ca40bd316442220988f91' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:1105]
-INFO: [Synth 8-6155] done synthesizing module 'ifm_2_delay_instantenous_frequency' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm.v:413]
-INFO: [Synth 8-6157] synthesizing module 'ifm_4_delay_instantenous_frequency' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm.v:642]
-INFO: [Synth 8-6157] synthesizing module 'ifm_xlcmult__parameterized0' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:811]
-INFO: [Synth 8-638] synthesizing module 'ifm_mult_gen_v12_0_i1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_mult_gen_v12_0_i1/synth/ifm_mult_gen_v12_0_i1.vhd:69]
-WARNING: [Synth 8-5640] Port 'zero_detect' is missing in component declaration [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_mult_gen_v12_0_i1/synth/ifm_mult_gen_v12_0_i1.vhd:72]
-WARNING: [Synth 8-5640] Port 'pcasc' is missing in component declaration [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_mult_gen_v12_0_i1/synth/ifm_mult_gen_v12_0_i1.vhd:72]
-WARNING: [Synth 8-5640] Port 'pcasc_ext' is missing in component declaration [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_mult_gen_v12_0_i1/synth/ifm_mult_gen_v12_0_i1.vhd:72]
+INFO: [Synth 8-3491] module 'cmpy_v6_0_26' declared at 'c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_cmpy_v6_0_i0/hdl/cmpy_v6_0_vh_rfs.vhd:16362' bound to instance 'U0' of component 'cmpy_v6_0_26' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_cmpy_v6_0_i0/synth/ifm_cmpy_v6_0_i0.vhd:166]
+INFO: [Synth 8-256] done synthesizing module 'ifm_cmpy_v6_0_i0' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_cmpy_v6_0_i0/synth/ifm_cmpy_v6_0_i0.vhd:72]
+INFO: [Synth 8-6155] done synthesizing module 'xlifm_cmpy_v6_0_i0_90479674483ca40bd316442220988f91' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:1105]
+INFO: [Synth 8-6155] done synthesizing module 'ifm_2_delay_instantenous_frequency' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm.v:413]
+INFO: [Synth 8-6157] synthesizing module 'ifm_4_delay_instantenous_frequency' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm.v:642]
+INFO: [Synth 8-6157] synthesizing module 'ifm_xlcmult__parameterized0' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:811]
+INFO: [Synth 8-638] synthesizing module 'ifm_mult_gen_v12_0_i1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_mult_gen_v12_0_i1/synth/ifm_mult_gen_v12_0_i1.vhd:69]
+WARNING: [Synth 8-5640] Port 'zero_detect' is missing in component declaration [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_mult_gen_v12_0_i1/synth/ifm_mult_gen_v12_0_i1.vhd:72]
+WARNING: [Synth 8-5640] Port 'pcasc' is missing in component declaration [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_mult_gen_v12_0_i1/synth/ifm_mult_gen_v12_0_i1.vhd:72]
+WARNING: [Synth 8-5640] Port 'pcasc_ext' is missing in component declaration [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_mult_gen_v12_0_i1/synth/ifm_mult_gen_v12_0_i1.vhd:72]
 	Parameter C_VERBOSITY bound to: 0 - type: integer 
 	Parameter C_MODEL_TYPE bound to: 0 - type: integer 
 	Parameter C_OPTIMIZE_GOAL bound to: 1 - type: integer 
@@ -380,31 +380,31 @@ WARNING: [Synth 8-5640] Port 'pcasc_ext' is missing in component declaration [c:
 	Parameter C_HAS_ZERO_DETECT bound to: 0 - type: integer 
 	Parameter C_ROUND_OUTPUT bound to: 0 - type: integer 
 	Parameter C_ROUND_PT bound to: 0 - type: integer 
-INFO: [Synth 8-3491] module 'mult_gen_v12_0_23' declared at 'c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_mult_gen_v12_0_i2/hdl/mult_gen_v12_0_vh_rfs.vhd:21527' bound to instance 'U0' of component 'mult_gen_v12_0_23' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_mult_gen_v12_0_i1/synth/ifm_mult_gen_v12_0_i1.vhd:130]
-INFO: [Synth 8-256] done synthesizing module 'ifm_mult_gen_v12_0_i1' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_mult_gen_v12_0_i1/synth/ifm_mult_gen_v12_0_i1.vhd:69]
-INFO: [Synth 8-6155] done synthesizing module 'ifm_xlcmult__parameterized0' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:811]
-INFO: [Synth 8-6155] done synthesizing module 'ifm_4_delay_instantenous_frequency' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm.v:642]
-INFO: [Synth 8-6157] synthesizing module 'ifm_envelope_detection' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm.v:1442]
-INFO: [Synth 8-6157] synthesizing module 'ifm_envelope_detection_x0' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm.v:871]
-INFO: [Synth 8-6157] synthesizing module 'sysgen_logical_2283bfdd69' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:388]
-INFO: [Synth 8-6155] done synthesizing module 'sysgen_logical_2283bfdd69' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:388]
-INFO: [Synth 8-6157] synthesizing module 'sysgen_logical_f09796fb8a' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:407]
-INFO: [Synth 8-6155] done synthesizing module 'sysgen_logical_f09796fb8a' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:407]
-INFO: [Synth 8-6157] synthesizing module 'ifm_xldelay__parameterized1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:182]
-INFO: [Synth 8-6157] synthesizing module 'synth_reg__parameterized2' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:94]
-INFO: [Synth 8-6157] synthesizing module 'srlc33e__parameterized2' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:60]
-INFO: [Synth 8-6155] done synthesizing module 'srlc33e__parameterized2' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:60]
-INFO: [Synth 8-6155] done synthesizing module 'synth_reg__parameterized2' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:94]
-INFO: [Synth 8-6155] done synthesizing module 'ifm_xldelay__parameterized1' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:182]
-INFO: [Synth 8-6157] synthesizing module 'sysgen_relational_e29186f284' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:432]
-INFO: [Synth 8-6155] done synthesizing module 'sysgen_relational_e29186f284' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:432]
-INFO: [Synth 8-6155] done synthesizing module 'ifm_envelope_detection_x0' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm.v:871]
-INFO: [Synth 8-6157] synthesizing module 'ifm_threshold_detection' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm.v:1121]
-INFO: [Synth 8-6157] synthesizing module 'ifm_xlcmult__parameterized1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:811]
-INFO: [Synth 8-638] synthesizing module 'ifm_mult_gen_v12_0_i2' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_mult_gen_v12_0_i2/synth/ifm_mult_gen_v12_0_i2.vhd:66]
-WARNING: [Synth 8-5640] Port 'zero_detect' is missing in component declaration [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_mult_gen_v12_0_i2/synth/ifm_mult_gen_v12_0_i2.vhd:69]
-WARNING: [Synth 8-5640] Port 'pcasc' is missing in component declaration [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_mult_gen_v12_0_i2/synth/ifm_mult_gen_v12_0_i2.vhd:69]
-WARNING: [Synth 8-5640] Port 'pcasc_ext' is missing in component declaration [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_mult_gen_v12_0_i2/synth/ifm_mult_gen_v12_0_i2.vhd:69]
+INFO: [Synth 8-3491] module 'mult_gen_v12_0_23' declared at 'c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_mult_gen_v12_0_i2/hdl/mult_gen_v12_0_vh_rfs.vhd:21527' bound to instance 'U0' of component 'mult_gen_v12_0_23' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_mult_gen_v12_0_i1/synth/ifm_mult_gen_v12_0_i1.vhd:130]
+INFO: [Synth 8-256] done synthesizing module 'ifm_mult_gen_v12_0_i1' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_mult_gen_v12_0_i1/synth/ifm_mult_gen_v12_0_i1.vhd:69]
+INFO: [Synth 8-6155] done synthesizing module 'ifm_xlcmult__parameterized0' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:811]
+INFO: [Synth 8-6155] done synthesizing module 'ifm_4_delay_instantenous_frequency' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm.v:642]
+INFO: [Synth 8-6157] synthesizing module 'ifm_envelope_detection' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm.v:1442]
+INFO: [Synth 8-6157] synthesizing module 'ifm_envelope_detection_x0' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm.v:871]
+INFO: [Synth 8-6157] synthesizing module 'sysgen_logical_2283bfdd69' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:388]
+INFO: [Synth 8-6155] done synthesizing module 'sysgen_logical_2283bfdd69' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:388]
+INFO: [Synth 8-6157] synthesizing module 'sysgen_logical_f09796fb8a' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:407]
+INFO: [Synth 8-6155] done synthesizing module 'sysgen_logical_f09796fb8a' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:407]
+INFO: [Synth 8-6157] synthesizing module 'ifm_xldelay__parameterized1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:182]
+INFO: [Synth 8-6157] synthesizing module 'synth_reg__parameterized2' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:94]
+INFO: [Synth 8-6157] synthesizing module 'srlc33e__parameterized2' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'srlc33e__parameterized2' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'synth_reg__parameterized2' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:94]
+INFO: [Synth 8-6155] done synthesizing module 'ifm_xldelay__parameterized1' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:182]
+INFO: [Synth 8-6157] synthesizing module 'sysgen_relational_e29186f284' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:432]
+INFO: [Synth 8-6155] done synthesizing module 'sysgen_relational_e29186f284' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:432]
+INFO: [Synth 8-6155] done synthesizing module 'ifm_envelope_detection_x0' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm.v:871]
+INFO: [Synth 8-6157] synthesizing module 'ifm_threshold_detection' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm.v:1121]
+INFO: [Synth 8-6157] synthesizing module 'ifm_xlcmult__parameterized1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:811]
+INFO: [Synth 8-638] synthesizing module 'ifm_mult_gen_v12_0_i2' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_mult_gen_v12_0_i2/synth/ifm_mult_gen_v12_0_i2.vhd:66]
+WARNING: [Synth 8-5640] Port 'zero_detect' is missing in component declaration [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_mult_gen_v12_0_i2/synth/ifm_mult_gen_v12_0_i2.vhd:69]
+WARNING: [Synth 8-5640] Port 'pcasc' is missing in component declaration [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_mult_gen_v12_0_i2/synth/ifm_mult_gen_v12_0_i2.vhd:69]
+WARNING: [Synth 8-5640] Port 'pcasc_ext' is missing in component declaration [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_mult_gen_v12_0_i2/synth/ifm_mult_gen_v12_0_i2.vhd:69]
 	Parameter C_VERBOSITY bound to: 0 - type: integer 
 	Parameter C_MODEL_TYPE bound to: 0 - type: integer 
 	Parameter C_OPTIMIZE_GOAL bound to: 1 - type: integer 
@@ -425,35 +425,35 @@ WARNING: [Synth 8-5640] Port 'pcasc_ext' is missing in component declaration [c:
 	Parameter C_HAS_ZERO_DETECT bound to: 0 - type: integer 
 	Parameter C_ROUND_OUTPUT bound to: 0 - type: integer 
 	Parameter C_ROUND_PT bound to: 0 - type: integer 
-INFO: [Synth 8-3491] module 'mult_gen_v12_0_23' declared at 'c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_mult_gen_v12_0_i2/hdl/mult_gen_v12_0_vh_rfs.vhd:21527' bound to instance 'U0' of component 'mult_gen_v12_0_23' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_mult_gen_v12_0_i2/synth/ifm_mult_gen_v12_0_i2.vhd:118]
-INFO: [Synth 8-256] done synthesizing module 'ifm_mult_gen_v12_0_i2' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_mult_gen_v12_0_i2/synth/ifm_mult_gen_v12_0_i2.vhd:66]
-INFO: [Synth 8-6157] synthesizing module 'synth_reg__parameterized3' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:94]
-INFO: [Synth 8-6157] synthesizing module 'srlc33e__parameterized3' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:60]
-INFO: [Synth 8-6155] done synthesizing module 'srlc33e__parameterized3' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:60]
-INFO: [Synth 8-6155] done synthesizing module 'synth_reg__parameterized3' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:94]
-INFO: [Synth 8-6157] synthesizing module 'zero_ext__parameterized1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:186]
-INFO: [Synth 8-6155] done synthesizing module 'zero_ext__parameterized1' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:186]
-INFO: [Synth 8-6157] synthesizing module 'convert_type__parameterized4' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:775]
-INFO: [Synth 8-6157] synthesizing module 'trunc__parameterized4' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:539]
-INFO: [Synth 8-6157] synthesizing module 'extend_msb__parameterized4' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:235]
-INFO: [Synth 8-6157] synthesizing module 'sign_ext__parameterized3' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:211]
-INFO: [Synth 8-6155] done synthesizing module 'sign_ext__parameterized3' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:211]
-INFO: [Synth 8-6155] done synthesizing module 'extend_msb__parameterized4' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:235]
-INFO: [Synth 8-6155] done synthesizing module 'trunc__parameterized4' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:539]
-INFO: [Synth 8-6157] synthesizing module 'wrap_arith__parameterized4' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:754]
-INFO: [Synth 8-6157] synthesizing module 'cast__parameterized9' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:13]
+INFO: [Synth 8-3491] module 'mult_gen_v12_0_23' declared at 'c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_mult_gen_v12_0_i2/hdl/mult_gen_v12_0_vh_rfs.vhd:21527' bound to instance 'U0' of component 'mult_gen_v12_0_23' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_mult_gen_v12_0_i2/synth/ifm_mult_gen_v12_0_i2.vhd:118]
+INFO: [Synth 8-256] done synthesizing module 'ifm_mult_gen_v12_0_i2' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_mult_gen_v12_0_i2/synth/ifm_mult_gen_v12_0_i2.vhd:66]
+INFO: [Synth 8-6157] synthesizing module 'synth_reg__parameterized3' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:94]
+INFO: [Synth 8-6157] synthesizing module 'srlc33e__parameterized3' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'srlc33e__parameterized3' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'synth_reg__parameterized3' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:94]
+INFO: [Synth 8-6157] synthesizing module 'zero_ext__parameterized1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:186]
+INFO: [Synth 8-6155] done synthesizing module 'zero_ext__parameterized1' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:186]
+INFO: [Synth 8-6157] synthesizing module 'convert_type__parameterized4' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:775]
+INFO: [Synth 8-6157] synthesizing module 'trunc__parameterized4' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:539]
+INFO: [Synth 8-6157] synthesizing module 'extend_msb__parameterized4' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:235]
+INFO: [Synth 8-6157] synthesizing module 'sign_ext__parameterized3' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:211]
+INFO: [Synth 8-6155] done synthesizing module 'sign_ext__parameterized3' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:211]
+INFO: [Synth 8-6155] done synthesizing module 'extend_msb__parameterized4' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:235]
+INFO: [Synth 8-6155] done synthesizing module 'trunc__parameterized4' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:539]
+INFO: [Synth 8-6157] synthesizing module 'wrap_arith__parameterized4' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:754]
+INFO: [Synth 8-6157] synthesizing module 'cast__parameterized9' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:13]
 INFO: [Common 17-14] Message 'Synth 8-6157' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Synth 8-6155] done synthesizing module 'cast__parameterized9' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:13]
-INFO: [Synth 8-6155] done synthesizing module 'wrap_arith__parameterized4' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:754]
-INFO: [Synth 8-6155] done synthesizing module 'cast__parameterized10' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:13]
-INFO: [Synth 8-6155] done synthesizing module 'convert_type__parameterized4' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:775]
-INFO: [Synth 8-6155] done synthesizing module 'ifm_xlcmult__parameterized1' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:811]
-INFO: [Synth 8-6155] done synthesizing module 'sysgen_constant_117d343824' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:515]
-INFO: [Synth 8-6155] done synthesizing module 'sysgen_constant_18e0b164c6' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:523]
-INFO: [Synth 8-6155] done synthesizing module 'zero_ext__parameterized2' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:186]
-INFO: [Synth 8-6155] done synthesizing module 'round_towards_inf' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:295]
+INFO: [Synth 8-6155] done synthesizing module 'cast__parameterized9' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'wrap_arith__parameterized4' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:754]
+INFO: [Synth 8-6155] done synthesizing module 'cast__parameterized10' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'convert_type__parameterized4' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:775]
+INFO: [Synth 8-6155] done synthesizing module 'ifm_xlcmult__parameterized1' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:811]
+INFO: [Synth 8-6155] done synthesizing module 'sysgen_constant_117d343824' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:515]
+INFO: [Synth 8-6155] done synthesizing module 'sysgen_constant_18e0b164c6' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:523]
+INFO: [Synth 8-6155] done synthesizing module 'zero_ext__parameterized2' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:186]
+INFO: [Synth 8-6155] done synthesizing module 'round_towards_inf' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/convert_type.v:295]
 INFO: [Common 17-14] Message 'Synth 8-6155' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Synth 8-638] synthesizing module 'ifm_c_counter_binary_v12_0_i1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_c_counter_binary_v12_0_i1/synth/ifm_c_counter_binary_v12_0_i1.vhd:68]
+INFO: [Synth 8-638] synthesizing module 'ifm_c_counter_binary_v12_0_i1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_c_counter_binary_v12_0_i1/synth/ifm_c_counter_binary_v12_0_i1.vhd:68]
 	Parameter C_IMPLEMENTATION bound to: 0 - type: integer 
 	Parameter C_VERBOSITY bound to: 0 - type: integer 
 	Parameter C_XDEVICEFAMILY bound to: zynquplus - type: string 
@@ -476,139 +476,139 @@ INFO: [Synth 8-638] synthesizing module 'ifm_c_counter_binary_v12_0_i1' [c:/User
 	Parameter C_SCLR_OVERRIDES_SSET bound to: 1 - type: integer 
 	Parameter C_HAS_SSET bound to: 0 - type: integer 
 	Parameter C_HAS_SINIT bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'c_counter_binary_v12_0_21' declared at 'c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_c_counter_binary_v12_0_i1/hdl/c_counter_binary_v12_0_vh_rfs.vhd:4289' bound to instance 'U0' of component 'c_counter_binary_v12_0_21' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_c_counter_binary_v12_0_i1/synth/ifm_c_counter_binary_v12_0_i1.vhd:132]
-INFO: [Synth 8-256] done synthesizing module 'ifm_c_counter_binary_v12_0_i1' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_c_counter_binary_v12_0_i1/synth/ifm_c_counter_binary_v12_0_i1.vhd:68]
-WARNING: [Synth 8-7071] port 'up' of module 'ifm_xlcounter_limit' is unconnected for instance 'counter' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm.v:1295]
-WARNING: [Synth 8-7023] instance 'counter' of module 'ifm_xlcounter_limit' has 7 connections declared, but only 6 given [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm.v:1295]
-WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
-INFO: [Synth 8-638] synthesizing module 'ifm_div_gen_v5_1_i1' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_div_gen_v5_1_i1/synth/ifm_div_gen_v5_1_i1.vhd:73]
+INFO: [Synth 8-3491] module 'c_counter_binary_v12_0_21' declared at 'c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_c_counter_binary_v12_0_i1/hdl/c_counter_binary_v12_0_vh_rfs.vhd:4289' bound to instance 'U0' of component 'c_counter_binary_v12_0_21' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_c_counter_binary_v12_0_i1/synth/ifm_c_counter_binary_v12_0_i1.vhd:132]
+INFO: [Synth 8-256] done synthesizing module 'ifm_c_counter_binary_v12_0_i1' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_c_counter_binary_v12_0_i1/synth/ifm_c_counter_binary_v12_0_i1.vhd:68]
+WARNING: [Synth 8-7071] port 'up' of module 'ifm_xlcounter_limit' is unconnected for instance 'counter' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm.v:1295]
+WARNING: [Synth 8-7023] instance 'counter' of module 'ifm_xlcounter_limit' has 7 connections declared, but only 6 given [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm.v:1295]
+WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7071] port 'Q31' of module 'SRLC32E' is unconnected for instance 'u1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+WARNING: [Synth 8-7023] instance 'u1' of module 'SRLC32E' has 6 connections declared, but only 5 given [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/synth_reg.v:76]
+INFO: [Synth 8-638] synthesizing module 'ifm_div_gen_v5_1_i1' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_div_gen_v5_1_i1/synth/ifm_div_gen_v5_1_i1.vhd:73]
 	Parameter C_XDEVICEFAMILY bound to: zynquplus - type: string 
 	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
 	Parameter C_HAS_ACLKEN bound to: 0 - type: integer 
@@ -633,10 +633,10 @@ INFO: [Synth 8-638] synthesizing module 'ifm_div_gen_v5_1_i1' [c:/Users/fsydere/
 	Parameter C_S_AXIS_DIVIDEND_TUSER_WIDTH bound to: 1 - type: integer 
 	Parameter C_M_AXIS_DOUT_TDATA_WIDTH bound to: 80 - type: integer 
 	Parameter C_M_AXIS_DOUT_TUSER_WIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'div_gen_v5_1_24' declared at 'c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_div_gen_v5_1_i1/hdl/div_gen_v5_1_vh_rfs.vhd:12886' bound to instance 'U0' of component 'div_gen_v5_1_24' [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_div_gen_v5_1_i1/synth/ifm_div_gen_v5_1_i1.vhd:152]
-INFO: [Synth 8-256] done synthesizing module 'ifm_div_gen_v5_1_i1' (0#1) [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_div_gen_v5_1_i1/synth/ifm_div_gen_v5_1_i1.vhd:73]
-WARNING: [Synth 8-6014] Unused sequential element clk_num_reg was removed.  [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/xlclockdriver_rd.v:79]
-WARNING: [Synth 8-6014] Unused sequential element cout_mem_92_22_reg[0] was removed.  [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:742]
+INFO: [Synth 8-3491] module 'div_gen_v5_1_24' declared at 'c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_div_gen_v5_1_i1/hdl/div_gen_v5_1_vh_rfs.vhd:12886' bound to instance 'U0' of component 'div_gen_v5_1_24' [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_div_gen_v5_1_i1/synth/ifm_div_gen_v5_1_i1.vhd:152]
+INFO: [Synth 8-256] done synthesizing module 'ifm_div_gen_v5_1_i1' (0#1) [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_div_gen_v5_1_i1/synth/ifm_div_gen_v5_1_i1.vhd:73]
+WARNING: [Synth 8-6014] Unused sequential element clk_num_reg was removed.  [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/xlclockdriver_rd.v:79]
+WARNING: [Synth 8-6014] Unused sequential element cout_mem_92_22_reg[0] was removed.  [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/work/hdl/ifm_entity_declarations.v:742]
 WARNING: [Synth 8-7129] Port clk in module ifm_xlconvert__parameterized7 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port ce in module ifm_xlconvert__parameterized7 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port clr in module ifm_xlconvert__parameterized7 is either unconnected or has no load
@@ -739,40 +739,40 @@ WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_10_viv__parameterized
 WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_10_viv__parameterized355 is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 2711.605 ; gain = 1171.500
+Finished RTL Elaboration : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 2711.125 ; gain = 1171.105
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 2711.605 ; gain = 1171.500
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 2711.125 ; gain = 1171.105
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 2711.605 ; gain = 1171.500
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 2711.125 ; gain = 1171.105
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.637 . Memory (MB): peak = 2711.605 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.810 . Memory (MB): peak = 2711.125 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 12798 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/constrs/ifm.xdc] for cell 'inst'
-Finished Parsing XDC File [c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/constrs/ifm.xdc] for cell 'inst'
-Parsing XDC File [C:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.runs/IFM_0_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [C:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.runs/IFM_0_synth_1/dont_touch.xdc]
+Parsing XDC File [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/constrs/ifm.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/constrs/ifm.xdc] for cell 'inst'
+Parsing XDC File [C:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.runs/IFM_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.runs/IFM_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 2711.605 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 2711.125 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 499 instances were transformed.
   DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 46 instances
   FDE => FDRE: 453 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.342 . Memory (MB): peak = 2711.605 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.365 . Memory (MB): peak = 2711.125 ; gain = 0.000
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 2711.605 ; gain = 1171.500
+Finished Constraint Validation : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 2711.125 ; gain = 1171.105
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -780,16 +780,16 @@ Start Loading Part and Timing Information
 Loading part: xczu9eg-ffvb1156-2-e
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 2711.605 ; gain = 1171.500
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 2711.125 ; gain = 1171.105
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 2711.605 ; gain = 1171.500
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 2711.125 ; gain = 1171.105
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 2711.605 ; gain = 1171.500
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:47 ; elapsed = 00:00:51 . Memory (MB): peak = 2711.125 ; gain = 1171.105
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-223] decloning instance 'ifm_div_gen_v5_1_i0:/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_fixed.i_fix_to_flt/i_fpo/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_BIT_DEL' (floating_point_v7_0_25_delay__parameterized12) to 'ifm_div_gen_v5_1_i0:/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_fixed.i_fix_to_flt/i_fpo/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_RND1_DEL'
 INFO: [Synth 8-223] decloning instance 'ifm_div_gen_v5_1_i0:/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_fixed.i_fix_to_flt/i_fpo/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_DELAY' (floating_point_v7_0_25_delay__parameterized12) to 'ifm_div_gen_v5_1_i0:/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_fixed.i_fix_to_flt/i_fpo/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_RND1_DELAY'
@@ -895,7 +895,7 @@ INFO: [Synth 8-3332] Sequential element (gDSP.gDSP_only.iDSP/use_prim.appDSP[0].
 INFO: [Synth 8-3332] Sequential element (gDSP.gDSP_only.iDSP/use_prim.appDSP[0].bppDSP[3].need_output_delay.output_delay/dN_hlutnm.runt_srl_loop.i_fdre) is unused and will be removed from module mult_gen_v12_0_23_viv__2.
 WARNING: [Synth 8-3332] Sequential element (ifm_default_clock_driver/clockdriver/clr_reg/has_latency.fd_array[1].reg_comp_1/fd_prim_array[0].rst_comp.fdre_comp) is unused and will be removed from module ifm.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:50 ; elapsed = 00:00:55 . Memory (MB): peak = 2711.605 ; gain = 1171.500
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:02 ; elapsed = 00:01:06 . Memory (MB): peak = 2711.125 ; gain = 1171.105
 ---------------------------------------------------------------------------------
  Sort Area is ifm_threshold_detection__GC0 squarereal/op_mem_65_20_reg[2]_0 : 0 0 : 2033 2033 : Used 1 time 0
  Sort Area is ifm_threshold_detection__GC0 squarereal1/op_mem_65_20_reg[2]_2 : 0 0 : 2033 2033 : Used 1 time 0
@@ -903,13 +903,13 @@ Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:50 ; elaps
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:57 ; elapsed = 00:01:03 . Memory (MB): peak = 2878.312 ; gain = 1338.207
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:10 ; elapsed = 00:01:22 . Memory (MB): peak = 2872.344 ; gain = 1332.324
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:57 ; elapsed = 00:01:03 . Memory (MB): peak = 2878.895 ; gain = 1338.789
+Finished Timing Optimization : Time (s): cpu = 00:01:10 ; elapsed = 00:01:22 . Memory (MB): peak = 2873.191 ; gain = 1333.172
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
@@ -2043,7 +2043,7 @@ RETIMING: backward move register inst/ifm_structi_1/x2_delay_avarage_freq1/divid
 RETIMING: backward move register inst/ifm_structi_1/x2_delay_avarage_freq1/divide/ifm_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_quotient_collector/i_typical_case.i_addsub/i_result_pipe.result_pipe_reg[2][1] from retiming_backward is deleted already 
 RETIMING: backward move register inst/ifm_structi_1/x2_delay_avarage_freq1/divide/ifm_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_quotient_collector/i_typical_case.i_addsub/i_result_pipe.result_pipe_reg[2][0] from retiming_backward is deleted already 
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:02 ; elapsed = 00:01:08 . Memory (MB): peak = 2962.031 ; gain = 1421.926
+Finished Technology Mapping : Time (s): cpu = 00:01:16 ; elapsed = 00:01:28 . Memory (MB): peak = 2955.980 ; gain = 1415.961
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -2061,37 +2061,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:05 ; elapsed = 00:01:11 . Memory (MB): peak = 3153.168 ; gain = 1613.062
+Finished IO Insertion : Time (s): cpu = 00:01:19 ; elapsed = 00:01:31 . Memory (MB): peak = 3147.715 ; gain = 1607.695
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:05 ; elapsed = 00:01:11 . Memory (MB): peak = 3153.168 ; gain = 1613.062
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:19 ; elapsed = 00:01:31 . Memory (MB): peak = 3147.715 ; gain = 1607.695
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:08 ; elapsed = 00:01:15 . Memory (MB): peak = 3198.672 ; gain = 1658.566
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:23 ; elapsed = 00:01:35 . Memory (MB): peak = 3193.164 ; gain = 1653.145
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:08 ; elapsed = 00:01:15 . Memory (MB): peak = 3198.672 ; gain = 1658.566
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:23 ; elapsed = 00:01:35 . Memory (MB): peak = 3193.164 ; gain = 1653.145
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:08 ; elapsed = 00:01:15 . Memory (MB): peak = 3198.672 ; gain = 1658.566
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:23 ; elapsed = 00:01:36 . Memory (MB): peak = 3193.164 ; gain = 1653.145
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:09 ; elapsed = 00:01:15 . Memory (MB): peak = 3198.672 ; gain = 1658.566
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:24 ; elapsed = 00:01:36 . Memory (MB): peak = 3193.164 ; gain = 1653.145
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -2188,18 +2188,18 @@ Report Cell Usage:
 |39    |FDRE            | 19889|
 +------+----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:09 ; elapsed = 00:01:15 . Memory (MB): peak = 3198.672 ; gain = 1658.566
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:24 ; elapsed = 00:01:36 . Memory (MB): peak = 3193.164 ; gain = 1653.145
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 19 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:37 ; elapsed = 00:01:09 . Memory (MB): peak = 3198.680 ; gain = 1658.574
-Synthesis Optimization Complete : Time (s): cpu = 00:01:09 ; elapsed = 00:01:16 . Memory (MB): peak = 3198.680 ; gain = 1658.574
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:44 ; elapsed = 00:01:28 . Memory (MB): peak = 3193.211 ; gain = 1653.191
+Synthesis Optimization Complete : Time (s): cpu = 00:01:24 ; elapsed = 00:01:37 . Memory (MB): peak = 3193.211 ; gain = 1653.191
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.588 . Memory (MB): peak = 3198.680 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.761 . Memory (MB): peak = 3193.211 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 12317 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 3198.680 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 3204.008 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 1323 instances were transformed.
   (CARRY4) => CARRY8: 854 instances
@@ -2210,12 +2210,14 @@ Synth Design complete | Checksum: a613f4a8
 INFO: [Common 17-83] Releasing license: Synthesis
 326 Infos, 272 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:25 ; elapsed = 00:01:33 . Memory (MB): peak = 3198.680 ; gain = 2645.980
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 3198.680 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.runs/IFM_0_synth_1/IFM_0.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP IFM_0, cache-ID = cced2e107a97ad9e
+synth_design: Time (s): cpu = 00:01:43 ; elapsed = 00:01:58 . Memory (MB): peak = 3204.008 ; gain = 2652.762
+Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.060 . Memory (MB): peak = 3204.008 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.runs/IFM_0_synth_1/IFM_0.dcp' has been generated.
+write_vhdl: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3204.008 ; gain = 0.000
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP IFM_0, cache-ID = 69c9c1d374864607
 INFO: [Coretcl 2-1174] Renamed 1896 cell refs.
-Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.039 . Memory (MB): peak = 3198.680 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.runs/IFM_0_synth_1/IFM_0.dcp' has been generated.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 3204.008 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.runs/IFM_0_synth_1/IFM_0.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file IFM_0_utilization_synth.rpt -pb IFM_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Jul 10 18:25:27 2025...
+write_vhdl: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 3204.008 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 11 14:30:17 2025...

@@ -139,11 +139,6 @@
     'Instance' => 'noisesampledone',
     'SimulinkInstance' => 'IFM_ModelComposer/IFM/Envelope Detection/Threshold Detection/NoiseSampleDone'
   },
-  'Line_138' => {
-    'CodeInstance' => 'ifm_struct/x2_delay_avarage_freq/divide',
-    'Instance' => 'divide',
-    'SimulinkInstance' => 'IFM_ModelComposer/IFM/2 Delay Avarage Freq/Divide'
-  },
   'Line_1385' => {
     'CodeInstance' => 'ifm_struct/envelope_detection/threshold_detection/real_component',
     'Instance' => 'real_component',
@@ -174,20 +169,25 @@
     'Instance' => 'totalsum',
     'SimulinkInstance' => 'IFM_ModelComposer/IFM/Envelope Detection/Threshold Detection/TotalSum'
   },
+  'Line_144' => {
+    'CodeInstance' => 'ifm_struct/x2_delay_avarage_freq/delay2',
+    'Instance' => 'delay2',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/2 Delay Avarage Freq/Delay2'
+  },
   'Line_1486' => {
     'CodeInstance' => 'ifm_struct/envelope_detection/envelope_detection',
     'Instance' => 'envelope_detection',
     'SimulinkInstance' => 'IFM_ModelComposer/IFM/Envelope Detection/Envelope Detection'
   },
-  'Line_150' => {
-    'CodeInstance' => 'ifm_struct/x2_delay_avarage_freq/inverter',
-    'Instance' => 'inverter',
-    'SimulinkInstance' => 'IFM_ModelComposer/IFM/2 Delay Avarage Freq/Inverter'
-  },
   'Line_1501' => {
     'CodeInstance' => 'ifm_struct/envelope_detection/threshold_detection',
     'Instance' => 'threshold_detection',
     'SimulinkInstance' => 'IFM_ModelComposer/IFM/Envelope Detection/Threshold Detection'
+  },
+  'Line_152' => {
+    'CodeInstance' => 'ifm_struct/x2_delay_avarage_freq/divide',
+    'Instance' => 'divide',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/2 Delay Avarage Freq/Divide'
   },
   'Line_1560' => {
     'CodeInstance' => 'ifm_struct/x2_delay_avarage_freq',
@@ -198,11 +198,6 @@
     'CodeInstance' => 'ifm_struct/x2_delay_avarage_freq1',
     'Instance' => 'x2_delay_avarage_freq1',
     'SimulinkInstance' => 'IFM_ModelComposer/IFM/2 Delay Avarage Freq1'
-  },
-  'Line_157' => {
-    'CodeInstance' => 'ifm_struct/x2_delay_avarage_freq/logical',
-    'Instance' => 'logical',
-    'SimulinkInstance' => 'IFM_ModelComposer/IFM/2 Delay Avarage Freq/Logical'
   },
   'Line_1576' => {
     'CodeInstance' => 'ifm_struct/x2_delay_instantenous_frequency',
@@ -224,15 +219,15 @@
     'Instance' => 'convert1',
     'SimulinkInstance' => 'IFM_ModelComposer/IFM/Convert1'
   },
+  'Line_164' => {
+    'CodeInstance' => 'ifm_struct/x2_delay_avarage_freq/inverter',
+    'Instance' => 'inverter',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/2 Delay Avarage Freq/Inverter'
+  },
   'Line_1645' => {
     'CodeInstance' => 'ifm_struct/convert2',
     'Instance' => 'convert2',
     'SimulinkInstance' => 'IFM_ModelComposer/IFM/Convert2'
-  },
-  'Line_165' => {
-    'CodeInstance' => 'ifm_struct/x2_delay_avarage_freq/logical1',
-    'Instance' => 'logical1',
-    'SimulinkInstance' => 'IFM_ModelComposer/IFM/2 Delay Avarage Freq/Logical1'
   },
   'Line_1665' => {
     'CodeInstance' => 'ifm_struct/convert3',
@@ -244,6 +239,11 @@
     'Instance' => 'clockdriver',
     'SimulinkInstance' => ''
   },
+  'Line_171' => {
+    'CodeInstance' => 'ifm_struct/x2_delay_avarage_freq/logical',
+    'Instance' => 'logical',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/2 Delay Avarage Freq/Logical'
+  },
   'Line_1710' => {
     'CodeInstance' => 'ifm_default_clock_driver',
     'Instance' => 'ifm_default_clock_driver',
@@ -254,20 +254,20 @@
     'Instance' => 'ifm_struct',
     'SimulinkInstance' => 'IFM'
   },
-  'Line_177' => {
+  'Line_179' => {
+    'CodeInstance' => 'ifm_struct/x2_delay_avarage_freq/logical1',
+    'Instance' => 'logical1',
+    'SimulinkInstance' => 'IFM_ModelComposer/IFM/2 Delay Avarage Freq/Logical1'
+  },
+  'Line_191' => {
     'CodeInstance' => 'ifm_struct/x2_delay_avarage_freq/register',
     'Instance' => 'register',
     'SimulinkInstance' => 'IFM_ModelComposer/IFM/2 Delay Avarage Freq/Register'
   },
-  'Line_185' => {
+  'Line_199' => {
     'CodeInstance' => 'ifm_struct/x2_delay_avarage_freq/relational',
     'Instance' => 'relational',
     'SimulinkInstance' => 'IFM_ModelComposer/IFM/2 Delay Avarage Freq/Relational'
-  },
-  'Line_199' => {
-    'CodeInstance' => 'ifm_struct/x2_delay_avarage_freq/delay2',
-    'Instance' => 'delay2',
-    'SimulinkInstance' => 'IFM_ModelComposer/IFM/2 Delay Avarage Freq/Delay2'
   },
   'Line_245' => {
     'CodeInstance' => 'ifm_struct/x2_delay_avarage_freq1/accumulator1',

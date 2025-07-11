@@ -1,0 +1,5 @@
+0.7
+2020.2
+May 22 2025
+00:13:55
+C:/Users/fsyde/Workspace/IFM/IFM_RTL/IFM_RTL.ip_user_files/ipstatic/hdl/cordic_v6_0_vh_rfs.vhd,1752234042,vhdl,,,,addsub;compare;cordic_atan_rom;cordic_cntr;cordic_ctrl_slice_par;cordic_ctrl_slice_wser;cordic_dat_acc_slice_par;cordic_dat_acc_slice_wser;cordic_eng;cordic_eng_slice_par;cordic_eng_slice_wser;cordic_hdl_comps;cordic_inp_config;cordic_out_config;cordic_pack;cordic_pha_acc_slice_par;cordic_pha_acc_slice_wser;cordic_round;cordic_scale;cordic_shift;cordic_sqrt;cordic_sqrt_mod;cordic_v6_0_24;cordic_v6_0_24_comp;cordic_v6_0_24_synth;cordic_v6_0_24_viv;cordic_v6_0_24_viv_comp;delay;delay_bit,,,,,,,,

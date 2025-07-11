@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version      : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
-| Date              : Thu Jul 10 18:29:26 2025
-| Host              : DESKTOP-5G0J4EJ running 64-bit major release  (build 9200)
+| Date              : Fri Jul 11 14:35:27 2025
+| Host              : fsydere running 64-bit major release  (build 9200)
 | Command           : report_clock_utilization -file IFM_bd_wrapper_clock_utilization_routed.rpt
 | Design            : IFM_bd_wrapper
 | Device            : xczu9eg-ffvb1156

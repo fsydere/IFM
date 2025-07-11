@@ -6,8 +6,8 @@ module ifm_stub (
   input [16-1:0] realpart,
   input clk,
   output [82-1:0] estimated_frequency_2_delay,
-  output [82-1:0] estimated_frequency_4_delay,
   output [1-1:0] estimated_frequency_2_delay_valid,
+  output [82-1:0] estimated_frequency_4_delay,
   output [1-1:0] estimated_frequency_4_delay_valid
 );
   ifm sysgen_dut (
@@ -16,8 +16,8 @@ module ifm_stub (
     .realpart(realpart),
     .clk(clk),
     .estimated_frequency_2_delay(estimated_frequency_2_delay),
-    .estimated_frequency_4_delay(estimated_frequency_4_delay),
     .estimated_frequency_2_delay_valid(estimated_frequency_2_delay_valid),
+    .estimated_frequency_4_delay(estimated_frequency_4_delay),
     .estimated_frequency_4_delay_valid(estimated_frequency_4_delay_valid)
   );
 endmodule

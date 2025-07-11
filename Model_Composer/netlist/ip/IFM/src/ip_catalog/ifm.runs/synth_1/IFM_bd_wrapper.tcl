@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.runs/synth_1/IFM_bd_wrapper.tcl"
+  variable script "C:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.runs/synth_1/IFM_bd_wrapper.tcl"
   variable category "vivado_synth"
 }
 
@@ -68,28 +68,28 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir C:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.cache/wt [current_project]
-set_property parent.project_path C:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.cache/wt [current_project]
+set_property parent.project_path C:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part xilinx.com:zcu102:part0:3.4 [current_project]
-set_property ip_repo_paths c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip [current_project]
+set_property ip_repo_paths c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip [current_project]
 update_ip_catalog
-set_property ip_output_repo c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.cache/ip [current_project]
+set_property ip_output_repo c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
-  C:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.srcs/sources_1/imports/hdl/IFM_bd_wrapper.v
-  C:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.srcs/sources_1/imports/sysgen/ifm_mod.v
+  C:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.srcs/sources_1/imports/hdl/IFM_bd_wrapper.v
+  C:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.srcs/sources_1/imports/sysgen/ifm_mod.v
 }
-add_files C:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.srcs/sources_1/bd/IFM_bd/IFM_bd.bd
-set_property used_in_implementation false [get_files -all c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/bd/IFM_bd/ip/IFM_bd_IFM_1_0/constrs/ifm.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/bd/IFM_bd/IFM_bd_ooc.xdc]
+add_files C:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.srcs/sources_1/bd/IFM_bd/IFM_bd.bd
+set_property used_in_implementation false [get_files -all c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/bd/IFM_bd/ip/IFM_bd_IFM_1_0/constrs/ifm.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/bd/IFM_bd/IFM_bd_ooc.xdc]
 
-read_ip -quiet c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.srcs/sources_1/ip/IFM_0/IFM_0.xci
-set_property used_in_implementation false [get_files -all c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/constrs/ifm.xdc]
+read_ip -quiet c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.srcs/sources_1/ip/IFM_0/IFM_0.xci
+set_property used_in_implementation false [get_files -all c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/constrs/ifm.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -100,11 +100,11 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.srcs/constrs_1/imports/sysgen/ifm_clock.xdc
-set_property used_in_implementation false [get_files C:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.srcs/constrs_1/imports/sysgen/ifm_clock.xdc]
+read_xdc C:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.srcs/constrs_1/imports/sysgen/ifm_clock.xdc
+set_property used_in_implementation false [get_files C:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.srcs/constrs_1/imports/sysgen/ifm_clock.xdc]
 
-read_xdc C:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.srcs/constrs_1/imports/sysgen/ifm.xdc
-set_property used_in_implementation false [get_files C:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.srcs/constrs_1/imports/sysgen/ifm.xdc]
+read_xdc C:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.srcs/constrs_1/imports/sysgen/ifm.xdc
+set_property used_in_implementation false [get_files C:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.srcs/constrs_1/imports/sysgen/ifm.xdc]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]

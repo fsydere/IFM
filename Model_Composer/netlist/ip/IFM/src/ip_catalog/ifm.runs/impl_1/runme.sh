@@ -12,9 +12,9 @@ echo "Please update the PATH and LD_LIBRARY_PATH variables below, before executi
 exit
 
 if [ -z "$PATH" ]; then
-  PATH=C:/Xilinx/2025.1/Vitis/bin;C:/Xilinx/2025.1/Vivado/ids_lite/ISE/bin/nt64;C:/Xilinx/2025.1/Vivado/ids_lite/ISE/lib/nt64:C:/Xilinx/2025.1/Vivado/bin
+  PATH=D:/Xiilinx/2025.1/Vitis/bin;D:/Xiilinx/2025.1/Vivado/ids_lite/ISE/bin/nt64;D:/Xiilinx/2025.1/Vivado/ids_lite/ISE/lib/nt64:D:/Xiilinx/2025.1/Vivado/bin
 else
-  PATH=C:/Xilinx/2025.1/Vitis/bin;C:/Xilinx/2025.1/Vivado/ids_lite/ISE/bin/nt64;C:/Xilinx/2025.1/Vivado/ids_lite/ISE/lib/nt64:C:/Xilinx/2025.1/Vivado/bin:$PATH
+  PATH=D:/Xiilinx/2025.1/Vitis/bin;D:/Xiilinx/2025.1/Vivado/ids_lite/ISE/bin/nt64;D:/Xiilinx/2025.1/Vivado/ids_lite/ISE/lib/nt64:D:/Xiilinx/2025.1/Vivado/bin:$PATH
 fi
 export PATH
 
@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.runs/impl_1'
+HD_PWD='C:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

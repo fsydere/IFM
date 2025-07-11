@@ -1,0 +1,23 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "D:/Xiilinx/2025.1/Vivado/data/rsb/busdef" --include "../../../../IFM_RTL.ip_user_files/ipstatic/work/hdl" \
+"../../../../IFM_RTL.ip_user_files/ipstatic/work/hdl/synth_reg.v" \
+"../../../../IFM_RTL.ip_user_files/ipstatic/work/hdl/synth_reg_w_init.v" \
+"../../../../IFM_RTL.ip_user_files/ipstatic/work/hdl/convert_type.v" \
+"../../../../IFM_RTL.ip_user_files/ipstatic/work/hdl/xlclockdriver_rd.v" \
+"../../../../IFM_RTL.ip_user_files/ipstatic/work/hdl/ifm_entity_declarations.v" \
+"../../../../IFM_RTL.ip_user_files/ipstatic/work/hdl/ifm.v" \
+"../../../../IFM_RTL.gen/sources_1/ip/IFM_0/sim/IFM_0.v" \
+"../../../../IFM_RTL.srcs/sources_1/new/IFM.v" \
+"../../../../IFM_RTL.srcs/sources_1/new/ModelComposer_Top.v" \
+"../../../../IFM_RTL.srcs/sources_1/new/TopModule_IFM.v" \
+"../../../../IFM_RTL.srcs/sources_1/new/complex_mult.v" \
+"../../../../IFM_RTL.srcs/sources_1/new/envelope_generator.v" \
+
+sv xil_defaultlib  --include "D:/Xiilinx/2025.1/Vivado/data/rsb/busdef" --include "../../../../IFM_RTL.ip_user_files/ipstatic/work/hdl" \
+"../../../../IFM_RTL.srcs/sim_1/new/ThresholdDetector_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

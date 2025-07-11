@@ -3,22 +3,22 @@
 # SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
 # IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
 # SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
-# Start of session at: Thu Jul 10 18:23:32 2025
-# Process ID         : 28124
-# Current directory  : C:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.runs/IFM_0_synth_1
+# Start of session at: Fri Jul 11 14:27:51 2025
+# Process ID         : 10028
+# Current directory  : C:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.runs/IFM_0_synth_1
 # Command line       : vivado.exe -log IFM_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source IFM_0.tcl
-# Log file           : C:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.runs/IFM_0_synth_1/IFM_0.vds
-# Journal file       : C:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.runs/IFM_0_synth_1\vivado.jou
-# Running On         : DESKTOP-5G0J4EJ
+# Log file           : C:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.runs/IFM_0_synth_1/IFM_0.vds
+# Journal file       : C:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.runs/IFM_0_synth_1\vivado.jou
+# Running On         : fsydere
 # Platform           : Windows Server 2016 or Windows 10
 # Operating System   : 26100
-# Processor Detail   : Intel(R) Core(TM) i9-14900K
-# CPU Frequency      : 3187 MHz
-# CPU Physical cores : 24
-# CPU Logical cores  : 32
-# Host memory        : 34115 MB
-# Swap memory        : 2147 MB
-# Total Virtual      : 36262 MB
-# Available Virtual  : 9268 MB
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i9-13900H
+# CPU Frequency      : 2995 MHz
+# CPU Physical cores : 14
+# CPU Logical cores  : 20
+# Host memory        : 16890 MB
+# Swap memory        : 3087 MB
+# Total Virtual      : 19977 MB
+# Available Virtual  : 4951 MB
 #-----------------------------------------------------------
 source IFM_0.tcl -notrace

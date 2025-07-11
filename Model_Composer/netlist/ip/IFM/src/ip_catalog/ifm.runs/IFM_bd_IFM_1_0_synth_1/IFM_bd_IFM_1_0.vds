@@ -3,31 +3,31 @@
 # SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
 # IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
 # SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
-# Start of session at: Thu Jul 10 18:25:28 2025
-# Process ID         : 1516
-# Current directory  : C:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.runs/IFM_bd_IFM_1_0_synth_1
+# Start of session at: Fri Jul 11 14:30:19 2025
+# Process ID         : 22184
+# Current directory  : C:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.runs/IFM_bd_IFM_1_0_synth_1
 # Command line       : vivado.exe -log IFM_bd_IFM_1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source IFM_bd_IFM_1_0.tcl
-# Log file           : C:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.runs/IFM_bd_IFM_1_0_synth_1/IFM_bd_IFM_1_0.vds
-# Journal file       : C:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.runs/IFM_bd_IFM_1_0_synth_1\vivado.jou
-# Running On         : DESKTOP-5G0J4EJ
+# Log file           : C:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.runs/IFM_bd_IFM_1_0_synth_1/IFM_bd_IFM_1_0.vds
+# Journal file       : C:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.runs/IFM_bd_IFM_1_0_synth_1\vivado.jou
+# Running On         : fsydere
 # Platform           : Windows Server 2016 or Windows 10
 # Operating System   : 26100
-# Processor Detail   : Intel(R) Core(TM) i9-14900K
-# CPU Frequency      : 3187 MHz
-# CPU Physical cores : 24
-# CPU Logical cores  : 32
-# Host memory        : 34115 MB
-# Swap memory        : 2147 MB
-# Total Virtual      : 36262 MB
-# Available Virtual  : 9288 MB
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i9-13900H
+# CPU Frequency      : 2995 MHz
+# CPU Physical cores : 14
+# CPU Logical cores  : 20
+# Host memory        : 16890 MB
+# Swap memory        : 3087 MB
+# Total Virtual      : 19977 MB
+# Available Virtual  : 5081 MB
 #-----------------------------------------------------------
 source IFM_bd_IFM_1_0.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip'.
-WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is 'c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.runs/IFM_bd_IFM_1_0_synth_1'.)
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/2025.1/Vivado/data/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is 'c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.runs/IFM_bd_IFM_1_0_synth_1'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xiilinx/2025.1/Vivado/data/ip'.
 WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
-Current IP cache path is c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.cache/ip 
-INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP IFM_bd_IFM_1_0, cache-ID = cced2e107a97ad9e.
-config_ip_cache: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 558.328 ; gain = 0.973
-INFO: [Common 17-206] Exiting Vivado at Thu Jul 10 18:25:42 2025...
+Current IP cache path is c:/Users/fsyde/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.cache/ip 
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP IFM_bd_IFM_1_0, cache-ID = 69c9c1d374864607.
+config_ip_cache: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 558.941 ; gain = 2.406
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 11 14:30:36 2025...

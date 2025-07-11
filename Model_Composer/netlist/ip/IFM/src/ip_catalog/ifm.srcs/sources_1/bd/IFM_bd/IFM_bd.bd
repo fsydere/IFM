@@ -153,7 +153,7 @@
     "components": {
       "IFM_1": {
         "vlnv": "FSY:VMC:IFM:1.0",
-        "ip_revision": "383077390",
+        "ip_revision": "383149635",
         "xci_name": "IFM_bd_IFM_1_0",
         "xci_path": "ip\\IFM_bd_IFM_1_0\\IFM_bd_IFM_1_0.xci",
         "inst_hier_path": "IFM_1",
