@@ -48,6 +48,15 @@ module ThresholdDetector_tb();
     .dataValid(DataValid) 
     );
     
+    ModelComposer_Top DUT2
+    (
+    .clk(clk),
+    .RealPart(RealPart),  
+    .ImagPart(ImagPart),  
+    .dataValid(DataValid) 
+    );
+    
+    
     // Clock generation: 300 MHz => 3.333 ns period
     realtime half_period = 1.66666667;
     initial begin
