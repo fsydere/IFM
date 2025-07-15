@@ -21,14 +21,14 @@ JustNoiseSamples = Fs*JustNoiseTime;
     'CarrierAmplitude',CarrierAmplitude);
 
 % For Debug Purposes Only
-% Before_mean_noise = zeros(1,length(SNR_dB)); After_mean_noise =
-% zeros(1,length(SNR_dB));
+% Before_mean_noise = zeros(1,length(SNR_dB)); 
+% After_mean_noise = zeros(1,length(SNR_dB));
 % 
 % for threshold_SNR_idx = 1:length(SNR_dB)
-%     Before_mean_noise(threshold_SNR_idx) = JustNoiseSamples *
+%     Before_mean_noise(threshold_SNR_idx) = JustNoiseSamples * ...
 %     mean(abs(noisySignals(1:JustNoiseSamples,threshold_SNR_idx)).^2);
-%     After_mean_noise(threshold_SNR_idx) =
-%     mean(abs(noisySignals(1:JustNoiseSamples,threshold_SNR_idx)).^2);
+%     After_mean_noise(threshold_SNR_idx) = ...
+%     4 * mean(abs(noisySignals(1:JustNoiseSamples,threshold_SNR_idx)).^2);
 % end
 
 [IFM_results] = IFM(noisySignals,'Fs',Fs, ...

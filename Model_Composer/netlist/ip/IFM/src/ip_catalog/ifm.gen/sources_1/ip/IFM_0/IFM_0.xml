@@ -266,7 +266,7 @@ ediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spiri
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:fcb9d39f</spirit:value>
+            <spirit:value>9:0b0ed073</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -280,11 +280,11 @@ ediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spiri
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Jul 11 11:30:17 UTC 2025</spirit:value>
+            <spirit:value>Tue Jul 15 16:30:36 UTC 2025</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:fcb9d39f</spirit:value>
+            <spirit:value>9:0b0ed073</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -295,7 +295,7 @@ ediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spiri
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:fcb9d39f</spirit:value>
+            <spirit:value>9:0b0ed073</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -311,11 +311,11 @@ ediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spiri
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Jul 11 11:27:48 UTC 2025</spirit:value>
+            <spirit:value>Tue Jul 15 16:28:54 UTC 2025</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:fcb9d39f</spirit:value>
+            <spirit:value>9:0b0ed073</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -331,11 +331,11 @@ ediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spiri
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Jul 11 11:27:48 UTC 2025</spirit:value>
+            <spirit:value>Tue Jul 15 16:28:54 UTC 2025</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:fcb9d39f</spirit:value>
+            <spirit:value>9:0b0ed073</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -608,7 +608,7 @@ ediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spiri
         <xilinx:xpmLibrary>XPM_FIFO</xilinx:xpmLibrary>
         <xilinx:xpmLibrary>XPM_CDC</xilinx:xpmLibrary>
       </xilinx:xpmLibraries>
-      <xilinx:coreRevision>383149635</xilinx:coreRevision>
+      <xilinx:coreRevision>383513314</xilinx:coreRevision>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2025.1</xilinx:xilinxVersion>

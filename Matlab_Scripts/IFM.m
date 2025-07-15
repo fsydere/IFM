@@ -18,6 +18,7 @@ function [IFM_results] = IFM(noisySignals,varargin)
 %   
 %   % Özel parametrelerle
 %   [IFM_results] = IFM('Fc', 50e6, 'BroadcastTime', 3e-3, 'time_delays', [1,2,3,4]);
+    
     % Varsayılan Parametreler
     defaultFs = 300e6;
     defaultBroadcastTime = 2e-3;
@@ -160,55 +161,45 @@ function [IFM_results] = IFM(noisySignals,varargin)
         end
     end
 
-    function [freq_estimates, avg_freq, freq_error] = calculateIFM(signal, pulse_regions, ...
-            delay_samples, Fs, true_freq)
-        % Sampling period
-        freq_estimates = [];
-        complex_mult = [];
-        orig = [];
-        delay = [];
-
-
-        for i = 1:size(pulse_regions, 1)
-            start_idx = pulse_regions(i, 1);
-            end_idx = pulse_regions(i, 2);
-            pulse_signal = signal(start_idx:end_idx);
+function [freq_estimates, avg_freq, freq_error] = calculateIFM(signal, ...
+        pulse_regions, delay_samples, Fs, true_freq)
+    % Sampling period
+    freq_estimates = [];
+    for i = 1:size(pulse_regions, 1)
+        start_idx = pulse_regions(i, 1);
+        end_idx = pulse_regions(i, 2);
+        pulse_signal = signal(start_idx:end_idx);
+                    
+        if length(pulse_signal) > delay_samples
+            % Extract delayed and original segments
+            delayed_signal = pulse_signal(1:end-delay_samples);
+            original_signal = pulse_signal(delay_samples+1:end);
             
-            % Convert real signal to analytic (complex) form
-            if isreal(pulse_signal)
-                pulse_signal = hilbert(pulse_signal);
-            end
+            % DEBUG ONLY
+            % complex_mult = original_signal .* conj(delayed_signal);
+            % delayed_complex = conj(delayed_signal);
+            % 
+            % divide = imag(complex_mult)./real(complex_mult);
+
+            % Vectorized phase difference calculation
+            phase_diffs = angle(original_signal .* conj(delayed_signal));
+            current_estimates = phase_diffs*Fs / (2 * pi * delay_samples);
             
-            if length(pulse_signal) > delay_samples
-                % Extract delayed and original segments
-                delayed_signal = pulse_signal(1:end-delay_samples);
-                original_signal = pulse_signal(delay_samples+1:end);
-                
-                % DEBUG ONLY
-                % complex_mult = original_signal .* conj(delayed_signal);
-                % delayed_complex = conj(delayed_signal);
-                % 
-                % divide = imag(complex_mult)./real(complex_mult);
+            % Append estimates for this pulse
+            freq_estimates = [freq_estimates; current_estimates(:)];
 
-                % Vectorized phase difference calculation
-                phase_diffs = angle(original_signal .* conj(delayed_signal));
-                current_estimates = phase_diffs*Fs / (2 * pi * delay_samples);
-                
-                % Append estimates for this pulse
-                freq_estimates = [freq_estimates; current_estimates(:)];
-
-            end
-        end
-        
-        % Compute average frequency and error
-        if isempty(freq_estimates)
-            avg_freq = NaN;
-            freq_error = NaN;
-        else
-            avg_freq = mean(freq_estimates);
-            freq_error = abs(avg_freq - true_freq);
         end
     end
+    
+    % Compute average frequency and error
+    if isempty(freq_estimates)
+        avg_freq = NaN;
+        freq_error = NaN;
+    else
+        avg_freq = mean(freq_estimates);
+        freq_error = abs(avg_freq - true_freq);
+    end
+end
 
     function visualizeIFMResults(IFM_results, TimeVector, SNR_dB, time_delays, true_freq)
         % IFM sonuçlarını görselleştir

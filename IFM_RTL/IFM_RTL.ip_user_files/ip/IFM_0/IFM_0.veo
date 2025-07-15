@@ -47,7 +47,7 @@
 // DO NOT MODIFY THIS FILE.
 
 // IP VLNV: FSY:VMC:IFM:1.0
-// IP Revision: 383077390
+// IP Revision: 383513314
 
 // The following must be inserted into your Verilog file for this
 // core to be instantiated. Change the instance name and port connections
@@ -60,8 +60,8 @@ IFM_0 your_instance_name (
   .realpart(realpart),                                                    // input wire [15 : 0] realpart
   .clk(clk),                                                              // input wire clk
   .estimated_frequency_2_delay(estimated_frequency_2_delay),              // output wire [81 : 0] estimated_frequency_2_delay
-  .estimated_frequency_4_delay(estimated_frequency_4_delay),              // output wire [81 : 0] estimated_frequency_4_delay
   .estimated_frequency_2_delay_valid(estimated_frequency_2_delay_valid),  // output wire [0 : 0] estimated_frequency_2_delay_valid
+  .estimated_frequency_4_delay(estimated_frequency_4_delay),              // output wire [81 : 0] estimated_frequency_4_delay
   .estimated_frequency_4_delay_valid(estimated_frequency_4_delay_valid)  // output wire [0 : 0] estimated_frequency_4_delay_valid
 );
 // INST_TAG_END ------ End INSTANTIATION Template ---------

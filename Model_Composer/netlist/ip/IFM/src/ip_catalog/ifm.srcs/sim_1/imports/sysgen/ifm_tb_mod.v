@@ -291,14 +291,14 @@ endmodule
 module ifm_tb (
 
 );
-  wire [16-1:0] realpart_net;
-  wire [82-1:0] estimated_frequency_2_delay_net;
-  wire [16-1:0] imagpart_net;
-  wire [1-1:0] estimated_frequency_4_delay_valid_net;
-  wire [1-1:0] estimated_frequency_2_delay_valid_net;
-  wire [1-1:0] datavalid_net;
-  wire clk_net;
   wire [82-1:0] estimated_frequency_4_delay_net;
+  wire [1-1:0] estimated_frequency_4_delay_valid_net;
+  wire [16-1:0] imagpart_net;
+  wire [1-1:0] estimated_frequency_2_delay_valid_net;
+  wire [16-1:0] realpart_net;
+  wire clk_net;
+  wire [82-1:0] estimated_frequency_2_delay_net;
+  wire [1-1:0] datavalid_net;
   xlclk #(
     .clk_period(3.333333)
   )

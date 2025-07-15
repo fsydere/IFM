@@ -520,12 +520,12 @@ module sysgen_constant_117d343824 (
   assign op = 15'b111010100101111;
 endmodule
 `timescale 1 ns / 10 ps
-module sysgen_constant_18e0b164c6 (
-  output [(49 - 1):0] op,
+module sysgen_constant_e845cdc475 (
+  output [(48 - 1):0] op,
   input clk,
   input ce,
   input clr);
-  assign op = 49'b0000011101010011000000000000000000000000000000000;
+  assign op = 48'b000111010100110000000000000000000000000000000000;
 endmodule
 `timescale 1 ns / 10 ps
 module sysgen_delay_276c9536e2 (
@@ -807,6 +807,14 @@ module sysgen_accum_122e1effc2 (
     end
   assign accum_reg_39_23_en = accum_reg_join_45_1_en;
   assign q = accum_reg_39_23;
+endmodule
+`timescale 1 ns / 10 ps
+module sysgen_constant_2703cc1217 (
+  output [(1 - 1):0] op,
+  input clk,
+  input ce,
+  input clr);
+  assign op = 1'b1;
 endmodule
 module ifm_xlcmult (a, ce, clr, clk, core_ce, core_clr, core_clk, rst, en, p);
  
@@ -1142,12 +1150,12 @@ wire[47:0] s_axis_b_tdata_net;
 
 
 `timescale 1 ns / 10 ps
-module  xldivider_generator_0c1a81ab8d5b5ba34e262088a482075b (a,a_tready,a_tvalid,b,b_tready,b_tvalid,ce,clk,op,result_tvalid);
+module  xldivider_generator_d10721af87df094de68f9ad02ab391ce (a,a_tready,a_tvalid,b,b_tready,b_tvalid,ce,clk,op,result_tvalid);
 
 input[47:0] a;
 output a_tready;
 input a_tvalid;
-input[48:0] b;
+input[47:0] b;
 output b_tready;
 input b_tvalid;
 input ce;
@@ -1158,12 +1166,11 @@ wire[79:0] m_axis_dout_tdata_net;
 wire[77:0] m_axis_dout_tdata_shift_in_net;
 wire[77:0] m_axis_dout_tdata_shift_out_net;
 wire[47:0] s_axis_dividend_tdata_net;
-wire[55:0] s_axis_divisor_tdata_net;
+wire[47:0] s_axis_divisor_tdata_net;
   assign m_axis_dout_tdata_shift_in_net = m_axis_dout_tdata_net[77 : 0];
   assign op = m_axis_dout_tdata_shift_out_net;
   assign s_axis_dividend_tdata_net[47 : 0] = a;
-  assign s_axis_divisor_tdata_net[55 : 49] = 7'b0;
-  assign s_axis_divisor_tdata_net[48 : 0] = b;
+  assign s_axis_divisor_tdata_net[47 : 0] = b;
   shift_op # ( .inp_width(78), .result_width(78), .shift_value(0), .shift_dir(0))
 shift_op_m_axis_dout_tdata_shift_in_net(.inp(m_axis_dout_tdata_shift_in_net), .res(m_axis_dout_tdata_shift_out_net));
 

@@ -74,10 +74,11 @@ SignalPower = mean(abs(PulseRadarSignal).^2);
 for i = 1:length(SNR_dB)
     % Her SNR seviyesi için gürültü hesapla
     NoisePower = SignalPower / (10^(SNR_dB(i)/10));
-    Noise = sqrt(NoisePower/2) * (randn(size(PulseRadarSignal)) + 1j*randn(size(PulseRadarSignal)));
+    Noise = sqrt(NoisePower/2) * (randn(size(PulseRadarSignal)) ...
+        + 1j*randn(size(PulseRadarSignal)));
     NoisySignals(:,i) = PulseRadarSignal + Noise;
 end
-
+%% Dosyalama 
 for i = 1:length(SNR_dB)
     data = timeseries(NoisySignals(:,i), TimeVector);
     
@@ -86,7 +87,6 @@ for i = 1:length(SNR_dB)
     
     save(file_name, '-v7.3', 'data');  
 end
-
 
 for i = 1:length(SNR_dB)
     % Gerçek ve sanal kısımları ayır ve ölçekle

@@ -271,7 +271,7 @@ lappend params_list CONFIG.FlowControl {Blocking}
 lappend params_list CONFIG.OptimizeGoal {Resources}
 lappend params_list CONFIG.OutTLASTBehv {Null}
 lappend params_list CONFIG.OutTready {false}
-lappend params_list CONFIG.algorithm_type {Radix2}
+lappend params_list CONFIG.algorithm_type {High_Radix}
 lappend params_list CONFIG.clocks_per_division {1}
 lappend params_list CONFIG.divide_by_zero_detect {false}
 lappend params_list CONFIG.dividend_and_quotient_width {48}
@@ -281,9 +281,9 @@ lappend params_list CONFIG.dividend_tuser_width {1}
 lappend params_list CONFIG.divisor_has_tlast {false}
 lappend params_list CONFIG.divisor_has_tuser {false}
 lappend params_list CONFIG.divisor_tuser_width {1}
-lappend params_list CONFIG.divisor_width {49}
+lappend params_list CONFIG.divisor_width {48}
 lappend params_list CONFIG.fractional_width {30}
-lappend params_list CONFIG.latency {83}
+lappend params_list CONFIG.latency {42}
 lappend params_list CONFIG.latency_configuration {Automatic}
 lappend params_list CONFIG.operand_sign {Signed}
 lappend params_list CONFIG.remainder_type {Fractional}

@@ -48,7 +48,7 @@
 
 
 // IP VLNV: FSY:VMC:IFM:1.0
-// IP Revision: 383149635
+// IP Revision: 383513314
 
 (* X_CORE_INFO = "ifm,Vivado 2025.1" *)
 (* CHECK_LICENSE_TYPE = "IFM_bd_IFM_1_0,ifm,{}" *)

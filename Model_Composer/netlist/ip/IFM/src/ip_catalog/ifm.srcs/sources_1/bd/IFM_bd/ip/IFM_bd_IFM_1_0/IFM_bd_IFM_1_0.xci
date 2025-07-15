@@ -4,7 +4,7 @@
     "xci_name": "IFM_bd_IFM_1_0",
     "cell_name": "IFM_1",
     "component_reference": "FSY:VMC:IFM:1.0",
-    "ip_revision": "383149635",
+    "ip_revision": "383513314",
     "gen_directory": "../../../../../../ifm.gen/sources_1/bd/IFM_bd/ip/IFM_bd_IFM_1_0",
     "parameters": {
       "component_parameters": {
@@ -25,7 +25,7 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
-        "IPREVISION": [ { "value": "383149635" } ],
+        "IPREVISION": [ { "value": "383513314" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "../../../../../../ifm.gen/sources_1/bd/IFM_bd/ip/IFM_bd_IFM_1_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],

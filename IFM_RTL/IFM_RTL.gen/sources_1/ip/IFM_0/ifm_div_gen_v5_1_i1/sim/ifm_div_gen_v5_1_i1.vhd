@@ -61,7 +61,7 @@ ENTITY ifm_div_gen_v5_1_i1 IS
     aclk : IN STD_LOGIC;
     s_axis_divisor_tvalid : IN STD_LOGIC;
     s_axis_divisor_tready : OUT STD_LOGIC;
-    s_axis_divisor_tdata : IN STD_LOGIC_VECTOR(55 DOWNTO 0);
+    s_axis_divisor_tdata : IN STD_LOGIC_VECTOR(47 DOWNTO 0);
     s_axis_dividend_tvalid : IN STD_LOGIC;
     s_axis_dividend_tready : OUT STD_LOGIC;
     s_axis_dividend_tdata : IN STD_LOGIC_VECTOR(47 DOWNTO 0);
@@ -108,7 +108,7 @@ ARCHITECTURE ifm_div_gen_v5_1_i1_arch OF ifm_div_gen_v5_1_i1 IS
       s_axis_divisor_tready : OUT STD_LOGIC;
       s_axis_divisor_tuser : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
       s_axis_divisor_tlast : IN STD_LOGIC;
-      s_axis_divisor_tdata : IN STD_LOGIC_VECTOR(55 DOWNTO 0);
+      s_axis_divisor_tdata : IN STD_LOGIC_VECTOR(47 DOWNTO 0);
       s_axis_dividend_tvalid : IN STD_LOGIC;
       s_axis_dividend_tready : OUT STD_LOGIC;
       s_axis_dividend_tuser : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
@@ -140,16 +140,16 @@ ARCHITECTURE ifm_div_gen_v5_1_i1_arch OF ifm_div_gen_v5_1_i1 IS
   ATTRIBUTE X_INTERFACE_INFO OF s_axis_divisor_tready: SIGNAL IS "xilinx.com:interface:axis:1.0 S_AXIS_DIVISOR TREADY";
   ATTRIBUTE X_INTERFACE_INFO OF s_axis_divisor_tvalid: SIGNAL IS "xilinx.com:interface:axis:1.0 S_AXIS_DIVISOR TVALID";
   ATTRIBUTE X_INTERFACE_MODE OF s_axis_divisor_tvalid: SIGNAL IS "slave S_AXIS_DIVISOR";
-  ATTRIBUTE X_INTERFACE_PARAMETER OF s_axis_divisor_tvalid: SIGNAL IS "XIL_INTERFACENAME S_AXIS_DIVISOR, TDATA_NUM_BYTES 7, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 100000000, PHASE 0.0, LAYERED_METADATA undef, INSERT_VIP 0";
+  ATTRIBUTE X_INTERFACE_PARAMETER OF s_axis_divisor_tvalid: SIGNAL IS "XIL_INTERFACENAME S_AXIS_DIVISOR, TDATA_NUM_BYTES 6, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 100000000, PHASE 0.0, LAYERED_METADATA undef, INSERT_VIP 0";
 BEGIN
   U0 : div_gen_v5_1_24
     GENERIC MAP (
       C_XDEVICEFAMILY => "zynquplus",
       C_HAS_ARESETN => 0,
       C_HAS_ACLKEN => 0,
-      C_LATENCY => 83,
-      ALGORITHM_TYPE => 1,
-      DIVISOR_WIDTH => 49,
+      C_LATENCY => 42,
+      ALGORITHM_TYPE => 3,
+      DIVISOR_WIDTH => 48,
       DIVIDEND_WIDTH => 48,
       SIGNED_B => 1,
       DIVCLK_SEL => 1,
@@ -160,7 +160,7 @@ BEGIN
       C_TLAST_RESOLUTION => 0,
       C_HAS_S_AXIS_DIVISOR_TUSER => 0,
       C_HAS_S_AXIS_DIVISOR_TLAST => 0,
-      C_S_AXIS_DIVISOR_TDATA_WIDTH => 56,
+      C_S_AXIS_DIVISOR_TDATA_WIDTH => 48,
       C_S_AXIS_DIVISOR_TUSER_WIDTH => 1,
       C_HAS_S_AXIS_DIVIDEND_TUSER => 0,
       C_HAS_S_AXIS_DIVIDEND_TLAST => 0,

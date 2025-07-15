@@ -46,7 +46,7 @@
 -- 
 -- DO NOT MODIFY THIS FILE.
 -- IP VLNV: FSY:VMC:IFM:1.0
--- IP Revision: 383077390
+-- IP Revision: 383513314
 
 -- The following code must appear in the VHDL architecture header.
 
@@ -58,8 +58,8 @@ COMPONENT IFM_0
     realpart : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
     clk : IN STD_LOGIC;
     estimated_frequency_2_delay : OUT STD_LOGIC_VECTOR(81 DOWNTO 0);
-    estimated_frequency_4_delay : OUT STD_LOGIC_VECTOR(81 DOWNTO 0);
     estimated_frequency_2_delay_valid : OUT STD_LOGIC_VECTOR(0 DOWNTO 0);
+    estimated_frequency_4_delay : OUT STD_LOGIC_VECTOR(81 DOWNTO 0);
     estimated_frequency_4_delay_valid : OUT STD_LOGIC_VECTOR(0 DOWNTO 0) 
   );
 END COMPONENT;
@@ -76,8 +76,8 @@ your_instance_name : IFM_0
     realpart => realpart,
     clk => clk,
     estimated_frequency_2_delay => estimated_frequency_2_delay,
-    estimated_frequency_4_delay => estimated_frequency_4_delay,
     estimated_frequency_2_delay_valid => estimated_frequency_2_delay_valid,
+    estimated_frequency_4_delay => estimated_frequency_4_delay,
     estimated_frequency_4_delay_valid => estimated_frequency_4_delay_valid
   );
 -- INST_TAG_END ------ End INSTANTIATION Template ---------
