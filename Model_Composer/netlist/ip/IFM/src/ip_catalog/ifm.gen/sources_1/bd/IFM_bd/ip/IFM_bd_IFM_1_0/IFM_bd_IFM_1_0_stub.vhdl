@@ -2,7 +2,7 @@
 -- Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
--- Date        : Tue Jul 15 19:30:24 2025
+-- Date        : Thu Jul 17 17:08:42 2025
 -- Host        : DESKTOP-5G0J4EJ running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub -rename_top IFM_bd_IFM_1_0 -prefix
 --               IFM_bd_IFM_1_0_ IFM_0_stub.vhdl
@@ -15,7 +15,6 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity IFM_bd_IFM_1_0 is
   Port ( 
-    datavalid : in STD_LOGIC_VECTOR ( 0 to 0 );
     imagpart : in STD_LOGIC_VECTOR ( 15 downto 0 );
     realpart : in STD_LOGIC_VECTOR ( 15 downto 0 );
     clk : in STD_LOGIC;
@@ -37,15 +36,12 @@ architecture stub of IFM_bd_IFM_1_0 is
   attribute syn_black_box : boolean;
   attribute black_box_pad_pin : string;
   attribute syn_black_box of stub : architecture is true;
-  attribute black_box_pad_pin of stub : architecture is "datavalid[0:0],imagpart[15:0],realpart[15:0],clk,estimated_frequency_2_delay[81:0],estimated_frequency_2_delay_valid[0:0],estimated_frequency_4_delay[81:0],estimated_frequency_4_delay_valid[0:0]";
+  attribute black_box_pad_pin of stub : architecture is "imagpart[15:0],realpart[15:0],clk,estimated_frequency_2_delay[81:0],estimated_frequency_2_delay_valid[0:0],estimated_frequency_4_delay[81:0],estimated_frequency_4_delay_valid[0:0]";
   attribute X_INTERFACE_INFO : string;
-  attribute X_INTERFACE_INFO of datavalid : signal is "xilinx.com:signal:data:1.0 datavalid DATA";
-  attribute X_INTERFACE_MODE : string;
-  attribute X_INTERFACE_MODE of datavalid : signal is "slave";
-  attribute X_INTERFACE_PARAMETER : string;
-  attribute X_INTERFACE_PARAMETER of datavalid : signal is "XIL_INTERFACENAME datavalid, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}";
   attribute X_INTERFACE_INFO of imagpart : signal is "xilinx.com:signal:data:1.0 imagpart DATA";
+  attribute X_INTERFACE_MODE : string;
   attribute X_INTERFACE_MODE of imagpart : signal is "slave";
+  attribute X_INTERFACE_PARAMETER : string;
   attribute X_INTERFACE_PARAMETER of imagpart : signal is "XIL_INTERFACENAME imagpart, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 15} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true}}}}}}";
   attribute X_INTERFACE_INFO of realpart : signal is "xilinx.com:signal:data:1.0 realpart DATA";
   attribute X_INTERFACE_MODE of realpart : signal is "slave";

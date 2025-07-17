@@ -12,366 +12,505 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0.000000 us"></ZoomStartTime>
-      <ZoomEndTime time="150.000001 us"></ZoomEndTime>
-      <Cursor1Time time="100.121687 us"></Cursor1Time>
+      <ZoomEndTime time="13.884394 us"></ZoomEndTime>
+      <Cursor1Time time="0.000000 us"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="174"></NameColumnWidth>
+      <NameColumnWidth column_width="170"></NameColumnWidth>
       <ValueColumnWidth column_width="58"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="57" />
+   <WVObjectSize size="9" />
    <wvobject type="divider" fp_name="divider90">
-      <obj_property name="label">Custom Design 10dB</obj_property>
+      <obj_property name="label">SNR 10dB</obj_property>
       <obj_property name="DisplayName">label</obj_property>
       <obj_property name="BkColor">#FFFFFF</obj_property>
    </wvobject>
-   <wvobject fp_name="/ThresholdDetector_tb/clk" type="logic">
-      <obj_property name="ElementShortName">clk</obj_property>
-      <obj_property name="ObjectShortName">clk</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ThresholdDetector_tb/rst_n" type="logic">
-      <obj_property name="ElementShortName">rst_n</obj_property>
-      <obj_property name="ObjectShortName">rst_n</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ThresholdDetector_tb/DataValid_10dB" type="logic">
-      <obj_property name="ElementShortName">DataValid_10dB</obj_property>
-      <obj_property name="ObjectShortName">DataValid_10dB</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ThresholdDetector_tb/RealPart_10dB" type="array">
-      <obj_property name="ElementShortName">RealPart_10dB[15:0]</obj_property>
-      <obj_property name="ObjectShortName">RealPart_10dB[15:0]</obj_property>
-      <obj_property name="Radix">REALRADIX</obj_property>
-      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
-      <obj_property name="radix_fractionWidth">15</obj_property>
-      <obj_property name="radix_otherWidth">0</obj_property>
-      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
-      <obj_property name="CellHeight">100</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ThresholdDetector_tb/ImagPart_10dB" type="array">
-      <obj_property name="ElementShortName">ImagPart_10dB[15:0]</obj_property>
-      <obj_property name="ObjectShortName">ImagPart_10dB[15:0]</obj_property>
-      <obj_property name="Radix">REALRADIX</obj_property>
-      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
-      <obj_property name="radix_fractionWidth">15</obj_property>
-      <obj_property name="radix_otherWidth">0</obj_property>
-      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
-      <obj_property name="CellHeight">100</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ThresholdDetector_tb/DUT_10dB/est_freq_2_delay_valid" type="logic">
-      <obj_property name="ElementShortName">est_freq_2_delay_valid</obj_property>
-      <obj_property name="ObjectShortName">est_freq_2_delay_valid</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ThresholdDetector_tb/DUT_10dB/est_freq_2_delay" type="array">
-      <obj_property name="ElementShortName">est_freq_2_delay[79:0]</obj_property>
-      <obj_property name="ObjectShortName">est_freq_2_delay[79:0]</obj_property>
-      <obj_property name="Radix">REALRADIX</obj_property>
-      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
-      <obj_property name="radix_fractionWidth">42</obj_property>
-      <obj_property name="radix_otherWidth">0</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ThresholdDetector_tb/DUT_10dB/est_freq_4_delay_valid" type="logic">
-      <obj_property name="ElementShortName">est_freq_4_delay_valid</obj_property>
-      <obj_property name="ObjectShortName">est_freq_4_delay_valid</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ThresholdDetector_tb/DUT_10dB/est_freq_4_delay" type="array">
-      <obj_property name="ElementShortName">est_freq_4_delay[79:0]</obj_property>
-      <obj_property name="ObjectShortName">est_freq_4_delay[79:0]</obj_property>
-      <obj_property name="Radix">REALRADIX</obj_property>
-      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
-      <obj_property name="radix_fractionWidth">42</obj_property>
-      <obj_property name="radix_otherWidth">0</obj_property>
-   </wvobject>
-   <wvobject type="divider" fp_name="divider90">
-      <obj_property name="label">Model Composer 10dB</obj_property>
+   <wvobject fp_name="group58" type="group">
+      <obj_property name="label">Custom Design</obj_property>
       <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="BkColor">#FFFFFF</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/ThresholdDetector_tb/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ThresholdDetector_tb/rst_n" type="logic">
+         <obj_property name="ElementShortName">rst_n</obj_property>
+         <obj_property name="ObjectShortName">rst_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ThresholdDetector_tb/DataValid_10dB" type="logic">
+         <obj_property name="ElementShortName">DataValid_10dB</obj_property>
+         <obj_property name="ObjectShortName">DataValid_10dB</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ThresholdDetector_tb/RealPart_10dB" type="array">
+         <obj_property name="ElementShortName">RealPart_10dB[15:0]</obj_property>
+         <obj_property name="ObjectShortName">RealPart_10dB[15:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">15</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+         <obj_property name="CellHeight">100</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ThresholdDetector_tb/ImagPart_10dB" type="array">
+         <obj_property name="ElementShortName">ImagPart_10dB[15:0]</obj_property>
+         <obj_property name="ObjectShortName">ImagPart_10dB[15:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">15</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+         <obj_property name="CellHeight">100</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ThresholdDetector_tb/DUT_10dB/est_freq_2_delay_valid" type="logic">
+         <obj_property name="ElementShortName">est_freq_2_delay_valid</obj_property>
+         <obj_property name="ObjectShortName">est_freq_2_delay_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ThresholdDetector_tb/DUT_10dB/est_freq_2_delay" type="array">
+         <obj_property name="ElementShortName">est_freq_2_delay[79:0]</obj_property>
+         <obj_property name="ObjectShortName">est_freq_2_delay[79:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">42</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ThresholdDetector_tb/DUT_10dB/est_freq_4_delay_valid" type="logic">
+         <obj_property name="ElementShortName">est_freq_4_delay_valid</obj_property>
+         <obj_property name="ObjectShortName">est_freq_4_delay_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ThresholdDetector_tb/DUT_10dB/est_freq_4_delay" type="array">
+         <obj_property name="ElementShortName">est_freq_4_delay[79:0]</obj_property>
+         <obj_property name="ObjectShortName">est_freq_4_delay[79:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">42</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject type="divider" fp_name="divider89">
+      </wvobject>
+      <wvobject fp_name="/ThresholdDetector_tb/DUT_10dB/ENVELOPE_GENERATOR/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ThresholdDetector_tb/DUT_10dB/ENVELOPE_GENERATOR/real_part" type="array">
+         <obj_property name="ElementShortName">real_part[15:0]</obj_property>
+         <obj_property name="ObjectShortName">real_part[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ThresholdDetector_tb/DUT_10dB/ENVELOPE_GENERATOR/imag_part" type="array">
+         <obj_property name="ElementShortName">imag_part[15:0]</obj_property>
+         <obj_property name="ObjectShortName">imag_part[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ThresholdDetector_tb/DUT_10dB/ENVELOPE_GENERATOR/data_valid" type="logic">
+         <obj_property name="ElementShortName">data_valid</obj_property>
+         <obj_property name="ObjectShortName">data_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ThresholdDetector_tb/DUT_10dB/ENVELOPE_GENERATOR/real_part_delayed" type="array">
+         <obj_property name="ElementShortName">real_part_delayed[15:0]</obj_property>
+         <obj_property name="ObjectShortName">real_part_delayed[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ThresholdDetector_tb/DUT_10dB/ENVELOPE_GENERATOR/imag_part_delayed" type="array">
+         <obj_property name="ElementShortName">imag_part_delayed[15:0]</obj_property>
+         <obj_property name="ObjectShortName">imag_part_delayed[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ThresholdDetector_tb/DUT_10dB/ENVELOPE_GENERATOR/data_valid_delayed" type="logic">
+         <obj_property name="ElementShortName">data_valid_delayed</obj_property>
+         <obj_property name="ObjectShortName">data_valid_delayed</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ThresholdDetector_tb/DUT_10dB/ENVELOPE_GENERATOR/envelope" type="logic">
+         <obj_property name="ElementShortName">envelope</obj_property>
+         <obj_property name="ObjectShortName">envelope</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ThresholdDetector_tb/DUT_10dB/ENVELOPE_GENERATOR/noise_sample_counter" type="array">
+         <obj_property name="ElementShortName">noise_sample_counter[15:0]</obj_property>
+         <obj_property name="ObjectShortName">noise_sample_counter[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ThresholdDetector_tb/DUT_10dB/ENVELOPE_GENERATOR/noise_sample_done" type="array">
+         <obj_property name="ElementShortName">noise_sample_done[0:0]</obj_property>
+         <obj_property name="ObjectShortName">noise_sample_done[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ThresholdDetector_tb/DUT_10dB/ENVELOPE_GENERATOR/noise_sample_done_d1" type="array">
+         <obj_property name="ElementShortName">noise_sample_done_d1[0:0]</obj_property>
+         <obj_property name="ObjectShortName">noise_sample_done_d1[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ThresholdDetector_tb/DUT_10dB/ENVELOPE_GENERATOR/data_valid_d1" type="array">
+         <obj_property name="ElementShortName">data_valid_d1[0:0]</obj_property>
+         <obj_property name="ObjectShortName">data_valid_d1[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ThresholdDetector_tb/DUT_10dB/ENVELOPE_GENERATOR/data_valid_d2" type="array">
+         <obj_property name="ElementShortName">data_valid_d2[0:0]</obj_property>
+         <obj_property name="ObjectShortName">data_valid_d2[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ThresholdDetector_tb/DUT_10dB/ENVELOPE_GENERATOR/make_avarage" type="array">
+         <obj_property name="ElementShortName">make_avarage[0:0]</obj_property>
+         <obj_property name="ObjectShortName">make_avarage[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ThresholdDetector_tb/DUT_10dB/ENVELOPE_GENERATOR/threshold" type="array">
+         <obj_property name="ElementShortName">threshold[47:0]</obj_property>
+         <obj_property name="ObjectShortName">threshold[47:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ThresholdDetector_tb/DUT_10dB/ENVELOPE_GENERATOR/threshold_calculated" type="logic">
+         <obj_property name="ElementShortName">threshold_calculated</obj_property>
+         <obj_property name="ObjectShortName">threshold_calculated</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ThresholdDetector_tb/DUT_10dB/ENVELOPE_GENERATOR/real_part_d1" type="array">
+         <obj_property name="ElementShortName">real_part_d1[15:0]</obj_property>
+         <obj_property name="ObjectShortName">real_part_d1[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ThresholdDetector_tb/DUT_10dB/ENVELOPE_GENERATOR/real_part_d2" type="array">
+         <obj_property name="ElementShortName">real_part_d2[15:0]</obj_property>
+         <obj_property name="ObjectShortName">real_part_d2[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ThresholdDetector_tb/DUT_10dB/ENVELOPE_GENERATOR/imag_part_d1" type="array">
+         <obj_property name="ElementShortName">imag_part_d1[15:0]</obj_property>
+         <obj_property name="ObjectShortName">imag_part_d1[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ThresholdDetector_tb/DUT_10dB/ENVELOPE_GENERATOR/imag_part_d2" type="array">
+         <obj_property name="ElementShortName">imag_part_d2[15:0]</obj_property>
+         <obj_property name="ObjectShortName">imag_part_d2[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ThresholdDetector_tb/DUT_10dB/ENVELOPE_GENERATOR/square_real" type="array">
+         <obj_property name="ElementShortName">square_real[31:0]</obj_property>
+         <obj_property name="ObjectShortName">square_real[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ThresholdDetector_tb/DUT_10dB/ENVELOPE_GENERATOR/square_imag" type="array">
+         <obj_property name="ElementShortName">square_imag[31:0]</obj_property>
+         <obj_property name="ObjectShortName">square_imag[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ThresholdDetector_tb/DUT_10dB/ENVELOPE_GENERATOR/sum_squares" type="array">
+         <obj_property name="ElementShortName">sum_squares[31:0]</obj_property>
+         <obj_property name="ObjectShortName">sum_squares[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ThresholdDetector_tb/DUT_10dB/ENVELOPE_GENERATOR/sum_squares_d1" type="array">
+         <obj_property name="ElementShortName">sum_squares_d1[31:0]</obj_property>
+         <obj_property name="ObjectShortName">sum_squares_d1[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ThresholdDetector_tb/DUT_10dB/ENVELOPE_GENERATOR/total_sum" type="array">
+         <obj_property name="ElementShortName">total_sum[47:0]</obj_property>
+         <obj_property name="ObjectShortName">total_sum[47:0]</obj_property>
+      </wvobject>
    </wvobject>
-   <wvobject fp_name="/ThresholdDetector_tb/clk" type="logic">
-      <obj_property name="ElementShortName">clk</obj_property>
-      <obj_property name="ObjectShortName">clk</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ThresholdDetector_tb/DataValid_10dB" type="logic">
-      <obj_property name="ElementShortName">DataValid_10dB</obj_property>
-      <obj_property name="ObjectShortName">DataValid_10dB</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ThresholdDetector_tb/RealPart_10dB" type="array">
-      <obj_property name="ElementShortName">RealPart_10dB[15:0]</obj_property>
-      <obj_property name="ObjectShortName">RealPart_10dB[15:0]</obj_property>
-      <obj_property name="Radix">REALRADIX</obj_property>
-      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
-      <obj_property name="radix_fractionWidth">15</obj_property>
-      <obj_property name="radix_otherWidth">0</obj_property>
-      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
-      <obj_property name="CellHeight">100</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ThresholdDetector_tb/ImagPart_10dB" type="array">
-      <obj_property name="ElementShortName">ImagPart_10dB[15:0]</obj_property>
-      <obj_property name="ObjectShortName">ImagPart_10dB[15:0]</obj_property>
-      <obj_property name="Radix">REALRADIX</obj_property>
-      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
-      <obj_property name="radix_fractionWidth">15</obj_property>
-      <obj_property name="radix_otherWidth">0</obj_property>
-      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
-      <obj_property name="CellHeight">100</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ThresholdDetector_tb/MC_DUT_10dB/estimated_frequency_2_delay_valid" type="logic">
-      <obj_property name="ElementShortName">estimated_frequency_2_delay_valid</obj_property>
-      <obj_property name="ObjectShortName">estimated_frequency_2_delay_valid</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ThresholdDetector_tb/MC_DUT_10dB/estimated_frequency_2_delay" type="array">
-      <obj_property name="ElementShortName">estimated_frequency_2_delay[81:0]</obj_property>
-      <obj_property name="ObjectShortName">estimated_frequency_2_delay[81:0]</obj_property>
-      <obj_property name="Radix">REALRADIX</obj_property>
-      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
-      <obj_property name="radix_fractionWidth">18</obj_property>
-      <obj_property name="radix_otherWidth">0</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ThresholdDetector_tb/MC_DUT_10dB/estimated_frequency_4_delay_valid" type="logic">
-      <obj_property name="ElementShortName">estimated_frequency_4_delay_valid</obj_property>
-      <obj_property name="ObjectShortName">estimated_frequency_4_delay_valid</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ThresholdDetector_tb/MC_DUT_10dB/estimated_frequency_4_delay" type="array">
-      <obj_property name="ElementShortName">estimated_frequency_4_delay[81:0]</obj_property>
-      <obj_property name="ObjectShortName">estimated_frequency_4_delay[81:0]</obj_property>
-      <obj_property name="Radix">REALRADIX</obj_property>
-      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
-      <obj_property name="radix_fractionWidth">18</obj_property>
-      <obj_property name="radix_otherWidth">0</obj_property>
+   <wvobject fp_name="group59" type="group">
+      <obj_property name="label">Model Composer</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/ThresholdDetector_tb/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ThresholdDetector_tb/DataValid_10dB" type="logic">
+         <obj_property name="ElementShortName">DataValid_10dB</obj_property>
+         <obj_property name="ObjectShortName">DataValid_10dB</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ThresholdDetector_tb/RealPart_10dB" type="array">
+         <obj_property name="ElementShortName">RealPart_10dB[15:0]</obj_property>
+         <obj_property name="ObjectShortName">RealPart_10dB[15:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">15</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+         <obj_property name="CellHeight">100</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ThresholdDetector_tb/ImagPart_10dB" type="array">
+         <obj_property name="ElementShortName">ImagPart_10dB[15:0]</obj_property>
+         <obj_property name="ObjectShortName">ImagPart_10dB[15:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">15</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+         <obj_property name="CellHeight">100</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ThresholdDetector_tb/MC_DUT_10dB/estimated_frequency_2_delay_valid" type="logic">
+         <obj_property name="ElementShortName">estimated_frequency_2_delay_valid</obj_property>
+         <obj_property name="ObjectShortName">estimated_frequency_2_delay_valid</obj_property>
+         <obj_property name="CustomSignalColor">#FFFFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ThresholdDetector_tb/MC_DUT_10dB/estimated_frequency_2_delay" type="array">
+         <obj_property name="ElementShortName">estimated_frequency_2_delay[81:0]</obj_property>
+         <obj_property name="ObjectShortName">estimated_frequency_2_delay[81:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">18</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+         <obj_property name="CustomSignalColor">#FFFFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ThresholdDetector_tb/MC_DUT_10dB/estimated_frequency_4_delay_valid" type="logic">
+         <obj_property name="ElementShortName">estimated_frequency_4_delay_valid</obj_property>
+         <obj_property name="ObjectShortName">estimated_frequency_4_delay_valid</obj_property>
+         <obj_property name="CustomSignalColor">#FFFFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ThresholdDetector_tb/MC_DUT_10dB/estimated_frequency_4_delay" type="array">
+         <obj_property name="ElementShortName">estimated_frequency_4_delay[81:0]</obj_property>
+         <obj_property name="ObjectShortName">estimated_frequency_4_delay[81:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">18</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+         <obj_property name="CustomSignalColor">#FFFFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
    </wvobject>
    <wvobject type="divider" fp_name="divider90">
-      <obj_property name="label">Custom Design 20dB</obj_property>
+      <obj_property name="label">SNR 20dB</obj_property>
       <obj_property name="DisplayName">label</obj_property>
       <obj_property name="BkColor">#00FFFF</obj_property>
    </wvobject>
-   <wvobject fp_name="/ThresholdDetector_tb/clk" type="logic">
-      <obj_property name="ElementShortName">clk</obj_property>
-      <obj_property name="ObjectShortName">clk</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ThresholdDetector_tb/rst_n" type="logic">
-      <obj_property name="ElementShortName">rst_n</obj_property>
-      <obj_property name="ObjectShortName">rst_n</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ThresholdDetector_tb/DataValid_20dB" type="logic">
-      <obj_property name="ElementShortName">DataValid_20dB</obj_property>
-      <obj_property name="ObjectShortName">DataValid_20dB</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ThresholdDetector_tb/RealPart_20dB" type="array">
-      <obj_property name="ElementShortName">RealPart_20dB[15:0]</obj_property>
-      <obj_property name="ObjectShortName">RealPart_20dB[15:0]</obj_property>
-      <obj_property name="Radix">REALRADIX</obj_property>
-      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
-      <obj_property name="radix_fractionWidth">15</obj_property>
-      <obj_property name="radix_otherWidth">0</obj_property>
-      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
-      <obj_property name="CellHeight">100</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ThresholdDetector_tb/ImagPart_20dB" type="array">
-      <obj_property name="ElementShortName">ImagPart_20dB[15:0]</obj_property>
-      <obj_property name="ObjectShortName">ImagPart_20dB[15:0]</obj_property>
-      <obj_property name="Radix">REALRADIX</obj_property>
-      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
-      <obj_property name="radix_fractionWidth">15</obj_property>
-      <obj_property name="radix_otherWidth">0</obj_property>
-      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
-      <obj_property name="CellHeight">100</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ThresholdDetector_tb/DUT_20dB/est_freq_2_delay_valid" type="logic">
-      <obj_property name="ElementShortName">est_freq_2_delay_valid</obj_property>
-      <obj_property name="ObjectShortName">est_freq_2_delay_valid</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ThresholdDetector_tb/DUT_20dB/est_freq_2_delay" type="array">
-      <obj_property name="ElementShortName">est_freq_2_delay[79:0]</obj_property>
-      <obj_property name="ObjectShortName">est_freq_2_delay[79:0]</obj_property>
-      <obj_property name="Radix">REALRADIX</obj_property>
-      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
-      <obj_property name="radix_fractionWidth">42</obj_property>
-      <obj_property name="radix_otherWidth">0</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ThresholdDetector_tb/DUT_20dB/est_freq_4_delay_valid" type="logic">
-      <obj_property name="ElementShortName">est_freq_4_delay_valid</obj_property>
-      <obj_property name="ObjectShortName">est_freq_4_delay_valid</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ThresholdDetector_tb/DUT_20dB/est_freq_4_delay" type="array">
-      <obj_property name="ElementShortName">est_freq_4_delay[79:0]</obj_property>
-      <obj_property name="ObjectShortName">est_freq_4_delay[79:0]</obj_property>
-      <obj_property name="Radix">REALRADIX</obj_property>
-      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
-      <obj_property name="radix_fractionWidth">42</obj_property>
-      <obj_property name="radix_otherWidth">0</obj_property>
-   </wvobject>
-   <wvobject type="divider" fp_name="divider90">
-      <obj_property name="label">Model Composer 20dB</obj_property>
+   <wvobject fp_name="group60" type="group">
+      <obj_property name="label">Custom Design</obj_property>
       <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="BkColor">#00FFFF</obj_property>
+      <wvobject fp_name="/ThresholdDetector_tb/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ThresholdDetector_tb/rst_n" type="logic">
+         <obj_property name="ElementShortName">rst_n</obj_property>
+         <obj_property name="ObjectShortName">rst_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ThresholdDetector_tb/DataValid_20dB" type="logic">
+         <obj_property name="ElementShortName">DataValid_20dB</obj_property>
+         <obj_property name="ObjectShortName">DataValid_20dB</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ThresholdDetector_tb/RealPart_20dB" type="array">
+         <obj_property name="ElementShortName">RealPart_20dB[15:0]</obj_property>
+         <obj_property name="ObjectShortName">RealPart_20dB[15:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">15</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+         <obj_property name="CellHeight">100</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ThresholdDetector_tb/ImagPart_20dB" type="array">
+         <obj_property name="ElementShortName">ImagPart_20dB[15:0]</obj_property>
+         <obj_property name="ObjectShortName">ImagPart_20dB[15:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">15</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+         <obj_property name="CellHeight">100</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ThresholdDetector_tb/DUT_20dB/est_freq_2_delay_valid" type="logic">
+         <obj_property name="ElementShortName">est_freq_2_delay_valid</obj_property>
+         <obj_property name="ObjectShortName">est_freq_2_delay_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ThresholdDetector_tb/DUT_20dB/est_freq_2_delay" type="array">
+         <obj_property name="ElementShortName">est_freq_2_delay[79:0]</obj_property>
+         <obj_property name="ObjectShortName">est_freq_2_delay[79:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">42</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ThresholdDetector_tb/DUT_20dB/est_freq_4_delay_valid" type="logic">
+         <obj_property name="ElementShortName">est_freq_4_delay_valid</obj_property>
+         <obj_property name="ObjectShortName">est_freq_4_delay_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ThresholdDetector_tb/DUT_20dB/est_freq_4_delay" type="array">
+         <obj_property name="ElementShortName">est_freq_4_delay[79:0]</obj_property>
+         <obj_property name="ObjectShortName">est_freq_4_delay[79:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">42</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
    </wvobject>
-   <wvobject fp_name="/ThresholdDetector_tb/clk" type="logic">
-      <obj_property name="ElementShortName">clk</obj_property>
-      <obj_property name="ObjectShortName">clk</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ThresholdDetector_tb/DataValid_20dB" type="logic">
-      <obj_property name="ElementShortName">DataValid_20dB</obj_property>
-      <obj_property name="ObjectShortName">DataValid_20dB</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ThresholdDetector_tb/RealPart_20dB" type="array">
-      <obj_property name="ElementShortName">RealPart_20dB[15:0]</obj_property>
-      <obj_property name="ObjectShortName">RealPart_20dB[15:0]</obj_property>
-      <obj_property name="Radix">REALRADIX</obj_property>
-      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
-      <obj_property name="radix_fractionWidth">15</obj_property>
-      <obj_property name="radix_otherWidth">0</obj_property>
-      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
-      <obj_property name="CellHeight">100</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ThresholdDetector_tb/ImagPart_20dB" type="array">
-      <obj_property name="ElementShortName">ImagPart_20dB[15:0]</obj_property>
-      <obj_property name="ObjectShortName">ImagPart_20dB[15:0]</obj_property>
-      <obj_property name="Radix">REALRADIX</obj_property>
-      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
-      <obj_property name="radix_fractionWidth">15</obj_property>
-      <obj_property name="radix_otherWidth">0</obj_property>
-      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
-      <obj_property name="CellHeight">100</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ThresholdDetector_tb/MC_DUT_20dB/estimated_frequency_2_delay_valid" type="logic">
-      <obj_property name="ElementShortName">estimated_frequency_2_delay_valid</obj_property>
-      <obj_property name="ObjectShortName">estimated_frequency_2_delay_valid</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ThresholdDetector_tb/MC_DUT_20dB/estimated_frequency_2_delay" type="array">
-      <obj_property name="ElementShortName">estimated_frequency_2_delay[81:0]</obj_property>
-      <obj_property name="ObjectShortName">estimated_frequency_2_delay[81:0]</obj_property>
-      <obj_property name="Radix">REALRADIX</obj_property>
-      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
-      <obj_property name="radix_fractionWidth">18</obj_property>
-      <obj_property name="radix_otherWidth">0</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ThresholdDetector_tb/MC_DUT_20dB/estimated_frequency_4_delay_valid" type="logic">
-      <obj_property name="ElementShortName">estimated_frequency_4_delay_valid</obj_property>
-      <obj_property name="ObjectShortName">estimated_frequency_4_delay_valid</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ThresholdDetector_tb/MC_DUT_20dB/estimated_frequency_4_delay" type="array">
-      <obj_property name="ElementShortName">estimated_frequency_4_delay[81:0]</obj_property>
-      <obj_property name="ObjectShortName">estimated_frequency_4_delay[81:0]</obj_property>
-      <obj_property name="Radix">REALRADIX</obj_property>
-      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
-      <obj_property name="radix_fractionWidth">18</obj_property>
-      <obj_property name="radix_otherWidth">0</obj_property>
-   </wvobject>
-   <wvobject type="divider" fp_name="divider90">
-      <obj_property name="label">Custom Design 40dB</obj_property>
+   <wvobject fp_name="group61" type="group">
+      <obj_property name="label">Model Composer</obj_property>
       <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="BkColor">#FF00FF</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ThresholdDetector_tb/clk" type="logic">
-      <obj_property name="ElementShortName">clk</obj_property>
-      <obj_property name="ObjectShortName">clk</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ThresholdDetector_tb/rst_n" type="logic">
-      <obj_property name="ElementShortName">rst_n</obj_property>
-      <obj_property name="ObjectShortName">rst_n</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ThresholdDetector_tb/DataValid_40dB" type="logic">
-      <obj_property name="ElementShortName">DataValid_40dB</obj_property>
-      <obj_property name="ObjectShortName">DataValid_40dB</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ThresholdDetector_tb/RealPart_40dB" type="array">
-      <obj_property name="ElementShortName">RealPart_40dB[15:0]</obj_property>
-      <obj_property name="ObjectShortName">RealPart_40dB[15:0]</obj_property>
-      <obj_property name="Radix">REALRADIX</obj_property>
-      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
-      <obj_property name="radix_fractionWidth">15</obj_property>
-      <obj_property name="radix_otherWidth">0</obj_property>
-      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
-      <obj_property name="CellHeight">100</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ThresholdDetector_tb/ImagPart_40dB" type="array">
-      <obj_property name="ElementShortName">ImagPart_40dB[15:0]</obj_property>
-      <obj_property name="ObjectShortName">ImagPart_40dB[15:0]</obj_property>
-      <obj_property name="Radix">REALRADIX</obj_property>
-      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
-      <obj_property name="radix_fractionWidth">15</obj_property>
-      <obj_property name="radix_otherWidth">0</obj_property>
-      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
-      <obj_property name="CellHeight">100</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ThresholdDetector_tb/DUT_40dB/est_freq_2_delay_valid" type="logic">
-      <obj_property name="ElementShortName">est_freq_2_delay_valid</obj_property>
-      <obj_property name="ObjectShortName">est_freq_2_delay_valid</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ThresholdDetector_tb/DUT_40dB/est_freq_2_delay" type="array">
-      <obj_property name="ElementShortName">est_freq_2_delay[79:0]</obj_property>
-      <obj_property name="ObjectShortName">est_freq_2_delay[79:0]</obj_property>
-      <obj_property name="Radix">REALRADIX</obj_property>
-      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
-      <obj_property name="radix_fractionWidth">42</obj_property>
-      <obj_property name="radix_otherWidth">0</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ThresholdDetector_tb/DUT_40dB/est_freq_4_delay_valid" type="logic">
-      <obj_property name="ElementShortName">est_freq_4_delay_valid</obj_property>
-      <obj_property name="ObjectShortName">est_freq_4_delay_valid</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ThresholdDetector_tb/DUT_40dB/est_freq_4_delay" type="array">
-      <obj_property name="ElementShortName">est_freq_4_delay[79:0]</obj_property>
-      <obj_property name="ObjectShortName">est_freq_4_delay[79:0]</obj_property>
-      <obj_property name="Radix">REALRADIX</obj_property>
-      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
-      <obj_property name="radix_fractionWidth">42</obj_property>
-      <obj_property name="radix_otherWidth">0</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/ThresholdDetector_tb/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ThresholdDetector_tb/DataValid_20dB" type="logic">
+         <obj_property name="ElementShortName">DataValid_20dB</obj_property>
+         <obj_property name="ObjectShortName">DataValid_20dB</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ThresholdDetector_tb/RealPart_20dB" type="array">
+         <obj_property name="ElementShortName">RealPart_20dB[15:0]</obj_property>
+         <obj_property name="ObjectShortName">RealPart_20dB[15:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">15</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+         <obj_property name="CellHeight">100</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ThresholdDetector_tb/ImagPart_20dB" type="array">
+         <obj_property name="ElementShortName">ImagPart_20dB[15:0]</obj_property>
+         <obj_property name="ObjectShortName">ImagPart_20dB[15:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">15</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+         <obj_property name="CellHeight">100</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ThresholdDetector_tb/MC_DUT_20dB/estimated_frequency_2_delay_valid" type="logic">
+         <obj_property name="ElementShortName">estimated_frequency_2_delay_valid</obj_property>
+         <obj_property name="ObjectShortName">estimated_frequency_2_delay_valid</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ThresholdDetector_tb/MC_DUT_20dB/estimated_frequency_2_delay" type="array">
+         <obj_property name="ElementShortName">estimated_frequency_2_delay[81:0]</obj_property>
+         <obj_property name="ObjectShortName">estimated_frequency_2_delay[81:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">18</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ThresholdDetector_tb/MC_DUT_20dB/estimated_frequency_4_delay_valid" type="logic">
+         <obj_property name="ElementShortName">estimated_frequency_4_delay_valid</obj_property>
+         <obj_property name="ObjectShortName">estimated_frequency_4_delay_valid</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ThresholdDetector_tb/MC_DUT_20dB/estimated_frequency_4_delay" type="array">
+         <obj_property name="ElementShortName">estimated_frequency_4_delay[81:0]</obj_property>
+         <obj_property name="ObjectShortName">estimated_frequency_4_delay[81:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">18</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+         <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
    </wvobject>
    <wvobject type="divider" fp_name="divider90">
-      <obj_property name="label">Model Composer 40dB</obj_property>
+      <obj_property name="label">SNR 40dB</obj_property>
       <obj_property name="DisplayName">label</obj_property>
       <obj_property name="BkColor">#FF00FF</obj_property>
    </wvobject>
-   <wvobject fp_name="/ThresholdDetector_tb/clk" type="logic">
-      <obj_property name="ElementShortName">clk</obj_property>
-      <obj_property name="ObjectShortName">clk</obj_property>
+   <wvobject fp_name="group63" type="group">
+      <obj_property name="label">Custom Design</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/ThresholdDetector_tb/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ThresholdDetector_tb/rst_n" type="logic">
+         <obj_property name="ElementShortName">rst_n</obj_property>
+         <obj_property name="ObjectShortName">rst_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ThresholdDetector_tb/DataValid_40dB" type="logic">
+         <obj_property name="ElementShortName">DataValid_40dB</obj_property>
+         <obj_property name="ObjectShortName">DataValid_40dB</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ThresholdDetector_tb/RealPart_40dB" type="array">
+         <obj_property name="ElementShortName">RealPart_40dB[15:0]</obj_property>
+         <obj_property name="ObjectShortName">RealPart_40dB[15:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">15</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+         <obj_property name="CellHeight">100</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ThresholdDetector_tb/ImagPart_40dB" type="array">
+         <obj_property name="ElementShortName">ImagPart_40dB[15:0]</obj_property>
+         <obj_property name="ObjectShortName">ImagPart_40dB[15:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">15</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+         <obj_property name="CellHeight">100</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ThresholdDetector_tb/DUT_40dB/est_freq_2_delay_valid" type="logic">
+         <obj_property name="ElementShortName">est_freq_2_delay_valid</obj_property>
+         <obj_property name="ObjectShortName">est_freq_2_delay_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ThresholdDetector_tb/DUT_40dB/est_freq_2_delay" type="array">
+         <obj_property name="ElementShortName">est_freq_2_delay[79:0]</obj_property>
+         <obj_property name="ObjectShortName">est_freq_2_delay[79:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">42</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ThresholdDetector_tb/DUT_40dB/est_freq_4_delay_valid" type="logic">
+         <obj_property name="ElementShortName">est_freq_4_delay_valid</obj_property>
+         <obj_property name="ObjectShortName">est_freq_4_delay_valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ThresholdDetector_tb/DUT_40dB/est_freq_4_delay" type="array">
+         <obj_property name="ElementShortName">est_freq_4_delay[79:0]</obj_property>
+         <obj_property name="ObjectShortName">est_freq_4_delay[79:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">42</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+      </wvobject>
    </wvobject>
-   <wvobject fp_name="/ThresholdDetector_tb/DataValid_40dB" type="logic">
-      <obj_property name="ElementShortName">DataValid_40dB</obj_property>
-      <obj_property name="ObjectShortName">DataValid_40dB</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ThresholdDetector_tb/RealPart_40dB" type="array">
-      <obj_property name="ElementShortName">RealPart_40dB[15:0]</obj_property>
-      <obj_property name="ObjectShortName">RealPart_40dB[15:0]</obj_property>
-      <obj_property name="Radix">REALRADIX</obj_property>
-      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
-      <obj_property name="radix_fractionWidth">15</obj_property>
-      <obj_property name="radix_otherWidth">0</obj_property>
-      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
-      <obj_property name="CellHeight">100</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ThresholdDetector_tb/ImagPart_40dB" type="array">
-      <obj_property name="ElementShortName">ImagPart_40dB[15:0]</obj_property>
-      <obj_property name="ObjectShortName">ImagPart_40dB[15:0]</obj_property>
-      <obj_property name="Radix">REALRADIX</obj_property>
-      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
-      <obj_property name="radix_fractionWidth">15</obj_property>
-      <obj_property name="radix_otherWidth">0</obj_property>
-      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
-      <obj_property name="CellHeight">100</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ThresholdDetector_tb/MC_DUT_40dB/estimated_frequency_2_delay_valid" type="logic">
-      <obj_property name="ElementShortName">estimated_frequency_2_delay_valid</obj_property>
-      <obj_property name="ObjectShortName">estimated_frequency_2_delay_valid</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ThresholdDetector_tb/MC_DUT_40dB/estimated_frequency_2_delay" type="array">
-      <obj_property name="ElementShortName">estimated_frequency_2_delay[81:0]</obj_property>
-      <obj_property name="ObjectShortName">estimated_frequency_2_delay[81:0]</obj_property>
-      <obj_property name="Radix">REALRADIX</obj_property>
-      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
-      <obj_property name="radix_fractionWidth">18</obj_property>
-      <obj_property name="radix_otherWidth">0</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ThresholdDetector_tb/MC_DUT_40dB/estimated_frequency_4_delay_valid" type="logic">
-      <obj_property name="ElementShortName">estimated_frequency_4_delay_valid</obj_property>
-      <obj_property name="ObjectShortName">estimated_frequency_4_delay_valid</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ThresholdDetector_tb/MC_DUT_40dB/estimated_frequency_4_delay" type="array">
-      <obj_property name="ElementShortName">estimated_frequency_4_delay[81:0]</obj_property>
-      <obj_property name="ObjectShortName">estimated_frequency_4_delay[81:0]</obj_property>
-      <obj_property name="Radix">REALRADIX</obj_property>
-      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
-      <obj_property name="radix_fractionWidth">18</obj_property>
-      <obj_property name="radix_otherWidth">0</obj_property>
+   <wvobject fp_name="group62" type="group">
+      <obj_property name="label">Model Composer</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/ThresholdDetector_tb/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ThresholdDetector_tb/DataValid_40dB" type="logic">
+         <obj_property name="ElementShortName">DataValid_40dB</obj_property>
+         <obj_property name="ObjectShortName">DataValid_40dB</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ThresholdDetector_tb/RealPart_40dB" type="array">
+         <obj_property name="ElementShortName">RealPart_40dB[15:0]</obj_property>
+         <obj_property name="ObjectShortName">RealPart_40dB[15:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">15</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+         <obj_property name="CellHeight">100</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ThresholdDetector_tb/ImagPart_40dB" type="array">
+         <obj_property name="ElementShortName">ImagPart_40dB[15:0]</obj_property>
+         <obj_property name="ObjectShortName">ImagPart_40dB[15:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">15</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+         <obj_property name="CellHeight">100</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ThresholdDetector_tb/MC_DUT_40dB/estimated_frequency_2_delay_valid" type="logic">
+         <obj_property name="ElementShortName">estimated_frequency_2_delay_valid</obj_property>
+         <obj_property name="ObjectShortName">estimated_frequency_2_delay_valid</obj_property>
+         <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ThresholdDetector_tb/MC_DUT_40dB/estimated_frequency_2_delay" type="array">
+         <obj_property name="ElementShortName">estimated_frequency_2_delay[81:0]</obj_property>
+         <obj_property name="ObjectShortName">estimated_frequency_2_delay[81:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">18</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+         <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ThresholdDetector_tb/MC_DUT_40dB/estimated_frequency_4_delay_valid" type="logic">
+         <obj_property name="ElementShortName">estimated_frequency_4_delay_valid</obj_property>
+         <obj_property name="ObjectShortName">estimated_frequency_4_delay_valid</obj_property>
+         <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ThresholdDetector_tb/MC_DUT_40dB/estimated_frequency_4_delay" type="array">
+         <obj_property name="ElementShortName">estimated_frequency_4_delay[81:0]</obj_property>
+         <obj_property name="ObjectShortName">estimated_frequency_4_delay[81:0]</obj_property>
+         <obj_property name="Radix">REALRADIX</obj_property>
+         <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+         <obj_property name="radix_fractionWidth">18</obj_property>
+         <obj_property name="radix_otherWidth">0</obj_property>
+         <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
    </wvobject>
 </wave_config>

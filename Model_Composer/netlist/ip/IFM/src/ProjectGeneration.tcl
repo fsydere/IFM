@@ -33,7 +33,7 @@ namespace eval ::xilinx::dsp::planaheaddriver {
 	set IP_LifeCycle_Menu {1}
 	set IP_Logo {sysgen_icon_100.png}
 	set IP_Name {IFM}
-	set IP_Revision {383513314}
+	set IP_Revision {383677618}
 	set IP_Socket_IP {0}
 	set IP_Socket_IP_Proj_Path {}
 	set IP_Vendor_Text {FSY}
@@ -62,7 +62,7 @@ namespace eval ::xilinx::dsp::planaheaddriver {
 	set TargetDir {C:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src}
 	set TestBenchModule {ifm_tb}
 	set TopLevelModule {ifm}
-	set TopLevelSimulinkHandle 330
+	set TopLevelSimulinkHandle 325
 	set TopLevelPortInterface {}
 	dict set TopLevelPortInterface realpart Name {realpart}
 	dict set TopLevelPortInterface realpart Type Fix_16_15
@@ -94,21 +94,6 @@ namespace eval ::xilinx::dsp::planaheaddriver {
 	dict set TopLevelPortInterface imagpart ClockDomain {ifm}
 	dict set TopLevelPortInterface imagpart Locs {}
 	dict set TopLevelPortInterface imagpart IOStandard {}
-	dict set TopLevelPortInterface datavalid Name {datavalid}
-	dict set TopLevelPortInterface datavalid Type Bool
-	dict set TopLevelPortInterface datavalid ArithmeticType xlUnsigned
-	dict set TopLevelPortInterface datavalid BinaryPoint 0
-	dict set TopLevelPortInterface datavalid Width 1
-	dict set TopLevelPortInterface datavalid DatFile {ifm_modelcomposer_ifm_datavalid.dat}
-	dict set TopLevelPortInterface datavalid IconText {DataValid}
-	dict set TopLevelPortInterface datavalid Direction in
-	dict set TopLevelPortInterface datavalid Period 1
-	dict set TopLevelPortInterface datavalid Interface 0
-	dict set TopLevelPortInterface datavalid InterfaceName {}
-	dict set TopLevelPortInterface datavalid InterfaceString {DATA}
-	dict set TopLevelPortInterface datavalid ClockDomain {ifm}
-	dict set TopLevelPortInterface datavalid Locs {}
-	dict set TopLevelPortInterface datavalid IOStandard {}
 	dict set TopLevelPortInterface estimated_frequency_2_delay Name {estimated_frequency_2_delay}
 	dict set TopLevelPortInterface estimated_frequency_2_delay Type Fix_82_18
 	dict set TopLevelPortInterface estimated_frequency_2_delay ArithmeticType xlSigned

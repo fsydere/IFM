@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x13D88A8585599D41",
+      "boundary_crc": "0xE590DEE777ECB059",
       "design_src": "SYSGEN",
       "device": "xczu9eg-ffvb1156-2-e",
       "gen_directory": "../../../../ifm.gen/sources_1/bd/IFM_bd",
@@ -37,18 +37,6 @@
           },
           "PHASE": {
             "value": "0.0",
-            "value_src": "default"
-          }
-        }
-      },
-      "datavalid": {
-        "type": "data",
-        "direction": "I",
-        "left": "0",
-        "right": "0",
-        "parameters": {
-          "LAYERED_METADATA": {
-            "value": "undef",
             "value_src": "default"
           }
         }
@@ -153,7 +141,7 @@
     "components": {
       "IFM_1": {
         "vlnv": "FSY:VMC:IFM:1.0",
-        "ip_revision": "383513314",
+        "ip_revision": "383677618",
         "xci_name": "IFM_bd_IFM_1_0",
         "xci_path": "ip\\IFM_bd_IFM_1_0\\IFM_bd_IFM_1_0.xci",
         "inst_hier_path": "IFM_1",
@@ -189,12 +177,6 @@
         "ports": [
           "clk",
           "IFM_1/clk"
-        ]
-      },
-      "datavalid_1": {
-        "ports": [
-          "datavalid",
-          "IFM_1/datavalid"
         ]
       },
       "imagpart_1": {

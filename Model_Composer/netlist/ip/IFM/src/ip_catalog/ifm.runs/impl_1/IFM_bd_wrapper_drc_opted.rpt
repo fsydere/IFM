@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
-| Date         : Tue Jul 15 19:32:26 2025
+| Date         : Thu Jul 17 17:10:50 2025
 | Host         : DESKTOP-5G0J4EJ running 64-bit major release  (build 9200)
 | Command      : report_drc -file IFM_bd_wrapper_drc_opted.rpt -pb IFM_bd_wrapper_drc_opted.pb -rpx IFM_bd_wrapper_drc_opted.rpx
 | Design       : IFM_bd_wrapper
@@ -24,324 +24,487 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max checks: <unlimited>
-             Checks found: 62
+             Checks found: 94
 +----------+----------+---------------------------------------------------------------------+--------+
 | Rule     | Severity | Description                                                         | Checks |
 +----------+----------+---------------------------------------------------------------------+--------+
-| AVAL-155 | Advisory | enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND | 45     |
-| AVAL-156 | Advisory | enum_USE_MULT_NONE__enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND    | 17     |
+| DPIP-2   | Warning  | Input pipelining                                                    | 16     |
+| DPOP-3   | Warning  | PREG Output pipelining                                              | 4      |
+| DPOP-4   | Warning  | MREG Output pipelining                                              | 8      |
+| AVAL-155 | Advisory | enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND | 54     |
+| AVAL-156 | Advisory | enum_USE_MULT_NONE__enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND    | 12     |
 +----------+----------+---------------------------------------------------------------------+--------+
 
 2. REPORT DETAILS
 -----------------
+DPIP-2#1 Warning
+Input pipelining  
+DSP IFM_bd_i/IFM_1/inst/ifm_struct/envelope_detection/signal_detection/squareimag/mult_46_56 input IFM_bd_i/IFM_1/inst/ifm_struct/envelope_detection/signal_detection/squareimag/mult_46_56/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#2 Warning
+Input pipelining  
+DSP IFM_bd_i/IFM_1/inst/ifm_struct/envelope_detection/signal_detection/squareimag/mult_46_56 input IFM_bd_i/IFM_1/inst/ifm_struct/envelope_detection/signal_detection/squareimag/mult_46_56/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#3 Warning
+Input pipelining  
+DSP IFM_bd_i/IFM_1/inst/ifm_struct/envelope_detection/signal_detection/squareimag/mult_46_56__0 input IFM_bd_i/IFM_1/inst/ifm_struct/envelope_detection/signal_detection/squareimag/mult_46_56__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#4 Warning
+Input pipelining  
+DSP IFM_bd_i/IFM_1/inst/ifm_struct/envelope_detection/signal_detection/squareimag/mult_46_56__0 input IFM_bd_i/IFM_1/inst/ifm_struct/envelope_detection/signal_detection/squareimag/mult_46_56__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#5 Warning
+Input pipelining  
+DSP IFM_bd_i/IFM_1/inst/ifm_struct/envelope_detection/signal_detection/squareimag/op_mem_65_20_reg[0] input IFM_bd_i/IFM_1/inst/ifm_struct/envelope_detection/signal_detection/squareimag/op_mem_65_20_reg[0]/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#6 Warning
+Input pipelining  
+DSP IFM_bd_i/IFM_1/inst/ifm_struct/envelope_detection/signal_detection/squareimag/op_mem_65_20_reg[0] input IFM_bd_i/IFM_1/inst/ifm_struct/envelope_detection/signal_detection/squareimag/op_mem_65_20_reg[0]/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#7 Warning
+Input pipelining  
+DSP IFM_bd_i/IFM_1/inst/ifm_struct/envelope_detection/signal_detection/squareimag/op_mem_65_20_reg[0]__0 input IFM_bd_i/IFM_1/inst/ifm_struct/envelope_detection/signal_detection/squareimag/op_mem_65_20_reg[0]__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#8 Warning
+Input pipelining  
+DSP IFM_bd_i/IFM_1/inst/ifm_struct/envelope_detection/signal_detection/squareimag/op_mem_65_20_reg[0]__0 input IFM_bd_i/IFM_1/inst/ifm_struct/envelope_detection/signal_detection/squareimag/op_mem_65_20_reg[0]__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#9 Warning
+Input pipelining  
+DSP IFM_bd_i/IFM_1/inst/ifm_struct/envelope_detection/signal_detection/squarereal/mult_46_56 input IFM_bd_i/IFM_1/inst/ifm_struct/envelope_detection/signal_detection/squarereal/mult_46_56/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#10 Warning
+Input pipelining  
+DSP IFM_bd_i/IFM_1/inst/ifm_struct/envelope_detection/signal_detection/squarereal/mult_46_56 input IFM_bd_i/IFM_1/inst/ifm_struct/envelope_detection/signal_detection/squarereal/mult_46_56/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#11 Warning
+Input pipelining  
+DSP IFM_bd_i/IFM_1/inst/ifm_struct/envelope_detection/signal_detection/squarereal/mult_46_56__0 input IFM_bd_i/IFM_1/inst/ifm_struct/envelope_detection/signal_detection/squarereal/mult_46_56__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#12 Warning
+Input pipelining  
+DSP IFM_bd_i/IFM_1/inst/ifm_struct/envelope_detection/signal_detection/squarereal/mult_46_56__0 input IFM_bd_i/IFM_1/inst/ifm_struct/envelope_detection/signal_detection/squarereal/mult_46_56__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#13 Warning
+Input pipelining  
+DSP IFM_bd_i/IFM_1/inst/ifm_struct/envelope_detection/signal_detection/squarereal/op_mem_65_20_reg[0] input IFM_bd_i/IFM_1/inst/ifm_struct/envelope_detection/signal_detection/squarereal/op_mem_65_20_reg[0]/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#14 Warning
+Input pipelining  
+DSP IFM_bd_i/IFM_1/inst/ifm_struct/envelope_detection/signal_detection/squarereal/op_mem_65_20_reg[0] input IFM_bd_i/IFM_1/inst/ifm_struct/envelope_detection/signal_detection/squarereal/op_mem_65_20_reg[0]/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#15 Warning
+Input pipelining  
+DSP IFM_bd_i/IFM_1/inst/ifm_struct/envelope_detection/signal_detection/squarereal/op_mem_65_20_reg[0]__0 input IFM_bd_i/IFM_1/inst/ifm_struct/envelope_detection/signal_detection/squarereal/op_mem_65_20_reg[0]__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#16 Warning
+Input pipelining  
+DSP IFM_bd_i/IFM_1/inst/ifm_struct/envelope_detection/signal_detection/squarereal/op_mem_65_20_reg[0]__0 input IFM_bd_i/IFM_1/inst/ifm_struct/envelope_detection/signal_detection/squarereal/op_mem_65_20_reg[0]__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPOP-3#1 Warning
+PREG Output pipelining  
+DSP IFM_bd_i/IFM_1/inst/ifm_struct/envelope_detection/signal_detection/squareimag/mult_46_56 output IFM_bd_i/IFM_1/inst/ifm_struct/envelope_detection/signal_detection/squareimag/mult_46_56/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#2 Warning
+PREG Output pipelining  
+DSP IFM_bd_i/IFM_1/inst/ifm_struct/envelope_detection/signal_detection/squareimag/mult_46_56__0 output IFM_bd_i/IFM_1/inst/ifm_struct/envelope_detection/signal_detection/squareimag/mult_46_56__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#3 Warning
+PREG Output pipelining  
+DSP IFM_bd_i/IFM_1/inst/ifm_struct/envelope_detection/signal_detection/squarereal/mult_46_56 output IFM_bd_i/IFM_1/inst/ifm_struct/envelope_detection/signal_detection/squarereal/mult_46_56/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#4 Warning
+PREG Output pipelining  
+DSP IFM_bd_i/IFM_1/inst/ifm_struct/envelope_detection/signal_detection/squarereal/mult_46_56__0 output IFM_bd_i/IFM_1/inst/ifm_struct/envelope_detection/signal_detection/squarereal/mult_46_56__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-4#1 Warning
+MREG Output pipelining  
+DSP IFM_bd_i/IFM_1/inst/ifm_struct/envelope_detection/signal_detection/squareimag/mult_46_56 multiplier stage IFM_bd_i/IFM_1/inst/ifm_struct/envelope_detection/signal_detection/squareimag/mult_46_56/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#2 Warning
+MREG Output pipelining  
+DSP IFM_bd_i/IFM_1/inst/ifm_struct/envelope_detection/signal_detection/squareimag/mult_46_56__0 multiplier stage IFM_bd_i/IFM_1/inst/ifm_struct/envelope_detection/signal_detection/squareimag/mult_46_56__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#3 Warning
+MREG Output pipelining  
+DSP IFM_bd_i/IFM_1/inst/ifm_struct/envelope_detection/signal_detection/squareimag/op_mem_65_20_reg[0] multiplier stage IFM_bd_i/IFM_1/inst/ifm_struct/envelope_detection/signal_detection/squareimag/op_mem_65_20_reg[0]/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#4 Warning
+MREG Output pipelining  
+DSP IFM_bd_i/IFM_1/inst/ifm_struct/envelope_detection/signal_detection/squareimag/op_mem_65_20_reg[0]__0 multiplier stage IFM_bd_i/IFM_1/inst/ifm_struct/envelope_detection/signal_detection/squareimag/op_mem_65_20_reg[0]__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#5 Warning
+MREG Output pipelining  
+DSP IFM_bd_i/IFM_1/inst/ifm_struct/envelope_detection/signal_detection/squarereal/mult_46_56 multiplier stage IFM_bd_i/IFM_1/inst/ifm_struct/envelope_detection/signal_detection/squarereal/mult_46_56/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#6 Warning
+MREG Output pipelining  
+DSP IFM_bd_i/IFM_1/inst/ifm_struct/envelope_detection/signal_detection/squarereal/mult_46_56__0 multiplier stage IFM_bd_i/IFM_1/inst/ifm_struct/envelope_detection/signal_detection/squarereal/mult_46_56__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#7 Warning
+MREG Output pipelining  
+DSP IFM_bd_i/IFM_1/inst/ifm_struct/envelope_detection/signal_detection/squarereal/op_mem_65_20_reg[0] multiplier stage IFM_bd_i/IFM_1/inst/ifm_struct/envelope_detection/signal_detection/squarereal/op_mem_65_20_reg[0]/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#8 Warning
+MREG Output pipelining  
+DSP IFM_bd_i/IFM_1/inst/ifm_struct/envelope_detection/signal_detection/squarereal/op_mem_65_20_reg[0]__0 multiplier stage IFM_bd_i/IFM_1/inst/ifm_struct/envelope_detection/signal_detection/squarereal/op_mem_65_20_reg[0]__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
 AVAL-155#1 Advisory
-enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
-IFM_bd_i/IFM_1/inst/ifm_struct/envelope_detection/threshold_detection/mean/ifm_div_gen_v5_1_i1_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_estimator/opt_vx8.i_uniwrap/i_primitive: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
-Related violations: <none>
-
-AVAL-155#2 Advisory
-enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
-IFM_bd_i/IFM_1/inst/ifm_struct/envelope_detection/threshold_detection/mean/ifm_div_gen_v5_1_i1_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_extra_digits.i_add_mult_add/opt_vx8.i_add/i_primitive: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
-Related violations: <none>
-
-AVAL-155#3 Advisory
-enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
-IFM_bd_i/IFM_1/inst/ifm_struct/envelope_detection/threshold_detection/mean/ifm_div_gen_v5_1_i1_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_extra_digits.i_add_mult_add/opt_vx8.i_multadd/i_primitive: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
-Related violations: <none>
-
-AVAL-155#4 Advisory
-enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
-IFM_bd_i/IFM_1/inst/ifm_struct/envelope_detection/threshold_detection/mean/ifm_div_gen_v5_1_i1_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[1].i_add_mult_add_splice/opt_vx8.i_add/i_primitive: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
-Related violations: <none>
-
-AVAL-155#5 Advisory
-enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
-IFM_bd_i/IFM_1/inst/ifm_struct/envelope_detection/threshold_detection/mean/ifm_div_gen_v5_1_i1_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[1].i_add_mult_add_splice/opt_vx8.i_multadd/i_primitive: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
-Related violations: <none>
-
-AVAL-155#6 Advisory
-enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
-IFM_bd_i/IFM_1/inst/ifm_struct/envelope_detection/threshold_detection/mean/ifm_div_gen_v5_1_i1_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[2].i_add_mult_add_splice/opt_vx8.i_add/i_primitive: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
-Related violations: <none>
-
-AVAL-155#7 Advisory
-enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
-IFM_bd_i/IFM_1/inst/ifm_struct/envelope_detection/threshold_detection/mean/ifm_div_gen_v5_1_i1_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[2].i_add_mult_add_splice/opt_vx8.i_multadd/i_primitive: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
-Related violations: <none>
-
-AVAL-155#8 Advisory
-enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
-IFM_bd_i/IFM_1/inst/ifm_struct/envelope_detection/threshold_detection/mean/ifm_div_gen_v5_1_i1_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[3].i_add_mult_add_splice/opt_vx8.i_add/i_primitive: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
-Related violations: <none>
-
-AVAL-155#9 Advisory
-enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
-IFM_bd_i/IFM_1/inst/ifm_struct/envelope_detection/threshold_detection/mean/ifm_div_gen_v5_1_i1_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[3].i_add_mult_add_splice/opt_vx8.i_multadd/i_primitive: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
-Related violations: <none>
-
-AVAL-155#10 Advisory
-enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
-IFM_bd_i/IFM_1/inst/ifm_struct/envelope_detection/threshold_detection/mean/ifm_div_gen_v5_1_i1_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[4].i_add_mult_add_splice/opt_vx8.i_add/i_primitive: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
-Related violations: <none>
-
-AVAL-155#11 Advisory
-enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
-IFM_bd_i/IFM_1/inst/ifm_struct/envelope_detection/threshold_detection/mean/ifm_div_gen_v5_1_i1_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[4].i_add_mult_add_splice/opt_vx8.i_multadd/i_primitive: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
-Related violations: <none>
-
-AVAL-155#12 Advisory
 enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
 IFM_bd_i/IFM_1/inst/ifm_struct/x2_delay_avarage_freq/divide/ifm_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_estimator/opt_vx8.i_uniwrap/i_primitive: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
 Related violations: <none>
 
-AVAL-155#13 Advisory
+AVAL-155#2 Advisory
 enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
 IFM_bd_i/IFM_1/inst/ifm_struct/x2_delay_avarage_freq/divide/ifm_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_extra_digits.i_add_mult_add/opt_vx8.i_add/i_primitive: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
 Related violations: <none>
 
-AVAL-155#14 Advisory
+AVAL-155#3 Advisory
 enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
 IFM_bd_i/IFM_1/inst/ifm_struct/x2_delay_avarage_freq/divide/ifm_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_extra_digits.i_add_mult_add/opt_vx8.i_multadd/i_primitive: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
 Related violations: <none>
 
-AVAL-155#15 Advisory
+AVAL-155#4 Advisory
 enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
 IFM_bd_i/IFM_1/inst/ifm_struct/x2_delay_avarage_freq/divide/ifm_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[1].i_add_mult_add_splice/opt_vx8.i_add/i_primitive: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
 Related violations: <none>
 
-AVAL-155#16 Advisory
+AVAL-155#5 Advisory
 enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
 IFM_bd_i/IFM_1/inst/ifm_struct/x2_delay_avarage_freq/divide/ifm_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[1].i_add_mult_add_splice/opt_vx8.i_multadd/i_primitive: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
 Related violations: <none>
 
-AVAL-155#17 Advisory
+AVAL-155#6 Advisory
 enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
 IFM_bd_i/IFM_1/inst/ifm_struct/x2_delay_avarage_freq/divide/ifm_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[2].i_add_mult_add_splice/opt_vx8.i_add/i_primitive: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
 Related violations: <none>
 
-AVAL-155#18 Advisory
+AVAL-155#7 Advisory
 enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
 IFM_bd_i/IFM_1/inst/ifm_struct/x2_delay_avarage_freq/divide/ifm_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[2].i_add_mult_add_splice/opt_vx8.i_multadd/i_primitive: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
 Related violations: <none>
 
-AVAL-155#19 Advisory
+AVAL-155#8 Advisory
 enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
 IFM_bd_i/IFM_1/inst/ifm_struct/x2_delay_avarage_freq/divide/ifm_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[3].i_add_mult_add_splice/opt_vx8.i_add/i_primitive: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
 Related violations: <none>
 
-AVAL-155#20 Advisory
+AVAL-155#9 Advisory
 enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
 IFM_bd_i/IFM_1/inst/ifm_struct/x2_delay_avarage_freq/divide/ifm_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[3].i_add_mult_add_splice/opt_vx8.i_multadd/i_primitive: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
 Related violations: <none>
 
-AVAL-155#21 Advisory
+AVAL-155#10 Advisory
 enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
 IFM_bd_i/IFM_1/inst/ifm_struct/x2_delay_avarage_freq/divide/ifm_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[4].i_add_mult_add_splice/opt_vx8.i_add/i_primitive: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
 Related violations: <none>
 
-AVAL-155#22 Advisory
+AVAL-155#11 Advisory
 enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
 IFM_bd_i/IFM_1/inst/ifm_struct/x2_delay_avarage_freq/divide/ifm_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[4].i_add_mult_add_splice/opt_vx8.i_multadd/i_primitive: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
 Related violations: <none>
 
-AVAL-155#23 Advisory
+AVAL-155#12 Advisory
 enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
 IFM_bd_i/IFM_1/inst/ifm_struct/x2_delay_avarage_freq/divide/ifm_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[5].i_add_mult_add_splice/opt_vx8.i_add/i_primitive: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
 Related violations: <none>
 
-AVAL-155#24 Advisory
+AVAL-155#13 Advisory
 enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
 IFM_bd_i/IFM_1/inst/ifm_struct/x2_delay_avarage_freq/divide/ifm_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[5].i_add_mult_add_splice/opt_vx8.i_multadd/i_primitive: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
 Related violations: <none>
 
-AVAL-155#25 Advisory
-enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
-IFM_bd_i/IFM_1/inst/ifm_struct/x2_delay_avarage_freq1/divide/ifm_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_estimator/opt_vx8.i_uniwrap/i_primitive: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
-Related violations: <none>
-
-AVAL-155#26 Advisory
-enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
-IFM_bd_i/IFM_1/inst/ifm_struct/x2_delay_avarage_freq1/divide/ifm_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_extra_digits.i_add_mult_add/opt_vx8.i_add/i_primitive: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
-Related violations: <none>
-
-AVAL-155#27 Advisory
-enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
-IFM_bd_i/IFM_1/inst/ifm_struct/x2_delay_avarage_freq1/divide/ifm_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_extra_digits.i_add_mult_add/opt_vx8.i_multadd/i_primitive: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
-Related violations: <none>
-
-AVAL-155#28 Advisory
-enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
-IFM_bd_i/IFM_1/inst/ifm_struct/x2_delay_avarage_freq1/divide/ifm_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[1].i_add_mult_add_splice/opt_vx8.i_add/i_primitive: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
-Related violations: <none>
-
-AVAL-155#29 Advisory
-enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
-IFM_bd_i/IFM_1/inst/ifm_struct/x2_delay_avarage_freq1/divide/ifm_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[1].i_add_mult_add_splice/opt_vx8.i_multadd/i_primitive: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
-Related violations: <none>
-
-AVAL-155#30 Advisory
-enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
-IFM_bd_i/IFM_1/inst/ifm_struct/x2_delay_avarage_freq1/divide/ifm_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[2].i_add_mult_add_splice/opt_vx8.i_add/i_primitive: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
-Related violations: <none>
-
-AVAL-155#31 Advisory
-enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
-IFM_bd_i/IFM_1/inst/ifm_struct/x2_delay_avarage_freq1/divide/ifm_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[2].i_add_mult_add_splice/opt_vx8.i_multadd/i_primitive: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
-Related violations: <none>
-
-AVAL-155#32 Advisory
-enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
-IFM_bd_i/IFM_1/inst/ifm_struct/x2_delay_avarage_freq1/divide/ifm_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[3].i_add_mult_add_splice/opt_vx8.i_add/i_primitive: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
-Related violations: <none>
-
-AVAL-155#33 Advisory
-enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
-IFM_bd_i/IFM_1/inst/ifm_struct/x2_delay_avarage_freq1/divide/ifm_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[3].i_add_mult_add_splice/opt_vx8.i_multadd/i_primitive: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
-Related violations: <none>
-
-AVAL-155#34 Advisory
-enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
-IFM_bd_i/IFM_1/inst/ifm_struct/x2_delay_avarage_freq1/divide/ifm_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[4].i_add_mult_add_splice/opt_vx8.i_add/i_primitive: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
-Related violations: <none>
-
-AVAL-155#35 Advisory
-enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
-IFM_bd_i/IFM_1/inst/ifm_struct/x2_delay_avarage_freq1/divide/ifm_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[4].i_add_mult_add_splice/opt_vx8.i_multadd/i_primitive: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
-Related violations: <none>
-
-AVAL-155#36 Advisory
-enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
-IFM_bd_i/IFM_1/inst/ifm_struct/x2_delay_avarage_freq1/divide/ifm_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[5].i_add_mult_add_splice/opt_vx8.i_add/i_primitive: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
-Related violations: <none>
-
-AVAL-155#37 Advisory
-enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
-IFM_bd_i/IFM_1/inst/ifm_struct/x2_delay_avarage_freq1/divide/ifm_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[5].i_add_mult_add_splice/opt_vx8.i_multadd/i_primitive: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
-Related violations: <none>
-
-AVAL-155#38 Advisory
+AVAL-155#14 Advisory
 enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
 IFM_bd_i/IFM_1/inst/ifm_struct/x2_delay_instantenous_frequency/product/ifm_cmpy_v6_0_i0_instance/U0/i_synth/i_synth/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP.qDSP[0].appDSP[0].bppDSP[0].u_l[0].use_dsp48e2.dsp: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
 Related violations: <none>
 
-AVAL-155#39 Advisory
+AVAL-155#15 Advisory
 enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
 IFM_bd_i/IFM_1/inst/ifm_struct/x2_delay_instantenous_frequency/product/ifm_cmpy_v6_0_i0_instance/U0/i_synth/i_synth/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP.qDSP[0].appDSP[0].bppDSP[0].u_l[1].use_dsp48e2.dsp: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
 Related violations: <none>
 
-AVAL-155#40 Advisory
+AVAL-155#16 Advisory
+enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+IFM_bd_i/IFM_1/inst/ifm_struct/x2_delay_instantenous_frequency/product/ifm_cmpy_v6_0_i0_instance/U0/i_synth/i_synth/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP.qDSP[0].appDSP[0].bppDSP[1].u_l[0].use_dsp48e2.dsp: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-155#17 Advisory
+enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+IFM_bd_i/IFM_1/inst/ifm_struct/x2_delay_instantenous_frequency/product/ifm_cmpy_v6_0_i0_instance/U0/i_synth/i_synth/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP.qDSP[0].appDSP[1].bppDSP[0].u_l[0].use_dsp48e2.dsp: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-155#18 Advisory
+enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+IFM_bd_i/IFM_1/inst/ifm_struct/x2_delay_instantenous_frequency/product/ifm_cmpy_v6_0_i0_instance/U0/i_synth/i_synth/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP.qDSP[0].appDSP[1].bppDSP[0].u_l[1].use_dsp48e2.dsp: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-155#19 Advisory
+enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+IFM_bd_i/IFM_1/inst/ifm_struct/x2_delay_instantenous_frequency/product/ifm_cmpy_v6_0_i0_instance/U0/i_synth/i_synth/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP.qDSP[0].appDSP[1].bppDSP[1].u_l[0].use_dsp48e2.dsp: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-155#20 Advisory
+enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+IFM_bd_i/IFM_1/inst/ifm_struct/x2_delay_instantenous_frequency/product/ifm_cmpy_v6_0_i0_instance/U0/i_synth/i_synth/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP.qDSP[0].appDSP[1].bppDSP[1].u_l[1].use_dsp48e2.dsp: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-155#21 Advisory
 enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
 IFM_bd_i/IFM_1/inst/ifm_struct/x2_delay_instantenous_frequency/product/ifm_cmpy_v6_0_i0_instance/U0/i_synth/i_synth/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP.qDSP[1].appDSP[0].bppDSP[0].u_l[0].use_dsp48e2.dsp: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
 Related violations: <none>
 
-AVAL-155#41 Advisory
+AVAL-155#22 Advisory
 enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
 IFM_bd_i/IFM_1/inst/ifm_struct/x2_delay_instantenous_frequency/product/ifm_cmpy_v6_0_i0_instance/U0/i_synth/i_synth/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP.qDSP[1].appDSP[0].bppDSP[0].u_l[1].use_dsp48e2.dsp: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
 Related violations: <none>
 
-AVAL-155#42 Advisory
+AVAL-155#23 Advisory
+enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+IFM_bd_i/IFM_1/inst/ifm_struct/x2_delay_instantenous_frequency/product/ifm_cmpy_v6_0_i0_instance/U0/i_synth/i_synth/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP.qDSP[1].appDSP[0].bppDSP[1].u_l[0].use_dsp48e2.dsp: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-155#24 Advisory
+enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+IFM_bd_i/IFM_1/inst/ifm_struct/x2_delay_instantenous_frequency/product/ifm_cmpy_v6_0_i0_instance/U0/i_synth/i_synth/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP.qDSP[1].appDSP[1].bppDSP[0].u_l[0].use_dsp48e2.dsp: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-155#25 Advisory
+enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+IFM_bd_i/IFM_1/inst/ifm_struct/x2_delay_instantenous_frequency/product/ifm_cmpy_v6_0_i0_instance/U0/i_synth/i_synth/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP.qDSP[1].appDSP[1].bppDSP[0].u_l[1].use_dsp48e2.dsp: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-155#26 Advisory
+enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+IFM_bd_i/IFM_1/inst/ifm_struct/x2_delay_instantenous_frequency/product/ifm_cmpy_v6_0_i0_instance/U0/i_synth/i_synth/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP.qDSP[1].appDSP[1].bppDSP[1].u_l[0].use_dsp48e2.dsp: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-155#27 Advisory
+enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+IFM_bd_i/IFM_1/inst/ifm_struct/x2_delay_instantenous_frequency/product/ifm_cmpy_v6_0_i0_instance/U0/i_synth/i_synth/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP.qDSP[1].appDSP[1].bppDSP[1].u_l[1].use_dsp48e2.dsp: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-155#28 Advisory
+enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+IFM_bd_i/IFM_1/inst/ifm_struct/x4_delay_avarage_freq/divide/ifm_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_estimator/opt_vx8.i_uniwrap/i_primitive: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-155#29 Advisory
+enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+IFM_bd_i/IFM_1/inst/ifm_struct/x4_delay_avarage_freq/divide/ifm_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_extra_digits.i_add_mult_add/opt_vx8.i_add/i_primitive: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-155#30 Advisory
+enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+IFM_bd_i/IFM_1/inst/ifm_struct/x4_delay_avarage_freq/divide/ifm_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_extra_digits.i_add_mult_add/opt_vx8.i_multadd/i_primitive: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-155#31 Advisory
+enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+IFM_bd_i/IFM_1/inst/ifm_struct/x4_delay_avarage_freq/divide/ifm_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[1].i_add_mult_add_splice/opt_vx8.i_add/i_primitive: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-155#32 Advisory
+enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+IFM_bd_i/IFM_1/inst/ifm_struct/x4_delay_avarage_freq/divide/ifm_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[1].i_add_mult_add_splice/opt_vx8.i_multadd/i_primitive: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-155#33 Advisory
+enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+IFM_bd_i/IFM_1/inst/ifm_struct/x4_delay_avarage_freq/divide/ifm_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[2].i_add_mult_add_splice/opt_vx8.i_add/i_primitive: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-155#34 Advisory
+enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+IFM_bd_i/IFM_1/inst/ifm_struct/x4_delay_avarage_freq/divide/ifm_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[2].i_add_mult_add_splice/opt_vx8.i_multadd/i_primitive: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-155#35 Advisory
+enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+IFM_bd_i/IFM_1/inst/ifm_struct/x4_delay_avarage_freq/divide/ifm_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[3].i_add_mult_add_splice/opt_vx8.i_add/i_primitive: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-155#36 Advisory
+enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+IFM_bd_i/IFM_1/inst/ifm_struct/x4_delay_avarage_freq/divide/ifm_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[3].i_add_mult_add_splice/opt_vx8.i_multadd/i_primitive: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-155#37 Advisory
+enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+IFM_bd_i/IFM_1/inst/ifm_struct/x4_delay_avarage_freq/divide/ifm_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[4].i_add_mult_add_splice/opt_vx8.i_add/i_primitive: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-155#38 Advisory
+enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+IFM_bd_i/IFM_1/inst/ifm_struct/x4_delay_avarage_freq/divide/ifm_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[4].i_add_mult_add_splice/opt_vx8.i_multadd/i_primitive: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-155#39 Advisory
+enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+IFM_bd_i/IFM_1/inst/ifm_struct/x4_delay_avarage_freq/divide/ifm_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[5].i_add_mult_add_splice/opt_vx8.i_add/i_primitive: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-155#40 Advisory
+enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+IFM_bd_i/IFM_1/inst/ifm_struct/x4_delay_avarage_freq/divide/ifm_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[5].i_add_mult_add_splice/opt_vx8.i_multadd/i_primitive: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-155#41 Advisory
 enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
 IFM_bd_i/IFM_1/inst/ifm_struct/x4_delay_instantenous_frequency/product/ifm_cmpy_v6_0_i0_instance/U0/i_synth/i_synth/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP.qDSP[0].appDSP[0].bppDSP[0].u_l[0].use_dsp48e2.dsp: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
 Related violations: <none>
 
-AVAL-155#43 Advisory
+AVAL-155#42 Advisory
 enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
 IFM_bd_i/IFM_1/inst/ifm_struct/x4_delay_instantenous_frequency/product/ifm_cmpy_v6_0_i0_instance/U0/i_synth/i_synth/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP.qDSP[0].appDSP[0].bppDSP[0].u_l[1].use_dsp48e2.dsp: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
 Related violations: <none>
 
+AVAL-155#43 Advisory
+enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+IFM_bd_i/IFM_1/inst/ifm_struct/x4_delay_instantenous_frequency/product/ifm_cmpy_v6_0_i0_instance/U0/i_synth/i_synth/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP.qDSP[0].appDSP[0].bppDSP[1].u_l[0].use_dsp48e2.dsp: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
 AVAL-155#44 Advisory
 enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
-IFM_bd_i/IFM_1/inst/ifm_struct/x4_delay_instantenous_frequency/product/ifm_cmpy_v6_0_i0_instance/U0/i_synth/i_synth/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP.qDSP[1].appDSP[0].bppDSP[0].u_l[0].use_dsp48e2.dsp: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+IFM_bd_i/IFM_1/inst/ifm_struct/x4_delay_instantenous_frequency/product/ifm_cmpy_v6_0_i0_instance/U0/i_synth/i_synth/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP.qDSP[0].appDSP[1].bppDSP[0].u_l[0].use_dsp48e2.dsp: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
 Related violations: <none>
 
 AVAL-155#45 Advisory
 enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+IFM_bd_i/IFM_1/inst/ifm_struct/x4_delay_instantenous_frequency/product/ifm_cmpy_v6_0_i0_instance/U0/i_synth/i_synth/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP.qDSP[0].appDSP[1].bppDSP[0].u_l[1].use_dsp48e2.dsp: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-155#46 Advisory
+enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+IFM_bd_i/IFM_1/inst/ifm_struct/x4_delay_instantenous_frequency/product/ifm_cmpy_v6_0_i0_instance/U0/i_synth/i_synth/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP.qDSP[0].appDSP[1].bppDSP[1].u_l[0].use_dsp48e2.dsp: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-155#47 Advisory
+enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+IFM_bd_i/IFM_1/inst/ifm_struct/x4_delay_instantenous_frequency/product/ifm_cmpy_v6_0_i0_instance/U0/i_synth/i_synth/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP.qDSP[0].appDSP[1].bppDSP[1].u_l[1].use_dsp48e2.dsp: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-155#48 Advisory
+enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+IFM_bd_i/IFM_1/inst/ifm_struct/x4_delay_instantenous_frequency/product/ifm_cmpy_v6_0_i0_instance/U0/i_synth/i_synth/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP.qDSP[1].appDSP[0].bppDSP[0].u_l[0].use_dsp48e2.dsp: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-155#49 Advisory
+enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
 IFM_bd_i/IFM_1/inst/ifm_struct/x4_delay_instantenous_frequency/product/ifm_cmpy_v6_0_i0_instance/U0/i_synth/i_synth/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP.qDSP[1].appDSP[0].bppDSP[0].u_l[1].use_dsp48e2.dsp: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-155#50 Advisory
+enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+IFM_bd_i/IFM_1/inst/ifm_struct/x4_delay_instantenous_frequency/product/ifm_cmpy_v6_0_i0_instance/U0/i_synth/i_synth/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP.qDSP[1].appDSP[0].bppDSP[1].u_l[0].use_dsp48e2.dsp: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-155#51 Advisory
+enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+IFM_bd_i/IFM_1/inst/ifm_struct/x4_delay_instantenous_frequency/product/ifm_cmpy_v6_0_i0_instance/U0/i_synth/i_synth/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP.qDSP[1].appDSP[1].bppDSP[0].u_l[0].use_dsp48e2.dsp: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-155#52 Advisory
+enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+IFM_bd_i/IFM_1/inst/ifm_struct/x4_delay_instantenous_frequency/product/ifm_cmpy_v6_0_i0_instance/U0/i_synth/i_synth/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP.qDSP[1].appDSP[1].bppDSP[0].u_l[1].use_dsp48e2.dsp: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-155#53 Advisory
+enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+IFM_bd_i/IFM_1/inst/ifm_struct/x4_delay_instantenous_frequency/product/ifm_cmpy_v6_0_i0_instance/U0/i_synth/i_synth/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP.qDSP[1].appDSP[1].bppDSP[1].u_l[0].use_dsp48e2.dsp: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-155#54 Advisory
+enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+IFM_bd_i/IFM_1/inst/ifm_struct/x4_delay_instantenous_frequency/product/ifm_cmpy_v6_0_i0_instance/U0/i_synth/i_synth/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP.qDSP[1].appDSP[1].bppDSP[1].u_l[1].use_dsp48e2.dsp: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
 Related violations: <none>
 
 AVAL-156#1 Advisory
 enum_USE_MULT_NONE__enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
-IFM_bd_i/IFM_1/inst/ifm_struct/envelope_detection/threshold_detection/mean/ifm_div_gen_v5_1_i1_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_extra_digits.i_add_mult_add/opt_vx8.i_add/i_primitive: DSP48E2 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+IFM_bd_i/IFM_1/inst/ifm_struct/x2_delay_avarage_freq/divide/ifm_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_extra_digits.i_add_mult_add/opt_vx8.i_add/i_primitive: DSP48E2 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
 Related violations: <none>
 
 AVAL-156#2 Advisory
 enum_USE_MULT_NONE__enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
-IFM_bd_i/IFM_1/inst/ifm_struct/envelope_detection/threshold_detection/mean/ifm_div_gen_v5_1_i1_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[1].i_add_mult_add_splice/opt_vx8.i_add/i_primitive: DSP48E2 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+IFM_bd_i/IFM_1/inst/ifm_struct/x2_delay_avarage_freq/divide/ifm_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[1].i_add_mult_add_splice/opt_vx8.i_add/i_primitive: DSP48E2 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
 Related violations: <none>
 
 AVAL-156#3 Advisory
 enum_USE_MULT_NONE__enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
-IFM_bd_i/IFM_1/inst/ifm_struct/envelope_detection/threshold_detection/mean/ifm_div_gen_v5_1_i1_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[2].i_add_mult_add_splice/opt_vx8.i_add/i_primitive: DSP48E2 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+IFM_bd_i/IFM_1/inst/ifm_struct/x2_delay_avarage_freq/divide/ifm_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[2].i_add_mult_add_splice/opt_vx8.i_add/i_primitive: DSP48E2 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
 Related violations: <none>
 
 AVAL-156#4 Advisory
 enum_USE_MULT_NONE__enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
-IFM_bd_i/IFM_1/inst/ifm_struct/envelope_detection/threshold_detection/mean/ifm_div_gen_v5_1_i1_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[3].i_add_mult_add_splice/opt_vx8.i_add/i_primitive: DSP48E2 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+IFM_bd_i/IFM_1/inst/ifm_struct/x2_delay_avarage_freq/divide/ifm_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[3].i_add_mult_add_splice/opt_vx8.i_add/i_primitive: DSP48E2 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
 Related violations: <none>
 
 AVAL-156#5 Advisory
 enum_USE_MULT_NONE__enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
-IFM_bd_i/IFM_1/inst/ifm_struct/envelope_detection/threshold_detection/mean/ifm_div_gen_v5_1_i1_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[4].i_add_mult_add_splice/opt_vx8.i_add/i_primitive: DSP48E2 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+IFM_bd_i/IFM_1/inst/ifm_struct/x2_delay_avarage_freq/divide/ifm_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[4].i_add_mult_add_splice/opt_vx8.i_add/i_primitive: DSP48E2 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
 Related violations: <none>
 
 AVAL-156#6 Advisory
 enum_USE_MULT_NONE__enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
-IFM_bd_i/IFM_1/inst/ifm_struct/x2_delay_avarage_freq/divide/ifm_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_extra_digits.i_add_mult_add/opt_vx8.i_add/i_primitive: DSP48E2 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+IFM_bd_i/IFM_1/inst/ifm_struct/x2_delay_avarage_freq/divide/ifm_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[5].i_add_mult_add_splice/opt_vx8.i_add/i_primitive: DSP48E2 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
 Related violations: <none>
 
 AVAL-156#7 Advisory
 enum_USE_MULT_NONE__enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
-IFM_bd_i/IFM_1/inst/ifm_struct/x2_delay_avarage_freq/divide/ifm_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[1].i_add_mult_add_splice/opt_vx8.i_add/i_primitive: DSP48E2 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+IFM_bd_i/IFM_1/inst/ifm_struct/x4_delay_avarage_freq/divide/ifm_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_extra_digits.i_add_mult_add/opt_vx8.i_add/i_primitive: DSP48E2 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
 Related violations: <none>
 
 AVAL-156#8 Advisory
 enum_USE_MULT_NONE__enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
-IFM_bd_i/IFM_1/inst/ifm_struct/x2_delay_avarage_freq/divide/ifm_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[2].i_add_mult_add_splice/opt_vx8.i_add/i_primitive: DSP48E2 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+IFM_bd_i/IFM_1/inst/ifm_struct/x4_delay_avarage_freq/divide/ifm_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[1].i_add_mult_add_splice/opt_vx8.i_add/i_primitive: DSP48E2 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
 Related violations: <none>
 
 AVAL-156#9 Advisory
 enum_USE_MULT_NONE__enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
-IFM_bd_i/IFM_1/inst/ifm_struct/x2_delay_avarage_freq/divide/ifm_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[3].i_add_mult_add_splice/opt_vx8.i_add/i_primitive: DSP48E2 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+IFM_bd_i/IFM_1/inst/ifm_struct/x4_delay_avarage_freq/divide/ifm_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[2].i_add_mult_add_splice/opt_vx8.i_add/i_primitive: DSP48E2 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
 Related violations: <none>
 
 AVAL-156#10 Advisory
 enum_USE_MULT_NONE__enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
-IFM_bd_i/IFM_1/inst/ifm_struct/x2_delay_avarage_freq/divide/ifm_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[4].i_add_mult_add_splice/opt_vx8.i_add/i_primitive: DSP48E2 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+IFM_bd_i/IFM_1/inst/ifm_struct/x4_delay_avarage_freq/divide/ifm_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[3].i_add_mult_add_splice/opt_vx8.i_add/i_primitive: DSP48E2 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
 Related violations: <none>
 
 AVAL-156#11 Advisory
 enum_USE_MULT_NONE__enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
-IFM_bd_i/IFM_1/inst/ifm_struct/x2_delay_avarage_freq/divide/ifm_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[5].i_add_mult_add_splice/opt_vx8.i_add/i_primitive: DSP48E2 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+IFM_bd_i/IFM_1/inst/ifm_struct/x4_delay_avarage_freq/divide/ifm_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[4].i_add_mult_add_splice/opt_vx8.i_add/i_primitive: DSP48E2 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
 Related violations: <none>
 
 AVAL-156#12 Advisory
 enum_USE_MULT_NONE__enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
-IFM_bd_i/IFM_1/inst/ifm_struct/x2_delay_avarage_freq1/divide/ifm_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_extra_digits.i_add_mult_add/opt_vx8.i_add/i_primitive: DSP48E2 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
-Related violations: <none>
-
-AVAL-156#13 Advisory
-enum_USE_MULT_NONE__enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
-IFM_bd_i/IFM_1/inst/ifm_struct/x2_delay_avarage_freq1/divide/ifm_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[1].i_add_mult_add_splice/opt_vx8.i_add/i_primitive: DSP48E2 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
-Related violations: <none>
-
-AVAL-156#14 Advisory
-enum_USE_MULT_NONE__enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
-IFM_bd_i/IFM_1/inst/ifm_struct/x2_delay_avarage_freq1/divide/ifm_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[2].i_add_mult_add_splice/opt_vx8.i_add/i_primitive: DSP48E2 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
-Related violations: <none>
-
-AVAL-156#15 Advisory
-enum_USE_MULT_NONE__enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
-IFM_bd_i/IFM_1/inst/ifm_struct/x2_delay_avarage_freq1/divide/ifm_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[3].i_add_mult_add_splice/opt_vx8.i_add/i_primitive: DSP48E2 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
-Related violations: <none>
-
-AVAL-156#16 Advisory
-enum_USE_MULT_NONE__enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
-IFM_bd_i/IFM_1/inst/ifm_struct/x2_delay_avarage_freq1/divide/ifm_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[4].i_add_mult_add_splice/opt_vx8.i_add/i_primitive: DSP48E2 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
-Related violations: <none>
-
-AVAL-156#17 Advisory
-enum_USE_MULT_NONE__enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
-IFM_bd_i/IFM_1/inst/ifm_struct/x2_delay_avarage_freq1/divide/ifm_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[5].i_add_mult_add_splice/opt_vx8.i_add/i_primitive: DSP48E2 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+IFM_bd_i/IFM_1/inst/ifm_struct/x4_delay_avarage_freq/divide/ifm_div_gen_v5_1_i0_instance/U0/i_synth/i_nonzero_fract.i_synth/opt_high_radix.i_nonzero_fract.i_high_radix/i_iterative_unit/i_splice[5].i_add_mult_add_splice/opt_vx8.i_add/i_primitive: DSP48E2 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
 Related violations: <none>
 
 

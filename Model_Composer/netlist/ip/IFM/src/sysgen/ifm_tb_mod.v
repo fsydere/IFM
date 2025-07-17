@@ -291,30 +291,18 @@ endmodule
 module ifm_tb (
 
 );
-  wire [82-1:0] estimated_frequency_4_delay_net;
-  wire [1-1:0] estimated_frequency_4_delay_valid_net;
-  wire [16-1:0] imagpart_net;
   wire [1-1:0] estimated_frequency_2_delay_valid_net;
   wire [16-1:0] realpart_net;
+  wire [82-1:0] estimated_frequency_4_delay_net;
   wire clk_net;
+  wire [16-1:0] imagpart_net;
   wire [82-1:0] estimated_frequency_2_delay_net;
-  wire [1-1:0] datavalid_net;
+  wire [1-1:0] estimated_frequency_4_delay_valid_net;
   xlclk #(
     .clk_period(3.333333)
   )
   clk_driver (
     .clk(clk_net)
-  );
-  xltbsource #(
-    .o_arith(`xlUnsigned),
-    .o_bin_pt(0),
-    .o_width(1),
-    .inputFile("ifm_modelcomposer_ifm_datavalid.dat"),
-    .periodMultiplier(1)
-  )
-  datavalid_driver (
-    .clk(clk_net),
-    .o(datavalid_net)
   );
   xltbsource #(
     .o_arith(`xlSigned),
@@ -383,7 +371,6 @@ module ifm_tb (
     .clk(clk_net)
   );
   IFM_bd_wrapper sysgen_dut (
-    .datavalid(datavalid_net),
     .imagpart(imagpart_net),
     .realpart(realpart_net),
     .clk(clk_net),

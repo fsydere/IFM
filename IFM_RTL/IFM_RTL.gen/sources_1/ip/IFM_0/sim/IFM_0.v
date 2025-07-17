@@ -48,14 +48,13 @@
 
 
 // IP VLNV: FSY:VMC:IFM:1.0
-// IP Revision: 383513314
+// IP Revision: 383677618
 
 `timescale 1ns/1ps
 
 (* IP_DEFINITION_SOURCE = "sysgen" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module IFM_0 (
-  datavalid,
   imagpart,
   realpart,
   clk,
@@ -65,11 +64,6 @@ module IFM_0 (
   estimated_frequency_4_delay_valid
 );
 
-(* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 datavalid DATA" *)
-(* X_INTERFACE_MODE = "slave" *)
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME datavalid, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum \
-{}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}" *)
-input wire [0 : 0] datavalid;
 (* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 imagpart DATA" *)
 (* X_INTERFACE_MODE = "slave" *)
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME imagpart, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum \
@@ -106,7 +100,6 @@ long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dep
 output wire [0 : 0] estimated_frequency_4_delay_valid;
 
   ifm inst (
-    .datavalid(datavalid),
     .imagpart(imagpart),
     .realpart(realpart),
     .clk(clk),

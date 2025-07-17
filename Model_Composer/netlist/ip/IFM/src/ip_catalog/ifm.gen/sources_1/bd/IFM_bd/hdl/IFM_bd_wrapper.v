@@ -2,7 +2,7 @@
 //Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
-//Date        : Tue Jul 15 19:28:53 2025
+//Date        : Thu Jul 17 17:07:13 2025
 //Host        : DESKTOP-5G0J4EJ running 64-bit major release  (build 9200)
 //Command     : generate_target IFM_bd_wrapper.bd
 //Design      : IFM_bd_wrapper
@@ -12,7 +12,6 @@
 
 module IFM_bd_wrapper
    (clk,
-    datavalid,
     estimated_frequency_2_delay,
     estimated_frequency_2_delay_valid,
     estimated_frequency_4_delay,
@@ -20,7 +19,6 @@ module IFM_bd_wrapper
     imagpart,
     realpart);
   input clk;
-  input [0:0]datavalid;
   output [81:0]estimated_frequency_2_delay;
   output [0:0]estimated_frequency_2_delay_valid;
   output [81:0]estimated_frequency_4_delay;
@@ -29,7 +27,6 @@ module IFM_bd_wrapper
   input [15:0]realpart;
 
   wire clk;
-  wire [0:0]datavalid;
   wire [81:0]estimated_frequency_2_delay;
   wire [0:0]estimated_frequency_2_delay_valid;
   wire [81:0]estimated_frequency_4_delay;
@@ -39,7 +36,6 @@ module IFM_bd_wrapper
 
   IFM_bd IFM_bd_i
        (.clk(clk),
-        .datavalid(datavalid),
         .estimated_frequency_2_delay(estimated_frequency_2_delay),
         .estimated_frequency_2_delay_valid(estimated_frequency_2_delay_valid),
         .estimated_frequency_4_delay(estimated_frequency_4_delay),

@@ -3,7 +3,7 @@ clear; close all; clc;
 % Sistem Parametreleri
 Fs                  = 300e6;            % Örnekleme frekansı (300 MHz)
 BroadcastTime       = 2e-3;             % Toplam yayın süresi (2 ms)
-JustNoiseTime       = 100e-6;           % Sadece gürültü süresi (100 μs)
+JustNoiseTime       = 00e-6;           % Sadece gürültü süresi (100 μs)
 PW                  = 10e-6;            % Darbe genişliği (10 μs)
 PRI                 = 100e-6;           % Darbe tekrarlama aralığı (100 μs)
 Fc                  = 25e6;             % Taşıyıcı frekans (25 MHz)

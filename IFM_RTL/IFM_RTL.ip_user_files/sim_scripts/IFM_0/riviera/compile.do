@@ -18,6 +18,7 @@ vlib riviera/cmpy_v6_0_26
 vlib riviera/cordic_v6_0_24
 vlib riviera/floating_point_v7_0_25
 vlib riviera/div_gen_v5_1_24
+vlib riviera/fir_compiler_v7_2_24
 
 vmap xbip_utils_v3_0_14 riviera/xbip_utils_v3_0_14
 vmap c_reg_fd_v12_0_10 riviera/c_reg_fd_v12_0_10
@@ -33,6 +34,7 @@ vmap cmpy_v6_0_26 riviera/cmpy_v6_0_26
 vmap cordic_v6_0_24 riviera/cordic_v6_0_24
 vmap floating_point_v7_0_25 riviera/floating_point_v7_0_25
 vmap div_gen_v5_1_24 riviera/div_gen_v5_1_24
+vmap fir_compiler_v7_2_24 riviera/fir_compiler_v7_2_24
 
 vcom -work xbip_utils_v3_0_14 -93  -incr \
 "../../../ipstatic/hdl/xbip_utils_v3_0_vh_rfs.vhd" \
@@ -54,7 +56,6 @@ vcom -work c_counter_binary_v12_0_21 -93  -incr \
 
 vcom -work xil_defaultlib -93  -incr \
 "../../../../IFM_RTL.gen/sources_1/ip/IFM_0/ifm_c_counter_binary_v12_0_i0/sim/ifm_c_counter_binary_v12_0_i0.vhd" \
-"../../../../IFM_RTL.gen/sources_1/ip/IFM_0/ifm_c_counter_binary_v12_0_i1/sim/ifm_c_counter_binary_v12_0_i1.vhd" \
 
 vcom -work axi_utils_v2_0_10 -93  -incr \
 "../../../ipstatic/hdl/axi_utils_v2_0_vh_rfs.vhd" \
@@ -85,12 +86,16 @@ vcom -work div_gen_v5_1_24 -93  -incr \
 
 vcom -work xil_defaultlib -93  -incr \
 "../../../../IFM_RTL.gen/sources_1/ip/IFM_0/ifm_div_gen_v5_1_i0/sim/ifm_div_gen_v5_1_i0.vhd" \
-"../../../../IFM_RTL.gen/sources_1/ip/IFM_0/ifm_div_gen_v5_1_i1/sim/ifm_div_gen_v5_1_i1.vhd" \
+
+vcom -work fir_compiler_v7_2_24 -93  -incr \
+"../../../ipstatic/hdl/fir_compiler_v7_2_vh_rfs.vhd" \
+
+vcom -work xil_defaultlib -93  -incr \
+"../../../../IFM_RTL.gen/sources_1/ip/IFM_0/ifm_fir_compiler_v7_2_i0/sim/ifm_fir_compiler_v7_2_i0.vhd" \
 "../../../../IFM_RTL.gen/sources_1/ip/IFM_0/ifm_mult_gen_v12_0_i0/sim/ifm_mult_gen_v12_0_i0.vhd" \
 "../../../../IFM_RTL.gen/sources_1/ip/IFM_0/ifm_mult_gen_v12_0_i1/sim/ifm_mult_gen_v12_0_i1.vhd" \
-"../../../../IFM_RTL.gen/sources_1/ip/IFM_0/ifm_mult_gen_v12_0_i2/sim/ifm_mult_gen_v12_0_i2.vhd" \
 
-vlog -work xil_defaultlib  -incr -v2k5 "+incdir+../../../ipstatic/work/hdl" "+incdir+../../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef" -l xbip_utils_v3_0_14 -l c_reg_fd_v12_0_10 -l xbip_dsp48_wrapper_v3_0_7 -l xbip_pipe_v3_0_10 -l c_addsub_v12_0_20 -l c_counter_binary_v12_0_21 -l xil_defaultlib -l axi_utils_v2_0_10 -l mult_gen_v12_0_23 -l floating_point_v7_1_20 -l cmpy_v6_0_26 -l cordic_v6_0_24 -l floating_point_v7_0_25 -l div_gen_v5_1_24 \
+vlog -work xil_defaultlib  -incr -v2k5 "+incdir+../../../ipstatic/work/hdl" "+incdir+../../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef" -l xbip_utils_v3_0_14 -l c_reg_fd_v12_0_10 -l xbip_dsp48_wrapper_v3_0_7 -l xbip_pipe_v3_0_10 -l c_addsub_v12_0_20 -l c_counter_binary_v12_0_21 -l xil_defaultlib -l axi_utils_v2_0_10 -l mult_gen_v12_0_23 -l floating_point_v7_1_20 -l cmpy_v6_0_26 -l cordic_v6_0_24 -l floating_point_v7_0_25 -l div_gen_v5_1_24 -l fir_compiler_v7_2_24 \
 "../../../ipstatic/work/hdl/synth_reg.v" \
 "../../../ipstatic/work/hdl/synth_reg_w_init.v" \
 "../../../ipstatic/work/hdl/convert_type.v" \

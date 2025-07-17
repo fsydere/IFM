@@ -47,7 +47,7 @@
 // DO NOT MODIFY THIS FILE.
 
 // IP VLNV: FSY:VMC:IFM:1.0
-// IP Revision: 383513314
+// IP Revision: 383677618
 
 // The following must be inserted into your Verilog file for this
 // core to be instantiated. Change the instance name and port connections
@@ -55,7 +55,6 @@
 
 //----------- Begin Cut here for INSTANTIATION Template ---// INST_TAG
 IFM_0 your_instance_name (
-  .datavalid(datavalid),                                                  // input wire [0 : 0] datavalid
   .imagpart(imagpart),                                                    // input wire [15 : 0] imagpart
   .realpart(realpart),                                                    // input wire [15 : 0] realpart
   .clk(clk),                                                              // input wire clk

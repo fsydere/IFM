@@ -82,6 +82,7 @@ set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_ip -quiet c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.srcs/sources_1/ip/IFM_0/IFM_0.xci
+set_property used_in_implementation false [get_files -all c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/ifm_fir_compiler_v7_2_i0/constraints/fir_compiler_v7_2.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/ip/IFM_0/constrs/ifm.xdc]
 
 OPTRACE "Adding files" END { }

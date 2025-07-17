@@ -35,7 +35,7 @@ defaultPlotResults = true;
 p = inputParser;
 addParameter(p, 'Fs', defaultFs, @(x) isnumeric(x) && x > 0);
 addParameter(p, 'BroadcastTime', defaultBroadcastTime, @(x) isnumeric(x) && x > 0);
-addParameter(p, 'JustNoiseTime', defaultJustNoiseTime, @(x) isnumeric(x) && x > 0);
+addParameter(p, 'JustNoiseTime', defaultJustNoiseTime, @(x) isnumeric(x) && x >= 0);
 addParameter(p, 'PW', defaultPW, @(x) isnumeric(x) && x > 0);
 addParameter(p, 'PRI', defaultPRI, @(x) isnumeric(x) && x > 0);
 addParameter(p, 'Fc', defaultFc, @(x) isnumeric(x) && x > 0);
@@ -63,7 +63,7 @@ JustNoiseSamples = Fs*JustNoiseTime;
 
 %% Radar Sinyali Oluştur
 % Darbe treni oluşturma
-PulseTrain = PulseTrainGeneration(Fs, BroadcastTime, PW, PRI);
+PulseTrain = PulseTrainGeneration(Fs, TotalSamples,JustNoiseSamples, PW, PRI);
 ComplexCarrier = CarrierAmplitude * exp(1j * 2 * pi * Fc * TimeVector);
 PulseRadarSignal = ComplexCarrier .* PulseTrain;
 
@@ -141,9 +141,7 @@ fprintf('=======================================\n\n');
 end
 
 %% Yardımcı Fonksiyonlar
-function [PulseTrain] = PulseTrainGeneration(Fs,BroadcastTime,PW,PRI)  
-    TotalSamples = Fs*BroadcastTime;
-    JustNoiseSamples = Fs * 100e-6;
+function [PulseTrain] = PulseTrainGeneration(Fs,TotalSamples,JustNoiseSamples,PW,PRI)  
     PulseTrain = zeros(1,TotalSamples);
     SignalStartSample = JustNoiseSamples + 1;
 

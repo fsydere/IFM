@@ -32,7 +32,7 @@ module ModelComposer_Top(
     );
     
     IFM_0 MC_IFM (
-      .datavalid(dataValid),                                                    // input wire [0 : 0] datavalid
+//      .datavalid(dataValid),                                                    // input wire [0 : 0] datavalid
       .imagpart(ImagPart),                                                      // input wire [15 : 0] imagpart
       .realpart(RealPart),                                                      // input wire [15 : 0] realpart
       .clk(clk),                                                                // input wire clk

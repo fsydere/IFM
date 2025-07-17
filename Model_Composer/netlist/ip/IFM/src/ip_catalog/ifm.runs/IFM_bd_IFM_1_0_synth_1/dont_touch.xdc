@@ -7,9 +7,6 @@
 # IP: c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/bd/IFM_bd/ip/IFM_bd_IFM_1_0/ifm_c_counter_binary_v12_0_i0/ifm_c_counter_binary_v12_0_i0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ifm_c_counter_binary_v12_0_i0 || ORIG_REF_NAME==ifm_c_counter_binary_v12_0_i0} -quiet] -quiet
 
-# IP: c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/bd/IFM_bd/ip/IFM_bd_IFM_1_0/ifm_c_counter_binary_v12_0_i1/ifm_c_counter_binary_v12_0_i1.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ifm_c_counter_binary_v12_0_i1 || ORIG_REF_NAME==ifm_c_counter_binary_v12_0_i1} -quiet] -quiet
-
 # IP: c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/bd/IFM_bd/ip/IFM_bd_IFM_1_0/ifm_cmpy_v6_0_i0/ifm_cmpy_v6_0_i0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ifm_cmpy_v6_0_i0 || ORIG_REF_NAME==ifm_cmpy_v6_0_i0} -quiet] -quiet
 
@@ -19,8 +16,8 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ifm_cordic_
 # IP: c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/bd/IFM_bd/ip/IFM_bd_IFM_1_0/ifm_div_gen_v5_1_i0/ifm_div_gen_v5_1_i0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ifm_div_gen_v5_1_i0 || ORIG_REF_NAME==ifm_div_gen_v5_1_i0} -quiet] -quiet
 
-# IP: c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/bd/IFM_bd/ip/IFM_bd_IFM_1_0/ifm_div_gen_v5_1_i1/ifm_div_gen_v5_1_i1.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ifm_div_gen_v5_1_i1 || ORIG_REF_NAME==ifm_div_gen_v5_1_i1} -quiet] -quiet
+# IP: c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/bd/IFM_bd/ip/IFM_bd_IFM_1_0/ifm_fir_compiler_v7_2_i0/ifm_fir_compiler_v7_2_i0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ifm_fir_compiler_v7_2_i0 || ORIG_REF_NAME==ifm_fir_compiler_v7_2_i0} -quiet] -quiet
 
 # IP: c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/bd/IFM_bd/ip/IFM_bd_IFM_1_0/ifm_mult_gen_v12_0_i0/ifm_mult_gen_v12_0_i0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ifm_mult_gen_v12_0_i0 || ORIG_REF_NAME==ifm_mult_gen_v12_0_i0} -quiet] -quiet
@@ -28,8 +25,8 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ifm_mult_ge
 # IP: c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/bd/IFM_bd/ip/IFM_bd_IFM_1_0/ifm_mult_gen_v12_0_i1/ifm_mult_gen_v12_0_i1.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ifm_mult_gen_v12_0_i1 || ORIG_REF_NAME==ifm_mult_gen_v12_0_i1} -quiet] -quiet
 
-# IP: c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/bd/IFM_bd/ip/IFM_bd_IFM_1_0/ifm_mult_gen_v12_0_i2/ifm_mult_gen_v12_0_i2.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ifm_mult_gen_v12_0_i2 || ORIG_REF_NAME==ifm_mult_gen_v12_0_i2} -quiet] -quiet
+# XDC: c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/bd/IFM_bd/ip/IFM_bd_IFM_1_0/ifm_fir_compiler_v7_2_i0/constraints/fir_compiler_v7_2.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==ifm_fir_compiler_v7_2_i0 || ORIG_REF_NAME==ifm_fir_compiler_v7_2_i0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
 # XDC: c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/bd/IFM_bd/ip/IFM_bd_IFM_1_0/constrs/ifm.xdc
 # XDC: The top module name and the constraint reference have the same name: 'IFM_bd_IFM_1_0'. Do not add the DONT_TOUCH constraint.
@@ -41,9 +38,6 @@ set_property KEEP_HIERARCHY SOFT [get_cells inst -quiet] -quiet
 # IP: c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/bd/IFM_bd/ip/IFM_bd_IFM_1_0/ifm_c_counter_binary_v12_0_i0/ifm_c_counter_binary_v12_0_i0.xci
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ifm_c_counter_binary_v12_0_i0 || ORIG_REF_NAME==ifm_c_counter_binary_v12_0_i0} -quiet] -quiet
 
-# IP: c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/bd/IFM_bd/ip/IFM_bd_IFM_1_0/ifm_c_counter_binary_v12_0_i1/ifm_c_counter_binary_v12_0_i1.xci
-#dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ifm_c_counter_binary_v12_0_i1 || ORIG_REF_NAME==ifm_c_counter_binary_v12_0_i1} -quiet] -quiet
-
 # IP: c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/bd/IFM_bd/ip/IFM_bd_IFM_1_0/ifm_cmpy_v6_0_i0/ifm_cmpy_v6_0_i0.xci
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ifm_cmpy_v6_0_i0 || ORIG_REF_NAME==ifm_cmpy_v6_0_i0} -quiet] -quiet
 
@@ -53,8 +47,8 @@ set_property KEEP_HIERARCHY SOFT [get_cells inst -quiet] -quiet
 # IP: c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/bd/IFM_bd/ip/IFM_bd_IFM_1_0/ifm_div_gen_v5_1_i0/ifm_div_gen_v5_1_i0.xci
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ifm_div_gen_v5_1_i0 || ORIG_REF_NAME==ifm_div_gen_v5_1_i0} -quiet] -quiet
 
-# IP: c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/bd/IFM_bd/ip/IFM_bd_IFM_1_0/ifm_div_gen_v5_1_i1/ifm_div_gen_v5_1_i1.xci
-#dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ifm_div_gen_v5_1_i1 || ORIG_REF_NAME==ifm_div_gen_v5_1_i1} -quiet] -quiet
+# IP: c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/bd/IFM_bd/ip/IFM_bd_IFM_1_0/ifm_fir_compiler_v7_2_i0/ifm_fir_compiler_v7_2_i0.xci
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ifm_fir_compiler_v7_2_i0 || ORIG_REF_NAME==ifm_fir_compiler_v7_2_i0} -quiet] -quiet
 
 # IP: c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/bd/IFM_bd/ip/IFM_bd_IFM_1_0/ifm_mult_gen_v12_0_i0/ifm_mult_gen_v12_0_i0.xci
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ifm_mult_gen_v12_0_i0 || ORIG_REF_NAME==ifm_mult_gen_v12_0_i0} -quiet] -quiet
@@ -62,8 +56,8 @@ set_property KEEP_HIERARCHY SOFT [get_cells inst -quiet] -quiet
 # IP: c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/bd/IFM_bd/ip/IFM_bd_IFM_1_0/ifm_mult_gen_v12_0_i1/ifm_mult_gen_v12_0_i1.xci
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ifm_mult_gen_v12_0_i1 || ORIG_REF_NAME==ifm_mult_gen_v12_0_i1} -quiet] -quiet
 
-# IP: c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/bd/IFM_bd/ip/IFM_bd_IFM_1_0/ifm_mult_gen_v12_0_i2/ifm_mult_gen_v12_0_i2.xci
-#dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ifm_mult_gen_v12_0_i2 || ORIG_REF_NAME==ifm_mult_gen_v12_0_i2} -quiet] -quiet
+# XDC: c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/bd/IFM_bd/ip/IFM_bd_IFM_1_0/ifm_fir_compiler_v7_2_i0/constraints/fir_compiler_v7_2.xdc
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==ifm_fir_compiler_v7_2_i0 || ORIG_REF_NAME==ifm_fir_compiler_v7_2_i0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
 # XDC: c:/Users/fsydere/Workspace/IFM/Model_Composer/netlist/ip/IFM/src/ip_catalog/ifm.gen/sources_1/bd/IFM_bd/ip/IFM_bd_IFM_1_0/constrs/ifm.xdc
 # XDC: The top module name and the constraint reference have the same name: 'IFM_bd_IFM_1_0'. Do not add the DONT_TOUCH constraint.

@@ -31,7 +31,7 @@ function [IFM_results] = IFM(noisySignals,varargin)
     p = inputParser;
     addParameter(p, 'Fs', defaultFs, @(x) isnumeric(x) && x > 0);
     addParameter(p, 'BroadcastTime', defaultBroadcastTime, @(x) isnumeric(x) && x > 0);
-    addParameter(p, 'JustNoiseTime', defaultJustNoiseTime, @(x) isnumeric(x) && x > 0);
+    addParameter(p, 'JustNoiseTime', defaultJustNoiseTime, @(x) isnumeric(x) && x >= 0);
     addParameter(p, 'Fc', defaultFc, @(x) isnumeric(x) && x > 0);
     addParameter(p, 'SNR_dB', defaultSNR_dB, @(x) isnumeric(x));
     addParameter(p, 'time_delays', defaulttime_delays, @(x) isnumeric(x));
@@ -50,6 +50,11 @@ function [IFM_results] = IFM(noisySignals,varargin)
     JustNoiseSamples = Fs*JustNoiseTime;
     
     %% Threshold Hesaplama
+    if(JustNoiseSamples < 1)
+        %Need Update
+        JustNoiseSamples = 100e-6*Fs;
+    end
+
     Threshold_db = zeros(1,length(SNR_dB));
     Threshold_linear = zeros(1,length(SNR_dB));
     

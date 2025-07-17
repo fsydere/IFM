@@ -46,14 +46,13 @@
 -- 
 -- DO NOT MODIFY THIS FILE.
 -- IP VLNV: FSY:VMC:IFM:1.0
--- IP Revision: 383513314
+-- IP Revision: 383677618
 
 -- The following code must appear in the VHDL architecture header.
 
 ------------- Begin Cut here for COMPONENT Declaration ------ COMP_TAG
 COMPONENT IFM_0
   PORT (
-    datavalid : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
     imagpart : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
     realpart : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
     clk : IN STD_LOGIC;
@@ -71,7 +70,6 @@ END COMPONENT;
 ------------- Begin Cut here for INSTANTIATION Template ----- INST_TAG
 your_instance_name : IFM_0
   PORT MAP (
-    datavalid => datavalid,
     imagpart => imagpart,
     realpart => realpart,
     clk => clk,

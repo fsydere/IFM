@@ -96,29 +96,6 @@
       </spirit:parameters>
     </spirit:busInterface>
     <spirit:busInterface>
-      <spirit:name>datavalid</spirit:name>
-      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="data" spirit:version="1.0"/>
-      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="data_rtl" spirit:version="1.0"/>
-      <spirit:slave/>
-      <spirit:portMaps>
-        <spirit:portMap>
-          <spirit:logicalPort>
-            <spirit:name>DATA</spirit:name>
-          </spirit:logicalPort>
-          <spirit:physicalPort>
-            <spirit:name>datavalid</spirit:name>
-          </spirit:physicalPort>
-        </spirit:portMap>
-      </spirit:portMaps>
-      <spirit:parameters>
-        <spirit:parameter>
-          <spirit:name>LAYERED_METADATA</spirit:name>
-          <spirit:value spirit:id="BUSIFPARAM_VALUE.DATAVALID.LAYERED_METADATA">xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type imm
-ediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spirit:value>
-        </spirit:parameter>
-      </spirit:parameters>
-    </spirit:busInterface>
-    <spirit:busInterface>
       <spirit:name>imagpart</spirit:name>
       <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="data" spirit:version="1.0"/>
       <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="data_rtl" spirit:version="1.0"/>
@@ -266,7 +243,7 @@ ediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spiri
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:0b0ed073</spirit:value>
+            <spirit:value>9:9344302a</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -280,11 +257,11 @@ ediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spiri
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Jul 15 16:47:53 UTC 2025</spirit:value>
+            <spirit:value>Thu Jul 17 14:21:53 UTC 2025</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:0b0ed073</spirit:value>
+            <spirit:value>9:9344302a</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -295,7 +272,7 @@ ediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spiri
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:0b0ed073</spirit:value>
+            <spirit:value>9:9344302a</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -311,11 +288,11 @@ ediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spiri
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Jul 15 16:47:45 UTC 2025</spirit:value>
+            <spirit:value>Thu Jul 17 14:21:45 UTC 2025</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:825bb40d</spirit:value>
+            <spirit:value>9:1b6f19e5</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -330,11 +307,11 @@ ediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spiri
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Jul 15 16:47:44 UTC 2025</spirit:value>
+            <spirit:value>Thu Jul 17 14:21:44 UTC 2025</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:0b0ed073</spirit:value>
+            <spirit:value>9:9344302a</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -350,11 +327,11 @@ ediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spiri
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Jul 15 16:47:45 UTC 2025</spirit:value>
+            <spirit:value>Thu Jul 17 14:21:45 UTC 2025</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:825bb40d</spirit:value>
+            <spirit:value>9:1b6f19e5</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -370,11 +347,11 @@ ediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spiri
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Jul 15 16:47:45 UTC 2025</spirit:value>
+            <spirit:value>Thu Jul 17 14:21:45 UTC 2025</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:0b0ed073</spirit:value>
+            <spirit:value>9:9344302a</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -390,33 +367,16 @@ ediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spiri
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Jul 15 16:47:45 UTC 2025</spirit:value>
+            <spirit:value>Thu Jul 17 14:21:45 UTC 2025</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:0b0ed073</spirit:value>
+            <spirit:value>9:9344302a</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
     </spirit:views>
     <spirit:ports>
-      <spirit:port>
-        <spirit:name>datavalid</spirit:name>
-        <spirit:wire>
-          <spirit:direction>in</spirit:direction>
-          <spirit:vector>
-            <spirit:left spirit:format="long">0</spirit:left>
-            <spirit:right spirit:format="long">0</spirit:right>
-          </spirit:vector>
-          <spirit:wireTypeDefs>
-            <spirit:wireTypeDef>
-              <spirit:typeName>std_logic_vector</spirit:typeName>
-              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-            </spirit:wireTypeDef>
-          </spirit:wireTypeDefs>
-        </spirit:wire>
-      </spirit:port>
       <spirit:port>
         <spirit:name>imagpart</spirit:name>
         <spirit:wire>
@@ -578,10 +538,6 @@ ediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spiri
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>ifm_c_counter_binary_v12_0_i1/ifm_c_counter_binary_v12_0_i1.xci</spirit:name>
-        <spirit:userFileType>xci</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
         <spirit:name>ifm_cmpy_v6_0_i0/ifm_cmpy_v6_0_i0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
@@ -594,7 +550,7 @@ ediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spiri
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>ifm_div_gen_v5_1_i1/ifm_div_gen_v5_1_i1.xci</spirit:name>
+        <spirit:name>ifm_fir_compiler_v7_2_i0/ifm_fir_compiler_v7_2_i0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
@@ -603,10 +559,6 @@ ediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spiri
       </spirit:file>
       <spirit:file>
         <spirit:name>ifm_mult_gen_v12_0_i1/ifm_mult_gen_v12_0_i1.xci</spirit:name>
-        <spirit:userFileType>xci</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>ifm_mult_gen_v12_0_i2/ifm_mult_gen_v12_0_i2.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
@@ -679,10 +631,6 @@ ediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spiri
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>ifm_c_counter_binary_v12_0_i1/ifm_c_counter_binary_v12_0_i1.xci</spirit:name>
-        <spirit:userFileType>xci</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
         <spirit:name>ifm_cmpy_v6_0_i0/ifm_cmpy_v6_0_i0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
@@ -695,7 +643,7 @@ ediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spiri
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>ifm_div_gen_v5_1_i1/ifm_div_gen_v5_1_i1.xci</spirit:name>
+        <spirit:name>ifm_fir_compiler_v7_2_i0/ifm_fir_compiler_v7_2_i0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
@@ -704,10 +652,6 @@ ediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spiri
       </spirit:file>
       <spirit:file>
         <spirit:name>ifm_mult_gen_v12_0_i1/ifm_mult_gen_v12_0_i1.xci</spirit:name>
-        <spirit:userFileType>xci</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>ifm_mult_gen_v12_0_i2/ifm_mult_gen_v12_0_i2.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
@@ -776,7 +720,7 @@ ediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spiri
         <xilinx:xpmLibrary>XPM_FIFO</xilinx:xpmLibrary>
         <xilinx:xpmLibrary>XPM_CDC</xilinx:xpmLibrary>
       </xilinx:xpmLibraries>
-      <xilinx:coreRevision>383513314</xilinx:coreRevision>
+      <xilinx:coreRevision>383677618</xilinx:coreRevision>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2025.1</xilinx:xilinxVersion>

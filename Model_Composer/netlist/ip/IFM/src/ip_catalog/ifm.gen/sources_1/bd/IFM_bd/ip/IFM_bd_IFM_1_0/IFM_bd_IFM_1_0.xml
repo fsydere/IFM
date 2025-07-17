@@ -96,29 +96,6 @@
       </spirit:parameters>
     </spirit:busInterface>
     <spirit:busInterface>
-      <spirit:name>datavalid</spirit:name>
-      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="data" spirit:version="1.0"/>
-      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="data_rtl" spirit:version="1.0"/>
-      <spirit:slave/>
-      <spirit:portMaps>
-        <spirit:portMap>
-          <spirit:logicalPort>
-            <spirit:name>DATA</spirit:name>
-          </spirit:logicalPort>
-          <spirit:physicalPort>
-            <spirit:name>datavalid</spirit:name>
-          </spirit:physicalPort>
-        </spirit:portMap>
-      </spirit:portMaps>
-      <spirit:parameters>
-        <spirit:parameter>
-          <spirit:name>LAYERED_METADATA</spirit:name>
-          <spirit:value spirit:id="BUSIFPARAM_VALUE.DATAVALID.LAYERED_METADATA">xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type imm
-ediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spirit:value>
-        </spirit:parameter>
-      </spirit:parameters>
-    </spirit:busInterface>
-    <spirit:busInterface>
       <spirit:name>imagpart</spirit:name>
       <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="data" spirit:version="1.0"/>
       <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="data_rtl" spirit:version="1.0"/>
@@ -266,7 +243,7 @@ ediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spiri
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:ec2a7d4d</spirit:value>
+            <spirit:value>9:1a85781b</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -280,11 +257,11 @@ ediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spiri
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Jul 15 16:30:50 UTC 2025</spirit:value>
+            <spirit:value>Thu Jul 17 14:09:08 UTC 2025</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:ec2a7d4d</spirit:value>
+            <spirit:value>9:1a85781b</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -295,7 +272,7 @@ ediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spiri
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:ec2a7d4d</spirit:value>
+            <spirit:value>9:1a85781b</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -311,11 +288,11 @@ ediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spiri
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Jul 15 16:28:53 UTC 2025</spirit:value>
+            <spirit:value>Thu Jul 17 14:07:13 UTC 2025</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:5f00750a</spirit:value>
+            <spirit:value>9:8bc9128d</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -331,11 +308,11 @@ ediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spiri
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Jul 15 16:28:53 UTC 2025</spirit:value>
+            <spirit:value>Thu Jul 17 14:07:13 UTC 2025</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:5f00750a</spirit:value>
+            <spirit:value>9:8bc9128d</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -351,11 +328,11 @@ ediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spiri
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Jul 15 16:28:53 UTC 2025</spirit:value>
+            <spirit:value>Thu Jul 17 14:07:13 UTC 2025</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:ec2a7d4d</spirit:value>
+            <spirit:value>9:1a85781b</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -371,33 +348,16 @@ ediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spiri
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Jul 15 16:28:53 UTC 2025</spirit:value>
+            <spirit:value>Thu Jul 17 14:07:13 UTC 2025</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:ec2a7d4d</spirit:value>
+            <spirit:value>9:1a85781b</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
     </spirit:views>
     <spirit:ports>
-      <spirit:port>
-        <spirit:name>datavalid</spirit:name>
-        <spirit:wire>
-          <spirit:direction>in</spirit:direction>
-          <spirit:vector>
-            <spirit:left spirit:format="long">0</spirit:left>
-            <spirit:right spirit:format="long">0</spirit:right>
-          </spirit:vector>
-          <spirit:wireTypeDefs>
-            <spirit:wireTypeDef>
-              <spirit:typeName>std_logic_vector</spirit:typeName>
-              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-            </spirit:wireTypeDef>
-          </spirit:wireTypeDefs>
-        </spirit:wire>
-      </spirit:port>
       <spirit:port>
         <spirit:name>imagpart</spirit:name>
         <spirit:wire>
@@ -559,10 +519,6 @@ ediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spiri
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>ifm_c_counter_binary_v12_0_i1/ifm_c_counter_binary_v12_0_i1.xci</spirit:name>
-        <spirit:userFileType>xci</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
         <spirit:name>ifm_cmpy_v6_0_i0/ifm_cmpy_v6_0_i0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
@@ -575,7 +531,7 @@ ediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spiri
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>ifm_div_gen_v5_1_i1/ifm_div_gen_v5_1_i1.xci</spirit:name>
+        <spirit:name>ifm_fir_compiler_v7_2_i0/ifm_fir_compiler_v7_2_i0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
@@ -587,48 +543,44 @@ ediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spiri
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>ifm_mult_gen_v12_0_i2/ifm_mult_gen_v12_0_i2.xci</spirit:name>
-        <spirit:userFileType>xci</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../../ipshared/d7bb/hdl/conv_pkg.v</spirit:name>
+        <spirit:name>../../ipshared/d022/hdl/conv_pkg.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
         <spirit:isIncludeFile>true</spirit:isIncludeFile>
         <spirit:logicalName>work</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/d7bb/hdl/synth_reg.v</spirit:name>
+        <spirit:name>../../ipshared/d022/hdl/synth_reg.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
         <spirit:logicalName>work</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/d7bb/hdl/synth_reg_w_init.v</spirit:name>
+        <spirit:name>../../ipshared/d022/hdl/synth_reg_w_init.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
         <spirit:logicalName>work</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/d7bb/hdl/convert_type.v</spirit:name>
+        <spirit:name>../../ipshared/d022/hdl/convert_type.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
         <spirit:logicalName>work</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/d7bb/hdl/xlclockdriver_rd.v</spirit:name>
+        <spirit:name>../../ipshared/d022/hdl/xlclockdriver_rd.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
         <spirit:logicalName>work</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/d7bb/hdl/ifm_entity_declarations.v</spirit:name>
+        <spirit:name>../../ipshared/d022/hdl/ifm_entity_declarations.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
         <spirit:logicalName>work</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/d7bb/hdl/ifm.v</spirit:name>
+        <spirit:name>../../ipshared/d022/hdl/ifm.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
         <spirit:logicalName>work</spirit:logicalName>
@@ -649,10 +601,6 @@ ediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spiri
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>ifm_c_counter_binary_v12_0_i1/ifm_c_counter_binary_v12_0_i1.xci</spirit:name>
-        <spirit:userFileType>xci</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
         <spirit:name>ifm_cmpy_v6_0_i0/ifm_cmpy_v6_0_i0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
@@ -665,7 +613,7 @@ ediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spiri
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>ifm_div_gen_v5_1_i1/ifm_div_gen_v5_1_i1.xci</spirit:name>
+        <spirit:name>ifm_fir_compiler_v7_2_i0/ifm_fir_compiler_v7_2_i0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
@@ -677,46 +625,42 @@ ediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spiri
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>ifm_mult_gen_v12_0_i2/ifm_mult_gen_v12_0_i2.xci</spirit:name>
-        <spirit:userFileType>xci</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
         <spirit:name>constrs/ifm.xdc</spirit:name>
         <spirit:userFileType>xdc</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/d7bb/hdl/conv_pkg.v</spirit:name>
+        <spirit:name>../../ipshared/d022/hdl/conv_pkg.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:isIncludeFile>true</spirit:isIncludeFile>
         <spirit:logicalName>work</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/d7bb/hdl/synth_reg.v</spirit:name>
+        <spirit:name>../../ipshared/d022/hdl/synth_reg.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:logicalName>work</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/d7bb/hdl/synth_reg_w_init.v</spirit:name>
+        <spirit:name>../../ipshared/d022/hdl/synth_reg_w_init.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:logicalName>work</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/d7bb/hdl/convert_type.v</spirit:name>
+        <spirit:name>../../ipshared/d022/hdl/convert_type.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:logicalName>work</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/d7bb/hdl/xlclockdriver_rd.v</spirit:name>
+        <spirit:name>../../ipshared/d022/hdl/xlclockdriver_rd.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:logicalName>work</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/d7bb/hdl/ifm_entity_declarations.v</spirit:name>
+        <spirit:name>../../ipshared/d022/hdl/ifm_entity_declarations.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:logicalName>work</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/d7bb/hdl/ifm.v</spirit:name>
+        <spirit:name>../../ipshared/d022/hdl/ifm.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:logicalName>work</spirit:logicalName>
       </spirit:file>
@@ -746,7 +690,7 @@ ediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spiri
         <xilinx:xpmLibrary>XPM_FIFO</xilinx:xpmLibrary>
         <xilinx:xpmLibrary>XPM_CDC</xilinx:xpmLibrary>
       </xilinx:xpmLibraries>
-      <xilinx:coreRevision>383513314</xilinx:coreRevision>
+      <xilinx:coreRevision>383677618</xilinx:coreRevision>
       <xilinx:configElementInfos>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.ASSOCIATED_BUSIF" xilinx:valuePermission="bd_and_user"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.ASSOCIATED_PORT" xilinx:valuePermission="bd_and_user"/>
@@ -755,7 +699,6 @@ ediate dependency {} format bool minimum {} maximum {}} value false}}}}}}</spiri
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.FREQ_HZ" xilinx:valuePermission="bd_and_user"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.FREQ_TOLERANCE_HZ" xilinx:valuePermission="bd_and_user"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.PHASE" xilinx:valuePermission="bd_and_user"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.DATAVALID.LAYERED_METADATA" xilinx:valuePermission="bd_and_user"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.ESTIMATED_FREQUENCY_2_DELAY.LAYERED_METADATA" xilinx:valuePermission="bd_and_user"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.ESTIMATED_FREQUENCY_2_DELAY_VALID.LAYERED_METADATA" xilinx:valuePermission="bd_and_user"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.ESTIMATED_FREQUENCY_4_DELAY.LAYERED_METADATA" xilinx:valuePermission="bd_and_user"/>

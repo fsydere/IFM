@@ -4,7 +4,7 @@
     "xci_name": "IFM_bd_IFM_1_0",
     "cell_name": "IFM_1",
     "component_reference": "FSY:VMC:IFM:1.0",
-    "ip_revision": "383513314",
+    "ip_revision": "383677618",
     "gen_directory": "../../../../../../ifm.gen/sources_1/bd/IFM_bd/ip/IFM_bd_IFM_1_0",
     "parameters": {
       "component_parameters": {
@@ -25,7 +25,7 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
-        "IPREVISION": [ { "value": "383513314" } ],
+        "IPREVISION": [ { "value": "383677618" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "../../../../../../ifm.gen/sources_1/bd/IFM_bd/ip/IFM_bd_IFM_1_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
@@ -36,7 +36,6 @@
     },
     "boundary": {
       "ports": {
-        "datavalid": [ { "direction": "in", "size_left": "0", "size_right": "0" } ],
         "imagpart": [ { "direction": "in", "size_left": "15", "size_right": "0" } ],
         "realpart": [ { "direction": "in", "size_left": "15", "size_right": "0" } ],
         "clk": [ { "direction": "in" } ],
@@ -62,17 +61,6 @@
           },
           "port_maps": {
             "CLK": [ { "physical_name": "clk" } ]
-          }
-        },
-        "datavalid": {
-          "vlnv": "xilinx.com:signal:data:1.0",
-          "abstraction_type": "xilinx.com:signal:data_rtl:1.0",
-          "mode": "slave",
-          "parameters": {
-            "LAYERED_METADATA": [ { "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}}", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ]
-          },
-          "port_maps": {
-            "DATA": [ { "physical_name": "datavalid" } ]
           }
         },
         "imagpart": {
